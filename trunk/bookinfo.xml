@@ -1,7 +1,7 @@
-<bookinfo id="about-byte-of-python">
+﻿<bookinfo id="about-byte-of-python">
 	<title>A Byte of Python</title>
 	<subtitle>Deutsche Übersetzung (unvollständig)</subtitle>
-	
+
 	<author>
 		<firstname>Swaroop</firstname>
 		<surname>C H</surname>
@@ -30,7 +30,7 @@
 		<holder>Lutz Horn (deutsche Übersetzung)</holder>
 		<holder>Christoph Zwerschke (deutsche Übersetzung)</holder>
 	</copyright>
- 
+
 	<abstract>
 		<title>Zusammenfassung</title>
 		<para>
@@ -46,14 +46,14 @@
 	<caption>
 		<para>
 			Die Arbeit an der deutschen Übersetzung dieses Buchs wird von
-			<ulink url="http://developer.berlios.de/">BerliOS</ulink>
+			<ulink url="http://developer.berlios.de">BerliOS</ulink>
 			freundlich unterstützt.
 		</para>
 	</caption>
 			</mediaobject>
 		</para>
 	</abstract>
-	
+
 	<legalnotice>
 		<para>
 			Dieses Buch ist unter der <ulink
