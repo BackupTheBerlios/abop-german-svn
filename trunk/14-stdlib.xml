@@ -1,18 +1,17 @@
 ﻿<chapter id="stdlib">
 
 	<!-- German Translation 2005-02-24 by Christoph Zwerschke -->
-	<!-- Korrektur gelesen 2005-02-27 Lutz Horn -->
 
-	<title>Die Python-Standard-Bibliothek</title> <!-- The Python Standard Library -->
+	<title>Die Standardbibliothek von Python</title> <!-- The Python Standard Library -->
 
 	<section id="stdlib-intro">
 		<title>Einführung</title> <!-- Introduction -->
 
 		<para>
 
-		Die Python-Standard-Bibliothek ist in jeder Python-Installation verfügbar. Sie enthält
-		eine riesige Anzahl äußerst nützlicher Module. Es ist sehr wichtig, dass Sie sich mit der
-		Python-Standard-Bibliothek vertraut machen, denn die meisten Ihrer Probleme können
+		Die Python-Standardbibliothek ist in jeder Python-Installation verfügbar. Sie enthält
+		eine riesige Anzahl äußert nützlicher Module. Es ist sehr wichtig, dass Sie sich mit der
+		Standardbibliothek von Python vertraut machen, denn die meisten Ihrer Probleme können
 		sehr leicht und schnell gelöst werden, wenn Sie mit dieser Bibliothek von Modulen vertraut sind.
 
 		<!-- The Python Standard Library is available with every Python installation. It contains a
@@ -24,7 +23,7 @@
 		<para>
 
 		Wir werden einige der häufig gebrauchten Module in dieser Bibliothek untersuchen.
-		Sie können die vollständigen Einzelheiten zu allen Modulen der Python-Standard-Bibliothek
+		Sie können die vollständigen Einzelheiten zu allen Modulen der Python-Standardbibliothek
 		in der (leider nur in Englisch verfügbaren) 'Python Library Reference' nachlesen,
 		die ebenfalls ein Bestandteil Ihrer Python-Installation ist.
 
@@ -232,7 +231,7 @@ if you wanna make your work also fun:
 				Wir benutzen den ersten Parameter, um zu prüfen, ob unserem Programm irgendwelche
 				Optionen übergeben worden sind. Wenn die Option <literal>--version</literal>
 				benutzt wird, dann wird die Versionsnummer des Programms ausgegeben. Auf ähnliche
-				Weise geben wir einige Erklärungen über das Programm aus, wenn die Option
+				Weise geben wir ein wenige Erklärungen über das Programm aus, wenn die Option
 				<literal>--help</literal> angegeben wird. Wir benutzen die Funktion <function>sys.exit</function>,
 				um das laufende Programm zu beenden. Wie immer erhalten Sie mit <literal>help(sys.exit)</literal>
 				weitere Einzelheiten hierzu.
@@ -481,7 +480,7 @@ if you wanna make your work also fun:
 		<para>
 
 		Wir haben ein wenig der Funktionalität der Module <literal>sys</literal> und
-		<literal>os</literal> der Python-Standard-Bibliothek kennen gelernt. Sie sollten
+		<literal>os</literal> der Python-Standardbibliothek kennen gelernt. Sie sollten
 		die Python-Standard-Dokumentation zu Rate ziehen, um mehr über diese und auch
 		über andere Module zu herauszufinden.
 
