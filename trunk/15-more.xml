@@ -371,23 +371,40 @@ $ python list_comprehension.py
 	</section>
 
 	<section id="lambda-forms">
-		<title>Lambda Forms</title>
+		<title>Der lambda-Operator</title> <!-- Lambda Forms -->
 
 		<para>
 
-		A <literal>lambda</literal> statement is used to create new function objects and then
-		return them at runtime.
+		Eine <literal>lambda</literal>-Anweisung wird verwendet, wenn man neue
+		Funktions-Objekte erzeugen und zur Laufzeit zurückgeben möchte.
+
+		<!-- A <literal>lambda</literal> statement is used to create new function objects and then
+		return them at runtime. -->
 
 		</para>
 
 		<section id="using-lambda-forms">
-			<title>Using Lambda Forms</title>
+			<title>Gebrauch des lambda-Operators</title> <!-- Using Lambda Forms -->
 
 			<example>
-				<title>Using Lambda Forms</title>
+				<title>Gebrauch des lambda-Operators
+					(<ulink url="code/lambda.py">lambda.py</ulink>)
+				</title> <!-- Using Lambda Forms -->
 
 				<programlisting>
 				<![CDATA[
+#!/usr/bin/python
+
+def erzeuge_wiederholer(n):
+	return lambda s: s * n
+
+verdoppler = erzeuge_wiederholer(2)
+
+print verdoppler('wort')
+print verdoppler(5)
+				]]>
+				</programlisting>
+				<!-- <![CDATA[
 #!/usr/bin/python
 # Filename: lambda.py
 
@@ -398,12 +415,11 @@ twice = make_repeater(2)
 
 print twice('word')
 print twice(5)
-				]]>
-				</programlisting>
+				]]> -->
 			</example>
 
 			<section>
-				<title>Output</title>
+				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
 				<![CDATA[
@@ -412,21 +428,36 @@ wordword
 10
 				]]>
 				</screen>
+				<!-- <![CDATA[
+$ python lambda.py
+wortwort
+10
+				]]> -->
 			</section>
 
 			<section>
-				<title>How It Works</title>
+				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
 
-				Here, we use a function <function>make_repeater</function> to create new
+				Wir benutzen hier eine Funktion <function>erzeuge_wiederholer</function>, um
+				ein 	neues Funktions-Objekt zur Laufzeit zu erzeugen und es zurückzugeben. Um dieses
+				Funktions-Objekt zu erzeugen, wird eine <literal>lambda</literal>-Anweisung
+				verwendet. Der <literal>lambda</literal>-Operator nimmt dabei einen Parameter
+				entgegen, gefolgt von einem einzelnen Ausdruck, der dann zum Rumpf der Funktion
+				wird und von der neuen Funktion ausgewertet und zurückgegeben wird. Beachten Sie,
+				dass innerhalb eines <literal>lambda</literal>-Operators keine Anweisung verwendet
+				werden darf, nicht einemal eine <literal>print</literal>-Anweisung, sondern dass hier
+				nur Ausdrücke erlaubt sind.
+
+				<!-- Here, we use a function <function>make_repeater</function> to create new
 				function objects at runtime and return it. A <literal>lambda</literal>
 				statement is used to create the function object. Essentially, the
 				<literal>lambda</literal> takes a parameter followed by a single expression
 				only which becomes the body of the function and the value of this
 				expression is returned by the new function. Note that even a
 				<literal>print</literal> statement cannot be used inside a lambda form,
-				only expressions.
+				only expressions. -->
 
 				</para>
 			</section>

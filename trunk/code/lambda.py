@@ -1,10 +1,9 @@
 #!/usr/bin/python
-# Filename: lambda.py
 
-def make_repeater(n):
+def erzeuge_wiederholer(n):
 	return lambda s: s * n
 
-twice = make_repeater(2)
+verdoppler = erzeuge_wiederholer(2)
 
-print twice('word')
-print twice(5)
+print verdoppler('wort')
+print verdoppler(5)
