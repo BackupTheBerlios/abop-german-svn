@@ -1,6 +1,7 @@
-﻿<chapter id="basics">
+<chapter id="basics">
 
 	<!-- German Translation 2005-02-17 by Christoph Zwerschke -->
+	<!-- Korrektur gelesen 2004-02-24 Lutz Horn -->
 
 	<title>Die Grundlagen</title> <!-- The Basics -->
 
@@ -91,7 +92,7 @@
 			<listitem>
 				<para>
 
-				Beispiele für komplexe Zahlen sind <literal>(-5+4j)</literal> oder <literal>(2.3 - 4.6j)</literal>.
+				Beispiele für komplexe Zahlen sind <literal>(-5 + 4j)</literal> oder <literal>(2.3 - 4.6j)</literal>.
 				Beachten Sie, dass die imaginäre Einheit hierbei nicht wie in der Mathematik üblich mit <literal>i</literal>,
 				sondern in der Schreibweise der Elektrotechniker mit <literal>j</literal> bezeichnet wird.
 
@@ -129,7 +130,7 @@
 				<para>
 
 				Sie können Strings durch Benutzung einzelner Anführungszeichen angeben, so wie
-				<literal>'Berufen Sie sich nur auf mich'</literal>. Sämtlicher Leerraum, d.h.
+				<literal>'Berufen Sie sich nur auf mich'</literal>. Sämtlicher Leerraum, d. h.
 				Leerzeichen und Tabulatoren, wird genauso beibehalten.
 
 				<!-- You can specify strings using single quotes such as
@@ -400,7 +401,7 @@ This is the second sentence."
 		Immer nur Literale zu verwenden würde schnell langweilig werden - wir brauchen eine Möglichkeit,
 		beliebige Informationen zu speichern und sie auch zu verarbeiten. An dieser Stelle treten
 		die <emphasis>Variablen</emphasis> auf den Plan. Variablen sind genau so, wie sie heißen -
-		ihr Wert ist variabel, d.h. man kann alles Mögliche in einer Variablen abspeichern. Variablen sind einfach
+		ihr Wert ist variabel, d.h. man kann alles Mögliche in einer Variable abspeichern. Variablen sind einfach
 		ein Teil des Speichers Ihres Computers, in dem Sie Informationen abspeichern. Anders als bei Literalen
 		benötigt man Methoden, um auf diese Variablen zuzugreifen, weswegen man ihnen Namen gibt.
 
@@ -505,7 +506,7 @@ This is the second sentence."
 		Variablen können verschiedene Arten von Werten enthalten, die
 		<emphasis role="bold">Datentypen</emphasis> genannt werden.
 		Die grundlegenden Datentypen sind Zahlen und Strings, die wir bereits besprochen haben.
-		In späteren Kapiteln werden wir sehen, wie wir unter Benutzunge von <link linkend="oops">Klassen</link>
+		In späteren Kapiteln werden wir sehen, wie wir unter Benutzung von <link linkend="oops">Klassen</link>
 		unsere eigenen Datentypen erzeugen können.
 
 		<!-- Variables can hold values of different types called <emphasis role="bold">data
@@ -544,7 +545,7 @@ This is the second sentence."
 
 		<para>
 
-		Wir werden nun sehen, wie wir Variablen zusammen mit Literale benutzen können.
+		Wir werden nun sehen, wie wir Variablen zusammen mit Literalen benutzen können.
 		Speichern Sie das folgende Beispiel als Programm ab und lassen Sie es laufen.
 
 		<!-- We will now see how to use variables along with literal constants. Save the following
@@ -670,13 +671,13 @@ This is the second line.
 
 			<para>
 
-			Und so funktioniert dieses Programm: Zuerst weisen wir der Variablen <varname>i</varname>
+			Und so funktioniert dieses Programm: Zuerst weisen wir der Variable <varname>i</varname>
 			die als Literal angegebene Zahl <literal>5</literal> zu, indem wir den Zuweisungsoperator
 			(<literal>=</literal>) verwenden. Diese Zeile wird eine Anweisung genannt, weil sie angibt,
 			dass etwas getan werden soll, und in diesem Fall wird der Variablenname <literal>i</literal>
 			mit dem Wert <literal>5</literal> verbunden. Als nächstes geben wir den Wert von <varname>i</varname>
 			unter Benutzung der <literal>print</literal>-Anweisung aus, die uns, kaum überraschend,
-			einfach den Wert der Variablen auf den Bildschirm ausgibt.
+			einfach den Wert der Variable auf den Bildschirm ausgibt.
 
 			<!-- Here's how this program works. First, we assign the literal constant value
 			<literal>5</literal> to the variable <varname>i</varname> using the
@@ -690,7 +691,7 @@ This is the second line.
 			</para>
 			<para>
 
-			Danach addieren wir <literal>1</literal> zu dem in der Variablen <varname>i</varname>
+			Danach addieren wir <literal>1</literal> zu dem in der Variable <varname>i</varname>
 			gespeicherten Wert und speichern das Ergebnis zurück in die Variable. Wir geben es dann wieder
 			aus und erhalten wie erwartet den Wert <literal>6</literal>.
 
@@ -701,7 +702,7 @@ This is the second line.
 			</para>
 			<para>
 
-			Entsprechend weisen wir der Variablen <varname>s</varname> den String-Literal
+			Entsprechend weisen wir der Variable <varname>s</varname> den String-Literal
 			in dreifachen Anführungszeichen zu und geben ihn dann aus.
 
 			<!-- Similarly, we assign the literal string to the variable <varname>s</varname>
@@ -1015,9 +1016,9 @@ SyntaxError: invalid syntax
 			</para>
 			<para>
 
-			Wählen Sie einen dieser drei Einrückungs-Stile. Vor allem aber, wählen und benutzen Sie
+			Wählen Sie einen dieser drei Einrückungsstile. Vor allem aber, wählen und benutzen Sie
 			diesen Stil <emphasis role="bold">einheitlich</emphasis>, d.h. benutzen Sie
-			<emphasis>ausschließlich</emphasis> diesen einen Einrückungs-Stil.
+			<emphasis>ausschließlich</emphasis> diesen einen Einrückungsstil.
 
 			<!-- Choose any of these three indentation styles. More importantly, choose one and
 			use it <emphasis role="bold">consistently</emphasis> i.e. use that indentation
