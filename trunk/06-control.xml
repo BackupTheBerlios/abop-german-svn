@@ -142,30 +142,51 @@ Done
 			</section>
 		</section>
 		<section>
-			<title>How It Works</title> <!-- TODO ab hier -->
+			<title>So funktioniert es</title> <!-- How It Works -->
 			<para>
 
-			In this program, we take guesses from the user and check if it is the number
+			In diesem Programm nehmen wir als Benutzereingaben Versuche entgegen,
+			eine geheime Zahl zu erraten, und überprüfen, ob diese Zahl erraten wurde.
+			Wir setzen die Variable <varname>zahl</varname> auf eine irgendeine von uns
+			ausgesuchte ganze Zahl, etwa <literal>23</literal>. Dann nehmen wir den Rateversuch
+			des Benutzers mit Hilfe der Funktion <literal>raw_input()</literal> entgegen.
+			Funktionen sind nichts weiter als wiederverwendbare Programmteile. Wir werden mehr
+			darüber im <link linkend="functions">nächsten Kapitel</link> erfahren.
+
+			<!-- In this program, we take guesses from the user and check if it is the number
 			that we have. We set the variable <varname>number</varname> to any integer we
 			want, say <literal>23</literal>. Then, we take the user's guess using the
 			<literal>raw_input()</literal> function. Functions are just reusable pieces of
 			programs. We'll read more about them in the <link linkend="functions">next
-			chapter</link>.
+			chapter</link>. -->
 
 			</para>
 			<para>
 
-			We supply a string to the built-in <function>raw_input</function> function
+			Wir übergeben der eingebauten Funktion <function>raw_input</function>
+			einen String, den diese auf dem Bildschirm ausgibt, bevor sie auf eine Benutzereingabe
+			wartet. Sobald wir etwas eingegeben und die <keycap>Enter</keycap>-Taste
+			gedrückt haben, liefert die Funktion die Eingabe zurück, die im Fall der Funktion
+			<function>raw_input</function> ein String ist. Wir verwandeln dann diesen String
+			mittels <literal>int</literal> in eine Ganzzahl, die wir in der Variablen
+			<varname>geraten</varname> abspeichern. Eigentlich ist <literal>int</literal>
+			eine Klasse, aber alles was Sie momentan wissen müssen, ist, dass sie hiermit
+			einen String in eine Ganzzahl umwandeln können (unter der Annahme, dass der
+			String eine gültige Ganzahl als Text enthält).
+
+			<!-- We supply a string to the built-in <function>raw_input</function> function
 			which prints it to the screen and waits for input from the user. Once we enter
 			something and press <keycap>enter</keycap>, the function returns the input
 			which in the case of <function>raw_input</function> is a string. We then
 			convert this string to an integer using <literal>int</literal> and then store
 			it in the variable <varname>guess</varname>. Actually, the <literal>int</literal>
 			is a class but all you need to know right now is that you can use it to convert
-			a string to an integer (assuming the string contains a valid integer in the text).
+			a string to an integer (assuming the string contains a valid integer in the text). -->
 
 			</para>
 			<para>
+
+			<!-- TODO hier gehts weiter -->
 
 			Next, we compare the guess of the user with the number we have chosen. If they
 			are equal, we print a success message. Notice that we use indentation levels to
