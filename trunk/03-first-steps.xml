@@ -2,6 +2,7 @@
 
 	<!-- German Translation 2005-02-20 by Bernd Hengelein -->
 	<!-- Corrections and additions 2005-02-24 by Christoph Zwerschke -->
+	<!-- Ergänzung Korrektur gelesen 2004-02-24 Lutz Horn -->
 
 	<title>Erste Schritte</title>
 
@@ -453,7 +454,7 @@ Käse!
 			</para>
 			<para>
 
-			Windows-Benutzer können dieses Problem lösen, indem sie die Datei z.B. mit
+			Windows-Benutzer können dieses Problem lösen, indem sie die Datei z. B. mit
 			Notepad, dem Standard-Editor unter Windows, laden und dann mit 'Speichern unter...'
 			in der Kodierung UTF-8 abspeichern. Das Python-Programm bekommt dadurch
 			eine (normalerweise nicht sichtbare) Kennung am Dateianfang, wodurch das System
@@ -485,7 +486,7 @@ print 'Käse!'  # kein Problem mehr
 			haben wir bei den Beispielprogrammen Umlaute vermieden bzw. mit ASCII-Zeichen umschrieben.
 			Denken Sie aber daran, dass Sie hier keineswegs eingeschränkt sind, sondern nach
 			Angabe einer Kodierung nach Herzenslust nicht nur Umlaute verwenden dürfen,
-			sondern auch kyrillische oder beliebig exotische Zeichen, wie sie z.B. in der Kodierung
+			sondern auch kyrillische oder beliebig exotische Zeichen, wie sie z. B. in der Kodierung
 			UTF-8 im Unicode-Zeichenvorrat reichlich vorhanden sind.
 
 			</para>
@@ -642,7 +643,7 @@ Hello World
 
 		Mit der eingebauten Hilfe (<literal>help</literal>) bekommen Sie zu jeder
 		Funktion oder jeder Anweisung in Python eine kurze Information angezeigt. Das ist vor allem sehr
-		nützlich, wenn Sie die Kommandozeile des Interpreters verwenden. Wenn Sie z.B.
+		nützlich, wenn Sie die Kommandozeile des Interpreters verwenden. Wenn Sie z. B.
 		<literal>help(str)</literal> eingeben, wird Ihnen die Hilfe zu der Klasse <literal>str</literal>
 		 angezeigt. Diese Klasse wird dazu verwendet um Text (Strings, Zeichenketten)
 		in Ihrem Programm zu speichern. Was man unter einer Klasse zu verstehen hat, wird
