@@ -26,7 +26,7 @@
 	<!ENTITY a_revhistory		SYSTEM "appendix-revhistory.xml">
 ]>
 
-<book id="byte-of-python" vendor="www.byteofpython.info">
+<book id="byte-of-python" vendor="www.byteofpython.info" lang="de">
 	&bookinfo;
 <!--
 	&dedication;
