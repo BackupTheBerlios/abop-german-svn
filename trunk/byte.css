@@ -37,6 +37,16 @@ h1.title {
   margin-top:10px;
 }
 
+h2.subtitle {
+  text-align:center;
+  background-color:#FFFED3;
+  border-left:1px solid #DBDAB5;
+  border-right:1px solid #DBDAB5;
+  border-bottom:1px solid #DBDAB5;
+  padding:5px;
+  margin-bottom:10px;
+           }
+
 div.author {
   font-size:16pt;
   text-align:center;

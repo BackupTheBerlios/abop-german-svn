@@ -1,48 +1,65 @@
 <bookinfo id="about-byte-of-python">
-  <title>A Byte of Python</title>
-  
-  <author>
-    <firstname>Swaroop</firstname>
-    <surname>C H</surname>
-    <affiliation>
-      <orgname>www.byteofpython.info</orgname>
-    </affiliation>
-  </author>
-  <collab>
-    <collabname>Bernd Hengelein</collabname>
-  </collab>
-  <collab>
-    <collabname>Lutz Horn</collabname>
-  </collab>
-  <collab>
-    <collabname>Christoph Zwerschke</collabname>
-  </collab>
-  <date>13 January 2004</date>
-  <releaseinfo>Version 1.20, deutsche &Uuml;bersetzung</releaseinfo>
-  <edition>A Byte of Python v1.20, deutsche &Uuml;bersetzung</edition>
-  <copyright>
-    <year>2003-2005</year>
-    <holder>Swaroop C H</holder>
-    <holder>Bernd Hengelein (deutsche &Uuml;bersetzung)</holder>
-    <holder>Lutz Horn (deutsche &Uuml;bersetzung)</holder>
-    <holder>Christoph Zwerschke (deutsche &Uuml;bersetzung)</holder>
-  </copyright>
+	<title>A Byte of Python</title>
+	<subtitle>Deutsche Übersetzung (unvollständig)</subtitle>
+	
+	<author>
+		<firstname>Swaroop</firstname>
+		<surname>C H</surname>
+		<affiliation>
+			<orgname>www.byteofpython.info</orgname>
+		</affiliation>
+	</author>
+	<collab>
+		<collabname>Bernd Hengelein</collabname>
+	</collab>
+	<collab>
+		<collabname>Lutz Horn</collabname>
+	</collab>
+	<collab>
+		<collabname>Christoph Zwerschke</collabname>
+	</collab>
+	<date>
+		13.01.2004, <?dbtimestamp format="d.m.Y" ?> (deutsche Übersetzung)
+	</date>
+	<releaseinfo>Version 1.20, deutsche Übersetzung</releaseinfo>
+	<edition>A Byte of Python v1.20, deutsche Übersetzung</edition>
+	<copyright>
+		<year>2003-2005</year>
+		<holder>Swaroop C H</holder>
+		<holder>Bernd Hengelein (deutsche Übersetzung)</holder>
+		<holder>Lutz Horn (deutsche Übersetzung)</holder>
+		<holder>Christoph Zwerschke (deutsche Übersetzung)</holder>
+	</copyright>
  
-  <abstract>
-    <title>Zusammenfassung</title>
-    <para>
-      Dieses Buch wird Ihnen dabei helfen, die Programmiersprache Python zu
-      lernen, unabh&auml;ngig davon, ob Sie ein erfahrener Programmierer sind ober ob
-      Sie zum ersten Mal mit Computern zu tun haben.
-    </para>
-  </abstract>
-  
-  <legalnotice>
-    <para>
-      Dieses Buch ist unter der <ulink
-      url="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative
-      Commons Attribution-NonCommercial-ShareAlike License 2.0</ulink>
-      lizensiert.
-    </para>
-  </legalnotice>
+	<abstract>
+		<title>Zusammenfassung</title>
+		<para>
+			Dieses Buch wird Ihnen dabei helfen, die Programmiersprache Python zu
+			lernen, unabhängig davon, ob Sie ein erfahrener Programmierer sind
+			ober ob Sie zum ersten Mal mit Computern zu tun haben.
+		</para>
+		<para>
+			<mediaobject>
+	<imageobject>
+		<imagedata fileref="bslogo.png"/>
+	</imageobject>
+	<caption>
+		<para>
+			Die Arbeit an der deutschen Übersetzung dieses Buchs wird von
+			<ulink url="http://developer.berlios.de/">BerliOS</ulink>
+			freundlich unterstützt.
+		</para>
+	</caption>
+			</mediaobject>
+		</para>
+	</abstract>
+	
+	<legalnotice>
+		<para>
+			Dieses Buch ist unter der <ulink
+			url="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative
+			Commons Attribution-NonCommercial-ShareAlike License 2.0</ulink>
+			lizensiert.
+		</para>
+	</legalnotice>
 </bookinfo>

@@ -147,8 +147,8 @@
 	</para>
 </section>
 
-<section id="status">
-	<title>Status des Buchs</title>
+  <section id="status">
+    <title>Status des Buches</title>
 
 	<para>
 	Dieses Buch ist eine <emphasis role="bold">ständige Baustelle</emphasis>.
@@ -167,28 +167,40 @@
 	Weitere Kapitel sind für die Zukunft geplant, etwa über wxPython, Twisted
 	und vielleicht auch Boa Constructor.
 
-	<!--More chapters are planned for the future, such as on wxPython,
-	Twisted and maybe even Boa Constructor.-->
-	</para>
-</section>
+      <!--More chapters are planned for the future, such as on wxPython,
+      Twisted and maybe even Boa Constructor.-->
+    </para>
+    
+    <section id="status-translation">
+      <title>Status der deutschen Übersetzung</title>
+      <para>
+	Die deutsche Übersetzung des Buches ist noch sehr
+	unvollständig.
+      </para>
+    </section>
+  </section>
 
-<section id="official-website">
-	<title>offizielle Website</title>
+  <section id="official-website">
+    <title>Offizielle Website</title>
+    <para>
+      Die offizielle Website des Buches ist <ulink
+      url="http://www.byteofpython.info">www.byteofpython.info</ulink>. Auf
+      der Website können Sie das gesamte Buch lesen, die letzte Version
+      herunterladen, und mir auch Rückmeldungen schicken.
+    </para>
 
-	<para>
-	Die offizielle Website des Buchs ist <ulink
-	url="http://www.byteofpython.info">www.byteofpython.info</ulink>. Auf
-	der Website können Sie das gesamte Buch lesen, die letzte Version
-	herunterladen, und mir auch Rückmeldungen schicken.
-
-	<!--The official website of the book is <ulink
-	url="http://www.byteofpython.info"
-	>www.byteofpython.info</ulink> . From the website, you can read
-	the whole book
-	online or you can download the latest versions of the book, and
-	also send me feedback.-->
-	</para>
-</section>
+    <section id="translation-project">
+      <title>Website des Übersetzungs-Projekts</title>
+      <para>
+	Die deutsche Übersetzung des Buches wird im <ulink
+	url="http://developer.berlios.de/">BerliOS</ulink>-Projekt
+	<ulink
+	 url="https://developer.berlios.de/projects/abop-german/">abop-german</ulink> erstellt.
+	 Auf der Projektseite haben Sie Zugriff auf die deutsche Übersetzung in
+	 verschiedenen Formaten.
+      </para>
+    </section>
+  </section>
 
 <section id="license">
 	<title>Lizenz</title>
@@ -199,15 +211,21 @@
 	Commons Attribution-NonCommercial-ShareAlike License 2.0</ulink>
 	lizensiert.
 
-	<!--This book is licensed under the <ulink
-	url="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative
-	Commons Attribution-NonCommercial-ShareAlike License 2.0</ulink> .-->
-	</para>
-	<para>
-	Das bedeutet, dass Sie frei sind, das Buch zu kopieren, zu verteilen und
-	anzuzeigen, solange Sie auf mich als Urheber hinweisen. Sie dürfen das
-	Buch ohne meine Erlaubnis nicht für kommerzielle Zwecke verwenden. Sie
-	dürfen .... <!-- TODO deutsche CC-Formulierung -->
+      <!--This book is licensed under the <ulink
+      url="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative
+      Commons Attribution-NonCommercial-ShareAlike License 2.0</ulink> .-->
+    </para>
+    <para>
+      Das bedeutet, dass Sie frei sind, das Buch zu kopieren, zu verteilen und
+      anzuzeigen, solange Sie auf mich als Urheber hinweisen. Sie dürfen das
+      Buch nicht für kommerzielle Zwecke verwenden ohne meine Erlaubnis. Sie
+      dürfen das Buch kopieren, verteilen und zugänglich machen, so
+      lange Sie die Urheberschaft des Autors und der Übersetzer
+      nennen. Sie dürfen das Buch nicht ohne Genehmigung für
+      kommerzielle Zwecke verwenden. Sie dürfen das Buch verändern und
+      von ihm abgeleitete Werke erstellen, so lange Sie alle
+      vorgenommenen Änderungen deutlich kennzeichnen und das Ergebnis
+      Ihrer Arbeit unter den hier dargestellten Bedingungen veröffentlichen.
 
 	<!--Basically, you are free to copy, distribute, and display the book,
 	as long as you give credit to me. The restrictions are that you
@@ -243,16 +261,34 @@
 	vornehmen kann. Sie können mich unter
 	<email>swaroop@byteofpython.info</email> erreichen.
 
-	<!--I have put in a lot of effort to make this book as interesting and
-	as accurate as possible. However, if you find some material to be
-	inconsistent or incorrect, or simply needs improvement, then
-	please do inform me, so that I can make suitable improvements. You
-	can reach me at <email>swaroop@byteofpython.info</email> .-->
-	</para>
-</section>
+      <!--I have put in a lot of effort to make this book as interesting and
+      as accurate as possible. However, if you find some material to be
+      inconsistent or incorrect, or simply needs improvement, then
+      please do inform me, so that I can make suitable improvements. You
+      can reach me at <email>swaroop@byteofpython.info</email> .-->
+    </para>
 
-<section id="something-to-think-about">
+    <section id="feedback-translation">
+      <title>Rückmeldung zur deutschen Übersetzung</title>
+      <para>
+	Falls Sie Rückmeldungen zur deutschen Überstzung dieses Buches
+	haben, falls Sie einen Tippfehler gefunden haben oder sonst
+	etwas beitragen möchten, verwenden Sie bitte eines der
+	Kommunikationsmittel auf der Website des Übersetzungsprojekts
+	<ulink
+	 url="https://developer.berlios.de/projects/abop-german/">abop-german</ulink>.
+      </para>
+    </section>
+  </section>
+
+  <section id="something-to-think-about">
 	<title>Etwas zum Nachdenken</title> <!-- Something To Think About -->
+    <note>
+      <para>
+	Die beiden folgenden Zitate wurden nicht übersetzt.
+      </para>
+    </note>
+      
 
 	<blockquote>
 	<attribution>C. A. R. Hoare</attribution>

@@ -70,6 +70,7 @@ then
 	         # --stringparam saxon.character.representation 'native;decimal' \
 
 	cp byte.css $dst
+	cp bslogo.png $dst
 	cp -r docbook-xsl/images $dst
 
 	# Colorizer
@@ -100,6 +101,7 @@ then
 	         # --stringparam saxon.character.representation 'native;decimal' \
 
 	cp byte.css $dst
+	cp bslogo.png $dst
 	cp -r docbook-xsl/images $dst
 
 	# Colorizer

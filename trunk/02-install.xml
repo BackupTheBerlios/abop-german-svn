@@ -1,23 +1,19 @@
 <chapter id="installing-python">
-	<title>Installing Python</title>
+	<title>Python installieren</title>
 	
 	<section id="for-linux-bsd-users">
-		<title>For Linux/BSD users</title>
-		
+		<title>Für GNU/Linux oder BSD</title>
 		<para>
-		
-		If you are using a Linux distribution such as Fedora or Mandrake or
-		{put your choice here}, or a BSD system such as FreeBSD, then you probably already
-		have Python installed on your system.
-		
+			Falls Sie eine GNU/Linux-Distribution wie Fedora Core, SuSE oder
+			Mandrake Linux verwenden oder ein BSD-System wie FreeBSD, dann
+			ist Python vermutlich bereits auf Ihrem System installiert.
 		</para>
 		<para>
-		
-		To test if you have Python already installed on your Linux box, open a shell
-		program (like <application>konsole</application> or
-		<application>gnome-terminal</application>) and enter the command
-		<command>python -V</command> as shown below.
-		
+			Um zu überprüfen, ob Python auf Ihrem GNU/Linux-System
+			installiert ist, öffnen Sie einen Terminalemulator
+			(z.B. <application>konsole</application> oder
+			<application>gnome-terminal</application>) und geben Sie das
+			Kommando <command>python -v</command> ein.
 		</para>
 		<informalexample>
 			<screen>
@@ -25,149 +21,125 @@ $ python -V
 Python 2.3.4
 			</screen>
 		</informalexample>
-		
 		<note>
 			<para>
-			
-			<prompt>$</prompt> is the prompt of the shell. It will be different for you
-			depending on the settings of your OS, hence I will indicate the prompt by
-			just the <prompt>$</prompt> symbol.
-			
+				<prompt>$</prompt> ist die Eingabeaufforderung der
+				Shell. Ihr genaues Aussehen hängt von den Einstellungen
+				Ihres Betriebssystems ab. Wir werden sie allgemein nur als
+				<prompt>$</prompt> darstellen.
 			</para>
 		</note>
-		
 		<para>
-		
-		If you see some version information like the one shown above, then you have
-		Python installed already.
-		
+			Falls Sie eine Versionsinformation wie die oben dargestellte
+			sehen, ist Python bereits installiert.
 		</para>
 		<para>
-		
-		However, if you get a message like this one:
-		
+			Wenn Sie jedoch eine solche Nachricht sehen:
 		</para>
 		<screen>
 $ python -V
 bash: python: command not found
 		</screen>
 		<para>
-		
-		then, you don't have Python installed. This is highly unlikely but possible.
-		
+			dann ist Python nicht installiert. Das ist zwar sehr
+			unwahrscheinlich, aber möglich.
 		</para>
 		<para>
-		
-		In this case, you have two ways of installing Python on your system.
-		
+			In diesem Fall gibt es zwei Wege, um Python auf Ihrem System zu
+			installieren.
 		</para>
 		<itemizedlist>
 			<listitem>
-				<para>
-				
-				Install the binary packages using the package management software
-				that comes with your OS, such as <application>yum</application> in
-				Fedora Linux, <application>urpmi</application> in Mandrake Linux,
-				<application>apt-get</application> in Debian Linux,
-				<application>pkg_add</application> in FreeBSD, etc. Note that you
-				will need an internet connection to use this method.
-				
-				</para>
-				<para>
-				
-				Alternatively, you can download the binaries from somewhere else and
-				then copy to your PC and install it.
-				
-				</para>
+	<para>
+		Installieren Sie die Binärpakete mit Hilfe des Paketmanagers
+		Ihres Betriebssystems, wie
+		z.B. <application>yum</application> unter Fedora Core,
+		<application>urpmi</application> unter Mandrake Linux,
+		<application>apt-get</application> unter Debian GNU/Linux,
+		<application>pkg_add</application> unter FreeBSD usw. Achten
+		Sie darauf, dass Sie für diese Methode eine
+		Internetverbindung benötigen.
+	</para>
+	<para>
+		Alternativ können Sie die Binärpakete auch von der
+		geeigneten Stelle herunterladen, auf Ihren Rechner kopieren
+		und dort installieren.
+	</para>
 			</listitem>
 			<listitem>
-				<para>
-				
-				You can compile Python from the <ulink url="http://www.python.org/download/"
-				>source code</ulink> and install it. The compilation instructions are
-				provided at the website.
-				
-				</para>
+	<para>
+		Sie können Python aus dem unter <ulink
+		url="http://www.python.org/download/">http://www.python.org/download/</ulink> verfügbaren Quellcode übersetzen und installieren. Eine entsprechende Anleitung finden Sie auf der Website.
+	</para>
 			</listitem>
 		</itemizedlist>
 	</section>
 	
 	<section id="for-windows-users">
-		<title>For Windows Users</title>
-		
+		<title>Für Windows</title>
 		<para>
-		
-		Visit <ulink url="http://www.python.org/download/">Python.org/download</ulink> and
-		download the latest version from this website (which was
-		<ulink url="http://www.python.org/ftp/python/2.3.4/Python-2.3.4.exe">2.3.4</ulink>
-		as of this writing. This is just 9.4 MB which is very compact compared to most other
-		languages. The installation is just like any other Windows-based software.
-		
+			Gehen Sie nach <ulink
+			url="http://www.python.org/download/">Python.org/download</ulink> und
+			laden Sie die neueste Version des Windows-Installationsprogramms
+			herunter. Dieses ist nur etwa 10 MB groß und, verglichen mit
+			anderen Programmiersprachen, sehr kompakt. Die Installation
+			läuft ab wie mit jedem anderen Windows-Programm.
 		</para>
-		
 		<caution>
 			<para>
-			
-			When you are given the option of unchecking any <emphasis>optional</emphasis>
-			components, don't uncheck any! Some of these components can be useful for you,
-			especially IDLE.
-			
+	Wenn Sie während der Installation gefragt werden, ob Sie
+	<emphasis>optionale</emphasis> Komponenten abwählen möchten,
+	so tuen Sie das nicht! Einige dieser Komponenten können
+	nützlich sein, insbesondere IDEL.
 			</para>
 		</caution>
-		
 		<para>
-		
-		An interesting fact is that about 70% of Python downloads are by Windows users. Of course,
-		this doesn't give the complete picture since almost all Linux users will have Python
-		installed already on their systems by default.
-		
+			Ein interessante Tatsache ist, dass etwa 70% aller
+			Python-Downloads durch Windows-Benutzer geschehen. Natürlich
+			ergibt das noch nicht das gesamte Bild, da vermutlich fast alle
+			GNU/Linux-Benutzer Python bereits automatisch auf ihrem System
+			installiert haben.
 		</para>
-		
 		<note>
-			<title>Using Python in the Windows command line</title>
+			<title>Python mit der Windows-Kommandozeile verwenden</title>
 			<para>
-			
-			If you want to be able to use Python from the Windows command line, then you
-			need to set the PATH variable appropriately.
-			
+	Wenn Sie in der Lage sein wolle, Python unter der der
+	Windows-Kommandozeile zu verwenden, müssen die
+	Umgebungsvariable PATH geeignet setzten.
 			</para>
 			<para>
-			
-			For Windows 2000, XP, 2003 , click on <guimenu>Control Panel</guimenu> ->
-			<guisubmenu>System</guisubmenu> -> <guisubmenu>Advanced</guisubmenu> ->
-			<guimenuitem>Environment Variables</guimenuitem>. Click on the variable
-			named <emphasis role="bold">PATH</emphasis> in the 'System Variables'
-			section, then select <guimenuitem>Edit</guimenuitem> and add
-			<command>;C:\Python23</command> (without the quotes) to the end of
-			what is already there. Of course, use the appropriate directory name.
-			
+	
+	For Windows 2000, XP, 2003 , click on <guimenu>Control Panel</guimenu> ->
+	<guisubmenu>System</guisubmenu> -> <guisubmenu>Advanced</guisubmenu> ->
+	<guimenuitem>Environment Variables</guimenuitem>. Click on the variable
+	named <emphasis role="bold">PATH</emphasis> in the 'System Variables'
+	section, then select <guimenuitem>Edit</guimenuitem> and add
+	<command>;C:\Python23</command> (without the quotes) to the end of
+	what is already there. Of course, use the appropriate directory name.
+	
 			</para>
 			<para>
-			
-			For older versions of Windows, add the following line to the file
-			<filename>C:\AUTOEXEC.BAT</filename> : '<command>PATH=%PATH%;C:\Python23</command>'
-			(without the quotes) and restart the system. For Windows NT, use the 
-			<filename>AUTOEXEC.NT</filename> file.
-			
+	
+	For older versions of Windows, add the following line to the file
+	<filename>C:\AUTOEXEC.BAT</filename> : '<command>PATH=%PATH%;C:\Python23</command>'
+	(without the quotes) and restart the system. For Windows NT, use the 
+	<filename>AUTOEXEC.NT</filename> file.
 			</para>
 		</note>
 	</section>
 	
 	<section id="installation-summary">
-		<title>Summary</title>
+		<title>Zusammenfassung</title>
 		<para>
-		
-		For a Linux system, you most probably already have Python installed on your system.
-		Otherwise, you can install it using the package management software that comes with
-		your distribution. For a Windows system, installing Python is as easy as downloading
-		the installer and double-clicking on it. From now on, we will assume that you have
-		Python installed on your system.
-		
+			Unter GNU/Linux wird Python vermutlich bereits auf Ihrem System
+			installiert sein. Ansonsten können Sie es mit Hilfe der
+			Paketmanagementsoftware Ihrer Distribution installieren. Unter
+			Windows müssen Sie für die Installation lediglich das
+			Installationsprogramm herunterladen und ausführen. Ab jetzt
+			gehen wir davon aus, dass Python auf Ihrem System installiert ist.
 		</para>
 		<para>
-		
-		Next, we will write our first Python program.
-		
+			Als nächstes werden Sie ihr erstes Pythonprogramm schreiben.
 		</para>
 	</section>
 </chapter>

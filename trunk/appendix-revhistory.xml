@@ -1,13 +1,48 @@
 <appendix id="revhistory">
-	<title>Revision History</title>
-	<section id="timestamp">
-		<title>Timestamp</title>
+	<title>Versionsgeschichte</title>
+	<section id="zeitstempel">
+		<title>Zeitstempel</title>
 		<para>
-			This document was generated on <?dbtimestamp format="B d, Y" ?>
-			at <?dbtimestamp format="H:M"?>
+			Dieses Dokument wurde am <?dbtimestamp format="d.m.Y" ?> um 
+			<?dbtimestamp format="H:M"?> Uhr erzeugt
 		</para>
 	</section>
-	<revhistory id="history">
+
+	<section id="changelog-translation">
+		<title>Vorgenommene Änderungen</title>
+		<para>
+			Für die deutsche Übersetzung wurden die folgenden Änderungen
+			vorgenommen, die über die reine Übersetzung des englischen
+			Originals in der Version 1.20 hinausgehen.
+		</para>
+		<itemizedlist>
+			<listitem>
+	<para>
+		 Nennung der Übersetzer in <filename>bookinfo.xml</filename>.
+	</para>
+			</listitem>
+			<listitem>
+	<para>
+		Hinweis auf BerliOS in <filename>bookinfo.xml</filename>.
+	</para>
+			</listitem>
+			<listitem>
+	<para>
+		Hinweis auf den Status der Übersetzung und auf das
+		Übersetzungs-Projekt in <filename>01-intro.xml</filename>.
+	</para>
+			</listitem>
+			<listitem>
+	<para>
+		Ergänzung dieser Liste vorgenommener Änderungen.
+	</para>
+			</listitem>
+		</itemizedlist>
+	</section>
+
+	<section id="revhistory-orig">
+		<title>Versionsgeschichte des englischen Originals</title>
+		<revhistory id="history">
 		<revision>
 			<revnumber>1.20</revnumber>
 			<date>13/01/2005</date>
@@ -127,4 +162,5 @@
 			</revremark>
 		</revision>
 	</revhistory>
+	</section>
 </appendix>
