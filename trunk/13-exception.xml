@@ -1,6 +1,7 @@
 ﻿<chapter id="exceptions">
 
 	<!-- German Translation 2005-02-24 by Christoph Zwerschke -->
+	<!-- Korrektur gelesen 2005-02-25 Lutz Horn -->
 
 	<title>Ausnahmen</title> <!-- Exceptions -->
 
@@ -8,7 +9,7 @@
 
 	Ausnahmen (<foreignphrase>exceptions</foreignphrase>) treten auf, wenn bestimmte
 	<emphasis>Ausnahmesituationen</emphasis> in Ihrem Programm eintreten.
-	Was zum Beispiel, wenn Sie eine Datei einlesen wollen, und die Datei gar nicht existiert?
+	Was zum Beispiel passiert, wenn Sie eine Datei einlesen wollen, und die Datei gar nicht existiert?
 	Oder wenn Sie die Datei aus Versehen gelöscht haben, während das Programm lief?
 	Solche Situationen werden mittels <emphasis role="bold">Ausnahmen</emphasis>
 	behandelt.
@@ -73,7 +74,7 @@ Hello World
 		Beachten Sie, dass eine Ausnahme namens <classname>SyntaxError</classname>
 		ausgelöst wird, und dass außerdem die Stelle, an der dieser Fehler auftrat, ausgegeben wird.
 		Dies geschieht durch eine eingebaute <emphasis>Fehlerbehandlung</emphasis>
-		für Ausnahmen, die durch Syntaxfehler ausgelöst wurden.
+		für solche Ausnahmen, die durch Syntaxfehler ausgelöst wurden.
 
 		<!-- Observe that a <classname>SyntaxError</classname> is raised and also the location
 		where the error was detected is printed. This is what an <emphasis>error handler</emphasis>
@@ -161,7 +162,7 @@ try:
 	s = raw_input('Geben Sie etwas ein --> ')
 except EOFError:
 	print '\nWarum haben Sie die Eingabe abgebrochen?'
-	sys.exit() # exit the program
+	sys.exit() # beendet das Programm
 except:
 	print '\nIrgendein Fehler hat eine Ausnahme ausgeloest.'
 	# an dieser Stelle beenden wir das Programm nicht
@@ -365,11 +366,11 @@ $ python ausnahmen.py
 Geben Sie etwas ein -->
 Warum haben Sie die Eingabe abgebrochen?
 
-$ python raising.py
+$ python ausnahmen.py
 Geben Sie etwas ein --> ab
 KurzeEingabeAusnahme: Eingabe hatte die Laenge 2, gefordert war mindestens 3.
 
-$ python raising.py
+$ python ausnahmen.py
 Geben Sie etwas ein --> abc
 Es wurde keine Ausnahme ausgeloest.
 				]]>
@@ -577,7 +578,7 @@ KeyboardInterrupt
 		</para>
 		<para>
 
-		Als nächstes untersuchen wir die Python -Standard-Bibliothek.
+		Als nächstes untersuchen wir die Python-Standard-Bibliothek.
 		<!-- Next, we will explore the Python Standard Library. -->
 
 		</para>

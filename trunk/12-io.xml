@@ -1,6 +1,7 @@
 ﻿<chapter id="io">
 
 	<!-- German Translation 2005-02-23 by Christoph Zwerschke -->
+	<!-- Korrektur gelesen 2004-02-25 Lutz Horn -->
 
 	<title>Ein/Ausgabe</title> <!-- Input/Output -->
 
@@ -45,9 +46,9 @@
 		<methodname>read</methodname>, <methodname>readline</methodname>
 		oder <methodname>write</methodname> verwenden. Die Möglichkeit,
 		aus der Datei zu lesen oder in die Datei zu schreiben hängt von dem Modus ab,
-		den Sie beim Öffnen der Datei angegeben haben. Schließlich, wenn Sie die Dateioperationen
+		den Sie beim Öffnen der Datei angegeben haben. Wenn Sie schließlich die Dateioperationen
 		abschließen wollen, rufen Sie die Methode <methodname>close</methodname> auf,
-		um Python mitzuteilen, das Sie mit dieser Datei fertig sind.
+		um Python mitzuteilen, dass Sie mit dieser Datei fertig sind.
 
 		<!-- You can open and use files for reading or writing by creating an object of the
 		<classname>file</classname> class and using its <methodname>read</methodname>,
@@ -60,7 +61,7 @@
 		</para>
 
 		<section id="using-files">
-			<title>Der Gebrauch von file</title> <!-- Using file -->
+			<title>Der Gebrauch von <classname>file</classname></title> <!-- Using file -->
 
 			<example>
 				<title>Verwendung von Dateien
@@ -177,7 +178,7 @@ if you wanna make your work also fun:
 				Schleife ein, wobei wir die Methode <methodname>readline</methodname> benutzen.
 				Diese Methode gibt jeweils eine vollständige Zeile zurück, einschließlich der Zeilenvorschubkennung
 				am Zeilenende. Wenn daher ein <emphasis>leerer</emphasis> String zurückgeliefert wird,
-				dann zeigt uns dies an, dass das Ende Der Datei erreicht wurde, und wir beenden die Schleife.
+				dann zeigt uns dies an, dass das Ende der Datei erreicht wurde, und wir beenden die Schleife.
 
 				<!-- Next, we open the same file again for reading. If we don't specify a mode,
 				then the read mode is the default one. We read in each line of the file
@@ -191,8 +192,8 @@ if you wanna make your work also fun:
 
 				Beachten Sie, dass wir an die <literal>print</literal>-Anweisung ein Komma angehängt
 				haben, um den automatischen Zeilenvorschub zu unterdrücken, der normalerweise bei jeder
-				<literal>print</literal>-Anweisung hinzugefügt wird, weil die aus der Datei eingelesene
-				Zeile bereits mit einer Zeilenvorschubkennung endet. Am Ende Schließen wir die Datei wieder
+				<literal>print</literal>-Anweisung hinzugefügt wird. Die aus der Datei eingelesene
+				Zeile endet bereits mit einer Zeilenvorschubkennung, ein weiterer ist unnötig. Am Ende schließen wir die Datei wieder
 				mit der Methode <methodname>close</methodname>.
 
 				<!-- Notice that we use a comma with the <literal>print</literal> statement to
@@ -326,7 +327,7 @@ $ python pickling.py
 
 				Beachten Sie als erstes, dass wir die <literal>import..as</literal>-Syntax
 				verwendet haben. Dies ist praktisch, denn wir können einen kürzeren Namen
-				für das Modul verwenden. Es ermöglicht uns in diesem Fall sogar, ein verschiedenes
+				für das Modul verwenden. Es ermöglicht uns in diesem Fall sogar, ein anderes
 				Modul (<literal>cPickle</literal> oder <literal>pickle</literal>) zu
 				verwenden, indem wir einfach nur eine Zeile ändern! Im Rest des Programms
 				beziehen wir uns auf dieses Modul als <varname>p</varname>.
