@@ -1,9 +1,9 @@
 #!/usr/bin/python
-# Filename: break.py
+# Dateiname: break.py
 
 while True:
-	s = raw_input('Enter something : ')
-	if s == 'quit':
+	s = raw_input('Geben Sie etwas ein : ')
+	if s == 'ende':
 		break
-	print 'Length of the string is', len(s)
-print 'Done'
+	print 'Die Laenge des Strings ist', len(s)
+print 'Fertig'
