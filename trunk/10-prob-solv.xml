@@ -1,6 +1,7 @@
 ﻿<chapter id="problem-solving">
 
     <!-- German Translation 2005-02-23 by Christoph Zwerschke -->
+	<!-- Korrektur gelesen 2004-02-24 Lutz Horn -->
 
 	<title>Problemlösung - So schreibt man ein Python-Skript</title> <!-- Problem Solving - Writing a Python Script -->
 
@@ -247,7 +248,7 @@ Successful backup to /mnt/e/backup/20041208073244.zip
 				der Uhrzeit zusammen, die wir mit der Funktion <function>time.strftime()</function>
 				ermitteln. Dem Namen wird noch die Dateiendung <filename>.zip</filename> angehängt
 				und das Zielverzeichnis vorangestellt. Dieser vollständige Dateiname mit Pfad wird in der
-				Variablen <varname>ziel</varname> gespeichert.
+				Variable <varname>ziel</varname> gespeichert.
 
 				<!-- We make use of the <literal>os</literal> and <literal>time</literal>
 				modules and so we import them. Then, we specify the files and directories
@@ -262,9 +263,9 @@ Successful backup to /mnt/e/backup/20041208073244.zip
 				</para>
 				<para>
 
-				Der Funktion <function>time.strftime()</function> muss eine Format-Spezifikation
+				Der Funktion <function>time.strftime()</function> muss eine Formatspezifikation
 				übergeben werden, wie wir sie im obigen Programm benutzt haben. Das <literal>%Y</literal>
-				wird hierbei durch das Jahr ohne das Jahrhundert ersetzt. Das <literal>%m</literal> wird
+				wird hierbei durch das Jahr <!--ohne das Jahrhundert--> ersetzt. Das <literal>%m</literal> wird
 				durch den Monat als Dezimalzahl zwischen <literal>01</literal> und <literal>12</literal>
 				ersetzt, und so weiter. Die vollständige Liste aller solcher Format-Spezifikationen kann im
 				<citation>Python-Referenz-Handbuch</citation> nachgelesen werden, das zusammen mit
@@ -567,7 +568,7 @@ $ python sicherung_ver2.py
 Verzeichnis /mnt/e/backup/20041208 erfolgreich angelegt
 Erfolgreiche Sicherung nach /mnt/e/backup/20041208/080020.zip
 
-$ python backup_ver2.py
+$ python sicherung_ver2.py
 Erfolgreiche Sicherung nach /mnt/e/backup/20041208/080428.zip
 				]]>
 				</screen>
@@ -629,7 +630,7 @@ Successful backup to /mnt/e/backup/20041208/080428.zip
 			macht, aber wenn man so viele Sicherheitskopien macht, dann wird es schwer zu
 			unterscheiden, wofür diese Sicherungskopien gemacht worden sind. Zum Beispiel
 			könnte ich einige größere Änderungen an einem Programm oder einer Präsentation
-			gemacht haben, um möchte dann, dass diese Änderungen mit dem Namen des
+			gemacht haben, und möchte dann, dass diese Änderungen mit dem Namen des
 			ZIP-Archivs verknüpft werden. Dies kann einfach dadurch erreicht werden, dass
 			man dem Namen des ZIP-Archivs einen benutzerdefinierten Kommentar anhängt.
 
@@ -770,7 +771,7 @@ SyntaxError: invalid syntax
 
 				<emphasis role="bold">Dieses Programm funktioniert nicht!</emphasis>.
 				Python sagt, dass es einen Syntax-Fehler hat, was bedeutet, dass das Skript
-				an einer Stelle nicht die Struktur aufweist, die Python hier erwartet zu sehen.
+				an einer Stelle nicht die Struktur aufweist, die Python hier erwartet.
 				Wenn wir auf die Fehlermeldung von Python Acht geben, gibt sie uns auch die
 				genaue Stelle an, wo der Fehler entdeckt wurde. Wir fangen also an, das Programm
 				ab dieser Zeile zu <emphasis>debuggen</emphasis>.
@@ -791,7 +792,7 @@ SyntaxError: invalid syntax
 				Für Python fehlt dem Summierungs-Operator (<literal>+</literal>) am Ende
 				der logischen Zeile daher ein Operand, weswegen es an dieser Stelle
 				abbricht. Erinnern Sie sich daran, dass wir angeben können, dass die logische
-				Zeile in der folgenden physikalischen Zeile fortgeführt wird, in dem wir einen
+				Zeile in der folgenden physikalischen Zeile fortgeführt wird, indem wir einen
 				Rückwärtsstrich am Ende der physikalischen Zeile benutzen. Wir machen daher
 				diese Verbesserung an unserem Programm. Eine solche Fehlerkorrektur wird
 				auch als <emphasis role="bold">Bug-Fixing</emphasis> bezeichnet.
@@ -1127,7 +1128,7 @@ tar = 'tar -cvzf %s %s -X /home/swaroop/excludes.txt' % (target, ' '.join(srcdir
 				des Moduls <literal>zipfile</literal> bzw. <literal>tarfile</literal>-
 				Sie gehören zur Python-Standard-Bibliothek und stehen Ihnen bereits zum
 				Gebrauch zur Verfügung. Durch den Einsatz dieser Bibliotheken kann man auch
-				die Benutzung von <function>os.system</function>, was grundsätzlich nicht
+				die Benutzung von <function>os.system</function> vermeiden, was grundsätzlich 
 				ratsam ist, weil man bei Benutzung dieser Funktion sehr schnell kostspielige
 				Fehler machen kann.
 
@@ -1156,7 +1157,7 @@ tar = 'tar -cvzf %s %s -X /home/swaroop/excludes.txt' % (target, ' '.join(srcdir
 	</section>
 
 	<section id="software-development-process">
-		<title>Der Software-Entwicklungs-Prozess</title> <!-- The Software Development Proces -->
+		<title>Der Softwareentwicklungsprozess</title> <!-- The Software Development Proces -->
 
 		<para>
 

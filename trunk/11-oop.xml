@@ -1,6 +1,7 @@
 ﻿<chapter id="oops">
 
 	<!-- German Translation 2005-02-19 by Christoph Zwerschke -->
+	<!-- Korrektur gelesen 2004-02-24 Lutz Horn -->
 
 	<title>Objektorientierte Programmierung</title> <!-- Object-Oriented Programming -->
 
@@ -749,7 +750,7 @@ I am the last one.
 				<varname>self.bevoelkerung</varname>. Beachten Sie, dass eine Objektvariable
 				mit dem gleichen Namen wie eine Klassenvariable diese Klassenvariable versteckt!
 				Wir nehmen auf die Objektvariable <varname>name</varname> Bezug,
-				in dem wir die Schreibweise <varname>self.name</varname> in den Methoden
+				indem wir die Schreibweise <varname>self.name</varname> in den Methoden
 				dieses Objekts benutzen. Merken Sie sich diesen einfachen Unterschied zwischen
 				Klassen- und Objektvariablen.
 
@@ -959,7 +960,7 @@ I am the last one.
 		ergänzen. Änderungen an den Unterdatentypen haben jedoch keine Auswirkung auf andere Unterdatentypen.
 		Ein weiterer Vorteil besteht darin, dass man auf ein Objekt der Klasse Dozent oder Student auch als ein
 		Objekt der Klasse <classname>SchulMitglied</classname> Bezug nehmen kann, was in einigen Situationen
-		nützlich sein könnte, z.B. wenn man die Anzahl der Mitglieder der Hochschule zählen möchte.
+		nützlich sein könnte, z. B. wenn man die Anzahl der Mitglieder der Hochschule zählen möchte.
 		Diese Möglichkeit, einen Unterdatentyp in jeder Situation, wo ein Elterndatentyp erwartet wird,
 		ersetzen zu können, d.h. ein Objekt als eine Instanz der Elternklasse behandeln zu können,
 		wird <emphasis role="bold">Polymorphismus</emphasis> genannt.
