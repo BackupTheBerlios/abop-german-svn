@@ -616,11 +616,12 @@ This is the second sentence."
 		</note>
 
 		<example>
-			<title>Benutzung von Variablen und Literalen</title> <!-- Using Variables and Literal constants -->
+			<title>Benutzung von Variablen und Literalen
+					(<ulink url="code/var.py">var.py</ulink>)
+			</title> <!-- Using Variables and Literal constants -->
 			<programlisting>
 			<![CDATA[
 #!/usr/bin/python
-# Dateiname: var.py
 
 i = 5
 print i
@@ -943,10 +944,11 @@ print i
 		For example: -->
 
 		</para>
+		<simpara>(<ulink url="code/var.py">leerzeichen.py</ulink>)</simpara>
 		<programlisting>
 		<![CDATA[
 #!/usr/bin/python
-# Dateiname: leerzeichen.py
+
 i = 5
  print 'Der Wert ist', i # Fehler! Leerzeichen am Zeilenanfang
 print 'Ich wiederhole, der Wert ist', i

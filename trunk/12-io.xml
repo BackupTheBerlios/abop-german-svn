@@ -63,12 +63,13 @@
 			<title>Der Gebrauch von file</title> <!-- Using file -->
 
 			<example>
-				<title>Verwendung von Dateien</title>
+				<title>Verwendung von Dateien
+					(<ulink url="code/beispiel_file.py">beispiel_file.py</ulink>)
+				</title>
 
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: beispiel_file.py
 
 gedicht = '''\
 Programmieren mit Elan
@@ -250,12 +251,13 @@ if you wanna make your work also fun:
 			<title>Einfrieren und wieder Auftauen</title> <!-- Pickling and Unpickling -->
 
 			<example>
-				<title>Einfrieren und wieder Auftauen</title>
+				<title>Einfrieren und wieder Auftauen
+					(<ulink url="code/einmachen.py">einmachen.py</ulink>)
+				</title> <!-- Pickling and Unpickling -->
 
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: einmachen.py
 
 import cPickle as p
 #import pickle as p

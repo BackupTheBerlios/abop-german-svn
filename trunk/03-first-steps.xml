@@ -262,11 +262,13 @@ hello world
 		</para>
 
 		<example>
-			<title>Gebrauch einer Quelldatei</title> <!-- Using a Source File -->
+			<title>Gebrauch einer Quelldatei
+					(<ulink url="code/hallowelt.py">hallowelt.py</ulink>)
+			</title> <!-- Using a Source File -->
 			<programlisting>
 			<![CDATA[
 #!/usr/bin/python
-# Dateiname: hallowelt.py
+
 print 'Hallo Welt'
 			]]>
 			</programlisting>

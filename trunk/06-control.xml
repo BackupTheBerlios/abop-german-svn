@@ -60,11 +60,12 @@
 			<title>Gebrauch der if-Anweisung</title> <!-- Using the if statement -->
 
 			<example id="using-if-statement">
-				<title>Gebrauch der if-Anweisung</title> <!-- Using the if statement -->
+				<title>Gebrauch der if-Anweisung
+					(<ulink url="code/if.py">if.py</ulink>)
+				</title> <!-- Using the if statement -->
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: if.py
 
 zahl = 23
 geraten = int(raw_input('Geben Sie eine ganze Zahl ein : '))
@@ -484,7 +485,7 @@ The for loop is over
 		</section>
 	</section>
 	<section id="break-statement">
-		<title>Die Break-Anweisung</title> <!-- The break statement -->
+		<title>Die break-Anweisung</title> <!-- The break statement -->
 
 		<para>
 
@@ -514,11 +515,12 @@ The for loop is over
 		<section>
 			<title>Gebrauch der break-Anweisung</title> <!-- Using the break statement -->
 			<example id="using-break-statement">
-				<title>Gebrauch der break-Anweisung</title> <!-- Using the break statement -->
+				<title>Gebrauch der break-Anweisung
+					(<ulink url="code/break.py">break.py</ulink>)
+				</title> <!-- Using the break statement -->
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: break.py
 
 while True:
 	s = raw_input('Geben Sie etwas ein : ')

@@ -54,12 +54,13 @@
 			<title>Kommandozeilenparameter</title> <!-- Command Line Arguments -->
 
 			<example>
-				<title>Der Gebrauch von sys.argv</title> <!-- Using sys.argv -->
+				<title>Der Gebrauch von sys.argv
+					(<ulink url="code/cat.py">cat.py</ulink>)
+				</title> <!-- Using sys.argv -->
 
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: cat.py
 
 import sys
 
@@ -141,14 +142,14 @@ else:
 			</example>
 
 			<section>
-				<title>Output</title> <!-- Ausgabe -->
+				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
 				<![CDATA[
 $ python cat.py
 Es wurden keine Parameter uebergeben.
 
-$ python cat.py --help
+$ python cat.py --hilfe
 Dieses Programm gibt Dateien auf der Standardausgabe aus.
 Es kann eine beliebige Anzahl von Dateien angegeben werden.
 Als Optionen koennen angegeben werden:

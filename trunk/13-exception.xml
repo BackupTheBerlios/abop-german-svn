@@ -147,12 +147,13 @@ EOFError
 			</para>
 
 			<example>
-				<title>Ausnahmebehandlung</title> <!-- Handling Exceptions -->
+				<title>Ausnahmebehandlung
+					(<ulink url="code/try_except.py">try_except.py</ulink>)
+				</title> <!-- Handling Exceptions -->
 
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: try_except.py
 
 import sys
 
@@ -300,12 +301,13 @@ Done
 			<title>So löst man Ausnahmen aus</title> <!-- How To Raise Exceptions -->
 
 			<example>
-				<title>So löst man Ausnahmen aus</title> <!-- How To Raise Exceptions -->
+				<title>So löst man Ausnahmen aus
+					(<ulink url="code/ausnahmen.py">ausnahmen.py</ulink>)
+				</title> <!-- How To Raise Exceptions -->
 
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: ausnahmen.py
 
 class KurzeEingabeAusnahme(Exception):
 	'''Eine benutzerdefinierte Ausnahmeklasse.'''
@@ -453,12 +455,13 @@ No exception was raised.
 			<title>Gebrauch von finally</title> <!-- Using Finally -->
 
 			<example>
-				<title>Gebrauch von finally</title> <!-- Using Finally -->
+				<title>Gebrauch von finally
+					(<ulink url="code/finally.py">finally.py</ulink>)
+				</title> <!-- Using Finally -->
 
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: finally.py
 
 import time
 

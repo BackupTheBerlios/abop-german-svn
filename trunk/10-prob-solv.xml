@@ -127,12 +127,13 @@
 			<title>Die erste Version</title> <!-- First Version -->
 
 			<example>
-				<title>Sicherungsskript - erste Version</title> <!-- Backup Script - The First Version -->
+				<title>Sicherungsskript - erste Version
+					(<ulink url="code/sicherung_ver1.py">sicherung_ver1.py</ulink>)
+				</title> <!-- Backup Script - The First Version -->
 
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: sicherung_ver1.py
 
 import os
 import time
@@ -471,12 +472,13 @@ Successful backup to /mnt/e/backup/20041208073244.zip
 			</para>
 
 			<example>
-				<title>Sicherungsskript - zweite Version</title> <!-- Backup Script - The Second Version -->
+				<title>Sicherungsskript - zweite Version
+					(<ulink url="code/sicherung_ver2.py">sicherung_ver2.py</ulink>)
+				</title> <!-- Backup Script - The Second Version -->
 
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: sicherung_ver2.py
 
 import os
 import time
@@ -644,12 +646,13 @@ Successful backup to /mnt/e/backup/20041208/080428.zip
 			</para>
 
 			<example>
-				<title>Sicherungsskript - dritte Version (funktioniert nicht!)</title> <!-- Backup Script - The Third Version (does not work!) -->
+				<title>Sicherungsskript - dritte Version (funktioniert nicht!)
+					(<ulink url="code/sicherung_ver3.py">sicherung_ver3.py</ulink>)
+				</title> <!-- Backup Script - The Third Version (does not work!) -->
 
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: sicherung_ver3.py
 
 import os
 import time
@@ -749,7 +752,7 @@ else:
 				<screen>
 				<![CDATA[
 $ python sicherung_ver3.py
-  File "sicherung_ver3.py", line 31
+  File "sicherung_ver3.py", line 30
     ziel = heute + os.sep + jetzt + '_' +
                                         ^
 SyntaxError: invalid syntax
@@ -815,12 +818,13 @@ SyntaxError: invalid syntax
 			<title>Die vierte Version</title> <!-- Fourth Version -->
 
 			<example>
-				<title>Sicherungsskript - vierte Version </title> <!-- Backup Script - The Fourth Version -->
+				<title>Sicherungsskript - vierte Version
+					(<ulink url="code/sicherung_ver4.py">sicherung_ver4.py</ulink>)
+				</title> <!-- Backup Script - The Fourth Version -->
 
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: sicherung_ver4.py
 
 import os
 import time
@@ -1128,7 +1132,7 @@ tar = 'tar -cvzf %s %s -X /home/swaroop/excludes.txt' % (target, ' '.join(srcdir
 				des Moduls <literal>zipfile</literal> bzw. <literal>tarfile</literal>-
 				Sie gehören zur Python-Standard-Bibliothek und stehen Ihnen bereits zum
 				Gebrauch zur Verfügung. Durch den Einsatz dieser Bibliotheken kann man auch
-				die Benutzung von <function>os.system</function> vermeiden, was grundsätzlich 
+				die Benutzung von <function>os.system</function> vermeiden, was grundsätzlich
 				ratsam ist, weil man bei Benutzung dieser Funktion sehr schnell kostspielige
 				Fehler machen kann.
 
