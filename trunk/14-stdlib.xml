@@ -1,43 +1,46 @@
-<chapter id="stdlib">
+﻿<chapter id="stdlib">
+
+    <!-- Zur Zeit utner Bearbeitung - CZ -->
+
 	<title>The Python Standard Library</title>
-	
+
 	<section id="stdlib-intro">
 		<title>Introduction</title>
-		
+
 		<para>
-		
+
 		The Python Standard Library is available with every Python installation. It contains a
 		huge number of very useful modules. It is important that you become familiar with the
 		Python Standard Library since most of your problems can be solved more easily and quickly
 		if you are familiar with this library of modules.
-		
+
 		</para>
 		<para>
-		
+
 		We will explore some of the commonly used modules in this library. You can find complete
 		details for all of the modules in the Python Standard Library in the 'Library
 		Reference' section in the documentation that comes with your Python installation.
-		
+
 		</para>
 	</section>
-	
+
 	<section id="sys-module">
 		<title>The sys module</title>
-		
+
 		<para>
-		
+
 		The <literal>sys</literal> module contains system-specific functionality. we have already
 		seen that the <varname>sys.argv</varname> list contains the command-line arguments.
-		
+
 		</para>
 
 <!-- 		TODO: Change this example to something which exposes more of sys module functionality -->
 		<section id="command-line-arguments">
 			<title>Command Line Arguments</title>
-			
+
 			<example>
 				<title>Using sys.argv</title>
-				
+
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
@@ -81,10 +84,10 @@ else:
 				]]>
 				</programlisting>
 			</example>
-			
+
 			<section>
 				<title>Output</title>
-				
+
 				<screen>
 				<![CDATA[
 $ python cat.py
@@ -111,28 +114,28 @@ if you wanna make your work also fun:
 				]]>
 				</screen>
 			</section>
-			
+
 			<section>
 				<title>How It Works</title>
-				
+
 				<para>
-				
+
 				This program tries to mimic the <command>cat</command> command familiar to
 				Linux/Unix users. You just speicfy the names of some text files and it will
 				print them to the output.
-				
+
 				</para>
 				<para>
-				
+
 				When a Python program is run i.e. not an interactive mode, there is always
 				at least one item in the <varname>sys.argv</varname> list which is the name
-				of the current program being run and is available as 
+				of the current program being run and is available as
 				<literal>sys.argv[0]</literal> since Python starts counting from 0. Other
 				command line arguments follow this item.
-				
+
 				</para>
 				<para>
-				
+
 				To make the program user-friendly we have supplied certain options that the
 				user can specify to learn more about the program. We use the first argument
 				to check if any options have been specified to our program. If the
@@ -141,34 +144,34 @@ if you wanna make your work also fun:
 				we give a bit of explanation about the program. We make use of the
 				<function>sys.exit</function> function to exit the running program. As always,
 				see <literal>help(sys.exit)</literal> for more details.
-				
+
 				</para>
 				<para>
-				
+
 				When no options are specified and filenames are passed to the program, it
 				simply prints out each line of each file, one after the other in the order
 				specified on the command line.
-				
+
 				</para>
 				<para>
-				
+
 				As an aside, the name <command>cat</command> is short for
 				<emphasis>concatenate</emphasis> which is basically what this program does
 				- it can print out a file or attach/concatenate two or more files together
 				in the output.
-				
+
 				</para>
 			</section>
 		</section>
 		<section id="more-sys">
 			<title>More sys</title>
-			
+
 			<para>
-			
+
 			The <varname>sys.version</varname> string gives you information about the version
 			of Python that you have installed. The <varname>sys.version_info</varname> tuple
 			gives an easier way of enabling Python-version specific parts of your program.
-			
+
 			</para>
 			<screen>
 			<![CDATA[
@@ -181,101 +184,101 @@ if you wanna make your work also fun:
 			]]>
 			</screen>
 			<para>
-			
+
 			For experienced programmers, other items of interest in the <literal>sys</literal>
 			module include <varname>sys.stdin</varname>, <varname>sys.stdout</varname> and
 			<varname>sys.stderr</varname> which correspond to the standard input, standard
 			output and standard error streams of your program respectively.
-			
+
 			</para>
 		</section>
 	</section>
-	
+
 	<section id="os-module">
 		<title>The os module</title>
-		
+
 		<para>
-		
+
 		This module represents generic <emphasis role="bold">o</emphasis>perating
 		<emphasis role="bold">s</emphasis>ystem functionality. This module is especially important
 		if you want to make your programs platform-independent i.e. it allows the program to be
 		written such that it will run on Linux as well as Windows without any problems and without
 		requiring changes. An example of this is using the <varname>os.sep</varname> variable
 		instead of the operation system-specific path separator.
-		
+
 		</para>
 		<para>
-		
+
 		Some of the more useful parts of the <literal>os</literal> module are listed below
 		Most of them are self-explanatory.
-		
+
 		</para>
-		
+
 		<itemizedlist>
 			<listitem>
 				<para>
-				
+
 				The <varname>os.name</varname> string specifies which platform you are using,
 				such as <literal>'nt'</literal> for Windows and <literal>'posix'</literal>
 				for Linux/Unix users.
-				
+
 				</para>
 			</listitem>
 			<listitem>
 				<para>
-				
+
 				The <function>os.getcwd()</function> function gets the current working
 				directory i.e. the path of the directory from which the curent Python
 				script is working.
-				
+
 				</para>
 			</listitem>
 			<listitem>
 				<para>
-				
+
 				The <function>os.getenv()</function> and <function>os.putenv()</function>
 				functions are used to get and set environment variables respectively.
-				
+
 				</para>
 			</listitem>
 			<listitem>
 				<para>
-				
+
 				The <function>os.listdir()</function> function returns the name of all
 				files and directories in the specified directory.
-				
+
 				</para>
 			</listitem>
 			<listitem>
 				<para>
-				
+
 				The <function>os.remove()</function> function is used to delete a file.
-				
+
 				</para>
 			</listitem>
 			<listitem>
 				<para>
-				
+
 				The <function>os.system()</function> function is used to run a shell
 				command.
-				
+
 				</para>
 			</listitem>
 			<listitem>
 				<para>
-				
+
 				The <varname>os.linesep</varname> string gives the line terminator used
 				in the current platform. For example, Windows uses <literal>'\r\n'</literal>,
 				Linux uses <literal>'\n'</literal> and Mac uses <literal>'\r'</literal>.
-				
+
 				</para>
 			</listitem>
 			<listitem>
 				<para>
-				
+
 				The <function>os.path.split()</function> function returns the directory
 				name and file name of the path.
-				
+
 				</para>
 				<screen>
 				<![CDATA[
@@ -286,40 +289,40 @@ if you wanna make your work also fun:
 			</listitem>
 			<listitem>
 				<para>
-				
+
 				The <function>os.path.isfile()</function> and the
 				<function>os.path.isdir()</function> functions check if the given path
 				refers to a file or directory respectively. Similarly, the
 				<function>os.path.exists()</function> function is used to check if a
 				given path actually exists.
-				
+
 				</para>
 			</listitem>
 		</itemizedlist>
-		
+
 		<para>
-		
+
 		You can explore the Python Standard Documentation for more details on these functions and
 		variables. You can use <literal>help(sys)</literal>, etc. as well.
-		
+
 		</para>
 	</section>
-	
+
 	<section id="stdlib-summary">
 		<title>Summary</title>
-		
+
 		<para>
-		
+
 		We have seen some of the functionality of the <literal>sys</literal> module and
 		<literal>sys</literal> modules in the Python Standard Library. You should explore the
 		Python Standard Documentation to find out more about these and other modules as well.
-		
+
 		</para>
 		<para>
-		
+
 		Next, we will cover various aspects of Python that will make our tour of Python more
 		<emphasis>complete</emphasis>.
-		
+
 		</para>
 	</section>
 </chapter>
