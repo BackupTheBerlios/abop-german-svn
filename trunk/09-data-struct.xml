@@ -1,4 +1,4 @@
-﻿<chapter id="data-structures">
+ï»¿<chapter id="data-structures">
 	<!-- in Arbeit 2005-02-27 Lutz Horn -->
 	<title>Datenstrukturen <!--Data Structures--></title>
 
@@ -268,40 +268,83 @@ My shopping list is now ['banana', 'carrot', 'mango', 'rice']
 				</para>
 				<para>
 
+				Wir haben auch die <literal>for..in</literal>-Schleife verwendet, um
+				durch die Dinge der Liste zu iterieren. Inzwischen werden Sie gemerkt
+				haben, dass eine Liste auch eine Sequenz ist. Die Besonderheiten von
+				Sequenzen werden wir in einem <link linkend="sequences">späteren
+				Abschnitt</link> besprechen.
+
+				<!--
 				We have also used the <literal>for..in</literal> loop to iterate through
 				the items of the list. By now, you must have realised that a list is
 				also a sequence. The speciality of sequences will be discussed in a later
 				<link linkend="sequences">section</link>
+-->
 
 				</para>
 				<para>
 
+				Beachten Sie, dass wir ein <emphasis>Komma</emphasis> am Ende der
+				<literal>print</literal>-Anweisung verwendet haben, um die automatische
+				Ausgabe eines Zeilenumbruchs nach der <literal>print</literal>-Anweisung
+				zu unterdrücken. Das ist eine etwas hässliche Art, aber sie ist einfach
+				und erledigt die Aufgabe.
+
+<!--
 				Notice that we use a <emphasis>comma</emphasis> at the end of the
 				<literal>print</literal> statement to suppress the automatic printing of
 				a line break after every <literal>print</literal> statement. This is a bit
 				of an ugly way of doing it, but it is simple and gets the job done.
+-->
 
 				</para>
 				<para>
 
+				Als nächstes werden wir ein Ding der Liste mit der
+				<methodname>append</methodname>-Methode hinzufügen, wie wir es bereits
+				besprochen habne. Dann werden wir überprüfen, ob das Ding der Liste
+				hinzugefügt wurde, indem wir den Inhalt durch den Aufruf der
+				<literal>print</literal>-Anweisung ausgeben. Diese druckt die Liste für
+				uns in einer ansprechenden Weise.
+
+				<!--
 				Next, we add an item to the list using the <methodname>append</methodname>
 				method of the list object, as already discussed before. Then, we check that
 				the item has been indeed added to the list by printing the contents of the
 				list by simply passing the list to the <literal>print</literal> statement
 				which prints it in a neat manner for us.
+-->
 
 				</para>
 				<para>
 
+				Dann sortieren wir die Liste mit ihrer
+				<methodname>sort</methodname>-Methode. Beachten Sie, dass diese Methode
+				die Liste selbst verändert und nicht lediglich eine veränderte Liste
+				zurückliefert. Das unterscheidet sich vom Verhalten von Strings. Dieses
+				Verhalten meinen wir, wenn wir sagen, eine Liste sein
+				<emphasis>veränderlich</emphasis> (mutable) und Strings
+				<emphasis>unveränderlich</emphasis> (immutable).
+				<!--
 				Then, we sort the list by using the <methodname>sort</methodname> method
 				of the list. Understand that this method affects the list itself and does
 				not return a modified list - this is different from the way strings
 				work. This is what we mean by saying that lists are <emphasis>mutable</emphasis>
 				and that strings are <emphasis>immutable</emphasis>.
+				-->
 
 				</para>
 				<para>
 
+				Nachdem wir ein Ding auf dem Markt gekauft haben, wollen wir es aus der
+				Liste entfernen. Das erreichen wir durch die
+				<literal>del</literal>-Anweisung. Wir sagen, welches Ding wir aus der
+				Liste entfernen wollen, die <literal>del</literal>-Anweisung tut es für
+				uns. Da wir das erste Ding aus der Liste entfernen wollen, verwenden wir
+				<literal>del shoplist[0]</literal> (beachten Sie, dass Python bei 0 zu
+				zählen beginnt).
+
+<!--
 				Next, when we finish buying an item in the market, we want to remove it
 				from the list. We achieve this by using the <literal>del</literal>
 				statement. Here, we mention which item of the list we want to remove and
@@ -309,6 +352,7 @@ My shopping list is now ['banana', 'carrot', 'mango', 'rice']
 				We specify that we want to remove the first item from the list and hence
 				we use <literal>del shoplist[0]</literal> (remember that Python starts
 				counting from 0).
+				-->
 
 				</para>
 				<para>

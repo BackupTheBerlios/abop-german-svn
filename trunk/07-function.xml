@@ -9,9 +9,10 @@
 		
 		<para>
 		
-		Funktionen sind wiederverwendbare Teile eines Programmes. Sie ermöglichen es Ihnen einem Block
+		Funktionen sind wiederverwendbare Teile eines Programms. Sie ermöglichen es
+		Ihnen, einem Block
 		von Statements einen Namen zu geben. Sie können dann diesen Block irgendwo in Ihrem Programm
-		beliebig oft laufen lassen indem Sie den Namen benutzen. Das nennt man eine Funktion
+		beliebig oft laufen lassen, indem Sie den Namen benutzen. Das nennt man eine Funktion
 		<emphasis>aufrufen</emphasis>. Wir haben bereits viele eingebauten Funktionen wie etwa
 		<function>len</function> oder <function>range</function> verwendet.
 		
@@ -26,11 +27,12 @@
 		</para>
 		<para>
 		
-		Funktionen verwended das <emphasis role="bold">def</emphasis>ined <literal>def</literal>
-		Schlüsselwort. Nach diesem folgt ein <emphasis>Identifikator</emphasis> Namen für die
-		Funktion. Danach kommt ein Klammernpaar welches einige Variablennamen enthalten kann. Die Zeile
-		endet mit einem Strichpunkt. Danach kommt der Block mit den Statements die zu der Funktion
-		gehören. Ein Beispiel wird erläutern wie einfach das eigentlich ist:
+	Funktionen werden mit dem Schlüsselwort <literal>def</literal> <emphasis
+	role="bold">definiert</emphasis>.
+		Nach diesem folgt ein <emphasis>identifizierender</emphasis> Name für die
+		Funktion. Danach kommt ein Klammernpaar, welches einige Variablennamen enthalten kann. Die Zeile
+		endet mit einem Doppelpunkt. Danach kommt der Block mit den Statements, die zu der Funktion
+		gehören. Ein Beispiel wird erläutern, wie einfach das eigentlich ist:
 
 		<!--		
 		Functions are <emphasis role="bold">def</emphasis>ined using the <literal>def</literal>
@@ -46,17 +48,17 @@
 			
 			<example>
 				<title>Definition einer Funktion</title><!--<title>Defining a function</title>-->
+					(<ulink url="code/funktion1.py">funktion1.py</ulink>)
 				
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Dateiname: funktion1.py
 
 def sagHallo():
-	print 'Hallo Welt!' # Der Block gehoert zur Funktion
-# Ende der Funktion
+	print 'Hallo Welt!' # der Block der Funktion
+# das Ende der Funktion
 
-sagHallo() # die Funktion aufrufen
+sayHello() # die Funktion aufrufen
 				]]>
 				
 <!--	
@@ -95,8 +97,8 @@ Hello World!
 				
 				<para>
 				
-				Wir definieren eine Funktion <literal>sagHallo</literal> indem wir die Syntax
-				verwenden die wir oben erklärt haben. Diese Funktion nimmt keine Parameter und
+				Wir definieren eine Funktion <literal>sagHallo</literal>, indem wir die Syntax
+				verwenden, die wir oben erklärt haben. Diese Funktion nimmt keine Parameter und
 				deshalb sind auch keine Variablen in den Klammern eingefügt. Parameter sind für
 				Funktionen nur Eingaben. Auf diese Weise können wir verschiedene Werte eingeben
 				und entsprechende Resultate zurückbekommen.
