@@ -1,7 +1,6 @@
 ﻿<chapter id="more-python">
 
 	<!-- German Translation 2005-02-27 by Christoph Zwerschke -->
-	<!-- noch in Arbeit!!! -->
 
 	<title>Noch mehr Python</title> <!-- More Python -->
 
@@ -292,7 +291,7 @@ $ python list_comprehension.py
 				Beachten Sie, dass die ursprüngliche Liste davon unberührt bleibt.
 				Oftmals, wenn wir Schleifen verwenden, um alle Element einer Liste zu durchlaufen,
 				können wir das Gleiche auf präzisere, kompaktere und deutlichere Weise durch eine
-				Listenkomprehension ausgedrücken.
+				Listenkomprehension ausdrücken.
 
 				<!-- Here, we derive a new list by specifying the manipulation to be done
 				(<literal>2*i</literal>) when some condition is satisfied
@@ -447,7 +446,7 @@ wortwort
 				entgegen, gefolgt von einem einzelnen Ausdruck, der dann zum Rumpf der Funktion
 				wird und von der neuen Funktion ausgewertet und zurückgegeben wird. Beachten Sie,
 				dass innerhalb eines <literal>lambda</literal>-Operators keine Anweisung verwendet
-				werden darf, nicht einemal eine <literal>print</literal>-Anweisung, sondern dass hier
+				werden darf, nicht einmal eine <literal>print</literal>-Anweisung, sondern dass hier
 				nur Ausdrücke erlaubt sind.
 
 				<!-- Here, we use a function <function>make_repeater</function> to create new
@@ -465,27 +464,40 @@ wortwort
 	</section>
 
 	<section id="exec-statement">
-		<title>The exec and eval statements</title>
+		<title>Die exec- und eval-Anweisungen</title> <!-- The exec and eval statements -->
 
 		<para>
 
-		The <literal>exec</literal> statement is used to execute Python statements which are
+		Die <literal>exec</literal>-Anweisung wird benutzt, um Python-Anweisungen
+		auszuführen, die in einem String oder in einer Datei gespeichert sind. Zum Beispiel können
+		wir zur Laufzeit einen String erzeugen, der Python-Code enthält, und diese Befehle
+		dann mittels der <literal>exec</literal>-Anweisung ausführen.
+		Unten sehen Sie ein einfaches Beispiel hierfür.
+
+		<!-- The <literal>exec</literal> statement is used to execute Python statements which are
 		stored in a string or file. For example, we can generate a string containing Python code
 		at runtime and then execute these statements using the <literal>exec</literal> statement.
-		A simple example is shown below.
+		A simple example is shown below. -->
 
 		</para>
 		<screen>
 		<![CDATA[
->>> exec 'print "Hello World"'
-Hello World
+>>> exec 'print "Hallo Welt"'
+Hallo Welt
 		]]>
 		</screen>
+		<!-- <![CDATA[
+>>> exec 'print "Hello World"'
+Hello World
+		]]> -->
 
 		<para>
 
-		The <literal>eval</literal> statement is used to evaluate valid Python expressions
-		which are stored in a string. A simple example is shown below.
+		Die <literal>eval</literal>-Anweisung wird verwendet, um gültige Python-Ausdrücke
+		auszuwerten, die in einem String gespeichert sind. Unten sehen Sie wieder ein einfaches Beispiel.
+
+		<!-- The <literal>eval</literal> statement is used to evaluate valid Python expressions
+		which are stored in a string. A simple example is shown below. -->
 
 		</para>
 		<screen>
@@ -497,19 +509,38 @@ Hello World
 	</section>
 
 	<section id="assert-statement">
-		<title>The assert statement</title>
+		<title>Die assert-Anweisung</title> <!-- The assert statement -->
 
 		<para>
 
-		The <literal>assert</literal> statement is used to assert that something is true. For
+		Die <literal>assert</literal>-Anweisung wird benutzt, um sicherzustellen, das
+		eine bestimmte Voraussetzung, die Sie machen, wirklich erfüllt ist. Zum Beispiel könnten
+		Sie von der Voraussetzung ausgehen, dass sich  in einer bestimmten Liste, die Sie benutzen,
+		mindestens ein Element befindet. Wenn Sie überprüfen wollen, ob dies wirklich stimmt
+		und andernfalls einen Fehler ausgeben wollen, dann ist eine <literal>assert</literal>-Anweisung
+		hierfür ideal. Wenn die Überprüfung mittels der <literal>assert</literal>-Anweisung fehlschlägt,
+		dann wird ein <classname>AssertionError</classname> ausgelöst.
+
+		<!-- The <literal>assert</literal> statement is used to assert that something is true. For
 		example, if you are very sure that you will have at least one element in a list you are
 		using and want to check this, and raise an error if it is not true, then
 		<literal>assert</literal> statement is ideal in this situation. When the assert
-		statement fails, an <classname>AssertionError</classname> is raised.
+		statement fails, an <classname>AssertionError</classname> is raised. -->
 
 		</para>
 		<screen>
 		<![CDATA[
+>>> meineliste = ['element']
+>>> assert len(meineliste) >= 1
+>>> meineliste.pop()
+'element'
+>>> assert len(meineliste) >= 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in ?
+AssertionError
+		]]>
+		</screen>
+		<!-- <![CDATA[
 >>> mylist = ['item']
 >>> assert len(mylist) >= 1
 >>> mylist.pop()
@@ -518,56 +549,83 @@ Hello World
 Traceback (most recent call last):
   File "<stdin>", line 1, in ?
 AssertionError
-		]]>
-		</screen>
+		]]> -->
 	</section>
 
 	<section id="repr-function">
-		<title>The repr function</title>
+		<title>Die repr-Function</title> <!-- The repr function -->
 
 		<para>
 
-		The <function>reprt</function> function is used to obtain a canonical string
+		Die <function>repr</function>-Funktion wird benutzt um eine 'kanonische'
+		Darstellung eines Objekts als String zu erhalten. Das Gleiche kann mit umgekehrten
+		einfachen Anführungszeichen erreichen (also nicht dem normalen einfachen
+		Anführungszeichen, das mit dem Apostroph identisch ist, und das man für normale
+		Strings in Python verwendet, sondern das schräg rückwärts gerichtete
+		Anführungszeichen, das dem französischen Accent grave entspricht).
+		Beachten Sie, dass meistens <literal>eval(repr(objekt)) == objekt</literal> gilt.
+
+		<!-- The <function>reprt</function> function is used to obtain a canonical string
 		representation of the object. Backticks (also called conversion or reverse quotes) do
 		the same thing. Note that you will have <literal>eval(repr(object)) == object</literal>
-		most of the time.
+		most of the time. -->
 
 		</para>
 		<screen>
 		<![CDATA[
+>>> liste = []
+>>> liste.append('element')
+>>> `liste`
+"['element']"
+>>> repr(liste)
+"['element']"
+		]]>
+		</screen>
+		<!-- <![CDATA[
 >>> i = []
 >>> i.append('item')
 >>> `i`
 "['item']"
 >>> repr(i)
 "['item']"
-		]]>
-		</screen>
+		]]> -->
 
 		<para>
 
-		Basically, the <function>repr</function> function or the backticks are used to obtain
+		Die Funktion <function>repr</function> bzw. die umgekehrten Anführungsstriche
+		werden grundsätzlich dafür benutzt, eine Darstellung eines Objekts in druckbarer reiner
+		Textform zu erhalten. Sie können bestimmen, was Ihre Objekte mit <function>repr</function>
+		zurückgeben, indem Sie die für die zugehörige Klasse die Methode
+		<methodname>__repr__</methodname> definieren.
+
+		<!-- Basically, the <function>repr</function> function or the backticks are used to obtain
 		a printable representation of the object. you can control what your objects return
 		for the <function>repr</function> function by defining the <methodname>__repr__</methodname>
-		method in your class.
+		method in your class. -->
 
 		</para>
 	</section>
 
 	<section id="more-python-summary">
-		<title>Summary</title>
+		<title>Zusammenfassung</title> <!-- Summary -->
 
 		<para>
 
-		We have covered some more features of Python in this chapter and yet you can be sure we
+		Wir haben in diesem Kapitel noch mehr Funktionalität von Python behandelt, aber Sie können
+		sich sicher sein, dass die gesamte Funktionalität damit noch nicht abgehandelt ist. Aber wir haben
+		inzwischen die meisten Dinge behandelt, die Sie jemals in der Praxis benutzen werden.
+		Es sollte für Sie als Ausgangspunkt ausreichen, um alle möglichen Programme zu schreiben.
+
+		<!-- We have covered some more features of Python in this chapter and yet you can be sure we
 		haven't covered all the features of Python. However, at this stage, we have covered most
 		of what you are ever going to use in practice. This is sufficient for you to get
-		started with whatever programs you are going to create.
+		started with whatever programs you are going to create. -->
 
 		</para>
 		<para>
 
-		Next, we will discuss how to explore Python further.
+		Als nächstes besprechen wir, wie man Python weiter erforschen kann.
+		<!-- Next, we will discuss how to explore Python further. -->
 
 		</para>
 	</section>
