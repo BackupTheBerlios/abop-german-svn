@@ -345,7 +345,6 @@ p.sayHi()
 
 # This short example can also be written as Person().sayHi()
 				]]> -->
-				(Quelldatei: <ulink url="code/methode.py">code/methode.py</ulink>)
 			</example>
 
 			<section>

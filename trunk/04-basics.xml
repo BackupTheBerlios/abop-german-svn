@@ -1,4 +1,4 @@
-<chapter id="basics">
+﻿<chapter id="basics">
 
 	<!-- German Translation 2005-02-17 by Christoph Zwerschke -->
 	<!-- Korrektur gelesen 2004-02-24 Lutz Horn -->
@@ -944,7 +944,7 @@ print i
 		For example: -->
 
 		</para>
-		<simpara>(<ulink url="code/var.py">leerzeichen.py</ulink>)</simpara>
+		<simpara>(<ulink url="code/leerzeichen.py">leerzeichen.py</ulink>)</simpara>
 		<programlisting>
 		<![CDATA[
 #!/usr/bin/python
