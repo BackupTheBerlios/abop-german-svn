@@ -1,18 +1,18 @@
-<chapter id="what-next">
+﻿<chapter id="what-next">
 
 	<!-- German Translation 2005-02-27 by Christoph Zwerschke -->
-	<!-- In Arbeit!!! ->
+	<!-- In Arbeit!!! -->
 
-	<title>Was kommt als n�chstes?</title> <!-- What Next? -->
+	<title>Was kommt als nächstes?</title> <!-- What Next? -->
 
 	<para>
 
-	Wenn Sie dieses Buch bis hierher gr�ndlich gelesen haben, und sich darin ge�bt haben,
-	viele Programme zu schreiben, dann m�ssten Sie sich inzwischen mit Python angefreundet
+	Wenn Sie dieses Buch bis hierher gründlich gelesen haben, und sich darin geübt haben,
+	viele Programme zu schreiben, dann müssten Sie sich inzwischen mit Python angefreundet
 	haben und damit vertraut geworden sein. Sie haben vermutlich einige Python-Programme
 	geschrieben, um verschiedene Dinge auszuprobieren, und um Ihre Python-Kenntnisse in
-	der Praxis zu �ben. Wenn Sie dies noch nicht getan haben, dann sollten Sie es noch tun.
-	Jetzt stellt sich die Frage: &quot;Was kommt als n�chstes?&quot;
+	der Praxis zu üben. Wenn Sie dies noch nicht getan haben, dann sollten Sie es noch tun.
+	Jetzt stellt sich die Frage: &quot;Was kommt als nächstes?&quot;
 
 	<!-- If you have read this book thoroughly till now and practiced writing a lot of programs, then you
 	must have become comfortable and familiar with Python.  You have probably created some Python
@@ -22,11 +22,11 @@
 	</para>
 	<para>
 
-	Ich m�chte vorschlagen, dass Sie sich einmal an dieses Problem heran wagen: Schreiben Sie Ihr
+	Ich möchte vorschlagen, dass Sie sich einmal an dieses Problem heran wagen: Schreiben Sie Ihr
 	eigenes kommandozeilenbasiertes <emphasis>Adressbuch</emphasis>-Programm, mit dem
-	Sie Ihre Kontaktadressen wie Freunde, Familie, Kollegen, und die zugeh�rigen Informationen
-	wie E-Mail-Adresse und/oder Telefonnummer hinzuf�gen, ver�ndern, l�schen oder durchsuchen k�nnen.
-	Die Daten m�ssen f�r den sp�teren Zugriff gespeichert werden.
+	Sie Ihre Kontaktadressen wie Freunde, Familie, Kollegen, und die zugehörigen Informationen
+	wie E-Mail-Adresse und/oder Telefonnummer hinzufügen, verändern, löschen oder durchsuchen können.
+	Die Daten müssen für den späteren Zugriff gespeichert werden.
 
 	<!-- I would suggest that you tackle this problem: create your own command-line
 	<emphasis>address-book</emphasis> program using which you can add, modify, delete or search for
@@ -36,50 +36,76 @@
 	</para>
 	<para>
 
-	This is fairly easy if you think about it in terms of all the various stuff that we have come
-	across till now. If you still want directions on how to proceed, then here's a hint.
+	Dies ist einigermaßen einfach, wenn Sie darüber vor dem Hintergrund der Dinge
+	nachdenken, die wir bisher schon besprochen haben. Wenn Sie dennoch Hinweise wünschen,
+	wie Sie dabei vorgehen können, dann ist hier ein Tipp für Sie.
+
+	<!-- This is fairly easy if you think about it in terms of all the various stuff that we have come
+	across till now. If you still want directions on how to proceed, then here's a hint. -->
 
 	</para>
 	<formalpara>
-		<title>Hint. (You shouldn't be reading this)</title>
+		<title>Tipp (Sie sollten ihn eigentlich nicht lesen)</title> <!-- Hint. (You shouldn't be reading this) -->
 
 		<para>
 
-		Create a class to represent the person's information. Use a dictionary to store person
+		Erzeugen Sie eine Klasse, um die Informationen der Person zu speichern. Benutzen
+		Sie ein Dictionary, um die Personen-Objekte mit ihrem jeweiligen Namen als Schlüssel zu speichern.
+		Benutzen Sie das <literal>pickle</literal>-Modul, um die Objekte persistent auf Ihrer Festplatte
+		zu speichern. Benutzen Sie die eingebauten Dictionary-Methoden, um Personen hinzuzufügen,
+		zu löschen und zu ändern.
+
+		<!-- Create a class to represent the person's information. Use a dictionary to store person
 		objects with their name as the key. Use the cPickle module to store the objects
 		persistently on your hard disk. Use the dictionary built-in methods to add, delete and
-		modify the persons.
+		modify the persons. -->
 
 		</para>
 	</formalpara>
 
 	<para>
 
-	Once you are able to do this, you can claim to be a Python programmer. Now, immediately send me
-	a mail thanking me for this great book ;-) . This step is optional but recommended.
+	Wenn Sie dies einmal geschafft haben, können Sie behaupten, ein Python-Programmierer zu sein.
+	Danach sollten Sie mir sofort eine Mail schicken, um sich für dieses großartige Buch zu bedanken ;-)
+	Dieser Schritt ist optional, aber empfohlen.
+
+	<!-- Once you are able to do this, you can claim to be a Python programmer. Now, immediately send me
+	a mail thanking me for this great book ;-) . This step is optional but recommended. -->
 
 	</para>
 	<para>
 
-	Here are some ways to continue your journey with Python:
+	Hier sind einige weitere Möglichkeiten für Ihre weitere Python-Entdeckungsreise:
+
+	<!-- Here are some ways to continue your journey with Python: -->
 
 	</para>
 
 	<section id="graphical-software">
-		<title>Graphical Software</title>
+		<title>Software mit grafischer Oberfläche</title> <!-- Graphical Software -->
 
 		<para>
 
-		<emphasis role="bold">GUI</emphasis> Libraries using Python - you need these to create
+		<emphasis role="bold">GUI</emphasis>-Bibliotheken für Python - Sie brauchen
+		diese, um Ihre eigenen grafischen Benutzeroberflächen (GUIs) zu programmieren.
+		Sie können sich Ihr eigenes IrfanView oder Kuickshow oder irgendetwas in der Art schreiben,
+		indem Sie GUI-Bibliotheken mit entsprechenden Python-Anbindung benutzen.
+		Eine solche Anbindung ermöglicht es Ihnen, Programme in Python zu schreiben, in
+		denen Sie auf diese Bibliotheken zurückgreifen, die ihrerseits in C oder C++ oder
+		anderen Sprachen geschrieben sind.
+
+		<!-- <emphasis role="bold">GUI</emphasis> Libraries using Python - you need these to create
 		your own graphical programs using Python. You can create your own IrfanView or
 		Kuickshow or anything like that using the GUI libraries with their Python bindings.
 		Bindings are what allow you to write programs in Python and use the libraries which are
-		themselves written in C or C++ or other languages.
+		themselves written in C or C++ or other languages. -->
 
 		</para>
 		<para>
 
-		There are lots of choices for GUI using Python:
+		Es gibt eine große Auswahl an GUI-Bibliotheken für Python:
+
+		<!-- There are lots of choices for GUI using Python: -->
 
 		</para>
 
