@@ -1,26 +1,26 @@
-<chapter id="data-structures">
+﻿<chapter id="data-structures">
 	<!-- in Arbeit 2005-02-27 Lutz Horn -->
 	<title>Datenstrukturen <!--Data Structures--></title>
-	
+
 	<section id="data-structures-intro">
 		<title>Einführung <!--Introduction--></title>
-		
+
 		<para>
 
 		Datenstrukturen sind wesentlich genau das - <emphasis>Strukturen</emphasis>,
 		die einige <emphasis>Daten</emphasis> zusammen halten können. Sie werden,
 		anders ausgedrückt, verwendet, um eine Sammlung von verwandten Daten zu
 		speichern.
-		
+
 		<!--
 		Data structures are basically just that - they are <emphasis>structures</emphasis> which
 		can hold some <emphasis>data</emphasis> together. In other words, they are used to store
 		a collection of related data.
 		-->
-		
+
 		</para>
 		<para>
-		
+
 		In Python  gibt es drei eingebaute Datenstrukturen - Listen, Tupel und
 		Wörterbücher (Dictionaries). Wir werden sehen, wie sich jede dieser drei
 		verwenden lässt und wie sie unser Leben einfacher machen.
@@ -28,13 +28,13 @@
 		There are three built-in data structures in Python - list, tuple and dictionary. We will
 		see how to use each of them and how they make life easier.
 		-->
-		
+
 		</para>
 	</section>
-	
+
 	<section id="list">
 		<title>Listen <!--List--></title>
-		
+
 		<para>
 
 		Eine <literal>list</literal> (Liste) ist eine Datenstruktur, die eine
@@ -45,7 +45,7 @@
 		Sie auf ihrer Einkaufsliste die Gegenstände zeilenweise untereinander stehen
 		haben, währen sie in einer Python-Liste durch Komma getrennt nebeneinander
 		stehen.
-		
+
 		<!--
 		A <literal>list</literal> is a data structure that holds an ordered collection of items
 		i.e. you can store a <emphasis>sequence</emphasis> of items in a list. This is easy to
@@ -53,7 +53,7 @@
 		except that you probbly have each item on a separate line in your shopping list whereas
 		in Python you put commas in between them.
 		-->
-		
+
 		</para>
 		<para>
 
@@ -70,32 +70,32 @@
 		for items in the list. Since, we can add and remove items, we say that a list is a
 		<emphasis>mutable</emphasis> data type i.e. this type can be altered.
 		-->
-		
+
 		</para>
-		
+
 		<section id="list-objects-classes">
 			<title>Eine schnelle Einführung in Objekte und Klassen <!--Quick
 			introduction to Objects and Classes--></title>
-			
+
 			<para>
 			Auch wenn ich die Diskussion von Objekten und Klassen im Allgemeinen
 			bisher aufgeschoben habe, benötigen wir jetzt eine kurze Erläuterung,
 			damit Sie Listen besser verstehen können. Wir werden auf dieses Thema
 			detaillierter in einem eigenen <link linkend="oops">Kapitel</link>
 			eingehen.
-			
+
 			<!--
 			Although, I've been generally delaying the discussion of objects and classes
 			till now, a little explanation is needed right now so that you can understand
 			lists better. We will still explore this topic in detail in its own
 			<link linkend="oops">chapter</link>.
 			-->
-			
+
 			</para>
 			<para>
 
 			Eine Liste ist ein Beispiel für die Verwendung von Objekte und Klassen.
-			Wenn Sie eine Varibale <varnam>i</varnam> verwenden und ihr einen Wert,
+			Wenn Sie eine Varibale <varname>i</varname> verwenden und ihr einen Wert,
 			z.B. die Ganzzahl <literal>5</literal> zuweisen, können Sie sich das als
 			die Erzeugung eines <emphasis role="bold">Objekts</emphasis> (einer
 			Instanz) <varname>i</varname> der <emphasis role="bold">Klasse</emphasis>
@@ -110,10 +110,10 @@
 			<classname>int</classname>. In fact, you can see <literal>help(int)</literal>
 			to understand this better.
 			-->
-			
+
 			</para>
 			<para>
-			
+
 			Eine Klasse kann <emphasis role="bold">Methoden</emphasis> haben, also
 			Funktionen, die für die Verwendung im Zusammenhang mit der Klasse
 			definiert werden. Sie können diese Funktionalitätsteile nur verwenden,
@@ -134,10 +134,10 @@
 			<varname>mylist</varname>. Note the use of dotted notation for accessing methods
 			of the objects.
 			-->
-			
+
 			</para>
 			<para>
-			
+
 			Außerdem kann eine Klasse <emphasis role="bold">Felder</emphasis> haben,
 			bei denen es sich um Variablen handelt, die nur im Zusammenhang mit der
 			Klasse verwendet werden können. Sie können diese Variablen/Namen nur
@@ -149,13 +149,13 @@
 			variables/names only when you have an object of that class. Fields are also
 			accessed by the dotted notation, for example, <varname>mylist.field</varname> .
 			-->
-			
+
 			</para>
 		</section>
-		
+
 		<section id="using-lists">
 			<title>Listen verwenden <!--Using Lists--></title>
-			
+
 			<example>
 				<title>Listen verwenden <!--Using lists-->
 					<ulink url="code/listen_verwenden.py">listen_verwenden.py</ulink>)
@@ -215,15 +215,15 @@ print 'My shopping list is now', shoplist
 				-->
 				</programlisting>
 			</example>
-			
+
 			<section>
 				<title>Ausgabe</title>
-				
+
 				<screen>
 				<![CDATA[
 $ python listen_verwenden.py
 Ich habe  4 Dinge einzukaufen.
-Diese Dinge sind: Aepfel Mangos Karotten Bananen 
+Diese Dinge sind: Aepfel Mangos Karotten Bananen
 Ich muss auch Reis einkaufen.
 Meine Einkaufsliste ist jetzt ['Aepfel', 'Mangos', 'Karotten', 'Bananen', 'Reis']
 Jetzt werde ich meine Einkaufsliste sortieren.
@@ -246,13 +246,13 @@ My shopping list is now ['banana', 'carrot', 'mango', 'rice']
 				-->
 				</screen>
 			</section>
-			
+
 			<section>
 				<title>So funktioniert es</title>
-				
+
 				<para>
-				
-				Die Variable <varname>einkaufsliste</varnam> ist eine Einkaufsliste von
+
+				Die Variable <varname>einkaufsliste</varname> ist eine Einkaufsliste von
 				jemandem, der auf den Markt geht. In <varname>einkaufsliste</varname>
 				speichern wir als Strings nur die Namen der Dinge. Aber beachten Sie,
 				dass Sie <emphasis>jede Art von Objekt</emphasis> einer Liste hinzufügen
@@ -264,44 +264,44 @@ My shopping list is now ['banana', 'carrot', 'mango', 'rice']
 				<emphasis>any kind of object</emphasis> to a list including numbers and
 				even other lists.
 				-->
-				
+
 				</para>
 				<para>
-				
+
 				We have also used the <literal>for..in</literal> loop to iterate through
 				the items of the list. By now, you must have realised that a list is
 				also a sequence. The speciality of sequences will be discussed in a later
 				<link linkend="sequences">section</link>
-				
+
 				</para>
 				<para>
-				
+
 				Notice that we use a <emphasis>comma</emphasis> at the end of the
 				<literal>print</literal> statement to suppress the automatic printing of
 				a line break after every <literal>print</literal> statement. This is a bit
 				of an ugly way of doing it, but it is simple and gets the job done.
-				
+
 				</para>
 				<para>
-				
+
 				Next, we add an item to the list using the <methodname>append</methodname>
 				method of the list object, as already discussed before. Then, we check that
 				the item has been indeed added to the list by printing the contents of the
 				list by simply passing the list to the <literal>print</literal> statement
 				which prints it in a neat manner for us.
-				
+
 				</para>
 				<para>
-				
+
 				Then, we sort the list by using the <methodname>sort</methodname> method
 				of the list. Understand that this method affects the list itself and does
 				not return a modified list - this is different from the way strings
 				work. This is what we mean by saying that lists are <emphasis>mutable</emphasis>
 				and that strings are <emphasis>immutable</emphasis>.
-				
+
 				</para>
 				<para>
-				
+
 				Next, when we finish buying an item in the market, we want to remove it
 				from the list. We achieve this by using the <literal>del</literal>
 				statement. Here, we mention which item of the list we want to remove and
@@ -309,37 +309,37 @@ My shopping list is now ['banana', 'carrot', 'mango', 'rice']
 				We specify that we want to remove the first item from the list and hence
 				we use <literal>del shoplist[0]</literal> (remember that Python starts
 				counting from 0).
-				
+
 				</para>
 				<para>
-				
+
 				If you want to know all the methods defined by the list object, see
 				<literal>help(list)</literal> for complete details.
-				
+
 				</para>
 			</section>
 		</section>
 	</section>
-	
+
 	<section id="tuple">
 		<title>Tuple</title>
-		
+
 		<para>
-		
+
 		Tuples are just like lists except that they are <emphasis role="bold">immutable</emphasis>
 		like strings i.e. you cannot modify tuples. Tuples are defined by specifying items
 		separated by commas within a pair of parentheses. Tuples are usually used in cases where
 		a statement or a user-defined function can safely assume that the collection of values
 		i.e. the tuple of values used will not change.
-		
+
 		</para>
-		
+
 		<section>
 			<title>Using Tuples</title>
-			
+
 			<example>
 				<title>Using Tuples</title>
-				
+
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
@@ -356,10 +356,10 @@ print 'Last animal brought from old zoo is', new_zoo[2][2]
 				]]>
 				</programlisting>
 			</example>
-			
+
 			<section>
 				<title>Output</title>
-				
+
 				<screen>
 				<![CDATA[
 $ python using_tuple.py
@@ -371,29 +371,29 @@ Last animal brought from old zoo is penguin
 				]]>
 				</screen>
 			</section>
-			
+
 			<section>
 				<title>How It Works</title>
-				
+
 				<para>
-				
+
 				The variable <varname>zoo</varname> refers to a tuple of items. We see
 				that the <function>len</function> function can be used to get the length
 				of the tuple. This also indicates that a tuple is a
 				<link linkend="sequences">sequence</link> as well.
-				
+
 				</para>
 				<para>
-				
+
 				We are now shifting these animals to a new zoo since the old zoo is being
 				closed. Therefore, the <varname>new_zoo</varname> tuple contains some
 				animals which are already there along with the animals brought over from
 				the old zoo. Back to reality, note that a tuple within a tuple does not
 				lose its identity.
-				
+
 				</para>
 				<para>
-				
+
 				We can access the items in the tuple by specifying the item's position
 				within a pair of square brackets just like we did for lists. This is
 				called the <emphasis>indexing</emphasis> operator. We access the third
@@ -402,14 +402,14 @@ Last animal brought from old zoo is penguin
 				item in the <varname>new_zoo</varname> tuple by specifying
 				<literal>new_zoo[2][2]</literal>. This is pretty simple once you've
 				understood the idiom.
-				
+
 				</para>
-				
+
 				<formalpara>
 					<title>Tuple with 0 or 1 items</title>
-					
+
 					<para>
-					
+
 					An empty tuple is constructed by an empty pair of parentheses
 					such as <literal>myempty = ()</literal>. However, a tuple with
 					a single item is not so simple. You have to specify it using a
@@ -418,38 +418,38 @@ Last animal brought from old zoo is penguin
 					the object in an expression i.e. you have to specify
 					<literal>singleton = (2 , )</literal> if you mean you want a tuple
 					containing the item <literal>2</literal>.
-					
+
 					</para>
 				</formalpara>
-				
+
 				<note>
 					<title>Note for Perl programmers</title>
-					
+
 					<para>
-					
+
 					A list within a list does not lose its identity i.e. lists are not
 					flattened as in Perl. The same applies to a tuple within a tuple,
 					or a tuple within a list, or a list within a tuple, etc. As far as
 					Python is concerned, they are just objects stored using another
 					object, that's all.
-					
+
 					</para>
 				</note>
 			</section>
 		</section>
 		<section id="tuple-print">
 			<title>Tuples and the print statement</title>
-			
+
 			<para>
-			
+
 			One of the most common usage of tuples is with the print statement. Here is an
 			example:
-			
+
 			</para>
-			
+
 			<example>
 				<title>Output using tuples</title>
-				
+
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
@@ -463,10 +463,10 @@ print 'Why is %s playing with that python?' % name
 				]]>
 				</programlisting>
 			</example>
-			
+
 			<section>
 				<title>Output</title>
-				
+
 				<screen>
 				<![CDATA[
 $ python print_tuple.py
@@ -475,12 +475,12 @@ Why is Swaroop playing with that python?
 				]]>
 				</screen>
 			</section>
-			
+
 			<section>
 				<title>How It Works</title>
-				
+
 				<para>
-				
+
 				The <literal>print</literal> statement can take a string using certain
 				specifications followed by the <literal>%</literal> symbol followed by
 				a tuple of items matching the specification. The specifications are used
@@ -488,98 +488,98 @@ Why is Swaroop playing with that python?
 				<literal>%s</literal> for strings and <literal>%d</literal> for integers.
 				The tuple must have items corresponding to these specifications in the same
 				order.
-				
+
 				</para>
 				<para>
-				
+
 				Observe the first usage where we use <literal>%s</literal> first and this
 				corresponds to the variable <varname>name</varname> which is the first
 				item in the tuple and the second specification is <literal>%d</literal>
 				corresponding to <varname>age</varname> which is the second item in the
 				tuple.
-				
+
 				</para>
 				<para>
-				
+
 				What Python does here is that it converts each item in the tuple into a
 				string and substitutes that string value into the place of the
 				specification. Therefore the <literal>%s</literal> is replaced by the
 				value of the variable <varname>name</varname> and so on.
-				
+
 				</para>
 				<para>
-				
+
 				This usage of the <literal>print</literal> statement makes writing
 				output extremely easy and avoids lot of string manipulation to achieve
 				the same. It also avoids using commas everywhere as we have done till now.
-				
+
 				</para>
 				<para>
-				
+
 				Most of the time, you can just use the <literal>%s</literal> specification
 				and let Python take care of the rest for you. This works even for numbers.
 				However, you may want to give the correct specifications since this adds
 				one level of checking that your program is correct.
-				
+
 				</para>
 				<para>
-				
+
 				In the second <literal>print</literal> statement, we are using a single
 				specification followed by the <literal>%</literal> symbol followed by a
 				single item - there are no pair of parentheses. This works only in the case
 				where there is a single specification in the string.
-				
+
 				</para>
 			</section>
 		</section>
 	</section>
-	
+
 	<section id="dictionary">
 		<title>Dictionary</title>
-		
+
 		<para>
-		
+
 		A dictionary is like an address-book where you can find the address or contact details
 		of a person by knowing only his/her name i.e. we associate
 		<emphasis role="bold">keys</emphasis> (name) with <emphasis role="bold">values</emphasis>
 		(details). Note that the key must be unique just like you cannot find out the correct
 		information if you have two persons with the exact same name.
-		
+
 		</para>
 		<para>
-		
+
 		Note that you can use only immutable objects (like strings) for the keys of a dictionary
 		but you can use either immutable or mutable objects for the values of the dictionary.
 		This basically translates to say that you should use only simple objects for keys.
-		
+
 		</para>
 		<para>
-		
+
 		Pairs of keys and valus are specified in a dictionary by using the notation
 		<literal>d = {key1 : value1, key2 : value2 }</literal>. Notice that they key/value pairs
 		are separated by a colon and the pairs are separated themselves by commas and all this
 		is enclosed in a pair of curly brackets.
-		
+
 		</para>
 		<para>
-		
+
 		Remember that key/value pairs in a dictionary are not ordered in any manner. If you want
 		a particular order, then you will have to sort them yourself before using it.
-		
+
 		</para>
 		<para>
-		
+
 		The dictionaries that you will be using are instances/objects of the
 		<classname>dict</classname> class.
-		
+
 		</para>
-		
+
 		<section id="using-dictionaries">
 			<title>Using Dictionaries</title>
-			
+
 			<example>
 				<title>Using dictionaries</title>
-				
+
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
@@ -611,10 +611,10 @@ if 'Guido' in ab: # OR ab.has_key('Guido')
 				]]>
 				</programlisting>
 			</example>
-			
+
 			<section>
 				<title>Output</title>
-				
+
 				<screen>
 				<![CDATA[
 $ python using_dict.py
@@ -631,36 +631,36 @@ Guido's address is guido@python.org
 				]]>
 				</screen>
 			</section>
-			
+
 			<section>
 				<title>How It Works</title>
-				
+
 				<para>
-				
+
 				We create the dictionary <varname>ab</varname> using the notation already
 				discussed. We then access key/value pairs by specifying the key using the
 				indexing operator as discussed in the context of lists and tuples.
 				Observe that the syntax is very simple for dictionaries as well.
-				
+
 				</para>
 				<para>
-				
+
 				We can add new key/value pairs by simply using the indexing operator to
 				access a key and assign that value, as we have done for Guido in the
 				above case.
-				
+
 				</para>
 				<para>
-				
+
 				We can delete key/value pairs using our old friend - the <literal>del</literal>
 				statement. We simply specify the dictionary and the indexing operator for the
 				key to be removed and pass it to the <literal>del</literal> statement.
 				There is no need to know the value corresponding to the key for this
 				operation.
-				
+
 				</para>
 				<para>
-				
+
 				Next, we access each key/value pair of the dictionary using the
 				<methodname>items</methodname> method of the dictionary which returns a
 				list of tuples where each tuple contains a pair of items - the key followed
@@ -668,23 +668,23 @@ Guido's address is guido@python.org
 				<varname>name</varname> and <varname>address</varname> correspondingly
 				for each pair using the <literal>for..in</literal> loop and then print
 				these values in the for-block.
-				
+
 				</para>
 				<para>
-				
+
 				We can check if a key/value pair exists using the <literal>in</literal>
 				operator or even the <methodname>has_key</methodname> method of the
 				<classname>dict</classname> class. You can see the documentation for
 				the complete list of methods of the <classname>dict</classname> class
 				using <literal>help(dict)</literal>.
-				
+
 				</para>
-				
+
 				<formalpara>
 					<title>Keyword Arguments and Dictionaries</title>
-					
+
 					<para>
-					
+
 					On a different note, if you have used keyword arguments in your
 					functions, you have already used dictionaries! Just think about it
 					- the key/value pair is specified by you in the parameter list of
@@ -692,7 +692,7 @@ Guido's address is guido@python.org
 					function, it is just a key access of a dictionary (which is called
 					the <emphasis>symbol table</emphasis> in compiler design
 					terminology).
-					
+
 					</para>
 				</formalpara>
 			</section>
@@ -700,23 +700,23 @@ Guido's address is guido@python.org
 	</section>
 	<section id="sequences">
 		<title>Sequences</title>
-		
+
 		<para>
-		
+
 		Lists, tuples and strings are examples of sequences, but what are sequences and what is
 		so special about them? Two of the main features of a sequence is the
 		<emphasis role="bold">indexing</emphasis> operation which allows us to fetch a particular
 		item in the sequence directly and the <emphasis role="bold">slicing</emphasis> operation
 		which allows us to retrieve a slice of the sequence i.e. a part of the sequence.
-		
+
 		</para>
-		
+
 		<section id="using-sequences">
 			<title>Using Sequences</title>
-			
+
 			<example>
 				<title>Using Sequences</title>
-				
+
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
@@ -747,10 +747,10 @@ print 'characters start to end is', name[:]
 				]]>
 				</programlisting>
 			</example>
-			
+
 			<section>
 				<title>Output</title>
-				
+
 				<screen>
 				<![CDATA[
 $ python seq.py
@@ -771,12 +771,12 @@ characters start to end is swaroop
 				]]>
 				</screen>
 			</section>
-			
+
 			<section>
 				<title>How It Works</title>
-				
+
 				<para>
-				
+
 				First, we see how to use indexes to get individual items of a sequence.
 				This is also referred to as the subscription operation. Whenever you
 				specify a number to a sequence within square brackets as shown above,
@@ -785,27 +785,27 @@ characters start to end is swaroop
 				<literal>shoplist[0]</literal> fetches the first item and
 				<literal>shoplist[3]</literal> fetches the fourth item in the
 				<varname>shoplist</varname> sequence.
-				
+
 				</para>
 				<para>
-				
+
 				The index can also be a negative number, in which case, the position is
-				calculated from the end of the sequence. Therefore, 
+				calculated from the end of the sequence. Therefore,
 				<literal>shoplist[-1]</literal> refers to the last item in the sequence and
 				<literal>shoplist[-2]</literal> fetches the second last item in the
 				sequence.
-				
+
 				</para>
 				<para>
-				
+
 				The slicing operation is used by specifying the name of the sequence followed
 				by an optional pair of numbers separated by a colon within square brackets.
 				Note that this is very very similar to the indexing operation you have been
 				using til lnow. Remember the numbers are optional but the colon isn't.
-				
+
 				</para>
 				<para>
-				
+
 				The first number (before the colon) in the slicing operation refers to the
 				position from where the slice starts and the second number (after the colon)
 				indicates where the slice will stop at. If the first number is not specified,
@@ -814,63 +814,63 @@ characters start to end is swaroop
 				returned <emphasis>starts</emphasis> at the start position and will end
 				just before the <emphasis>end</emphasis> position i.e. the start position is
 				included but the end position is excluded from the sequence slice.
-				
+
 				</para>
 				<para>
-				
+
 				Thus, <literal>shoplist[1:3]</literal> returns a slice of the sequence
 				starting at position 1, includes position 2 but stops at position 3 and
 				therefore a <emphasis>slice</emphasis> of two items is returned.
 				Similarly, <literal>shoplist[:]</literal> returns a copy of the whole
 				sequence.
-				
+
 				</para>
 				<para>
-				
+
 				You can also do slicing with negative positions. Negative numbers are used
 				for positions from the end of the sequence. For example,
 				<literal>shoplist[:-1]</literal> will return a slice of the sequence which
 				excludes the last item of the sequence but contains everything else.
-				
+
 				</para>
 				<para>
-				
+
 				Try various combinations of such slice specifications using the Python
 				interpreter interactively i.e. the prompt so that you can see the results
 				immediately. The great thing about sequences is that you can access
 				tuples, lists and strings all in the same way!
-				
+
 				</para>
 			</section>
 		</section>
 	</section>
-	
+
 	<section id="references">
 		<title>References</title>
-		
+
 		<para>
-		
+
 		When you create an object and assign it to a variable, the variable only
 		<emphasis>refers</emphasis> to the object and does not represent the object itself!
 		That is, the variable name points to that part of your computer's memory where the
 		object is stored. This is called as <emphasis role="bold">binding</emphasis> of the
 		name to the object.
-		
+
 		</para>
 		<para>
-		
+
 		Generally, you don't need to be worried about this, but there is a subtle effect due
 		to references which you need to be aware of. This is demonstrated by the following
 		example.
-		
+
 		</para>
-		
+
 		<section id="objects-and-references">
 			<title>Objects and References</title>
-			
+
 			<example>
 				<title>Objects and References</title>
-				
+
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
@@ -897,10 +897,10 @@ print 'mylist is', mylist
 				]]>
 				</programlisting>
 			</example>
-			
+
 			<section>
 				<title>Output</title>
-				
+
 				<screen>
 				<![CDATA[
 $ python reference.py
@@ -913,12 +913,12 @@ mylist is ['carrot', 'banana']
 				]]>
 				</screen>
 			</section>
-			
+
 			<section>
 				<title>How It Works</title>
-				
+
 				<para>
-				
+
 				Most of the explanation is available in the comments itself. What you
 				need to remember is that if you want to make a copy of a list or such
 				kinds of sequences or complex objects (not simple <emphasis>objects</emphasis>
@@ -926,18 +926,18 @@ mylist is ['carrot', 'banana']
 				copy. If you just assign the variable name to another name, both of them
 				will <emphasis>refer</emphasis> to the same object and this could lead to
 				all sorts of trouble if you are not careful.
-				
+
 				</para>
-				
+
 				<note>
 					<title>Note for Perl programmers</title>
-					
+
 					<para>
-					
+
 					Remember that an assignment statement for lists does
 					<emphasis role="bold">not</emphasis> create a copy. You have to use
 					slicing operation to make a copy of the sequence.
-					
+
 					</para>
 				</note>
 			</section>
@@ -945,28 +945,28 @@ mylist is ['carrot', 'banana']
 	</section>
 	<section id="more-about-strings">
 		<title>More about Strings</title>
-		
+
 		<para>
-		
+
 		We have already discussed strings in detail earlier. What more can there be to know?
 		Well, did you know that strings are also objects and have methods which do everything
 		from checking part of a string to stripping spaces!
-		
+
 		</para>
 		<para>
-		
+
 		The strings that you use in program are all objects of the class <classname>str</classname>.
 		Some useful methods of this class are demonstrated in the next example. For a complete list
 		of such methods, see <literal>help(str)</literal>.
-		
+
 		</para>
-		
+
 		<section id="string-methods">
 			<title>String Methods</title>
-			
+
 			<example>
 				<title>String Methods</title>
-				
+
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
@@ -989,10 +989,10 @@ print delimiter.join(mylist)
 				]]>
 				</programlisting>
 			</example>
-			
+
 			<section>
 				<title>Output</title>
-				
+
 				<screen>
 				<![CDATA[
 $ python str_methods.py
@@ -1003,46 +1003,46 @@ Brazil_*_Russia_*_India_*_China
 				]]>
 				</screen>
 			</section>
-			
+
 			<section>
 				<title>How It Works</title>
-				
+
 				<para>
-				
+
 				Here, we see a lot of the string methods in action. The
 				<methodname>startswith</methodname> method is used to find out whether the
 				string starts with the given string. The <literal>in</literal> operator is
 				used to check if a given string is a part of the string.
-				
+
 				</para>
 				<para>
-				
+
 				The <methodname>find</methodname> method is used to do find the position of
 				the given string in the string or returns -1 if it is not successful to find
 				the substring. The <classname>str</classname> class also has a neat method
 				to <methodname>join</methodname> the items of a sequence with the string
 				acting as a delimiter between each item of the sequence and returns a bigger
 				string generated from this.
-				
+
 				</para>
 			</section>
 		</section>
 	</section>
-	
+
 	<section id="data-structures-summary">
 		<title>Summary</title>
-		
+
 		<para>
-		
+
 		We have explored the various built-in data structures of Python in detail. These
 		data structures will be essential for writing programs of reasonable size.
-		
+
 		</para>
 		<para>
-		
+
 		Now that we have a lot of the basics of Python in place, we will next see how to
 		design and write a real-world Python program.
-		
+
 		</para>
 	</section>
 </chapter>
