@@ -1,6 +1,7 @@
 ﻿<chapter id="more-python">
 
 	<!-- German Translation 2005-02-27 by Christoph Zwerschke -->
+	<!-- Korrektur gelesen 2005-02-27 Lutz Horn -->
 
 	<title>Noch mehr Python</title> <!-- More Python -->
 
@@ -172,17 +173,19 @@
 Ja
 		]]>
 		</screen>
+		<!--
 		<screen>
-		<!-- <![CDATA[
+		<![CDATA[
 >>> flag = True
 >>> if flag: print 'Yes'
 ...
 Yes
-		]]> -->
+		]]>
 		</screen>
 		<para>
+		-->
 
-		Wie man sieht wird die einzelne Anweisung nicht als separater verwendet,
+		Wie man sieht wird die einzelne Anweisung nicht in einen separater Block
 		sondern direkt hinter die Bedingungsanweisung in die gleiche Zeile geschrieben.
 		Man kann dies zwar verwenden, um sein Programm <emphasis>kleiner</emphasis>
 		zu machen, aber ich empfehle dennoch <emphasis role="bold">stark</emphasis>,
@@ -227,8 +230,8 @@ Yes
 		Listenkomprehension (Listenbeschreibung) ist ein Fachbegriff für eine sehr nützliche
 		Funktionalität von Python, die es erlaubt, aus einer existierende Liste eine neue Liste abzuleiten.
 		Nehmen Sie zum Beispiel an, Sie haben eine Liste von Zahlen und wollen eine entsprechende
-		Liste erzeugen, die aus den mit zwei multiplizierten Zahlen besteht, aber nur, wenn die
-		jeweilige Zahl selbst kleiner als zwei ist. Eine Listenkomprehension ist in solchen Fällen ideal.
+		Liste erzeugen, die aus den mit Zwei multiplizierten Zahlen besteht, aber nur, wenn die
+		jeweilige Zahl selbst kleiner als Zwei ist. Eine Listenkomprehension ist in solchen Fällen ideal.
 
 		<!-- List comprehensions are used to derive a new list from an existing list. For example, you
 		have a list of numbers and you want to get a corresponding list with all the numbers
@@ -325,7 +328,7 @@ $ python list_comprehension.py
 		<screen>
 		<![CDATA[
 >>> def potenzsumme(potenz, *parameter):
-...     '''Gibt die Summe der angegebenen Potzen aller Parameter zurueck.'''
+...     '''Gibt die Summe der angegebenen Potenz aller Parameter zurueck.'''
 ...     summe = 0
 ...     for i in parameter:
 ...             summe += pow(i, potenz)
@@ -356,7 +359,7 @@ $ python list_comprehension.py
 		<para>
 
 		Aufgrund des vorangestellten <literal>*</literal> bei der Variable <varname>parameter</varname>,
-		werden alles zusätzlichen Parameter, die der Funktion übergeben werden, als ein Tupel
+		werden alle zusätzlichen Parameter, die der Funktion übergeben werden, als ein Tupel
 		in <varname>parameter</varname> gespeichert. Wenn stattdessen ein <literal>**</literal>
 		vorangestellt worden wäre, dann wären die zusätzlichen Parameter als Schlüssel/Wert-Paare eines
 		Dictionaries betrachtet worden.
@@ -423,7 +426,7 @@ print twice(5)
 				<screen>
 				<![CDATA[
 $ python lambda.py
-wordword
+wortwort
 10
 				]]>
 				</screen>

@@ -1,6 +1,7 @@
 ﻿<chapter id="stdlib">
 
 	<!-- German Translation 2005-02-24 by Christoph Zwerschke -->
+	<!-- Korrektur gelesen 2005-02-27 Lutz Horn -->
 
 	<title>Die Python-Standard-Bibliothek</title> <!-- The Python Standard Library -->
 
@@ -10,7 +11,7 @@
 		<para>
 
 		Die Python-Standard-Bibliothek ist in jeder Python-Installation verfügbar. Sie enthält
-		eine riesige Anzahl äußert nützlicher Module. Es ist sehr wichtig, dass Sie sich mit der
+		eine riesige Anzahl äußerst nützlicher Module. Es ist sehr wichtig, dass Sie sich mit der
 		Python-Standard-Bibliothek vertraut machen, denn die meisten Ihrer Probleme können
 		sehr leicht und schnell gelöst werden, wenn Sie mit dieser Bibliothek von Modulen vertraut sind.
 
@@ -231,7 +232,7 @@ if you wanna make your work also fun:
 				Wir benutzen den ersten Parameter, um zu prüfen, ob unserem Programm irgendwelche
 				Optionen übergeben worden sind. Wenn die Option <literal>--version</literal>
 				benutzt wird, dann wird die Versionsnummer des Programms ausgegeben. Auf ähnliche
-				Weise geben wir ein wenige Erklärungen über das Programm aus, wenn die Option
+				Weise geben wir einige Erklärungen über das Programm aus, wenn die Option
 				<literal>--help</literal> angegeben wird. Wir benutzen die Funktion <function>sys.exit</function>,
 				um das laufende Programm zu beenden. Wie immer erhalten Sie mit <literal>help(sys.exit)</literal>
 				weitere Einzelheiten hierzu.

@@ -1,6 +1,7 @@
 ﻿<chapter id="control-flow">
 
 	<!-- German Translation 2005-02-25 by Christoph Zwerschke -->
+	<!-- Korrektur gelesen 2005-02-27 Lutz Horn -->
 
 	<title>Kontrollfluss</title> <!-- Control Flow -->
 
@@ -14,7 +15,7 @@
 		Programmfluss, d.h. die Reihenfolge, in der die Anweisungen ausgeführt werden, ändern will?
 		Eine Anforderung könnte zum Beispiel sein, dass das Programm eine Entscheidung treffen soll
 		und je nach Situation verschiedene Dinge tun soll, z.B. 'Guten Morgen' oder 'Guten Abend' ausgeben,
-		je nach Tageszeit unterschiedlich?
+		je nach Tageszeit.
 
 		<!-- In the programs we have seen till now, there has always been a series of statements
 		and Python faithfully executes them in the same order. What if you wanted to change the
@@ -66,7 +67,7 @@
 #!/usr/bin/python
 
 zahl = 23
-geraten = int(raw_input('Geben Sie eine ganze Zahl ein : '))
+geraten = int(raw_input('Geben Sie eine ganze Zahl ein: '))
 
 if geraten == zahl:
 	print 'Glueckwunsch, Sie haben es erraten.' # hier faengt ein neuer Block an
@@ -108,15 +109,15 @@ print 'Done'
 				<screen>
 				<![CDATA[
 $ python if.py
-Geben Sie eine ganze Zahl ein : 50
+Geben Sie eine ganze Zahl ein: 50
 Nein, die Zahl ist etwas niedriger.
 Fertig.
 $ python if.py
-Geben Sie eine ganze Zahl ein : 22
+Geben Sie eine ganze Zahl ein: 22
 Nein, die Zahl ist etwas hoeher.
 Fertig.
 $ python if.py
-Geben Sie eine ganze Zahl ein : 23
+Geben Sie eine ganze Zahl ein: 23
 Glueckwunsch, Sie haben es erraten.
 (Aber Sie gewinnen leider keinen Preis!)
 Fertig.
@@ -143,9 +144,9 @@ Done
 			<title>So funktioniert es</title> <!-- How It Works -->
 			<para>
 
-			In diesem Programm nehmen wir als Benutzereingaben Versuche entgegen,
+			In diesem Programm nehmen wir als Benutzereingabe einen Versuch entgegen,
 			eine geheime Zahl zu erraten, und überprüfen, ob diese Zahl erraten wurde.
-			Wir setzen die Variable <varname>zahl</varname> auf eine irgendeine von uns
+			Wir setzen die Variable <varname>zahl</varname> auf irgendeine von uns
 			ausgesuchte ganze Zahl, etwa <literal>23</literal>. Dann nehmen wir den Rateversuch
 			des Benutzers mit Hilfe der Funktion <literal>raw_input()</literal> entgegen.
 			Funktionen sind nichts weiter als wieder verwendbare Programmteile. Wir werden mehr
@@ -212,7 +213,8 @@ Done
 			</para>
 			<para>
 
-			Danach überprüfen wir, ob die geratene Zahl kleiner als unsere Zahl, und falls dies
+			Falls die beiden Zahlen nicht gleich waren überprüfen wir, ob die geratene
+			Zahl kleiner als unsere Zahl ist, und falls dies
 			der Fall ist, informieren wir den Benutzer, dass unsere Zahl ein wenig höher ist.
 			Was wir hier verwendet haben, ist eine <literal>elif</literal>-Klausel, mit der
 			man zwei verschachtelte <literal>if else-if else</literal>-Anweisungen als eine
@@ -351,7 +353,7 @@ zahl = 23
 weiter = True
 
 while weiter:
-	geraten = int(raw_input('Geben Sie eine ganze Zahl ein : '))
+	geraten = int(raw_input('Geben Sie eine ganze Zahl ein: '))
 
 	if zahl == geraten:
 		print 'Glueckwunsch, Sie haben es erraten.'
@@ -396,11 +398,11 @@ print 'Done'
 				<screen>
 				<![CDATA[
 $ python while.py
-Geben Sie eine ganze Zahl ein : 50
+Geben Sie eine ganze Zahl ein: 50
 Nein, die Zahl ist etwas niedriger.
-Geben Sie eine ganze Zahl ein : 22
+Geben Sie eine ganze Zahl ein: 22
 Nein, die Zahl ist etwas hoeher.
-Geben Sie eine ganze Zahl ein : 23
+Geben Sie eine ganze Zahl ein: 23
 Glueckwunsch, Sie haben es erraten.
 Die while-Schleife wurde beendet.
 Fertig.
@@ -611,7 +613,7 @@ The for loop is over
 				In diesem Beispiel übergeben wir ihr zwei Zahlen, und <function>range</function>
 				gibt eine Sequenz von Zahlen zurück, die von der ersten bis zur zweiten angegebenen Zahl
 				läuft. Zum Beispiel ergibt <literal>range(1,5)</literal> die Sequenz
-				<literal>[1, 2, 3, 4]</literal>. Normalerweise wird benutzt <function>range</function>
+				<literal>[1, 2, 3, 4]</literal>. Normalerweise benutzt <function>range</function>
 				eine Schrittweite von 1. Wenn wir der Funktion <function>range</function> eine dritte
 				Zahl übergeben, dann wird diese als Schrittweite benutzt. Zum Beispiel ergibt
 				<literal>range(1,5,2)</literal> die Sequenz <literal>[1,3]</literal>.
@@ -754,7 +756,7 @@ The for loop is over
 #!/usr/bin/python
 
 while True:
-	s = raw_input('Geben Sie etwas ein : ')
+	s = raw_input('Geben Sie etwas ein: ')
 	if s == 'ende':
 		break
 	print 'Die Laenge des Strings ist', len(s)
@@ -778,15 +780,15 @@ print 'Done'
 				<screen>
 				<![CDATA[
 $ python break.py
-Geben Sie etwas ein : Programmieren mit Elan
+Geben Sie etwas ein: Programmieren mit Elan
 Die Laenge des Strings ist 22
-Geben Sie etwas ein : und die Arbeit wird getan,
+Geben Sie etwas ein: und die Arbeit wird getan,
 Die Laenge des Strings ist 26
-Geben Sie etwas ein : willst du Spass haben daran:
+Geben Sie etwas ein: willst du Spass haben daran:
 Die Laenge des Strings ist 28
-Geben Sie etwas ein :   Nimm Python!
+Geben Sie etwas ein:   Nimm Python!
 Die Laenge des Strings ist 13
-Geben Sie etwas ein : ende
+Geben Sie etwas ein: ende
 Fertig.
 				]]>
 				</screen>
@@ -888,7 +890,7 @@ willst du Spass haben daran:
 #!/usr/bin/python
 
 while True:
-	s = raw_input('Geben Sie etwas ein : ')
+	s = raw_input('Geben Sie etwas ein: ')
 	if s == 'ende':
 		break
 	if len(s) < 3:
@@ -916,11 +918,11 @@ while True:
 				<screen>
 				<![CDATA[
 $ python continue.py
-Geben Sie etwas ein : a
-Geben Sie etwas ein : 12
-Geben Sie etwas ein : abc
+Geben Sie etwas ein: a
+Geben Sie etwas ein: 12
+Geben Sie etwas ein: abc
 Die Laenge der Eingabe ist ausreichend.
-Geben Sie etwas ein : ende
+Geben Sie etwas ein: ende
 				]]>
 				</screen>
 				<!-- <![CDATA[
