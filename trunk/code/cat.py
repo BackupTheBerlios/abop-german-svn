@@ -1,39 +1,38 @@
 #!/usr/bin/python
-# Filename: cat.py
+# Dateiname: cat.py
 
 import sys
 
-def readfile(filename):
-	'''Print a file to the standard output.'''
-	f = file(filename)
+def liesdatei(dateiname):
+	'''Gib eine Datei auf der Standardausgabe aus.'''
+	f = file(dateiname)
 	while True:
-		line = f.readline()
-		if len(line) == 0:
+		zeile = f.readline()
+		if len(zeile) == 0:
 			break
-		print line, # notice comma
+		print zeile, # beachten Sie das Komma
 	f.close()
 
-# Script starts from here
+# das Skript beginnt hier
 if len(sys.argv) < 2:
-	print 'No action specified.'
+	print 'Es wurden keine Parameter uebergeben.'
 	sys.exit()
 
 if sys.argv[1].startswith('--'):
 	option = sys.argv[1][2:]
-	# fetch sys.argv[1] but without the first two characters
+	# hole sys.argv[1], aber ohne die ersten beiden Zeichen
 	if option == 'version':
 		print 'Version 1.2'
-	elif option == 'help':
+	elif option == 'hilfe':
 		print '''\
-This program prints files to the standard output.
-Any number of files can be specified.
-Options include:
-  --version : Prints the version number
-  --help    : Display this help'''
+Dieses Programm gibt Dateien auf der Standardausgabe aus.
+Es kann eine beliebige Anzahl von Dateien angegeben werden.
+Als Optionen koennen angegeben werden:
+  --version : Gibt die Versionsnummer aus
+  --hilfe   : Gibt diese Hilfe aus'''
 	else:
-		print 'Unknown option.'
+		print 'Unbekannte Option.'
 	sys.exit()
 else:
-	for filename in sys.argv[1:]:
-		readfile(filename)
-
+	for dateiname in sys.argv[1:]:
+		liesdatei(dateiname)
