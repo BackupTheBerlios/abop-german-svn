@@ -91,7 +91,7 @@
 			<listitem>
 				<para>
 
-				Wir benutzen den gewöhnlichen <command>ZIP</command>-Befehl, der normalerweise in jeder
+				Wir benutzen den gewöhnlichen <command>zip</command>-Befehl, der normalerweise in jeder
 				Linux/Unix-Distribution vorhanden ist. Windows-Benutzer können <application>PKZIP</application>
 				oder das <application>Info-ZIP</application>-Programm verwenden. Beachten Sie, dass Sie jedes
 				beliebige Programm für die Archivierung verwenden können, solange es eine Kommandozeilenschnittstelle
