@@ -1,31 +1,45 @@
-<chapter id="exceptions">
-	<title>Exceptions</title>
-	
+﻿<chapter id="exceptions">
+
+	<!-- German Translation 2005-02-24 by Christoph Zwerschke -->
+
+	<title>Ausnahmen</title> <!-- Exceptions -->
+
 	<para>
-	
-	Exceptions occur when certain <emphasis>exceptional</emphasis> situations occur in your program.
+
+	Ausnahmen (<foreignphrase>exceptions</foreignphrase> treten auf, wenn bestimmte
+	<emphasis>Ausnahmesituationen</emphasis> in Ihrem Programm eintreten.
+	Was zum Beispiel, wenn Sie eine Datei einlesen wollen, und die Datei gar nicht existiert?
+	Oder wenn Sie die Datei aus Versehen gelöscht haben, während das Programm lief?
+	Solche Situationen werden mittels <emphasis role="bold">Ausnahmen</emphasis>
+	behandelt.
+
+	<!-- Exceptions occur when certain <emphasis>exceptional</emphasis> situations occur in your program.
 	For example, what if you are going to read a file and the file does not exist? Or what if you
 	accidentally deleted it when the program was running? Such situations are handled using
-	<emphasis role="bold">exceptions</emphasis>.
-	
+	<emphasis role="bold">exceptions</emphasis>. -->
+
 	</para>
 	<para>
-	
-	What if your program had some invalid statements? This is handled by Python which
+
+	Was passiert, wenn es in Ihrem Programm ungültige Anweisungen gibt? In einem solchen Fall
+	reagiert Python, indem es eine Ausnahme <emphasis role="bold">auslöst</emphasis>, und
+	Ihnen mitteilt, dass es auf einen <emphasis role="bold">Fehler</emphasis> gestoßen ist.
+
+	<!-- What if your program had some invalid statements? This is handled by Python which
 	<emphasis role="bold">raises</emphasis> its hands and tells you there is an
-	<emphasis role="bold">error</emphasis>.
-	
+	<emphasis role="bold">error</emphasis>. -->
+
 	</para>
-	
+
 	<section id="errors">
-		<title>Errors</title>
-		
+		<title>Fehler</title> <!-- Errors -->
+
 		<para>
-		
+
 		Consider a simple <literal>print</literal> statement. What if we misspelt
 		<literal>print</literal> as <literal>Print</literal>? Note the capitalization.
 		In this case, Python <emphasis>raises</emphasis> a syntax error.
-		
+
 		</para>
 		<screen>
 		<![CDATA[
@@ -37,25 +51,25 @@ SyntaxError: invalid syntax
 
 >>> print 'Hello World'
 Hello World
-		]]>                   
+		]]>
 		</screen>
 		<para>
-		
+
 		Observe that a <classname>SyntaxError</classname> is raised and also the location
 		where the error was detected is printed. This is what an <emphasis>error handler</emphasis>
 		for this error does.
-		
+
 		</para>
-	</section>             
-	
+	</section>
+
 	<section id="try-except">
 		<title>Try..Except</title>
-		
+
 		<para>
-		
+
 		We will <emphasis role="bold">try</emphasis> to read input from the user. Press
 		<keycombo><keycap>Ctrl</keycap><keycap>d</keycap></keycombo> and see what happens.
-		
+
 		</para>
 		<screen>
 		<![CDATA[
@@ -66,32 +80,32 @@ EOFError
 		]]>
 		</screen>
 		<para>
-		
+
 		Python raises an error called <classname>EOFError</classname> which basically means
 		it found an <emphasis>end of file</emphasis> when it did not expect to (which is
 		represented by <keycombo><keycap>Ctrl</keycap><keycap>d</keycap></keycombo>)
-		
+
 		</para>
 		<para>
-		
+
 		Next, we will see how to handle such errors.
-		
+
 		</para>
-		
+
 		<section id="handling-exceptions">
 			<title>Handling Exceptions</title>
-			
+
 			<para>
-			
+
 			We can handle exceptions using the <literal>try..except</literal> statement.
 			We basically put our usual statements within the try-block and put all our
 			error handlers in the except-block.
-			
+
 			</para>
-			
+
 			<example>
 				<title>Handling Exceptions</title>
-				
+
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
@@ -112,10 +126,10 @@ print 'Done'
 				]]>
 				</programlisting>
 			</example>
-			
+
 			<section>
 				<title>Output</title>
-				
+
 				<screen>
 				<![CDATA[
 $ python try_except.py
@@ -128,12 +142,12 @@ Done
 				]]>
 				</screen>
 			</section>
-			
+
 			<section>
 				<title>How It Works</title>
-				
+
 				<para>
-				
+
 				We put all the statements that might raise an error in the
 				<literal>try</literal> block and then handle all the errors and exceptions
 				in the <literal>except</literal> clause/block. The <literal>except</literal>
@@ -142,51 +156,51 @@ Done
 				supplied, it will handle <emphasis>all</emphasis> errors and exceptions.
 				There has to be at least one <literal>except</literal> clause associated
 				with every <literal>try</literal> clause.
-				
+
 				</para>
 				<para>
-				
+
 				If any error or exception is not handled, then the default Python handler
 				is called which just stops the execution of the program and prints a
 				message. We have already seen this in action.
-				
+
 				</para>
 				<para>
-				
+
 				You can also have an <literal>else</literal> clause associated with a
 				<literal>try..catch</literal> block. The <literal>else</literal> clause
 				is executed if no exception occurs.
-				
+
 				</para>
 				<para>
-				
+
 				We can also get the exception object so that we can retrieve additional
 				information about the exception which has occurred. This is demonstrated
 				in the next example.
-				
+
 				</para>
 			</section>
 		</section>
 	</section>
 	<section id="raising-exceptions">
 		<title>Raising Exceptions</title>
-		
+
 		<para>
-		
+
 		You can <emphasis>raise</emphasis> exceptions using the <literal>raise</literal> statement.
 		You also have to specify the name of the error/exception and the exception object that is
 		to be <emphasis>thrown</emphasis> along with the exception. The error or exception that you
 		can arise should be class which directly or indirectly is a derived class of the
 		<classname>Error</classname> or <classname>Exception</classname> class respectively.
-		
+
 		</para>
-		
+
 		<section id="how-to-raise-exceptions">
 			<title>How To Raise Exceptions</title>
-			
+
 			<example>
 				<title>How to Raise Exceptions</title>
-				
+
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
@@ -214,10 +228,10 @@ else:
 				]]>
 				</programlisting>
 			</example>
-			
+
 			<section>
 				<title>Output</title>
-				
+
 				<screen>
 				<![CDATA[
 $ python raising.py
@@ -234,53 +248,53 @@ No exception was raised.
 				]]>
 				</screen>
 			</section>
-			
+
 			<section>
 				<title>How It Works</title>
-				
+
 				<para>
-				
+
 				Here, we are creating our own exception type although we could've used any
 				predefined exception/error for demonstration purposes. This new exception
 				type is the <classname>ShortInputException</classname> class. It has two
 				fields - <varname>length</varname> which is the length of the given input,
 				and <varname>atleast</varname> which is the minimum length that the program
 				was expecting.
-				
+
 				</para>
 				<para>
-				
+
 				In the <literal>except</literal> clause, we mention the class of error as
 				well as the variable to hold the corresponding error/exception object.
 				This is analogous to parameters and arguments in a function call. Within
 				this particular <literal>except</literal> clause, we use the
 				<varname>length</varname> and <varname>atleast</varname> fields of the
 				exception object to print an appropriate message to the user.
-				
+
 				</para>
 			</section>
 		</section>
 	</section>
-	
+
 	<section id="try-finally">
 		<title>Try..Finally</title>
-		
+
 		<para>
-		
+
 		What if you were reading a file and you wanted to close the file whether or not an
 		exception was raised? This can be done using the <literal>finally</literal> block.
 		Note that you can use an <literal>except</literal> clause along with a
 		<literal>finally</literal> block for the same corresponding <literal>try</literal>
 		block. You will have to embed one within another if you want to use both.
-		
+
 		</para>
-		
+
 		<section id="using-try-finally">
 			<title>Using Finally</title>
-			
+
 			<example>
 				<title>Using Finally</title>
-				
+
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
@@ -302,10 +316,10 @@ finally:
 				]]>
 				</programlisting>
 			</example>
-			
+
 			<section>
 				<title>Output</title>
-				
+
 				<screen>
 				<![CDATA[
 $ python finally.py
@@ -319,45 +333,45 @@ KeyboardInterrupt
 				]]>
 				</screen>
 			</section>
-			
+
 			<section>
 				<title>How It Works</title>
-				
+
 				<para>
-				
+
 				We do the usual file-reading stuff, but I've arbitrarily introduced a way
 				of sleeping for 2 seconds before printing each line using the
 				<function>time.sleep</function> method. The only reason is so that the
 				program runs slowly (Python is very fast by nature). When the program is
 				still running, press <keycombo><keycap>Ctrl</keycap><keycap>c</keycap></keycombo>
 				to interrupt/cancel the program.
-				
+
 				</para>
 				<para>
-				
+
 				Observe that a <classname>KeyboardInterrupt</classname> exception is thrown
 				and the program exits, but before the program exits, the finally clause is
 				executed and the file is closed.
-				
+
 				</para>
 			</section>
 		</section>
 	</section>
-	
+
 	<section id="exceptions-summary">
 		<title>Summary</title>
-		
+
 		<para>
-		
+
 		We have discussed the usage of the <literal>try..except</literal> and
 		<literal>try..finally</literal> statements. We have seen how to create our own exception
 		types and how to raise exceptions as well.
-		
+
 		</para>
 		<para>
-		
+
 		Next, we will explore the Python Standard Library.
-		
+
 		</para>
 	</section>
 </chapter>
