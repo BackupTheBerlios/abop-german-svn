@@ -1,50 +1,50 @@
 #!/usr/bin/python
-# Filename: objvar.py
+# Dateiname: objvar.py
 
 class Person:
-	'''Represents a person.'''
-	population = 0
+	'''Stellt eine Person dar.'''
+	bevoelkerung = 0
 
 	def __init__(self, name):
-		'''Initializes the person's data.'''
+		'''Initialisiert die Daten der Person.'''
 		self.name = name
-		print '(Initializing %s)' % self.name
+		print '(Initialisiere %s)' % self.name
 
-		# When this person is created, he/she
-		# adds to the population
-		Person.population += 1
-	
+		# Wenn diese Person erzeugt wird,
+		# traegt er/sie zur Bevoelkerung bei
+		Person.bevoelkerung += 1
+
 	def __del__(self):
-		'''I am dying.'''
-		print '%s says bye.' % self.name
+		'''Ich sterbe.'''
+		print '%s verabschiedet sich.' % self.name
 
-		Person.population -= 1
+		Person.bevoelkerung -= 1
 
-		if Person.population == 0:
-			print 'I am the last one.'
+		if Person.bevoelkerung == 0:
+			print 'Ich bin der letzte.'
 		else:
-			print 'There are still %d people left.' % Person.population
-	
-	def sayHi(self):
-		'''Greeting by the person.
-		
-		Really, that's all it does.'''
-		print 'Hi, my name is %s.' % self.name
-	
-	def howMany(self):
-		'''Prints the current population.'''
-		if Person.population == 1:
-			print 'I am the only person here.'
+			print 'Es gibt noch %d Leute.' % Person.bevoelkerung
+
+	def sagHallo(self):
+		'''Begruessung durch die Person.
+
+		Das ist wirklich alles, was hier geschieht.'''
+		print 'Hallo, mein Name ist %s.' % self.name
+
+	def wieViele(self):
+		'''Gibt die aktuelle Bevoelkerungszahl aus.'''
+		if Person.bevoelkerung == 1:
+			print 'Ich bin ganz allein hier.'
 		else:
-			print 'We have %d persons here.' % Person.population
+			print 'Es gibt hier %d Leute.' % Person.bevoelkerung
 
 swaroop = Person('Swaroop')
-swaroop.sayHi()
-swaroop.howMany()
+swaroop.sagHallo()
+swaroop.wieViele()
 
 kalam = Person('Abdul Kalam')
-kalam.sayHi()
-kalam.howMany()
+kalam.sagHallo()
+kalam.wieViele()
 
-swaroop.sayHi()
-swaroop.howMany()
+swaroop.sagHallo()
+swaroop.wieViele()

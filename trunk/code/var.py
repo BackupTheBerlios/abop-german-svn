@@ -1,11 +1,11 @@
 #!/usr/bin/python
-# Filename : var.py
+# Dateiname: var.py
 
 i = 5
 print i
 i = i + 1
 print i
 
-s = '''This is a multi-line string.
-This is the second line.'''
+s = '''Dies ist ein mehrzeiliger String.
+Dies ist die zweite Zeile.'''
 print s

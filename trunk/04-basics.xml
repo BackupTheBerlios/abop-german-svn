@@ -618,7 +618,8 @@ This is the second sentence."
 			<title>Benutzung von Variablen und Literalen</title> <!-- Using Variables and Literal constants -->
 			<programlisting>
 			<![CDATA[
-# Dateiname : var.py
+#!/usr/bin/python
+# Dateiname: var.py
 
 i = 5
 print i
@@ -943,6 +944,8 @@ print i
 		</para>
 		<programlisting>
 		<![CDATA[
+#!/usr/bin/python
+# Dateiname: leerzeichen.py
 i = 5
  print 'Der Wert ist', i # Fehler! Leerzeichen am Zeilenanfang
 print 'Ich wiederhole, der Wert ist', i
