@@ -1,7 +1,8 @@
-﻿<chapter id="basics">
+<chapter id="basics">
 
 	<!-- German Translation 2005-02-17 by Christoph Zwerschke -->
 	<!-- Korrektur gelesen 2004-02-24 Lutz Horn -->
+	<!-- Korrektur gelesen, kleine Änderungen 2004-02-27 Bernd Hengelein -->
 
 	<title>Die Grundlagen</title> <!-- The Basics -->
 
@@ -45,7 +46,7 @@
 
 		<para>
 
-		Von Zahlen gibt es in Python vier Typen - Ganzzahlen (int), lange Ganzzahlen (long),
+		Es gibt vier Zahlentypen in Python - Ganzzahlen (int), lange Ganzzahlen (long),
 		Fließkommazahlen (float) und komplexe Zahlen (complex).
 
 		<!-- Numbers in Python are of four types - integers, long integers, floating point and complex
@@ -144,7 +145,8 @@
 				<!-- Using Double Quotes -->
 				<para>
 
-				Strings in doppelten Anführungszeichen funktionieren genauso wie Strings in einfachen Anführungszeichen.
+				Strings in doppelten Anführungszeichen verhalten sich genauso wie Strings
+				in einfachen Anführungszeichen.
 				Ein Beispiel hierfür: <literal><![CDATA["Wie heißen's doch gleich?"]]></literal>.
 
 				<!-- Strings in double quotes work exactly the same way as strings in single
@@ -158,7 +160,7 @@
 				<!-- Using Triple Quotes -->
 				<para>
 
-				Sie können mehrzeilige Strings unter Benutzung dreifacher Anführungszeichen angeben.
+				Sie können mehrzeilige Strings angeben, indem Sie dreifache Anführungszeichen verwenden.
 				Innerhalb der dreifachen Anführungszeichen können Sie einfache und doppelte Anführungszeichen
 				nach Belieben benutzen. Ein Beispiel:
 
@@ -192,7 +194,7 @@ He said "Bond, James Bond."
 				den String <literal>Wie heißen's doch gleich?</literal>. Sie können Ihn nicht als
 				<literal>'Wie heißen's doch gleich?'</literal> eingeben, weil Python dann durcheinander
 				käme und nicht mehr wüsste, wo der String anfängt und wo er aufhört. Daher müssen Sie
-				auf irgendeine Weise angeben, dass dieses einzelne Anführungszeichen nicht das Ende des
+				irgendwie angeben, dass dieses einzelne Anführungszeichen nicht das Ende des
 				Strings bedeutet. Dies kann mit Hilfe eines so genannten <emphasis>Maskierungscodes</emphasis>
 				geschehen. Sie geben ein einzelnes Anführungszeichen dabei als <literal>\'</literal> an
 				- beachten Sie dabei den Rückwärtsstrich. Nun können Sie den String als
@@ -213,7 +215,7 @@ He said "Bond, James Bond."
 				<para>
 
 				Eine andere Möglichkeit, diesen speziellen String anzugeben, wäre
-				<literal>"Wie heißen's doch gleich?"</literal>, d.h. unter Benutzung doppelter Anführungszeichen.
+				<literal>"Wie heißen's doch gleich?"</literal>, d. h. unter Benutzung doppelter Anführungszeichen.
 				Gleichermaßen müssen Sie einen Maskierungscode benutzen, um ein doppeltes Anführungszeichen
 				als solches innerhalb eines Strings zu benutzen, der von doppelten Anführungszeichen umschlossen ist.
 				Außerdem müssen Sie den Rückwärtsstrich selber innerhalb eines Strings mittels des Maskierungscodes
@@ -403,7 +405,7 @@ This is the second sentence."
 		die <emphasis>Variablen</emphasis> auf den Plan. Variablen sind genau so, wie sie heißen -
 		ihr Wert ist variabel, d.h. man kann alles Mögliche in einer Variable abspeichern. Variablen sind einfach
 		ein Teil des Speichers Ihres Computers, in dem Sie Informationen abspeichern. Anders als bei Literalen
-		benötigt man Methoden, um auf diese Variablen zuzugreifen, weswegen man ihnen Namen gibt.
+		muss es möglich sein, um auf diese Variablen zuzugreifen. Deswegen gibt man ihnen Namen.
 
 		<!-- Using just literal constants can soon become boring - we need some way of storing any
 		information and manipulate them as well. This is where <emphasis>variables</emphasis>
@@ -456,7 +458,7 @@ This is the second sentence."
 			<listitem>
 				<para>
 
-				Bei Bezeichnern spielt die Groß/Kleinschreibung eine Rolle. So bezeichnen zum Beispiel
+				Bei Bezeichnern spielt die Groß-/Kleinschreibung eine Rolle. So bezeichnen zum Beispiel
 				<literal>meinname</literal> und <literal>meinName</literal>
 				<emphasis role="bold">nicht</emphasis> die gleichen Variablen.
 				Beachten Sie, dass das <literal>n</literal> in ersterem klein geschrieben ist,
@@ -545,8 +547,8 @@ This is the second sentence."
 
 		<para>
 
-		Wir werden nun sehen, wie wir Variablen zusammen mit Literalen benutzen können.
-		Speichern Sie das folgende Beispiel als Programm ab und lassen Sie es laufen.
+		Wir werden nun sehen, wie wir Variablen zusammen mit Literalen benutzen können. Wir	speichern
+		das folgende Beispiel als Programm ab und lassen Sie es laufen.
 
 		<!-- We will now see how to use variables along with literal constants. Save the following
 		example and run the program. -->
@@ -586,7 +588,7 @@ This is the second sentence."
 
 					Speichern Sie das Programm als Datei mit dem Dateinamen,
 					der im Kommentar angegeben ist.
-					Ich folge der Vereinbarung, nach der alle Python-Programme mit
+					Ich halte mich an die Vereinbarung, nach der alle Python-Programme mit
 					der Datei-Endung <literal>.py</literal> gespeichert werden.
 
 					<!-- Save it as a file with the filename mentioned in the comment.
@@ -675,7 +677,7 @@ This is the second line.
 			Und so funktioniert dieses Programm: Zuerst weisen wir der Variable <varname>i</varname>
 			die als Literal angegebene Zahl <literal>5</literal> zu, indem wir den Zuweisungsoperator
 			(<literal>=</literal>) verwenden. Diese Zeile wird eine Anweisung genannt, weil sie angibt,
-			dass etwas getan werden soll, und in diesem Fall wird der Variablenname <literal>i</literal>
+			dass etwas getan werden soll. In diesem Fall wird der Variablenname <literal>i</literal>
 			mit dem Wert <literal>5</literal> verbunden. Als nächstes geben wir den Wert von <varname>i</varname>
 			unter Benutzung der <literal>print</literal>-Anweisung aus, die uns, kaum überraschend,
 			einfach den Wert der Variable auf den Bildschirm ausgibt.
@@ -818,10 +820,10 @@ i = 5; print i
 		Ich möchte jedoch die <emphasis role="bold">ausdrückliche Empfehlung</emphasis> aussprechen,
 		dass Sie dabei bleiben, <emphasis role="bold">eine einzelne logische Zeile pro physikalischer
 		Zeile</emphasis> zu schreiben. Man sollte das Semikolon also möglichst vermeiden, um den Code
-		möglichst übersichtlich und lesbar zu halten. Tatsächlich habe ich <emphasis>noch nie</emphasis>
+		übersichtlich und lesbar zu halten. Tatsächlich habe ich <emphasis>noch nie</emphasis>
 		ein Semikolon in einem Python-Programm benutzt oder auch nur gesehen. Umgekehrt sollten Sie
-		mehr als eine physikalische Zeile für eine einzelne logische Zeile nur dann benutzen, wenn die logische Zeile
-		wirklich sehr lang ist.
+		mehr als eine physikalische Zeile für eine einzelne logische Zeile nur dann benutzen, wenn die
+		logische Zeile wirklich sehr lang ist.
 
 		<!-- However, I <emphasis role="bold">strongly recommend</emphasis> that you stick to
 		<emphasis role="bold">writing a single logical line in a single physical line
@@ -895,7 +897,7 @@ print i
 		Dies ist der Fall, wenn die logische Zeile runde, eckige oder geschweifte Klammern enthält, und vor dem Zeilenende
 		Klammern noch nicht geschlossen wurden. Dies wird <emphasis role="bold">implizite Zeilenverkettung</emphasis>
 		genannt. Sie können sehen, wie dies funktioniert, wenn wir in späteren Kapiteln Programme schreiben werden,
-		die <link linkend="list">Listen</link> enthalten.
+		die <link linkend="list">Listen</link> verwenden.
 
 		<!-- Sometimes, there is an implicit assumption where you don't need to use a backslash. This
 		is the case where the logical line uses parentheses, square brackets or curly braces. This
@@ -938,7 +940,7 @@ print i
 		</para>
 		<para>
 
-		Eine Sache, die Sie im Kopf behalten sollten, ist, dass falsche Einrückung zu Fehlern führen kann.
+		Sie sollten im Kopf behalten, dass falsche Einrückung zu Fehlern führen kann.
 		Zum Beispiel:
 		<!-- One thing you should remember is how wrong indentation can give rise to errors.
 		For example: -->
