@@ -1,15 +1,15 @@
 #!/usr/bin/python
-# Filename: try_except.py
+# Dateiname: try_except.py
 
 import sys
 
 try:
-	s = raw_input('Enter something --> ')
+	s = raw_input('Geben Sie etwas ein --> ')
 except EOFError:
-	print '\nWhy did you do an EOF on me?'
+	print '\nWarum haben Sie die Eingabe abgebrochen?'
 	sys.exit() # exit the program
 except:
-	print '\nSome error/exception occurred.'
-	# here, we are not exiting the program
+	print '\nIrgendein Fehler hat eine Ausnahme ausgeloest.'
+	# an dieser Stelle beenden wir das Programm nicht
 
-print 'Done'
+print 'Fertig'

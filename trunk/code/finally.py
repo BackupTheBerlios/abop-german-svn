@@ -1,16 +1,16 @@
 #!/usr/bin/python
-# Filename: finally.py
+# Dateiname: finally.py
 
 import time
 
 try:
-	f = file('poem.txt')
-	while True: # our usual file-reading idiom
-		line = f.readline()
-		if len(line) == 0:
+	f = file('gedicht.txt')
+	while True: # unsere uebliche Weise, Dateien zu lesen
+		zeile = f.readline()
+		if len(zeile) == 0:
 			break
 		time.sleep(2)
-		print line,
+		print zeile,
 finally:
 	f.close()
-	print 'Cleaning up...closed the file'
+	print 'Raeume auf... Datei geschlossen.'
