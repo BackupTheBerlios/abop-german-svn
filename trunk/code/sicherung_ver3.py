@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: sicherung_ver3.py
 
 import os
 import time

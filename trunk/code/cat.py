@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: cat.py
 
 import sys
 

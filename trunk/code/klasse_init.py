@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: klasse_init.py
 
 class Person:
 	def __init__(self, name):

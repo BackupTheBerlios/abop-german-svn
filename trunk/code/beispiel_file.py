@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: beispiel_file.py
 
 gedicht = '''\
 Programmieren mit Elan

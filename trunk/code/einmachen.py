@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: einmachen.py
 
 import cPickle as p
 #import pickle as p

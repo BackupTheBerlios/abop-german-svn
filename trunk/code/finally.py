@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: finally.py
 
 import time
 

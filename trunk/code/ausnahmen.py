@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: ausnahmen.py
 
 class KurzeEingabeAusnahme(Exception):
 	'''Eine benutzerdefinierte Ausnahmeklasse.'''

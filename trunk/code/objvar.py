@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: objvar.py
 
 class Person:
 	'''Stellt eine Person dar.'''

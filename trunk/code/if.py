@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: if.py
 
 zahl = 23
 geraten = int(raw_input('Geben Sie eine ganze Zahl ein : '))

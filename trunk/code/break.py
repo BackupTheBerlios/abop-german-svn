@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: break.py
 
 while True:
 	s = raw_input('Geben Sie etwas ein : ')

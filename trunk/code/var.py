@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: var.py
 
 i = 5
 print i

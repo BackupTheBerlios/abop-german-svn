@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: try_except.py
 
 import sys
 

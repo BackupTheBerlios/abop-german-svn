@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: vererbung.py
 
 class SchulMitglied:
 	'''Repraesentiert ein beliebiges Mitglied der Hochschule.'''

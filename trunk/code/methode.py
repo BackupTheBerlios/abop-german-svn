@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Dateiname: methode.py
 
 class Person:
 	def sagHallo(self):
