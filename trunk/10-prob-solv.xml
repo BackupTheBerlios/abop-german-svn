@@ -772,7 +772,7 @@ SyntaxError: invalid syntax
 
 				<para>
 
-				<emphasis role="bold">Dieses Programm funktioniert nicht!</emphasis>.
+				<emphasis role="bold">Dieses Programm funktioniert nicht!</emphasis>
 				Python sagt, dass es einen Syntax-Fehler hat, was bedeutet, dass das Skript
 				an einer Stelle nicht die Struktur aufweist, die Python hier erwartet.
 				Wenn wir auf die Fehlermeldung von Python Acht geben, gibt sie uns auch die
