@@ -277,10 +277,6 @@ print 'Hallo Welt'
 # Filename : helloworld.py
 print 'Hello World'
 			]]> -->
-			<para>
-				(Quelldatei: <ulink url="code/hallowelt.py">code/hallowelt.py</ulink>)
-				<!-- (Source file: <ulink url="code/helloworld.py">code/helloworld.py</ulink>) -->
-			</para>
 		</example>
 		<para>
 
