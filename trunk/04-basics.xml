@@ -405,7 +405,7 @@ This is the second sentence."
 		die <emphasis>Variablen</emphasis> auf den Plan. Variablen sind genau so, wie sie heißen -
 		ihr Wert ist variabel, d.h. man kann alles Mögliche in einer Variable abspeichern. Variablen sind einfach
 		ein Teil des Speichers Ihres Computers, in dem Sie Informationen abspeichern. Anders als bei Literalen
-		muss es möglich sein, um auf diese Variablen zuzugreifen. Deswegen gibt man ihnen Namen.
+		braucht man eine Möglichkeit, auf diese Variablen zuzugreifen. Deswegen gibt man ihnen Namen.
 
 		<!-- Using just literal constants can soon become boring - we need some way of storing any
 		information and manipulate them as well. This is where <emphasis>variables</emphasis>
@@ -547,8 +547,8 @@ This is the second sentence."
 
 		<para>
 
-		Wir werden nun sehen, wie wir Variablen zusammen mit Literalen benutzen können. Wir	speichern
-		das folgende Beispiel als Programm ab und lassen Sie es laufen.
+		Wir werden nun sehen, wie wir Variablen zusammen mit Literalen benutzen können. Um dies
+		auszuprobieren, können Sie das folgende Beispiel als Programm abpeichern und laufen lassen.
 
 		<!-- We will now see how to use variables along with literal constants. Save the following
 		example and run the program. -->
