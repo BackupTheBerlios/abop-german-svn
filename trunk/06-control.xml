@@ -213,13 +213,12 @@ Done
 			</para>
 			<para>
 
-			Falls die beiden Zahlen nicht gleich waren überprüfen wir, ob die geratene
-			Zahl kleiner als unsere Zahl ist, und falls dies
-			der Fall ist, informieren wir den Benutzer, dass unsere Zahl ein wenig höher ist.
-			Was wir hier verwendet haben, ist eine <literal>elif</literal>-Klausel, mit der
-			man zwei verschachtelte <literal>if else-if else</literal>-Anweisungen als eine
-			kombinierte <literal>if-elif-else</literal>-Anweisung schreiben kann. Dadurch
-			wird das Programm vereinfacht und die nötige Einrückungstiefe reduziert.
+			Falls die beiden Zahlen nicht gleich waren, überprüfen wir, ob die geratene Zahl kleiner
+			als unsere Zahl ist, und falls dies der Fall ist, informieren wir den Benutzer, dass unsere Zahl
+			ein wenig höher ist. Was wir hier verwendet haben, ist eine <literal>elif</literal>-Klausel,
+			mit der man zwei verschachtelte <literal>if else-if else</literal>-Anweisungen als eine
+			kombinierte <literal>if-elif-else</literal>-Anweisung schreiben kann. Dadurch wird das
+			Programm vereinfacht und die nötige Einrückungstiefe reduziert.
 
 			<!-- Then, we check if the guess is less than the number, and if so, we inform the user
 			to guess a little higher than that. What we have used here is the

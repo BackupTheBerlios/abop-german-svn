@@ -173,19 +173,15 @@
 Ja
 		]]>
 		</screen>
-		<!--
-		<screen>
-		<![CDATA[
+		<!-- <![CDATA[
 >>> flag = True
 >>> if flag: print 'Yes'
 ...
 Yes
-		]]>
-		</screen>
+		]]> -->
 		<para>
-		-->
 
-		Wie man sieht wird die einzelne Anweisung nicht in einen separater Block
+		Wie man sieht, wird die einzelne Anweisung nicht in einen separaten Block,
 		sondern direkt hinter die Bedingungsanweisung in die gleiche Zeile geschrieben.
 		Man kann dies zwar verwenden, um sein Programm <emphasis>kleiner</emphasis>
 		zu machen, aber ich empfehle dennoch <emphasis role="bold">stark</emphasis>,
@@ -230,8 +226,8 @@ Yes
 		Listenkomprehension (Listenbeschreibung) ist ein Fachbegriff für eine sehr nützliche
 		Funktionalität von Python, die es erlaubt, aus einer existierende Liste eine neue Liste abzuleiten.
 		Nehmen Sie zum Beispiel an, Sie haben eine Liste von Zahlen und wollen eine entsprechende
-		Liste erzeugen, die aus den mit Zwei multiplizierten Zahlen besteht, aber nur, wenn die
-		jeweilige Zahl selbst kleiner als Zwei ist. Eine Listenkomprehension ist in solchen Fällen ideal.
+		Liste erzeugen, die aus den mit 2 multiplizierten Zahlen besteht, aber nur, wenn die
+		jeweilige Zahl selbst kleiner als 2 ist. Eine Listenkomprehension ist in solchen Fällen ideal.
 
 		<!-- List comprehensions are used to derive a new list from an existing list. For example, you
 		have a list of numbers and you want to get a corresponding list with all the numbers
@@ -432,7 +428,7 @@ wortwort
 				</screen>
 				<!-- <![CDATA[
 $ python lambda.py
-wortwort
+wordword
 10
 				]]> -->
 			</section>
