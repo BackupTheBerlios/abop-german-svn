@@ -179,8 +179,8 @@ Ja
 ...
 Yes
 		]]> -->
-		<para>
 
+		<para>
 		Wie man sieht, wird die einzelne Anweisung nicht in einen separaten Block,
 		sondern direkt hinter die Bedingungsanweisung in die gleiche Zeile geschrieben.
 		Man kann dies zwar verwenden, um sein Programm <emphasis>kleiner</emphasis>

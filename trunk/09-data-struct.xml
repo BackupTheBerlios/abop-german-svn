@@ -1,69 +1,130 @@
 <chapter id="data-structures">
 	<!-- in Arbeit 2005-02-27 Lutz Horn -->
-	<title>Data Structures</title>
+	<title>Datenstrukturen <!--Data Structures--></title>
 	
 	<section id="data-structures-intro">
-		<title>Introduction</title>
+		<title>Einführung <!--Introduction--></title>
 		
 		<para>
+
+		Datenstrukturen sind wesentlich genau das - <emphasis>Strukturen</emphasis>,
+		die einige <emphasis>Daten</emphasis> zusammen halten können. Sie werden,
+		anders ausgedrückt, verwendet, um eine Sammlung von verwandten Daten zu
+		speichern.
 		
+		<!--
 		Data structures are basically just that - they are <emphasis>structures</emphasis> which
 		can hold some <emphasis>data</emphasis> together. In other words, they are used to store
 		a collection of related data.
+		-->
 		
 		</para>
 		<para>
 		
+		In Python  gibt es drei eingebaute Datenstrukturen - Listen, Tupel und
+		Wörterbücher (Dictionaries). Wir werden sehen, wie sich jede dieser drei
+		verwenden lässt und wie sie unser Leben einfacher machen.
+		<!--
 		There are three built-in data structures in Python - list, tuple and dictionary. We will
 		see how to use each of them and how they make life easier.
+		-->
 		
 		</para>
 	</section>
 	
 	<section id="list">
-		<title>List</title>
+		<title>Listen <!--List--></title>
 		
 		<para>
+
+		Eine <literal>list</literal> (Liste) ist eine Datenstruktur, die eine
+		Sammlung von Gegenständen geordnet enthält. Das bedeutet, dass Sie eine
+		<emphasis>Sequenz</emphasis> von Gegenständen in einer Liste speichern
+		können. Man kann sich das wie eine Einkaufsliste vorstellen, die eine Liste
+		von zu kaufenden Gegenständen enthält. Ein Unterschied besteht darin, dass
+		Sie auf ihrer Einkaufsliste die Gegenstände zeilenweise untereinander stehen
+		haben, währen sie in einer Python-Liste durch Komma getrennt nebeneinander
+		stehen.
 		
+		<!--
 		A <literal>list</literal> is a data structure that holds an ordered collection of items
 		i.e. you can store a <emphasis>sequence</emphasis> of items in a list. This is easy to
 		imagine if you can think of a shopping list where you have a list of items to buy,
 		except that you probbly have each item on a separate line in your shopping list whereas
 		in Python you put commas in between them.
+		-->
 		
 		</para>
 		<para>
-		
+
+		Eine Liste von Gegenständen muss mit eckige Klammern (<literal>[</literal>
+		und <literal>]</literal>) umgeben sein, damit Python sie als Liste erkännt.
+		Sobald Sie eine Liste erzeugt haben, können Sie ihr Gegengstände hinzufügen,
+		welche aus ihr entfernen oder nach Gegenständen in ihr suchen. Da wir
+		Gegenstände hinzufügen und entfernen können, nenne wir eine Liste einen
+		<emphasis>veränderbaren</emphasis> (mutable) Datentyp.
+
+		<!--
 		The list of items should be enclosed in square brackets so that Python understands that
 		you are specifying a list. Once you have created a list, you can add, remove or search
 		for items in the list. Since, we can add and remove items, we say that a list is a
 		<emphasis>mutable</emphasis> data type i.e. this type can be altered.
+		-->
 		
 		</para>
 		
 		<section id="list-objects-classes">
-			<title>Quick introduction to Objects and Classes</title>
+			<title>Eine schnelle Einführung in Objekte und Klassen <!--Quick
+			introduction to Objects and Classes--></title>
 			
 			<para>
+			Auch wenn ich die Diskussion von Objekten und Klassen im Allgemeinen
+			bisher aufgeschoben habe, benötigen wir jetzt eine kurze Erläuterung,
+			damit Sie Listen besser verstehen können. Wir werden auf dieses Thema
+			detaillierter in einem eigenen <link linkend="oops">Kapitel</link>
+			eingehen.
 			
+			<!--
 			Although, I've been generally delaying the discussion of objects and classes
 			till now, a little explanation is needed right now so that you can understand
 			lists better. We will still explore this topic in detail in its own
 			<link linkend="oops">chapter</link>.
+			-->
 			
 			</para>
 			<para>
-			
+
+			Eine Liste ist ein Beispiel für die Verwendung von Objekte und Klassen.
+			Wenn Sie eine Varibale <varnam>i</varnam> verwenden und ihr einen Wert,
+			z.B. die Ganzzahl <literal>5</literal> zuweisen, können Sie sich das als
+			die Erzeugung eines <emphasis role="bold">Objekts</emphasis> (einer
+			Instanz) <varname>i</varname> der <emphasis role="bold">Klasse</emphasis>
+			(des Typs) <classname>int</classname> vorstellen. Lesen Sie die Hilfe
+			<literal>help(int)</literal>, um dies besser zu verstehen.
+
+			<!--
 			A list is an example of usage of objects and classes. When you use a variable
 			<varname>i</varname> and assign a value to it, say integer <literal>5</literal>
 			to it, you can think of it as creating an <emphasis role="bold">object</emphasis>
 			(instance) <varname>i</varname> of <emphasis role="bold">class</emphasis> (type)
 			<classname>int</classname>. In fact, you can see <literal>help(int)</literal>
 			to understand this better.
+			-->
 			
 			</para>
 			<para>
 			
+			Eine Klasse kann <emphasis role="bold">Methoden</emphasis> haben, also
+			Funktionen, die für die Verwendung im Zusammenhang mit der Klasse
+			definiert werden. Sie können diese Funktionalitätsteile nur verwenden,
+			wenn Sie ein Objekt der Klasse haben. So stellt Python z.B. die Methode
+			<function>append</function> der Klasse <classname>list</classname> zur
+			Verfügung. Diese Methode erlaubt es Ihnen, einen Gegenstand am Ende einer
+			Liste anzufügen. So wird z.B. <literal>meineliste.append("ein Ding")</literal>
+			den String <literal>"ein Ding"</literal> am Ende der Liste
+			<varname>meineliste</varname> anfügen. Beachten Sie die Verwendung der
+			Punktnotation, mit der Sie die Methode eines Objekts verwenden können.
+			<!--
 			A class can also have <emphasis role="bold">methods</emphasis> i.e. functions
 			defined for use with respect to that class only. You can use these pieces of
 			functionality only when you have an object of that class. For example, Python
@@ -72,28 +133,62 @@
 			<literal>mylist.append('an item')</literal> will add that string to the list
 			<varname>mylist</varname>. Note the use of dotted notation for accessing methods
 			of the objects.
+			-->
 			
 			</para>
 			<para>
 			
+			Außerdem kann eine Klasse <emphasis role="bold">Felder</emphasis> haben,
+			bei denen es sich um Variablen handelt, die nur im Zusammenhang mit der
+			Klasse verwendet werden können. Sie können diese Variablen/Namen nur
+			verwenden, wenn Sie ein Objekt der Klasse haben. Auf Felder wird ebenfalls
+			mit der Punktnotation zugegriffen, z.B. <varname>meineliste.feld</varname>.
+			<!--
 			A class can also have <emphasis role="bold">fields</emphasis> which are nothing
 			but variables defined for use with respect to that class only. You can use these
 			variables/names only when you have an object of that class. Fields are also
 			accessed by the dotted notation, for example, <varname>mylist.field</varname> .
+			-->
 			
 			</para>
 		</section>
 		
 		<section id="using-lists">
-			<title>Using Lists</title>
+			<title>Listen verwenden <!--Using Lists--></title>
 			
 			<example>
-				<title>Using lists</title>
-				
+				<title>Listen verwenden <!--Using lists-->
+					<ulink url="code/listen_verwenden.py">listen_verwenden.py</ulink>)
+				</title>
 				<programlisting>
 				<![CDATA[
 #!/usr/bin/python
-# Filename: using_list.py
+
+# Das ist meine Einkaufsliste.
+einkaufsliste = ['Aepfel', 'Mangos', 'Karotten', 'Bananen']
+
+print 'Ich habe ', len(einkaufsliste), 'Dinge einzukaufen.'
+
+print 'Diese Dinge sind:', # Achten Sie auf das Komma am Ende.
+for ding in einkaufsliste:
+	print ding,
+
+print '\nIch muss auch Reis einkaufen.'
+einkaufsliste.append('Reis')
+print 'Meine Einkaufsliste ist jetzt', einkaufsliste
+
+print 'Jetzt werde ich meine Einkaufsliste sortieren.'
+einkaufsliste.sort()
+print 'Die sortierte Einkaufsliste ist', einkaufsliste
+
+print 'Das erste Ding, das ich kaufen werde, ist', einkaufsliste[0]
+altesding = einkaufsliste[0]
+del einkaufsliste[0]
+print 'Ich habe', altesding, 'gekauft'
+print 'Meine Einkaufsliste ist jetzt', einkaufsliste
+				]]>
+<!--
+#!/usr/bin/python
 
 # This is my shopping list
 shoplist = ['apple', 'mango', 'carrot', 'banana']
@@ -117,15 +212,27 @@ olditem = shoplist[0]
 del shoplist[0]
 print 'I bought the', olditem
 print 'My shopping list is now', shoplist
-				]]>
+				-->
 				</programlisting>
 			</example>
 			
 			<section>
-				<title>Output</title>
+				<title>Ausgabe</title>
 				
 				<screen>
 				<![CDATA[
+$ python listen_verwenden.py
+Ich habe  4 Dinge einzukaufen.
+Diese Dinge sind: Aepfel Mangos Karotten Bananen 
+Ich muss auch Reis einkaufen.
+Meine Einkaufsliste ist jetzt ['Aepfel', 'Mangos', 'Karotten', 'Bananen', 'Reis']
+Jetzt werde ich meine Einkaufsliste sortieren.
+Die sortierte Einkaufsliste ist ['Aepfel', 'Bananen', 'Karotten', 'Mangos', 'Reis']
+Das erste Ding, das ich kaufen werde, ist Aepfel
+Ich habe Aepfel gekauft
+Meine Einkaufsliste ist jetzt ['Bananen', 'Karotten', 'Mangos', 'Reis']
+				]]>
+				<!--
 $ python using_list.py
 I have 4 items to purchase.
 These items are: apple mango carrot banana
@@ -136,20 +243,27 @@ Sorted shopping list is ['apple', 'banana', 'carrot', 'mango', 'rice']
 The first item I will buy is apple
 I bought the apple
 My shopping list is now ['banana', 'carrot', 'mango', 'rice']
-				]]>
+				-->
 				</screen>
 			</section>
 			
 			<section>
-				<title>How It Works</title>
+				<title>So funktioniert es</title>
 				
 				<para>
 				
+				Die Variable <varname>einkaufsliste</varnam> ist eine Einkaufsliste von
+				jemandem, der auf den Markt geht. In <varname>einkaufsliste</varname>
+				speichern wir als Strings nur die Namen der Dinge. Aber beachten Sie,
+				dass Sie <emphasis>jede Art von Objekt</emphasis> einer Liste hinzufügen
+				können, auch Zahlen und andere Listen.
+				<!--
 				The variable <varname>shoplist</varname> is a shopping list for someone
 				who is going to the market. In <varname>shoplist</varname>, we only store
 				strings of the names of the items to buy but remember you can add
 				<emphasis>any kind of object</emphasis> to a list including numbers and
 				even other lists.
+				-->
 				
 				</para>
 				<para>
