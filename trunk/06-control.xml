@@ -38,25 +38,52 @@
 		</para>
 	</section>
 	<section id="if-statement">
-		<title>The if statement</title> <!-- ab hier TODO -->
+		<title>Die if-Anweisung</title> <!-- The if statement -->
 
 		<para>
 
-		The <literal>if</literal> statement is used to check a condition and <emphasis>if</emphasis>
+		Die <literal>if</literal>-Anweisung wird benutzt, um eine Bedingung abzuprüfen.
+		Falls diese Bedingung erfüllt ist, wird ein Block von Anweisungen ausgeführt
+		(der so genannte <emphasis>if-Block</emphasis>), andernfalls wird ein
+		anderer Block von Anweisungen ausgeführt (der so genannte <emphasis>else-Block</emphasis>).
+		Die <literal>else</literal>-Klausel ist dabei optional.
+
+		<!-- The <literal>if</literal> statement is used to check a condition and <emphasis>if</emphasis>
 		the condition is true, we run a block of statements (called the
 		<emphasis>if-block</emphasis>), <emphasis>else</emphasis> we process another block of
 		statements (called the <emphasis>else-block</emphasis>). The <emphasis>else</emphasis>
-		clause is optional.
+		clause is optional. -->
 
 		</para>
 
 		<section>
-			<title>Using the if statement</title>
+			<title>Gebrauch der if-Anweisung</title> <!-- Using the if statement -->
 
 			<example id="using-if-statement">
-				<title>Using the if statement</title>
+				<title>Gebrauch der if-Anweisung</title> <!-- Using the if statement -->
 				<programlisting>
 				<![CDATA[
+#!/usr/bin/python
+# Dateiname: if.py
+
+zahl = 23
+geraten = int(raw_input('Geben Sie eine ganze Zahl ein : '))
+
+if geraten == zahl:
+	print 'Glueckwunsch, Sie haben es erraten.' # hier faengt ein neuer Block an
+	print "(Aber Sie gewinnen leider keinen Preis!)" # hier hoert der neue Block auf
+elif geraten < zahl:
+	print 'Nein, die Zahl ist etwas hoeher' # noch ein Block
+	# Sie koennen in dem Block tun, was sie wollen ...
+else:
+	print 'Nein, die Zahl ist etwas niedriger'
+	# hierhin gelangt man, wenn geraten > zahl ist
+
+print 'Fertig'
+# Diese letzte Anweisung wird immer am Ende nach der if-Anweisung ausgefuehrt
+				]]>
+				</programlisting>
+				<!-- <![CDATA[
 #!/usr/bin/python
 # Filename: if.py
 
@@ -75,13 +102,28 @@ else:
 
 print 'Done'
 # This last statement is always executed, after the if statement is executed
-				]]>
-				</programlisting>
+				]]> -->
 			</example>
 			<section>
 				<title>Output</title>
 				<screen>
 				<![CDATA[
+$ python if.py
+Geben Sie eine ganze Zahl ein : 50
+Nein, die Zahl ist etwas niedriger
+Fertig
+$ python if.py
+Geben Sie eine ganze Zahl ein : 22
+Nein, die Zahl ist etwas hoeher
+Fertig
+$ python if.py
+Geben Sie eine ganze Zahl ein : 23
+Glueckwunsch, Sie haben es erraten.
+(Aber Sie gewinnen leider keinen Preis!)
+Fertig
+				]]>
+				</screen>
+				<!-- <![CDATA[
 $ python if.py
 Enter an integer : 50
 No, it is a little lower than that
@@ -95,12 +137,11 @@ Enter an integer : 23
 Congratulations, you guessed it.
 (but you do not win any prizes!)
 Done
-				]]>
-				</screen>
+				]]> -->
 			</section>
 		</section>
 		<section>
-			<title>How It Works</title>
+			<title>How It Works</title> <!-- TODO ab hier -->
 			<para>
 
 			In this program, we take guesses from the user and check if it is the number

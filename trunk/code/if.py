@@ -1,18 +1,18 @@
 #!/usr/bin/python
-# Filename: if.py
+# Dateiname: if.py
 
-number = 23
-guess = int(raw_input('Enter an integer : '))
+zahl = 23
+geraten = int(raw_input('Geben Sie eine ganze Zahl ein : '))
 
-if guess == number:
-	print 'Congratulations, you guessed it.' # New block starts here
-	print "(but you don't win any prizes!)" # New block ends here
-elif guess < number:
-	print 'No, it is a little higher than that' # Another block
-	# You can do whatever you want in a block ...
+if geraten == zahl:
+	print 'Glueckwunsch, Sie haben es erraten.' # hier faengt ein neuer Block an
+	print "(Aber Sie gewinnen leider keinen Preis!)" # hier hoert der neue Block auf
+elif geraten < zahl:
+	print 'Nein, die Zahl ist etwas hoeher' # noch ein Block
+	# Sie koennen in dem Block tun, was sie wollen ...
 else:
-	print 'No, it is a little lower than that'
-	# you must have guess > number to reach here
+	print 'Nein, die Zahl ist etwas niedriger'
+	# hierhin gelangt man, wenn geraten > zahl ist
 
-print 'Done'
-# This last statement is always executed, after the if statement is executed
+print 'Fertig'
+# Diese letzte Anweisung wird immer am Ende nach der if-Anweisung ausgefuehrt
