@@ -74,13 +74,13 @@ if geraten == zahl:
 	print 'Glueckwunsch, Sie haben es erraten.' # hier faengt ein neuer Block an
 	print "(Aber Sie gewinnen leider keinen Preis!)" # hier hoert der neue Block auf
 elif geraten < zahl:
-	print 'Nein, die Zahl ist etwas hoeher' # noch ein Block
+	print 'Nein, die Zahl ist etwas hoeher.' # noch ein Block
 	# Sie koennen in dem Block tun, was sie wollen ...
 else:
-	print 'Nein, die Zahl ist etwas niedriger'
+	print 'Nein, die Zahl ist etwas niedriger.'
 	# hierhin gelangt man, wenn geraten > zahl ist
 
-print 'Fertig'
+print 'Fertig.'
 # Diese letzte Anweisung wird immer am Ende nach der if-Anweisung ausgefuehrt
 				]]>
 				</programlisting>
@@ -111,17 +111,17 @@ print 'Done'
 				<![CDATA[
 $ python if.py
 Geben Sie eine ganze Zahl ein : 50
-Nein, die Zahl ist etwas niedriger
-Fertig
+Nein, die Zahl ist etwas niedriger.
+Fertig.
 $ python if.py
 Geben Sie eine ganze Zahl ein : 22
-Nein, die Zahl ist etwas hoeher
-Fertig
+Nein, die Zahl ist etwas hoeher.
+Fertig.
 $ python if.py
 Geben Sie eine ganze Zahl ein : 23
 Glueckwunsch, Sie haben es erraten.
 (Aber Sie gewinnen leider keinen Preis!)
-Fertig
+Fertig.
 				]]>
 				</screen>
 				<!-- <![CDATA[
@@ -186,106 +186,190 @@ Done
 			</para>
 			<para>
 
-			<!-- TODO hier gehts weiter -->
+			Als nächstes vergleichen wir die vom Benutzer geratene Zahl mit der von uns
+			ausgewählten Zahl. Wenn sie gleich sind, geben wir eine Erfolgsmeldung aus.
+			Beachen Sie, dass wir verschieden Einrückstiefen benutzen, um Python klarzumachen,
+			welche Anweisung zu welchem Block gehört. Darum sind Einrückungen in Python
+			so wichtig und man muss auf den Leerraum am Zeilenanfang achten (im Gegensatz
+			zu anderen Programmiersprachen, wo Blöcke üblicherweise durch irgendeine Art von
+			Klammern oder Schlüsselworte wie BEGIN..END markiert werden). Ich hoffe, dass
+			Sie sich an die Regel 'einen Tabulator pro Einrückungstiefe' halten, erinnern Sie sich?
 
-			Next, we compare the guess of the user with the number we have chosen. If they
+			<!-- Next, we compare the guess of the user with the number we have chosen. If they
 			are equal, we print a success message. Notice that we use indentation levels to
 			tell Python which statements belong to which block. This is why indentation is
 			so important in Python. I hope you are sticking to 'one tab per indentation level'
-			rule. Are you?
+			rule. Are you? -->
 
 			</para>
 			<para>
 
-			Notice how the <literal>if</literal> statement contains a colon at the end - we
-			are indicating to Python that a block of statements follows.
+			Beachten Sie, dass die <literal>if</literal>-Anweisung einen Doppelpunkt
+			am Ende erfordert - hiermit wird in Python grundsätzlich angezeigt, dass ein neuer
+			Anweisungsblock folgt.
+
+			<!-- Notice how the <literal>if</literal> statement contains a colon at the end - we
+			are indicating to Python that a block of statements follows. -->
 
 			</para>
 			<para>
 
-			Then, we check if the guess is less than the number, and if so, we inform the user
+			Danach überprüfen wir, ob die geratene Zahl kleiner als unsere Zahl, und falls dies
+			der Fall ist, informieren wir den Benutzer, dass unsere Zahl ein wenig höher ist.
+			Was wir hier verwendet haben, ist eine <literal>elif</literal>-Klausel, mit der
+			man zwei verschachtelte <literal>if else-if else</literal>-Anweisungen als eine
+			kombinierte <literal>if-elif-else</literal>-Anweisung schreiben kann. Dadurch
+			wird das Programm vereinfacht und die nötige Einrückungstiefe reduziert.
+
+			<!-- Then, we check if the guess is less than the number, and if so, we inform the user
 			to guess a little higher than that. What we have used here is the
 			<literal>elif</literal> clause which actually combines two related
 			<literal>if else-if else</literal> statements into one combined
 			<literal>if-elif-else</literal> statement. This makes the program easier and
-			reduces the amount of indentation required.
+			reduces the amount of indentation required. -->
 
 			</para>
 			<para>
 
-			The <literal>elif</literal> and <literal>else</literal> statements must also have
+			Die <literal>elif</literal>- und <literal>else</literal>-Anweisungen müssen
+			ebenfalls einen Doppelpunkt am Ende der logischen Zeile haben, gefolgt von dem jeweiligen
+			Anweisungsblock (natürlich mit der richtigen Einrückungstiefe).
+
+			<!-- The <literal>elif</literal> and <literal>else</literal> statements must also have
 			a colon at the end of the logical line followed by their corresponding block of
-			statements (with proper indentation, of course)
+			statements (with proper indentation, of course) -->
 
 			</para>
 			<para>
 
-			You can have another <literal>if</literal> statement inside the if-block of an
+			Sie können innerhalb des if-Blocks einer <literal>if</literal>-Anweisung
+			eine weitere <literal>if</literal>-Anweisung unterbringen und so weiter -
+			dies nennt man eine verschachtelte <literal>if</literal>-Anweisung.
+
+			<!-- You can have another <literal>if</literal> statement inside the if-block of an
 			<literal>if</literal> statement and so on - this is called a nested
-			<literal>if</literal> statement.
+			<literal>if</literal> statement. -->
 
 			</para>
 			<para>
 
-			Remember that the <literal>elif</literal> and <literal>else</literal> parts are
-			optional. A minival valid <literal>if</literal> statement is
+			Denken Sie daran, dass die <literal>elif</literal>- und <literal>else</literal>-Teile
+			optional sind. Eine minimale gültige <literal>if</literal>-Anweisung ist:
+
+			<!-- Remember that the <literal>elif</literal> and <literal>else</literal> parts are
+			optional. A minival valid <literal>if</literal> statement is -->
 
 			</para>
 			<programlisting>
 			<![CDATA[
 if True:
-	print 'Yes, it is true'
+	print 'Ja, es ist wahr.'
 			]]>
 			</programlisting>
+			<!-- <![CDATA[
+if True:
+	print 'Yes, it is true'
+			]]> -->
 			<para>
 
-			After Python has finished executing the complete <literal>if</literal> statement
+			Nachdem Python die gesamte <literal>if</literal>-Anweisung sowie die zugehörigen
+			<literal>elif</literal>- und <literal>else</literal>-Klauseln abgearbeitet hat,
+			fährt es mit der nächsten Anweisung in dem Block fort, der die <literal>if</literal>-Anweisung
+			enthält. In diesem Fall ist es der Hauptblock, in dem die Programmausführung beginnt, und
+			die nächste Anweisung lautet <literal>print 'Fertig.'</literal>. Danach erkennt Python
+			das Programmende und beendet die Programmausführung.
+
+			<!-- After Python has finished executing the complete <literal>if</literal> statement
 			along with the assocated <literal>elif</literal> and <literal>else</literal>
 			clauses, it moves on to the next statement in the block containing the
 			<literal>if</literal> statement. In this case, it is the main block where
 			execution of the program starts and the next statement is the
 			<literal>print 'Done'</literal> statement. After this, Python sees the ends of
-			the program and simply finishes up.
+			the program and simply finishes up. -->
 
 			</para>
 			<para>
 
-			Although this is a very simple program, I have been pointing out a lot of things
+			Dies ist zwar ein sehr kleines Programm, aber ich habe dennoch auf eine Menge
+			Dinge hingewiesen, die Sie selbst in diesem kleinen Programm beachten sollten.
+			All dies ist im Grunde unmittelbar einleuchtend (und für Leute mit
+			C/C++-Hintergrund überraschend einfach) und wenn Sie sich diese Dinge einmal
+			bewusst klar gemacht haben, werden Sie sich schnell mit ihnen anfreunden, und
+			sie werden ihnen bald völlig 'natürlich' vorkommen.
+
+			<!-- Although this is a very simple program, I have been pointing out a lot of things
 			that you should notice even in this simple program. All these are pretty
 			straightforward (and surprisingly simple for those of you from C/C++ backgrounds)
 			and requires you to become aware of all these initially, but after that, you
-			will become comfortable with it and it'll feel 'natural' to you.
+			will become comfortable with it and it'll feel 'natural' to you. -->
 
 			</para>
 		</section>
 		<note>
-			<title>Note for C/C++ Programmers</title>
+			<title>Anmerkung für C/C++-Programmierer</title> <!-- Note for C/C++ Programmers -->
 			<para>
 
-			There is no <literal>switch</literal> statement in Python. You can use an
+			In Python gibt es keine <literal>switch</literal>-Anweisung. Sie können
+			eine <literal>if..elif..elif..else</literal>-Anweisung benutzen, um das Gleiche
+			zu erreichen, und oft stattdessen auch eine <emphasis>Abbildung</emphasis>
+			(ein <link linkend="dictionary">Dictionary</link>) benutzen.
+
+			<!-- There is no <literal>switch</literal> statement in Python. You can use an
 			<literal>if..elif..else</literal> statement to do the same thing (and in some
-			cases, use a <link linkend="dictionary">dictionary</link> to do it quickly)
+			cases, use a <link linkend="dictionary">dictionary</link> to do it quickly) -->
 
 			</para>
 		</note>
 	</section>
 	<section id="while-statement">
-		<title>The while statement</title>
+		<title>Die while-Anweisung</title> <!-- The while statement -->
 
 		<para>
 
-		The <literal>while</literal> statement allows you to repeatedly execute a block of
+		Die <literal>while</literal>-Anweisung ermöglicht es Ihnen, einen
+		Anweisungsblock wiederholt auszuführen, solange eine zugehörige Bedingung
+		erfüllt ist. Eine <literal>while</literal>-Anweisung ist ein Beispiel für eine
+		so genannte <emphasis>Schleifen</emphasis>-Anweisung.
+		Die <literal>while</literal>-Anweisung kann eine optionale
+		<literal>else</literal>-Klausel haben.
+
+		<!-- The <literal>while</literal> statement allows you to repeatedly execute a block of
 		statements as long as a condition is true. A <literal>while</literal> statement is an
 		example of what is called a <emphasis>looping</emphasis> statement. A
-		<literal>while</literal> statement can have an optional <literal>else</literal> clause.
+		<literal>while</literal> statement can have an optional <literal>else</literal> clause. -->
 
 		</para>
 		<section>
-			<title>Using the while statement</title>
+			<title>Gebrauch der while-Anweisung</title> <!-- Using the while statement -->
 			<example id="using-while-statement">
-				<title>Using the while statement</title>
+				<title>Gebrauch der while-Anweisung
+					(<ulink url="code/while.py">while.py</ulink>)
+				</title> <!-- Using the while statement -->
 				<programlisting>
 				<![CDATA[
+#!/usr/bin/python
+
+zahl = 23
+weiter = True
+
+while weiter:
+	geraten = int(raw_input('Geben Sie eine ganze Zahl ein : '))
+
+	if zahl == geraten:
+		print 'Glueckwunsch, Sie haben es erraten.'
+		weiter = False # das fuehrt zum Ende der while-Schleife
+	elif geraten < zahl:
+		print 'Nein, die Zahl ist etwas hoeher.'
+	else:
+		print 'Nein, die Zahl ist etwas niedriger.'
+else:
+	print 'Die while-Schleife wurde beendet.'
+	# Hier koennte man noch weitere Dinge tun.
+
+print 'Fertig.'
+				]]>
+				</programlisting>
+				<!-- <![CDATA[
 #!/usr/bin/python
 # Filename: while.py
 
@@ -307,13 +391,24 @@ else:
 	# Do anything else you want to do here
 
 print 'Done'
-				]]>
-				</programlisting>
+				]]> -->
 			</example>
 			<section>
-				<title>Output</title>
+				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
+$ python while.py
+Geben Sie eine ganze Zahl ein : 50
+Nein, die Zahl ist etwas niedriger.
+Geben Sie eine ganze Zahl ein : 22
+Nein, die Zahl ist etwas hoeher.
+Geben Sie eine ganze Zahl ein : 23
+Glueckwunsch, Sie haben es erraten.
+Die while-Schleife wurde beendet.
+Fertig.
+				]]>
+				</screen>
+				<!-- <![CDATA[
 $ python while.py
 Enter an integer : 50
 No, it is a little lower than that.
@@ -323,24 +418,41 @@ Enter an integer : 23
 Congratulations, you guessed it.
 The while loop is over.
 Done
-				]]>
-				</screen>
+				]]> -->
 			</section>
 			<section>
-				<title>How It Works</title>
+				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
 
-				In this program, we are still playing the guessing game, but the advantage
+				In diesem Programm spielen wir immer noch das Ratespiel, aber
+				mit der Verbesserung, dass der Benutzer nun so lange weiter raten kann,
+				bis er richtig geraten hat - man muss das Programm nicht mehr für jeden
+				Rateversuch neu starten, wie wir es zuvor getan haben. Hier zeigt sich
+				sehr gut der Nutzen einer <literal>while</literal>-Anweisung.
+
+				<!-- In this program, we are still playing the guessing game, but the advantage
 				is that the user is allowed to keep guessing until he guesses correctly -
 				there is no need to repeatedly execute the program for each guess as we
 				have done previously. This aptly demonstrates the use of the
-				<literal>while</literal> statement.
+				<literal>while</literal> statement. -->
 
 				</para>
 				<para>
 
-				We move the <literal>raw_input</literal> and <literal>if</literal>
+				Wir verschieben die <literal>raw_input</literal>- und
+				<literal>if</literal>-Anweisung in die <literal>while</literal>-Schleife
+				und setzen die Variable <varname>weiter</varname> vor dem
+				Betreten der while-Schleife auf <literal>True</literal> (logisch wahr).
+				In der Schleife wird zuerst geprüft, ob die Variable <varname>weiter</varname>
+				immer noch als logischer Wert wahr ist, und wenn wenn dies der Fall ist,
+				dann wird der zugehörige <emphasis>while-Block</emphasis> ausgeführt.
+				Nachdem dieser Block ausgeführt wurde, wird die Bedingung erneut geprüft,
+				die in diesem Fall aus der Variablen <varname>weiter</varname> besteht.
+				Wenn Sie weiterhin logisch wahr ist, dann wird der while-Block wieder ausgeführt,
+				ansonsten wird der optionale else-Block ausgeführt und danach die nächste Anweisung.
+
+				<!-- We move the <literal>raw_input</literal> and <literal>if</literal>
 				statements to inside the <literal>while</literal> loop and set the
 				variable <varname>running</varname> to <literal>True</literal> before
 				the while loop. First, we check if the variable <varname>running</varname>
@@ -348,41 +460,70 @@ Done
 				<emphasis>while-block</emphasis>. After this block is executed, the
 				condition is again checked which in this case is the <varname>running</varname>
 				variable. If it is true, we execute the while-block again, else we continue
-				to execute the optional else-block and then continue to the next statement.
+				to execute the optional else-block and then continue to the next statement. -->
 
 				</para>
 				<para>
 
-				The <literal>else</literal> block is executed when the <literal>while</literal>
+				Der <literal>else</literal>-Block wird ausgeführt, wenn die
+				<literal>while</literal>-Bedingung als logischer Wert falsch
+				(<literal>False</literal>) wird - dies kann sogar bereits beim ersten
+				Mal passieren, wenn die Bedingung überprüft wird. Wenn eine
+				<literal>while</literal>-Schleife eine <literal>else</literal>-Klausel hat,
+				dann wird diese stets ausgeführt, es sei denn, dass die Schleife eine
+				<literal>break</literal>-Anweisung besitzt (darauf kommen wir in diesem
+				Kapitel noch zu sprechen) oder dass die <literal>while</literal>-Schleife
+				endlos läuft, ohne jemals abzubrechen.
+
+				<!-- The <literal>else</literal> block is executed when the <literal>while</literal>
 				loop condition becomes <literal>False</literal> - this may even be the first
 				time that the condition is checked. If there is an <literal>else</literal>
 				clause for a <literal>while</literal> loop, it is always executed unless you
 				have a <literal>while</literal> loop which loops forever without ever breaking
-				out!
+				out! -->
 
 				</para>
 				<para>
 
-				The <literal>True</literal> and <literal>False</literal> are called Boolean
+				Die Werte <literal>True</literal> und <literal>False</literal> werden
+				<emphasis>Wahrheitswerte</emphasis> genannt. Es handelt sich um den
+				sogenannten logischen oder booleschen Datentyp, und Sie können sich diese Werte
+				als gleichbedeutend mit den Werten <literal>1</literal> bzw. <literal>0</literal>
+				denken, und in dem Programm auch <literal>1</literal> statt <literal>True</literal>
+				bzw. <literal>0</literal> statt <literal>False</literal> schreiben, aber dann würde
+				nicht ganz deutlich, dass die Variable <varname>weiter</varname> eigentlich einen
+				Wahrheitswert repräsentiert, und nicht eine Zahl.
+
+				<!-- The <literal>True</literal> and <literal>False</literal> are called Boolean
 				types and you can consider them to be equivalent to the value
 				<literal>1</literal> and <literal>0</literal> respecitvely. It's important
 				to use these where the condition or checking is important and not the actual
-				value such as <literal>1</literal>.
+				value such as <literal>1</literal>. --> <!-- The last sentence is not true.
+				Writing a 1 is even a little bit speedier and some even recommend it. (CZ) -->
 
 				</para>
 				<para>
 
-				The else-block is actually redundant since you can put those statements
+				Solange keine <literal>break</literal>-Anweisung im Spiel ist, ist der
+				<literal>else</literal>-Block eigentlich überflüssig, denn man
+				kann in dem Fall die darin befindlichen Anweisungen einfach im gleichen Block,
+				in dem sich die <literal>while</literal>-Anweisung befindet, hinter die
+				<literal>while</literal>-Schleife schreiben um das gleiche Ergebnis zu erzielen.
+
+				<!-- The else-block is actually redundant since you can put those statements
 				in the same block (as the <literal>while</literal> statement) after the
-				<literal>while</literal> statement to get the same effect.
+				<literal>while</literal> statement to get the same effect. -->
 
 				</para>
 				<note>
-					<title>Note for C/C++ Programmers</title>
+					<title>Anmerkung für C/C++-Programmierer</title> <!-- Note for C/C++ Programmers -->
 					<para>
 
-					Remember that you can have an <literal>else</literal> clause for
-					the <literal>while</literal> loop.
+					Denken Sie daran, dass man unter Python bei einer <literal>while</literal>-Schleife
+					auch eine <literal>else</literal>-Klausel zur Verfügung hat.
+
+					<!-- Remember that you can have an <literal>else</literal> clause for
+					the <literal>while</literal> loop. -->
 
 					</para>
 				</note>
@@ -390,8 +531,10 @@ Done
 		</section>
 	</section>
 	<section id="for-loop">
-		<title>The for loop</title>
+		<title>Die for-Schleife</title> <!-- The for loop -->
 		<para>
+
+		<!-- ab hier TODO -->
 
 		The <literal>for..in</literal> statement is another looping statement which
 		<emphasis>iterates</emphasis> over a sequence of objects i.e. go through each item
@@ -418,7 +561,7 @@ else:
 				</programlisting>
 			</example>
 			<section>
-				<title>Output</title>
+				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
 $ python for.py
@@ -431,7 +574,7 @@ The for loop is over
 				</screen>
 			</section>
 			<section>
-				<title>How It Works</title>
+				<title>So funktioniert es</title> <!-- How It Works -->
 				<para>
 
 				In this program, we are printing a <emphasis>sequence</emphasis> of
@@ -548,7 +691,7 @@ while True:
 	if s == 'ende':
 		break
 	print 'Die Laenge des Strings ist', len(s)
-print 'Fertig'
+print 'Fertig.'
 				]]>
 				</programlisting>
 				<!-- <![CDATA[
@@ -577,7 +720,7 @@ Die Laenge des Strings ist 28
 Geben Sie etwas ein :   Nimm Python!
 Die Laenge des Strings ist 13
 Geben Sie etwas ein : ende
-Fertig
+Fertig.
 				]]>
 				</screen>
 				<!-- <![CDATA[

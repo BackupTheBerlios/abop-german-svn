@@ -473,7 +473,7 @@ Käse!
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-print 'Käse!'  # kein Problem mehr
+print 'Käse!' # kein Problem mehr
 			]]>
 			</programlisting>
 			Neben der universellen Kodierung <literal>utf-8</literal> ist im westeuropäischen Sprachraum

@@ -1,21 +1,20 @@
 #!/usr/bin/python
-# Filename: while.py
 
-number = 23
-running = True
+zahl = 23
+weiter = True
 
-while running:
-	guess = int(raw_input('Enter an integer : '))
+while weiter:
+	geraten = int(raw_input('Geben Sie eine ganze Zahl ein : '))
 
-	if guess == number:
-		print 'Congratulations, you guessed it.'
-		running = False # this causes the while loop to stop
-	elif guess < number:
-		print 'No, it is a little higher than that.'
+	if zahl == geraten:
+		print 'Glueckwunsch, Sie haben es erraten.'
+		weiter = False # das fuehrt zum Ende der while-Schleife
+	elif geraten < zahl:
+		print 'Nein, die Zahl ist etwas hoeher.'
 	else:
-		print 'No, it is a little lower than that.'
+		print 'Nein, die Zahl ist etwas niedriger.'
 else:
-	print 'The while loop is over.'
-	# Do anything else you want to do here
+	print 'Die while-Schleife wurde beendet.'
+	# Hier koennte man noch weitere Dinge tun.
 
-print 'Done'
+print 'Fertig.'

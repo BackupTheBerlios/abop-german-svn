@@ -5,4 +5,4 @@ while True:
 	if s == 'ende':
 		break
 	print 'Die Laenge des Strings ist', len(s)
-print 'Fertig'
+print 'Fertig.'
