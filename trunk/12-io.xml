@@ -6,13 +6,13 @@
 
 	<para>
 
-	Sie werden häufig die Anforderung haben, dass Ihr Programm mit dem Benutzer (der Sie auch
-	selber sein können) interagiert. Das Programm soll etwa eine Eingabe vom Benutzer entgegennehmen
+	Sie werden häufig die Anforderung haben, dass Ihr Programm mit dem Benutzer (der Sie auch selber
+	sein können) interagieren soll. Das Programm soll etwa eine Eingabe vom Benutzer entgegennehmen
 	und dann irgendwelche Ergebnisse ausgeben. Wir können dies mit <function>raw_input</function>
 	bzw. <literal>print</literal>-Anweisungen erreichen. Zur Ausgabe können wir auch die verschiedenen
 	Methoden der Klasse <classname>str</classname> (String) verwenden. Zum Beispiel können Sie
-	die <methodname>rjust</methodname>-Methode einsetzen, um einen Streing zu erhalten, der
-	bezueglich einer angegeben Breite rechts ausgerichtet ist.
+	die <methodname>rjust</methodname>-Methode einsetzen, um einen String zu erhalten, der
+	bezüglich einer angegeben Breite rechts ausgerichtet ist.
 	Für weitere Einzelheiten, siehe <literal>help(str)</literal>.
 
 	<!-- There will be lots of times when you want your program to interact with the user (which could be
@@ -174,7 +174,7 @@ if you wanna make your work also fun:
 				Als nächstes öffnen wir die gleiche Datei zum Lesen. Wenn wir keinen Modus angeben,
 				dann wird standardmäßig der Lesemodus benutzt. Wir lesen jede Zeile der Datei in einer
 				Schleife ein, wobei wir die Methode <methodname>readline</methodname> benutzen.
-				Diese Methode gibt jweils eine vollständige Zeile zurück, einschließlich der Zeilenvorschubkennung
+				Diese Methode gibt jeweils eine vollständige Zeile zurück, einschließlich der Zeilenvorschubkennung
 				am Zeilenende. Wenn daher ein <emphasis>leerer</emphasis> String zurückgeliefert wird,
 				dann zeigt uns dies an, dass das Ende Der Datei erreicht wurde, und wir beenden die Schleife.
 
@@ -231,7 +231,7 @@ if you wanna make your work also fun:
 		</para>
 		<para>
 
-		Es gibt ein anderes Modul names <literal>cPickle</literal>, das ganz genauso wie das
+		Es gibt ein anderes Modul namens <literal>cPickle</literal>, das ganz genauso wie das
 		<literal>pickle</literal>-Modul funktioniert, außer dass es in der Sprache C geschrieben
 		und daher (bis zu 1000 mal) schneller ist. Sie können sich aussuchen, welches der beiden Module
 		Sie verwenden wollen, auch wenn wir hier als Beispiel das Modul <literal>cPickle</literal>
@@ -381,7 +381,7 @@ $ python pickling.py
 		</para>
 		<para>
 
-		Als nächses werden wir das Konzept der so genannten Ausnahmen erforschen.
+		Als nächstes werden wir das Konzept der so genannten Ausnahmen erforschen.
 		<!-- Next, we will explore the concept of exceptions. -->
 
 		</para>
