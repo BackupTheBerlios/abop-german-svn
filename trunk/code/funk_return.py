@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Filename: func_return.py
 
 def maximum(x, y):
 	if x > y:

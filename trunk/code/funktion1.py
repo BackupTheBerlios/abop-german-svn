@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 def sagHallo():
-	print 'Hallo Welt!' # der Block der Funktion
-# das Ende der Funktion
+	print 'Hallo Welt!' # Block gehoert zur Funktion
+# Ende der Funktion
 
-sagHallo() # die Funktion aufrufen
+sagHallo() # Aufruf der Funktion
