@@ -1,6 +1,6 @@
-<chapter id="installing-python">
+﻿<chapter id="installing-python">
 	<title>Python installieren</title>
-	
+
 	<section id="for-linux-bsd-users">
 		<title>Für GNU/Linux oder BSD</title>
 		<para>
@@ -74,7 +74,7 @@ bash: python: command not found
 			</listitem>
 		</itemizedlist>
 	</section>
-	
+
 	<section id="for-windows-users">
 		<title>Für Windows</title>
 		<para>
@@ -108,7 +108,7 @@ bash: python: command not found
 	Umgebungsvariable PATH geeignet setzten.
 			</para>
 			<para>
-	
+
 	For Windows 2000, XP, 2003 , click on <guimenu>Control Panel</guimenu> ->
 	<guisubmenu>System</guisubmenu> -> <guisubmenu>Advanced</guisubmenu> ->
 	<guimenuitem>Environment Variables</guimenuitem>. Click on the variable
@@ -116,18 +116,18 @@ bash: python: command not found
 	section, then select <guimenuitem>Edit</guimenuitem> and add
 	<command>;C:\Python23</command> (without the quotes) to the end of
 	what is already there. Of course, use the appropriate directory name.
-	
+
 			</para>
 			<para>
-	
+
 	For older versions of Windows, add the following line to the file
 	<filename>C:\AUTOEXEC.BAT</filename> : '<command>PATH=%PATH%;C:\Python23</command>'
-	(without the quotes) and restart the system. For Windows NT, use the 
+	(without the quotes) and restart the system. For Windows NT, use the
 	<filename>AUTOEXEC.NT</filename> file.
 			</para>
 		</note>
 	</section>
-	
+
 	<section id="installation-summary">
 		<title>Zusammenfassung</title>
 		<para>
@@ -139,7 +139,7 @@ bash: python: command not found
 			gehen wir davon aus, dass Python auf Ihrem System installiert ist.
 		</para>
 		<para>
-			Als nächstes werden Sie ihr erstes Pythonprogramm schreiben.
+			Als Nächstes werden Sie ihr erstes Pythonprogramm schreiben.
 		</para>
 	</section>
 </chapter>

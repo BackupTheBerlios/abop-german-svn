@@ -264,7 +264,7 @@ $ python simplestclass.py
 				</para>
 				<para>
 
-				Als nächstes erzeugen wir ein Objekt (eine Instanz) dieser Klasse, indem wir den Namen
+				Als Nächstes erzeugen wir ein Objekt (eine Instanz) dieser Klasse, indem wir den Namen
 				der Klasse benutzen, gefolgt von einem Klammerpaar. (Wir werden im nächsten Abschnitt
 				mehr über diese so genannte <link linkend="class-init">Instanziierung</link> lernen).
 				Zur Sicherheit überprüfen wir den Typ der Variable, indem wir sie einfach mit <literal>print</literal>
@@ -1244,7 +1244,7 @@ Name:"Swaroop" Age:"22" Marks: "75"
 		</para>
 		<para>
 
-		Als nächstes lernen wir, mit Ein/Ausgaben umzugehen und in Python
+		Als Nächstes lernen wir, mit Ein/Ausgaben umzugehen und in Python
 		auf Dateien zuzugreifen.
 
 		<!-- Next, we will learn how to deal with input/output and how to access files in Python. -->

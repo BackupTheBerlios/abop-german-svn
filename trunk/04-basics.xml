@@ -1,4 +1,4 @@
-<chapter id="basics">
+﻿<chapter id="basics">
 
 	<!-- German Translation 2005-02-17 by Christoph Zwerschke -->
 	<!-- Korrektur gelesen 2004-02-24 Lutz Horn -->
@@ -678,7 +678,7 @@ This is the second line.
 			die als Literal angegebene Zahl <literal>5</literal> zu, indem wir den Zuweisungsoperator
 			(<literal>=</literal>) verwenden. Diese Zeile wird eine Anweisung genannt, weil sie angibt,
 			dass etwas getan werden soll. In diesem Fall wird der Variablenname <literal>i</literal>
-			mit dem Wert <literal>5</literal> verbunden. Als nächstes geben wir den Wert von <varname>i</varname>
+			mit dem Wert <literal>5</literal> verbunden. Als Nächstes geben wir den Wert von <varname>i</varname>
 			unter Benutzung der <literal>print</literal>-Anweisung aus, die uns, kaum überraschend,
 			einfach den Wert der Variable auf den Bildschirm ausgibt.
 

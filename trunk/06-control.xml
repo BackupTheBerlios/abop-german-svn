@@ -185,7 +185,7 @@ Done
 			</para>
 			<para>
 
-			Als nächstes vergleichen wir die vom Benutzer geratene Zahl mit der von uns
+			Als Nächstes vergleichen wir die vom Benutzer geratene Zahl mit der von uns
 			ausgewählten Zahl. Wenn sie gleich sind, geben wir eine Erfolgsmeldung aus.
 			Beachten Sie, dass wir verschiedene Einrücktiefen benutzen, um Python klarzumachen,
 			welche Anweisung zu welchem Block gehört. Darum sind Einrückungen in Python
@@ -987,7 +987,7 @@ Enter something : quit
 		</para>
 		<para>
 
-		Als nächstes sehen wir, wie wir Funktionen erzeugen und benutzen können.
+		Als Nächstes sehen wir, wie wir Funktionen erzeugen und benutzen können.
 
 		<!-- Next, we will see how to create and use functions. -->
 

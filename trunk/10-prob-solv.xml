@@ -1263,7 +1263,7 @@ tar = 'tar -cvzf %s %s -X /home/swaroop/excludes.txt' % (target, ' '.join(srcdir
 		</para>
 		<para>
 
-		Als nächstes werden wir die objektorientierte Programmierweise besprechen.
+		Als Nächstes werden wir die objektorientierte Programmierweise besprechen.
 		<!-- Next, we will discuss object-oriented programming. -->
 
 		</para>

@@ -173,7 +173,7 @@ if you wanna make your work also fun:
 				</para>
 				<para>
 
-				Als nächstes öffnen wir die gleiche Datei zum Lesen. Wenn wir keinen Modus angeben,
+				Als Nächstes öffnen wir die gleiche Datei zum Lesen. Wenn wir keinen Modus angeben,
 				dann wird standardmäßig der Lesemodus benutzt. Wir lesen jede Zeile der Datei in einer
 				Schleife ein, wobei wir die Methode <methodname>readline</methodname> benutzen.
 				Diese Methode gibt jeweils eine vollständige Zeile zurück, einschließlich der Zeilenvorschubkennung
@@ -356,7 +356,7 @@ $ python pickling.py
 				</para>
 				<para>
 
-				Als nächstes holen wir das Objekt mit der Funktion <function>load</function> des
+				Als Nächstes holen wir das Objekt mit der Funktion <function>load</function> des
 				<literal>pickle</literal>-Moduls wieder zurück. Dieser Vorgang wird als
 				<emphasis>Wiederauftauen</emphasis> (oder
 				<foreignphrase>unpickling</foreignphrase>) bezeichnet.
@@ -384,7 +384,7 @@ $ python pickling.py
 		</para>
 		<para>
 
-		Als nächstes werden wir das Konzept der so genannten Ausnahmen erforschen.
+		Als Nächstes werden wir das Konzept der so genannten Ausnahmen erforschen.
 		<!-- Next, we will explore the concept of exceptions. -->
 
 		</para>
