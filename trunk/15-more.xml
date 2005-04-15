@@ -321,7 +321,7 @@ $ python list_comprehension.py
 
 		</para>
 		<simpara>Beispiel: <ulink url="code/potenzsumme.py">potenzsumme.py</ulink></simpara>
-		<screen>
+		<programlisting>
 		<![CDATA[
 >>> def potenzsumme(potenz, *parameter):
 ...     '''Gibt die Summe der angegebenen Potenz aller Parameter zurueck.'''
@@ -336,7 +336,7 @@ $ python list_comprehension.py
 >>> potenzsumme(2, 10) # 10^2
 100
 		]]>
-		</screen>
+		</programlisting>
 		<!-- <![CDATA[
 >>> def powersum(power, *args):
 ...     '''Return the sum of each argument raised to specified power.'''
