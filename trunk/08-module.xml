@@ -1,23 +1,23 @@
 ﻿<chapter id="modules">
 
 	<!-- German Translation 2005-04-14 by Bernhard Krieger -->
-	<!-- NOCH NICHT: Korrektur gelesen 2005-04-15 Christoph Zwerschke -->
+	<!-- Korrektur gelesen 2005-04-16 Christoph Zwerschke -->
 
 	<title>Module</title> <!-- Modules -->
 
 	<section id="modules-intro">
 
-		<title>Einleitung</title> <!-- Introduction -->
+		<title>Einführung</title> <!-- Introduction -->
 
 		<para>
 
-		Sie haben gesehen, wie Sie Code wieder verwenden können indem Sie Funktionen definieren.
-		Was passiert, wenn Sie eine ganze Anzahl von Funktionen in anderen Programmen benutzen
-		wollen? Wie Sie vielleicht vermuten ist die Antwort 'Module'. Ein Modul ist im Grunde
-		nur eine Datei, die alle Ihre definierten Funktionen und Variablen beinhaltet. Um ein
-		Modul in anderen Programmen wieder zu verwenden zu können
-		<emphasis role="bold">muß</emphasis> der Dateiname eines Moduls eine
-		<filename>.py</filename> Endung haben.
+		Sie haben gesehen, wie Sie Code in Ihren Programm wieder verwenden können, indem Sie
+		Funktionen nur einmal definieren. Was machen Sie aber, wenn Sie eine ganze Anzahl von
+		Funktionen in anderen Programmen benutzen wollen? Wie Sie vielleicht vermutet haben,
+		sind Module die Lösung dafür. Ein Modul ist im Grunde nur eine Datei, die alle von Ihnen
+		definierten Funktionen und Variablen beinhaltet. Um ein Modul in anderen Programmen
+		wiederverwenden zu können, <emphasis role="bold">muss</emphasis> der
+		Dateiname eines Moduls die Endung <filename>.py</filename> haben.
 
 		<!-- You have seen how you can reuse code in your program by defining functions once. What
 		if you wanted to reuse a number of functions in other programs that you write? As you
@@ -29,10 +29,9 @@
 		</para>
 		<para>
 
-		Man kann ein Modul von einem anderen Programm  <emphasis>importieren</emphasis> um von
-		dessen Funktionalität Gebrauch zu machen. Genauso können wir die Python Standard
-		Bibliothek verwenden. Zuerst werden wir sehen wie wir die Module der Standard Bibliothek
-		verwenden können.
+		Ein Modul kann von einem anderen Programm <emphasis>importiert</emphasis> werden,
+		um von dessen Funktionalität Gebrauch zu machen. Genauso können wir auch die Python-Standardbibliothek
+		verwenden. Zunächst werden wir sehen, wie wir die Module der Standardbibliothek verwenden können.
 
 		<!-- A module can be <emphasis>imported</emphasis> by another program to make use of its
 		functionality. This is how we can use the Python standard library as well. First,
@@ -53,7 +52,7 @@
 
 import sys
 
-print 'Die Kommandozeilen-Argumente sind:'
+print 'Die Kommandozeilenparameter sind:'
 for i in sys.argv:
 	print i
 
@@ -79,7 +78,7 @@ print '\n\nThe PYTHONPATH is', sys.path, '\n'
 				<screen>
 				<![CDATA[
 $ python beispiel_sys.py Wir sind Argumente
-Die Kommandozeilen-Argumente sind:
+Die Kommandozeilenparameter sind:
 beispiel_sys.py
 Wir
 sind
@@ -113,11 +112,11 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 
 				<para>
 
-				Zuerst <emphasis>importieren</emphasis> wir die <literal>sys</literal>
-				Module indem wir das <literal>import</literal> Statement verwenden. Im Grunde
-				teilt man damit Python mit, daß wir diese Modul verwenden wollen. Das
-				<literal>sys</literal> Modul enthält Funktionalität die sich auf den Python
-				Interpreter und dessen Umgebung bezieht.
+				Zuerst <emphasis>importieren</emphasis> wir das Modul <literal>sys</literal>
+				mittels der <literal>import</literal>-Anweisung. Im Wesentlich teilen wir Python
+				dadurch mit, dass wir dieses Modul in unserem Programm verwenden wollen. Das Modul
+				<literal>sys</literal> enthält Funktionalität, die mit dem Python-Interpreter selbst
+				und dessen Umgebung zu tun hat.
 
 				<!-- First, we <emphasis>import</emphasis> the <literal>sys</literal> module
 				using the <literal>import</literal> statement. Basically, this translates
@@ -128,14 +127,14 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 				</para>
 				<para>
 
-				Wenn Python das <literal>import sys</literal> Statement ausführt, sucht
-				es nach dem Modul  <filename>sys.py</filename> in einem der Verzeichnisse,
-				die in der Variablen <varname>sys.path</varname> aufgelistet werden. Wird
-				die Datei gefunden, werden die Statements im Hauptblock dieses Moduls
-				ausgeführt. Das Modul wird für Sie dann <emphasis>zur Verfügung</emphasis>
-				gestellt. Beachten Sie, daß diese Initialisierung nur beim
-				<emphasis>ersten</emphasis> Import des Moduls ausgeführt wird. 'sys' ist
-				die Abkürzung für 'system'.
+				Wenn Python die Anweisung <literal>import sys</literal> ausführt, sucht
+				es nach dem Modul <filename>sys.py</filename> in einem der Verzeichnisse,
+				die in seiner Variablen <varname>sys.path</varname> aufgelistet werden. Wird
+				die Datei gefunden, so werden die Anweisungen im Hauptblock dieses Moduls
+				ausgeführt. Das Modul wird für Sie dann <emphasis>verfügbar</emphasis>
+				gemacht. Beachten Sie, dass die Initialisierung nur beim <emphasis>ersten</emphasis>
+				Mal durchgeführt wird, wenn wir ein Modul importieren. Übrigens steht 'sys'
+				als Abkürzung für 'System'.
 
 				<!-- When Python executes the <literal>import sys</literal> statement, it looks for
 				the <filename>sys.py</filename> module in one of the directores listed in its
@@ -148,11 +147,11 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 				</para>
 				<para>
 
-				Mann kann sich auf die <varname>argv</varname> Variable im <literal>sys</literal>
-				Modul beziehen indem man die Punkt Notation verwendet: <varname>sys.argv</varname>
-				Ein Vorteil dieser Vorgehensweise besteht darin, daß der Name nicht mit einer
-				Variablen des Names <varname>argv</varname> innerhalb Ihres Programms kollidiert.
-				Auch weist er eindeutig darauf hin, daß er Teil des <literal>sys</literal> Modules ist.
+				Der Zugriff auf die Variable <varname>argv</varname> im Modul <literal>sys</literal>
+				geschieht mittels der Punktnotation <varname>sys.argv</varname>.
+				Ein Vorteil dieser Vorgehensweise besteht darin, dass der Name nicht mit einer anderen
+				Variablen des Namens <varname>argv</varname> innerhalb Ihres Programms kollidiert.
+				Auch weist er eindeutig darauf hin, dass er Teil des Moduls <literal>sys</literal> ist.
 
 				<!-- The <varname>argv</varname> variable in the <literal>sys</literal> module is
 				referred to using the dotted notation - <varname>sys.argv</varname> - one of
@@ -163,11 +162,11 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 				</para>
 				<para>
 
-				Die <varname>sys.argv</varname> Variable ist eine <emphasis>Liste</emphasis> von
-				Strings (Listen werden detailliert in einem detaillierten <link linkend="list">Teil</link>)
-				dieses Buches erklärt. Im besonderen enthält	<varname>sys.argv</varname> die Liste der
-				<emphasis>Kommandozeilenargumente</emphasis>, d.h. die Argumente die Ihrem Programm
-				durch die Kommandozeile gegeben werden.
+				Die Variable <varname>sys.argv</varname> ist eine <emphasis>Liste</emphasis> von
+				Strings (Listen werden in späteren <link linkend="list">Abschnitten</link> genauer erklärt).
+				Diese spezielle Liste <varname>sys.argv</varname> besteht aus den
+				<emphasis>Kommandozeilenparametern</emphasis>, d.h. den zusätzlichen Argumenten,
+				die Ihrem Programm über die Kommandozeile übergegeben wurden.
 
 				<!-- The <varname>sys.argv</varname> variable is a <emphasis>list</emphasis> of
 				strings (lists are explained in detail in later
@@ -179,19 +178,18 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 				</para>
 				<para>
 
-				Wenn Sie ein IDE verwenden um diese Programm zu schreiben und auszuführen,
-				suchen Sie nach einem Weg Kommandozeilenargumente in die Menüs zu programmieren.
+				Wenn Sie eine Entwicklungsumgebung verwenden, um diese Programme zu schreiben und auszuführen,
+				suchen in den Menüs nach einer Möglichkeit, dem Programm Kommandozeilenparameter zu übergeben.
 
 				<!-- If you are using an IDE to write and run these programs, look for a way to
 				specify command line arguments to the program in the menus. -->
 
 				</para>
 				<para>
-				Wenn wir <literal>python sys_verwenden.py wir sind Argumente</literal>
-				ausführen, verwenden wir das Modul <filename>sys_verwenden.py</filename> mit dem
-				<command>python</command> Kommando. Alles andere danach sind Argumente, die dem
-				Programm zugeführt werden. Python speichert es in der <varname>sys.argv</varname>
-				Variable für uns.
+				Wenn wir <literal>python beispiel_sys.py Wir sind Argumente</literal>
+				ausführen, starten wir das Modul <filename>beispiel_sys.py</filename> mit dem
+				<command>python</command>-Befehl, und alles andere danach sind Argumente, die dem
+				Programm übergeben werden. Python speichert sie für uns in der Variablen <varname>sys.argv</varname>.
 
 				<!-- Here, when we execute <literal>python using_sys.py we are arguments</literal>,
 				we run the module <filename>using_sys.py</filename> with the
@@ -202,13 +200,13 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 				</para>
 				<para>
 
-				Denken Sie daran, daß der Name des laufenden Skripts immer das erste Argument in
-				der <varname>sys.argv</varname> Liste ist. In diesem Fall werden wir
-				<literal>'sys_verwenden.py'</literal> als <varname>sys.argv[0]</varname>,
-				<literal>'wir'</literal> als <varname>sys.argv[1]</varname>,
+				Denken Sie daran, dass der Name des laufenden Skripts immer der erste Parameter
+				in der Liste <varname>sys.argv</varname> ist. In diesem Fall haben wir also
+				<literal>'beispiel_sys.py'</literal> als <varname>sys.argv[0]</varname>,
+				<literal>'Wir'</literal> als <varname>sys.argv[1]</varname>,
 				<literal>'sind'</literal> als <varname>sys.argv[2]</varname> und
-				<literal>'Argumente'</literal> als <varname>sys.argv[3]</varname>. Beachten Sie,
-				daß Python mit 0 zum zählen anfängt, nicht mit 1.
+				<literal>'Argumente'</literal> als <varname>sys.argv[3]</varname>.
+				Beachten Sie, dass Python mit 0 anfängt zu zählen, und nicht mit 1.
 
 				<!-- Remember, the name of the script running is always the first argument in the
 				<varname>sys.argv</varname> list. So, in this case we will have
@@ -221,14 +219,14 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 				</para>
 				<para>
 
-				Der <varname>sys.path</varname> enthält die Liste des Namesverzeichnisses von
-				welchem Namen importiert werden. Beachten Sie, daß der erste String in
-				<varname>sys.path</varname> leer ist. Dieser Leere String deutet an, daß das
-				aktuelle Verzeichnis auch Teil des <varname>sys.path</varname> ist welcher der
-				selbe ist wie die <envar>PYTHONPATH</envar> Umgebungsvariable. Das bedeutet daß
-				Sie Module importiere können, die sich im gleichen Verzeichnis befinden. Andernfalls
-				müssen Sie Ihr Modul in eines der Verzeichnisse geben, welche in
-				<varname>sys.path</varname> aufgelisted sind.
+				Die Variable <varname>sys.path</varname> enthält die Liste der Namen der
+				Verzeichnisse, aus denen Module importiert werden. Beachten Sie, dass der erste String in
+				<varname>sys.path</varname> leer ist - dieser Leerestring zeigt an, dass das
+				aktuelle Verzeichnis auch Teil von <varname>sys.path</varname> ist, das ansonsten
+				mit der Umgebungsvariablen <envar>PYTHONPATH</envar> übereinstimmt.
+				Das bedeutet, dass Sie Module, die sich im gleichen Verzeichnis befinden, direkt
+				importieren können. Andernfalls müssen Sie Ihr Modul in eines der Verzeichnisse platzieren,
+				die in <varname>sys.path</varname> aufgelistet sind.
 
 				<!-- The <varname>sys.path</varname> contains the list of directory names where
 				modules are imported from. Observe that the first string in
@@ -244,20 +242,21 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 		</section>
 	</section>
 	<section id="byte-compiled">
-		<title>Byte-compiled .pyc files</title> <!-- Byte-compiled .pyc files -->
+		<title>Byte-kompilierte .pyc-Dateien</title> <!-- Byte-compiled .pyc files -->
 
 		<para>
 
-		Ein Modul zu importieren ist ziemlich teuer. Python hat einige Tricks um es zu
-		beschleunigen. Ein Weg ist dabei <emphasis>byte-kompillierte</emphasis> Dateien
-		herzustellen die mit <filename>.pyc</filename> enden. Das hängt mit dem
-		Zwischenschritt zusammen in dem Python das Program verwandelt (siehe
-		<link linkend="python-vm">die	Einführung zu der Arbeitsweise von Python</link>).
-		Die <filename>.pyc</filename> Datei ist nützlich, wenn Sie das Modul das nächste mal
-		von einem anderen Program aus importieren. Es ist viel schneller, da ein Teil des
-		Vorgangs der zum Import eines Moduls nötig ist schon erledigt ist. Diese
-		byte-kompillierten Dateien sind auch plattformunabhängig. So, jetzt wissen Sie
-		auch was diese <filename>.pyc</filename> Datein wirklich sind.
+		Ein Modul zu importieren, ist hinsichtlich verbrauchter Rechenzeit eine relativ teure
+		Angelegenheit, weswegen Python einige Tricks anwendet, um dies zu beschleunigen.
+		Einer davon ist, <emphasis>byte-kompilierte</emphasis> Dateien mit der Endung
+		<filename>.pyc</filename> zu erzeugen, die im Zusammenhang mit der
+		Zwischenform stehen, in die Python ein Programm vor der Ausführung verwandelt (siehe
+		die <link linkend="python-vm">Einführung zur Arbeitsweise von Python</link>).
+		Die <filename>.pyc</filename>-Datei ist nützlich, wenn Sie das Modul das nächste
+		Mal von einem anderen Programm aus importieren - dies wird viel schneller durchgeführt,
+		da ein Teil des Vorgangs, der zum Import eines Moduls nötig ist, schon erledigt ist.
+		Die byte-kompilierten Dateien sind auch plattformunabhängig. Jetzt wissen Sie also,
+		wozu diese <filename>.pyc</filename>-Dateien eigentlich da sind.
 
 		<!-- Importing a module is a relatively costly affair, so Python does some tricks to make
 		it faster. One way is to create <emphasis>byte-compiled</emphasis> files with the extension
@@ -273,18 +272,18 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 	</section>
 
 	<section id="from-import">
-		<title>Das from..import Statement</title> <!-- The from..import statement -->
+		<title>Die Anweisung from..import</title> <!-- The from..import statement -->
 
 		<para>
 
-		Wenn Sie direkt die <varname>argv</varname> Variable in Ihr Programm importieren wollen,
-		(um das zu vermeiden geben sie dafür <literal>sys.</literal> jedesmal ein) können Sie das
-		<literal>from sys import argv</literal> Statement verwenden. Wenn Sie alle Namen die im
-		<literal>sys</literal> Modul verwendet werden importieren wollen, können Sie das
-		<literal>from sys import *</literal> Statement verwenden. Das funktioniert für alle Module.
-		Generell ist es besser das <literal>from..import</literal> Statement zu vermeiden und dafür
-		das <literal>import</literal> Statement zu verwenden. Ihr Program wird dadurch um einiges
-		lesbarer und Sie vermeiden dadurch auch Namenskonflikte.
+		Wenn Sie einfach nur die <varname>argv</varname> Variable in Ihr Programm importieren
+		wollen (um zu vermeiden, jedes Mal <literal>sys.</literal> eingeben zu müssen), können Sie die
+		Anweisung <literal>from sys import argv</literal> verwenden. Wenn Sie alle vom Modul
+		<literal>sys</literal> verwendeten Namen importieren wollen, können Sie dafür die Anweisung
+		<literal>from sys import *</literal> verwenden. Das funktioniert bei allen Modulen.
+		Im Allgemeinen ist es besser, die Anweisung <literal>from..import</literal> zu vermeiden, und
+		stattdessen die <literal>import</literal>-Anweisung zu verwenden. Ihr Programm wird dadurch
+		um einiges lesbarer, und Sie vermeiden dadurch mögliche Namenskonflikte.
 
 		<!-- If you want to directly import the <varname>argv</varname> variable into your program (to
 		avoid typing the <literal>sys.</literal> everytime for it), then you can use the
@@ -298,17 +297,17 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 		</para>
 	</section>
 	<section id="module-name">
-		<title>A module's __name__</title> <!-- A module's __name__ -->
+		<title>Der __name__ eines Moduls</title> <!-- A module's __name__ -->
 
 		<para>
 
-		Jedes Modul hat einen Namen und Statements in einem Modul können den Namen Ihres Moduls
-		herausfinden. Das ist besonders nützlich in einer bestimmten Situation: Wie vorher schon
-		darauf hingewiesen wurde wird der Hauptblock in einem Modul ausgeführt, wenn ein Modul zum
-		ersten mal importiert wird. Was tun wir, wenn wir wollen, daß der Block nur ausgeführt
-		wird, wenn das Program durch sich selbst ausgeführt wurde und nicht wenn es von einem anderen
-		Modul importiert wurde? Das können wir dadurch erreichen, daß wir  <varname>__name__</varname>
-		Eigenschaften des Moduls verwenden.
+		Jedes Modul hat einen Namen, und auf diesen Namen können Anweisungen in einem Modul
+		zugreifen. Das ist in einer bestimmten Situation besonders nützlich: Wie vorher schon erwähnt,
+		wird der Hauptblock eines Moduls ausgeführt, wenn es zum ersten Mal importiert wird. Was
+		machen wir aber, wenn wir wollen, dass der Block nur ausgeführt wird, wenn das Modul
+		als eigenständiges Programm selbst gestartet wurde, aber nicht, wenn es von einem anderen
+		Modul importiert wurde? Dies können wir erreichen, indem wir das Attribut
+		<varname>__name__</varname> des Moduls auswerten.
 
 		<!-- Every module has a name and statements in a module can find out the name of its module.
 		This is especially handy in one particular situation - As mentioned previously, when a
@@ -320,10 +319,10 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 		</para>
 
 		<section id="using-name">
-			<title>__name__ eines Moduls verwenden</title> <!-- Using a module's __name__ -->
+			<title>Verwendung von __name__</title> <!-- Using a module's __name__ -->
 
 			<example>
-				<title>__name__ eines Moduls verwenden
+				<title>Verwendung von __name__
 					(<ulink url="code/beispiel_name.py">beispiel_name.py</ulink>)
 				</title> <!-- Using a module's __name__ -->
 
@@ -332,7 +331,7 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 #!/usr/bin/python
 
 if __name__ == '__main__':
-	print 'Dieses Program laeuft selbst'
+	print 'Dieses Programm laeuft selbst'
 else:
 	print 'Ich werde von einem anderen Modul importiert'
 				]]>
@@ -354,7 +353,7 @@ else:
 				<screen>
 				<![CDATA[
 $ python beispiel_name.py
-Dieses Program laeuft selbst
+Dieses Programm laeuft selbst
 
 $ python
 >>> import beispiel_name
@@ -378,9 +377,10 @@ I am being imported from another module
 
 				<para>
 
-				Jedes Python Modul hat sein <varname>__name__</varname> definiert und wenn dieser
-				<literal>'__main__'</literal> ist bedeutet daß das Modul eigenständig durch den
-				Nutzer zum laufen gebracht wird.
+				Jedes Python Modul hat einen im Attribut <varname>__name__</varname> definierten
+				Namen, und wenn dieser Name <literal>'__main__'</literal> lautet, dann bedeutet dies,
+				dass das Modul als eigenständiges Programm vom Benutzer ausgeführt wurde, und wir können
+				dementsprechende Aktionen durchführen.
 
 				<!-- Every Python module has it's <varname>__name__</varname> defined and if this
 				is <literal>'__main__'</literal>, it implies that the module is being run
@@ -392,13 +392,13 @@ I am being imported from another module
 	</section>
 
 	<section id="making-modules">
-		<title>Eigene Module herstellen</title> <!-- Making your own Modules -->
+		<title>Eigene Module erstellen</title> <!-- Making your own Modules -->
 
 		<para>
 
-		Es ist einfach eigene Module herzustellen. Sie haben es schon die ganze Zeit gemacht!
-		Jedes Python Program ist ein Modul. Sie müssen nur sicherstellen, daß es eine
-		<filename>.py</filename> Endung hat. Das folgende Beispiel sollte das erklären:
+		Es ist einfach, seine eigenen Module zu erstellen, Sie haben es schon die ganze Zeit getan!
+		Jedes Python-Programm ist auch ein Modul. Sie müssen nur sicherstellen, dass es die
+		Dateiendung <filename>.py</filename> hat. Das folgende Beispiel soll dies verdeutlichen:
 
 		<!-- Creating your own modules is easy, you've been doing it all along! Every Python program
 		is also a module. You just have to make sure it has a <filename>.py</filename> extension.
@@ -407,10 +407,10 @@ I am being imported from another module
 		</para>
 
 		<section id="creating-modules">
-			<title>Eigene Module herstellen</title> <!-- Creating your own Modules -->
+			<title>Eigene Module erstellen</title> <!-- Creating your own Modules -->
 
 			<example>
-				<title>Wie Sie ihre eigenen Module herstellen können
+				<title>Wie man ein eigenes Modul erstellt
 					(<ulink url="code/meinmodul.py">meinmodul.py</ulink>)
 				</title> <!-- How to create your own module -->
 
@@ -441,9 +441,10 @@ version = '0.1'
 
 			<para>
 
-			Das war ein Beispiel eines <emphasis>Modules</emphasis>. Wie Sie sehen können, ist das
-			nichts besonderes verglichen mit einem gewöhnlichen Python Program. Als nächstes werden
-			wir sehen, wie wir dieses Modul in unseren anderen Python Programmen verwenden können.
+			Hiermit haben wir ein sehr einfaches Beispiel-<emphasis>Modul</emphasis> erstellt.
+			Wie Sie sehen können, gibt es daran nichts Besonderes gegenüber einem gewöhnlichen
+			Python-Programm. Als nächstes werden wir sehen, wie wir dieses Modul in unseren anderen
+			Python-Programmen verwenden können.
 
 			<!-- The above was a sample <emphasis>module</emphasis>. As you can see, there is nothing
 			particularly special about compared to our usual Python program. We will next see
@@ -452,9 +453,9 @@ version = '0.1'
 			</para>
 			<para>
 
-			Erinnern Sie sich, daß das Modul im gleichen Verzeichnis sein muß wie das Program,
-			welches es importiert. Andernfalls kann es auch in einem der Verzeichnisse sein, die
-			in <varname>sys.path</varname> aufgeführt.
+			Erinnern Sie sich, dass das Modul im das gleiche Verzeichnis platziert werden sollte wie das
+			Programm, von dem es importiert wird, oder dass es in einem der Verzeichnisse liegen sollte,
+			die in <varname>sys.path</varname> aufgeführt sind.
 
 			<!-- Remember that the module should be placed in the same directory as the program that
 			we import it in, or the module should be in one of the directories listed in
@@ -490,7 +491,7 @@ print 'Version', mymodule.version
 
 				<screen>
 				<![CDATA[
-$ python meinemodule_demo.py
+$ python meinmodul_demo.py
 Hallo, hier spricht meinmodul.
 Version 0.1
 				]]>
@@ -507,10 +508,10 @@ Version 0.1
 
 				<para>
 
-				Beachten Sie, daß wir den die gleiche gepunktete Notation verwenden, um
-				Zugang zu den Mitglieder der Module zu erhalten. Python wiederverwendet
-				die selbe Notation um ein besonderes 'pythonisches' Feeling herzustellen,
-				damit wir nicht immer neue Wege lernen müssen Dinge zu tun.
+				Beachten Sie, dass wir beide Male die Punktnotation verwenden, um auf
+				die Mitglieder des Moduls zuzugreifen. In Python verwendet man immer
+				wieder die gleichen Schreibweisen, die einen besonderen 'pythonischen' Stil
+				bilden, so dass wir nicht immer neue Weisen lernen müssen, Dinge zu tun.
 
 				<!-- Notice that we use the same dotted notation to access members of the
 				module. Python makes good reuse of the same notation to give the
@@ -526,7 +527,7 @@ Version 0.1
 
 			<para>
 
-			Hier ist eine Version, die die <literal>from..import</literal> Syntax verwendet.
+			Hier ist eine Version, in der die <literal>from..import</literal>-Syntax verwendet wird.
 
 			<!-- Here is a version utilising the <literal>from..import</literal> syntax. -->
 
@@ -560,8 +561,8 @@ print 'Version', version
 
 			<para>
 
-			Die Ausgabe von <filename>meinmodul_demo2.py</filename> ist die selbe wie
-			von <filename>meinmodul_demo.py</filename>.
+			Die Ausgabe von <filename>meinmodul_demo2.py</filename> ist dieselbe
+			wie die von <filename>meinmodul_demo.py</filename>.
 
 			<!-- The output of <filename>mymodule_demo2.py</filename> is same as the output of
 			<filename>mymodule_demo.py</filename>. -->
@@ -574,14 +575,13 @@ print 'Version', version
 
 	<section id="dir">
 
-		<title>Die dir() Funktion</title> <!-- The dir() function -->
+		<title>Die Funktion dir()</title> <!-- The dir() function -->
 
 		<para>
 
-		Sie können die eingebaute <function>dir</function> Funktion verwenden um
-		die Bezeichner aufzulisten, welche ein Modul verwendet. Die Bezeichner sind
-		die Funktionen, Klassen und Variablen, welche in dem jeweiligen Modul
-		verwendet werden.
+		Sie können die eingebaute Funktion <function>dir()</function> benutzen, um
+		die Bezeichner aufzulisten, die von einem Modul definiert werden. Die Bezeichner sind
+		die Funktionen, Klassen und Variablen, die in dem jeweiligen Modul definiert werden.
 
 		<!-- You can use the built-in <function>dir</function> function to list the identifiers
 		that a module defines. The identifiers are the functions, classes and variables defined
@@ -590,9 +590,9 @@ print 'Version', version
 		</para>
 		<para>
 
-		Wenn Sie der <function>dir()</function> Function einen Modulnamen geben, gibt sie die
-		Liste der Namen zurück, welche in dem Modul definiert werden. Wenn kein Argument angegeben
-		wird, gibt sie die Liste der Namen des gegenwärtigen Moduls zurück.
+		Wenn Sie der <function>dir</function>-Funktion einen Modulnamen übergeben,
+		dann gibt sie die Liste der Namen zurück, die in diesem Modul definiert werden. Wenn
+		kein Parameter übergegeben wird, gibt sie die Liste der Namen des aktuellen Moduls zurück.
 
 		<!-- When you supply a module name to the <function>dir()</function> function, it returns the
 		list of the names defined in that module. When no argument is applied to it, it returns
@@ -601,10 +601,10 @@ print 'Version', version
 		</para>
 
 		<section id="using-dir">
-			<title>Die dir Funktion verwenden</title> <!-- Using the dir function -->
+			<title>Die dir-Funktion verwenden</title> <!-- Using the dir function -->
 
 			<example>
-				<title>Die Dir Funktion verwenden</title> <!--Using the dir function -->
+				<title>Die dir-Funktion verwenden</title> <!--Using the dir function -->
 				<screen>
 				<![CDATA[
 $ python
@@ -670,9 +670,9 @@ $ python
 
 				<para>
 
-				Zuerst sehen wir den Gebrauch von <function>dir</function> bei dem
-				importierten <literal>sys</literal> Modul. Wir können die riesige
-				Liste von Eigenschaften sehen, die darin enthalten ist.
+				Zuerst sehen wir die Anwendung von <function>dir</function> auf das
+				importierte <literal>sys</literal>-Modul. Wir können die riesige Liste
+				von Attributen sehen, die darin enthalten sind.
 
 				<!-- First, we see the usage of <function>dir</function> on the imported
 				<literal>sys</literal> module. We can see the huge list of attributes
@@ -681,10 +681,10 @@ $ python
 				</para>
 				<para>
 
-				Als nächstes verwenden wir die <function>dir</function> Funktion ohne
-				Ihr Parameter zu geben. Die Voreinstellung ist, daß sie ein Liste von
-				Attributen für das momentane Modul zurückgibt. Beachten Sie, daß die
-				Liste auch die importierten Module enthält.
+				Als Nächstes verwenden wir die <function>dir</function>-Funktion,
+				ohne ihr einen Parameter zu übergeben: Die Voreinstellung ist, dass sie die
+				Attribute des aktuellen Moduls zurückliefert. Beachten Sie, dass die
+				importierten Module ebenfalls Teil der Liste sind.
 
 				<!-- Next, we use the <function>dir</function> function without passing
 				parameters to it - by default, it returns the list of attributes for
@@ -694,13 +694,13 @@ $ python
 				</para>
 				<para>
 
-				Um die <function>dir</function> Funktion in Aktion zu sehen definieren wir
-				eine neue Variable <varname>a</varname> und weisen ihr einen Wert zu. Danach
-				führen wir die <function>dir</function> aus und beobachten, daß es einen
-				zusätzlichen Wert in der Liste des selben Names gibt. Wir entfernen die
-				Variable/Eigenschaft des gegenwärtigen Moduls indem wir das <literal>del</literal>
-				Statement verwenden. Die Änderung dann wieder berücksichtigt in der Ausgabe der
-				<function>dir</function> Funktion.
+				Um zu sehen, wie die <function>dir</function>-Funktion arbeitet, definieren wir
+				eine neue Variable <varname>a</varname>, und weisen ihr einen Wert zu. Danach
+				überprüfen, was sich an der Ausgabe von <function>dir</function> geändert hat.
+				Wir stellen fest, dass es in der Liste ein zusätzliches Element des gleichen Namens
+				<varname>a</varname> gibt. Wir entfernen die Variable bzw. das Attribut des
+				Moduls mittels der Anweisung <literal>del</literal>. Als Resultat der Änderung
+				sehen wir wieder eine entsprechende Ausgabe der <function>dir</function>-Funktion.
 
 				<!-- In order to observe the <function>dir</function> in action, we define
 				a new variable <varname>a</varname> and assign it a value and then check
@@ -713,11 +713,12 @@ $ python
 				</para>
 				<para>
 
-				Eine Bemerkung zu <literal>del</literal>: Dieses Statement wird verwendet
-				um eine Variable / einen Namen zu <emphasis>entfernen</emphasis>. Nachdem
-				das Statement ausgeführt wurde (in unserem Fall <literal>del a</literal>)
-				haben Sie keinen Zugriff mehr auf die Variable variable <varname>a</varname>.
-				Es ist als hätte es sie nie gegeben.
+				Eine Anmerkung zu <literal>del</literal>: Diese Anweisung wird benutzt,
+				um eine Variable bzw. einen Namen zu <emphasis>entfernen</emphasis>
+				(<literal>del</literal> steht kurz für <foreignphrase>delete</foreignphrase>).
+				Nachdem die Anweisung ausgeführt wurde (in diesem Fall <literal>del a</literal>),
+				können Sie nicht mehr auf die Variable <varname>a</varname> zugreifen -
+				es ist, als hätte es sie nie gegeben.
 
 				<!-- A note on <literal>del</literal> - this statement is used to
 				<emphasis>delete</emphasis> a variable/name and after the statement has
@@ -735,10 +736,11 @@ $ python
 
 		<para>
 
-		Module sind nützlich weil sie einen Service und eine Funktionalität bieten die Sie in anderen
-		Programmen verwenden können. Die Standardbibliothek die mit Python kommt ist ein Beispiel
-		für ein Set von Modulen. Wir haben gesehen wie wir solche Module verwenden könne und wie
-		wir eigene Module herstellen können.
+		Module sind nützlich, weil sie Dienste und Funktionalität zur Verfügung stellen,
+		die Sie in anderen Programmen wiederverwenden können. Die Standardbibliothek,
+		die mit Python ausgeliefert wird, ist ein Beispiel für einen solchen Satz von Modulen.
+		Wir haben gesehen, wie wir solche Module verwenden können, und auch, wie wir
+		eigene Module erstellen können.
 
 		<!-- Modules are useful because they provide services and functionality that you can reuse in
 		other programs. The standard library that comes with Python is an example of such a set
@@ -747,8 +749,8 @@ $ python
 		</para>
 		<para>
 
-		Als Nächstes werden wir interessante Konzepte kennenlernen, die Datenstrukturen
-		genannt werden.
+		Als Nächstes werden wir einige interessante Konzepte kennen lernen,
+		die Datenstrukturen genannt werden.
 
 		<!-- Next, we will learn about some interesting concepts called data structures. -->
 

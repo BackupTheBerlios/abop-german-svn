@@ -2,7 +2,7 @@
 
 import sys
 
-print 'Die Kommandozeilen-Argumente sind:'
+print 'Die Kommandozeilenparameter sind:'
 for i in sys.argv:
 	print i
 
