@@ -1,40 +1,44 @@
-<appendix id="revhistory">
+﻿<appendix id="revhistory">
+
+	<!-- Remarks about additions in German version 2005-02-19 by Lutz Horn -->
+	<!-- German translation 2005-07-16 by Christoph Zwerschke -->
+	<!-- Proofreading 2005-07-16 Christoph Zwerschke -->
+
 	<title>Versionsgeschichte</title>
-	<section id="zeitstempel">
+	<section id="timestamp">
 		<title>Zeitstempel</title>
 		<para>
-			Dieses Dokument wurde am <?dbtimestamp format="d.m.Y" ?> um 
-			<?dbtimestamp format="H:M"?> Uhr erzeugt
+			Dieses Dokument wurde am <?dbtimestamp format="d.m.Y" ?> um
+			<?dbtimestamp format="H:M"?> Uhr erzeugt.
 		</para>
 	</section>
 
 	<section id="changelog-translation">
-		<title>Vorgenommene Änderungen</title>
+		<title>Ergänzungen in der deutschen Version</title>
 		<para>
 			Für die deutsche Übersetzung wurden die folgenden Änderungen
 			vorgenommen, die über die reine Übersetzung des englischen
-			Originals in der Version 1.20 hinausgehen.
+			Originals in der Version 1.20 hinausgehen:
 		</para>
 		<itemizedlist>
 			<listitem>
 	<para>
-		 Nennung der Übersetzer in <filename>bookinfo.xml</filename>.
+		 Nennung der Übersetzer und Hinweis auf BerliOS bei den Metainformation.
 	</para>
 			</listitem>
 			<listitem>
 	<para>
-		Hinweis auf BerliOS in <filename>bookinfo.xml</filename>.
+		Hinweis auf den Status der Übersetzung und auf das Übersetzungs-Projekt im Vorwort.
 	</para>
 			</listitem>
 			<listitem>
 	<para>
-		Hinweis auf den Status der Übersetzung und auf das
-		Übersetzungs-Projekt in <filename>01-intro.xml</filename>.
+		Anmerkung für deutsche Anwender in Kapitel 3.
 	</para>
 			</listitem>
 			<listitem>
 	<para>
-		Ergänzung dieser Liste vorgenommener Änderungen.
+		Sehr wenige kleinere inhaltliche Ergänzungen und Berichtigungen in anderen Kapiteln.
 	</para>
 			</listitem>
 		</itemizedlist>
@@ -45,120 +49,142 @@
 		<revhistory id="history">
 		<revision>
 			<revnumber>1.20</revnumber>
-			<date>13/01/2005</date>
+			<date>13.01.2005</date>
 			<revremark>
-				Complete rewrite using Quanta+ on FC3 with lot of corrections and updates. Many
-				new examples. Re-wrote my DocBook setup from scratch.
+				Mit Quanta+ unter FC3 komplett neu geschrieben, mit vielen Korrekturen und Aktualisierungen.
+				Viele neue Beispiele. DocBook-Setup von Grund auf neu geschrieben.
+				<!-- Complete rewrite using Quanta+ on FC3 with lot of corrections and updates. Many
+				new examples. Re-wrote my DocBook setup from scratch. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>1.15</revnumber>
-			<date>28/03/2004</date>
+			<date>28.03.2004</date>
 			<revremark>
-				Minor revisions
+				Kleinere Überarbeitungen
+				<!-- Minor revisions -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>1.12</revnumber>
-			<date>16/03/2004</date>
+			<date>16.03.2004</date>
 			<revremark>
-				Additions and corrections.
+				Ergänzungen und Korrekturen.
+				<!-- Additions and corrections. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>1.10</revnumber>
-			<date>09/03/2004</date>
+			<date>09.03.2004</date>
 			<revremark>
-				More typo corrections, thanks to many enthusiastic and helpful readers.
+				Weitere Tippfehler korrigiert, dank vieler begeisterter und hilfreicher Leser.
+				<!-- More typo corrections, thanks to many enthusiastic and helpful readers. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>1.00</revnumber>
-			<date>08/03/2004</date>
+			<date>08.03.2004</date>
 			<revremark>
-				After tremendous feedback and suggestions from readers, I have made
-				significant revisions to the content along with typo corrections.
+				Nach einer riesigen Menge von Rückmeldungen und Vorschlägen von Lesern
+				habe ich den Inhalt erheblich überarbeitet und dabei Tippfehler korrigiert.
+				<!-- After tremendous feedback and suggestions from readers, I have made
+				significant revisions to the content along with typo corrections. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>0.99</revnumber>
-			<date>22/02/2004</date>
+			<date>22.02.2004</date>
 			<revremark>
-				Added a new chapter on modules. Added details about variable number
-				of arguments in functions.
+				Ein neues Kapitel über Module hinzugefügt. Einzelheiten über eine variable
+				Anzahl von Argumenten in Funktionen ergänzt.
+				<!-- Added a new chapter on modules. Added details about variable number
+				of arguments in functions. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>0.98</revnumber>
-			<date>16/02/2004</date>
+			<date>16.02.2004</date>
 			<revremark>
-				Wrote a Python script and CSS stylesheet to improve XHTML output,
+				Ein Python-Skript und ein CSS-Stylesheet geschrieben, um die XHTML-Ausgabe
+				zu verbessern, samt einem groben, aber funktionalen lexikalischen Analyseprogramm
+				zur automatischen VIM-ähnlichen Syntax-Hervorhebung in den Programmlistings.
+				<!-- Wrote a Python script and CSS stylesheet to improve XHTML output,
 				including a crude-yet-functional lexical analyzer for automatic
-				VIM-like syntax highlighting of the program listings.
+				VIM-like syntax highlighting of the program listings. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>0.97</revnumber>
-			<date>13/02/2004</date>
+			<date>13.02.2004</date>
 			<revremark>
-				Another completely rewritten draft, in DocBook XML (again). Book has
-				improved a lot - it is more coherent and readable.
+				Ein weiterer neu geschriebener Entwurf, (wieder) in DocBook-XML.
+				Das Buch ist jetzt viel besser - es ist verständlicher und lesbarer.
+				<!-- Another completely rewritten draft, in DocBook XML (again). Book has
+				improved a lot - it is more coherent and readable. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>0.93</revnumber>
-			<date>25/01/2004</date>
+			<date>25.01.2004</date>
 			<revremark>
-				Added IDLE talk and more Windows-specific stuff
+				Ausführungen zu IDLE und weitere Windows-spezifische Dinge hinzugefügt.
+				<!-- Added IDLE talk and more Windows-specific stuff -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>0.92</revnumber>
-			<date>05/01/2004</date>
+			<date>05.01.2004</date>
 			<revremark>
-				Changes to few examples.
+				Änderungen an einigen Beispielen.
+				<!-- Changes to few examples. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>0.91</revnumber>
-			<date>30/12/2003</date>
+			<date>30.12.2003</date>
 			<revremark>
-				Corrected typos. Improvised many topics.
+				Tippfehler korrigiert. Viele Themen improvisiert.
+				<!-- Corrected typos. Improvised many topics. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>0.90</revnumber>
-			<date>18/12/2003</date>
+			<date>18.12.2003</date>
 			<revremark>
-				Added 2 more chapters. OpenOffice format with revisions.
+				Zwei weitere Kapitel hinzugefügt. OpenOffice-Format mit Berichtigungen.
+				<!-- Added 2 more chapters. OpenOffice format with revisions. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>0.60</revnumber>
-			<date>21/11/2003</date>
+			<date>21.11.2003</date>
 			<revremark>
-				Fully rewritten and expanded.
+				Völlig neu geschrieben und erweitert.
+				<!-- Fully rewritten and expanded. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>0.20</revnumber>
-			<date>20/11/2003</date>
+			<date>20.11.2003</date>
 			<revremark>
-				Corrected some typos and errors.
+				Einige Tippfehler und inhaltliche Fehler korrigiert.
+				<!-- Corrected some typos and errors. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>0.15</revnumber>
-			<date>20/11/2003</date>
+			<date>20.11.2003</date>
 			<revremark>
-				Converted to DocBook XML.
+				Nach DocBook-XML konvertiert.
+				<!-- Converted to DocBook XML. -->
 			</revremark>
 		</revision>
 		<revision>
 			<revnumber>0.10</revnumber>
-			<date>14/11/2003</date>
+			<date>14.11.2003</date>
 			<revremark>
-				Initial draft using KWord.
+				Erster Entwurf mit KWord.
+				<!-- Initial draft using KWord. -->
 			</revremark>
 		</revision>
 	</revhistory>

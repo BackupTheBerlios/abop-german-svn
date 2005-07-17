@@ -1,6 +1,7 @@
 ﻿<appendix id="about">
 
 	<!-- German Translation 2005-03-23 by Christoph Zwerschke -->
+	<!-- Proofreading 2005-07-16 Christoph Zwerschke -->
 
 	<title>Zum Buch und seinem Autor</title> <!-- About -->
 
@@ -25,13 +26,12 @@
 			Zunächst hatte ich KWord benutzt, um das Buch zu schreiben (wie in der
 			<link linkend="history-lesson">Geschichtsstunde</link> im Vorwort erläutert).
 			Später habe ich zu DocBook XML mit Kate als Editor gewechselt, fand es aber
-			zu mühsam. Daher habe ich zu OpenOffice gewechsel, das einfach hervorragend
-			war, weil es einem Kontrolle über die Formatierung gab und PDF-Generierung
+			zu mühsam. Daher habe ich zu OpenOffice gewechselt, das einfach hervorragend
+			war, weil es einem Kontrolle über die Formatierung gab und die Generierung von PDF
 			ermöglichte. Die Generierung von HTML war jedoch mangelhaft. Schließlich entdeckte
-			ich XEmacs und habe das Buch noch einmal von Anfang an in DocBook XML neu
-			geschrieben (noch einmal), nachdem ich entschieden hatte, dass dieses Format die
-			langfristige Lösung war. In diesem sechsten Entwurf habe ich entschieden, Quanta+
-			als Editor zu verwenden.
+			ich XEmacs und habe das Buch (noch einmal) von Anfang an in DocBook XML neu
+			geschrieben, nachdem ich entschieden hatte, dass dieses Format die langfristige Lösung war.
+			In diesem sechsten Entwurf habe ich entschieden, Quanta+ als Editor zu verwenden.
 
 			<!-- Initially, I was using KWord to write the book (as explained in the
 			<link linkend="history-lesson">History Lesson</link> in the preface). Later,
@@ -64,7 +64,7 @@
 		<para>
 			C. H. Swaroop liebt seine Arbeit als ein Softwareentwickler für Yahoo!
 			in der indischen Stadt Bangalore. Zu seinen technischen Interessengebieten
-			gehört FLOSS (Free/Libre Open Source Software) wie Linux, DotGNU,
+			gehören FLOSS (Free/Libre Open Source Software) wie Linux, DotGNU,
 			Qt und MySQL, großartige Programmiersprachen wie Python und C#,
 			in der Freizeit Dinge wie dieses Buch und alle mögliche Software zu schreiben,
 			und auch sein Blog zu schreiben. Zu seinen weiteren Interessen gehören

@@ -1,6 +1,7 @@
 ﻿<chapter id="stdlib">
 
-	<!-- German Translation 2005-02-24 by Christoph Zwerschke -->
+	<!-- German translation 2005-02-24 by Christoph Zwerschke -->
+	<!-- Proofreading 2005-07-16 Christoph Zwerschke -->
 
 	<title>Die Standardbibliothek von Python</title> <!-- The Python Standard Library -->
 
@@ -10,9 +11,9 @@
 		<para>
 
 		Die Python-Standardbibliothek ist in jeder Python-Installation verfügbar. Sie enthält
-		eine riesige Anzahl äußert nützlicher Module. Es ist sehr wichtig, dass Sie sich mit der
-		Standardbibliothek von Python vertraut machen, denn die meisten Ihrer Probleme können
-		sehr leicht und schnell gelöst werden, wenn Sie mit dieser Bibliothek von Modulen vertraut sind.
+		eine riesige Anzahl äußerst nützlicher Module. Es ist sehr wichtig, dass Sie sich mit der
+		Python-Standardbibliothek vertraut machen, denn die meisten Ihrer Probleme können
+		leichter und schneller gelöst werden, wenn Sie mit dieser Bibliothek von Modulen vertraut sind.
 
 		<!-- The Python Standard Library is available with every Python installation. It contains a
 		huge number of very useful modules. It is important that you become familiar with the
@@ -231,7 +232,7 @@ if you wanna make your work also fun:
 				Wir benutzen den ersten Parameter, um zu prüfen, ob unserem Programm irgendwelche
 				Optionen übergeben worden sind. Wenn die Option <literal>--version</literal>
 				benutzt wird, dann wird die Versionsnummer des Programms ausgegeben. Auf ähnliche
-				Weise geben wir ein wenige Erklärungen über das Programm aus, wenn die Option
+				Weise geben wir ein wenig Erklärung über das Programm aus, wenn die Option
 				<literal>--help</literal> angegeben wird. Wir benutzen die Funktion <function>sys.exit</function>,
 				um das laufende Programm zu beenden. Wie immer erhalten Sie mit <literal>help(sys.exit)</literal>
 				weitere Einzelheiten hierzu.
@@ -260,7 +261,7 @@ if you wanna make your work also fun:
 				<para>
 
 				Nebenbei bemerkt ist der Name <command>cat</command> eine Abkürzung
-				für <foreignphrase>concatenate</foreignphrase>, was verketten bedeutet und
+				für <foreignphrase>concatenate</foreignphrase>, was 'verketten' bedeutet und
 				genau das bezeichnet, was dieses Programm tut - es kann eine Datei ausgeben, oder
 				zwei oder mehr Dateien in der Ausgabe einander anfügen und so miteinander verketten.
 
@@ -321,7 +322,7 @@ if you wanna make your work also fun:
 		(<literal>os</literal> steht hierbei für <emphasis role="bold">O</emphasis>perating
 		<emphasis role="bold">S</emphasis>ystem). Dieses Modul ist besonders wichtig, wenn Sie
 		Ihr Programm plattformunabhängig gestalten wollen, d.h. es ermöglicht es, das Programm so zu schreiben,
-		dass es sowohl unter Linux also auch unter Windows oder MacOS problemlos und ohne erforderliche
+		dass es sowohl unter Linux als auch unter Windows oder MacOS problemlos und ohne erforderliche
 		Änderungen abläuft.
 
 		<!-- This module represents generic <emphasis role="bold">o</emphasis>perating
@@ -392,7 +393,7 @@ if you wanna make your work also fun:
 			<listitem>
 				<para>
 
-				Die Funktion <function>os.remove()</function> wird benutzt, um eine Datei zu löschen
+				Die Funktion <function>os.remove()</function> wird benutzt, um eine Datei zu löschen.
 
 				<!-- The <function>os.remove()</function> function is used to delete a file. -->
 
@@ -412,7 +413,7 @@ if you wanna make your work also fun:
 			<listitem>
 				<para>
 
-				Der String <varname>os.linesep</varname> ist die Zeilenendekennung, die bei
+				Der String <varname>os.linesep</varname> ist die Zeilenendekennung, die auf der
 				jeweiligen Plattform benutzt wird. Zum Beispiel verwendet Windows <literal>'\r\n'</literal>,
 				Linux verwendet <literal>'\n'</literal> und Mac verwendet <literal>'\r'</literal>.
 

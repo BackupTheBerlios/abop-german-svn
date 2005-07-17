@@ -1,6 +1,7 @@
 ﻿<chapter id="what-next">
 
-	<!-- German Translation 2005-02-28 by Christoph Zwerschke -->
+	<!-- German translation 2005-02-28 by Christoph Zwerschke -->
+	<!-- Proofreading 2005-07-16 Christoph Zwerschke -->
 
 	<title>Was kommt als Nächstes?</title> <!-- What Next? -->
 
@@ -88,7 +89,7 @@
 		<emphasis role="bold">GUI</emphasis>-Bibliotheken für Python - Sie brauchen
 		diese, um Ihre eigenen grafischen Benutzeroberflächen (GUIs) zu programmieren.
 		Sie können sich Ihr eigenes IrfanView oder Kuickshow oder irgendetwas in der Art schreiben,
-		indem Sie GUI-Bibliotheken mit entsprechenden Python-Anbindung benutzen.
+		indem Sie GUI-Bibliotheken mit ihrer jeweiligen Python-Anbindung benutzen.
 		Eine solche Anbindung ermöglicht es Ihnen, Programme in Python zu schreiben, in
 		denen Sie auf diese Bibliotheken zurückgreifen, die ihrerseits in C oder C++ oder
 		anderen Sprachen geschrieben sind.
@@ -149,8 +150,8 @@
 					<para>
 
                         Dies ist die Python-Anbindung für das GTK+-Toolkit, das die Grundlage ist,
-                        auf der GNOME aufgebaut wurde. GTK+ hat im Gebrauch viele Eigenheiten,
-                        wenn Sie aber einmal damit vertraut sind, können Sie damit schnell GUI-Anwendungen
+                        auf der GNOME aufgebaut wurde. GTK+ hat im Gebrauch viele Eigenheiten;
+                        wenn Sie aber einmal damit vertraut sind, können Sie schnell GUI-Anwendungen
                         erstellen. Das Werkzeug Glade zum entwerfen  der grafischen Schnittstelle
                         ist hierbei unverzichtbar. Die Dokumentation müsste noch verbessert werden.
                         GTK+ läuft gut unter Linux, aber die Portierung auf Windows ist unvollständig.
@@ -177,11 +178,11 @@
 					<para>
 
                         Dies ist die Python-Anbindung für das wxWidgets-Toolkit. Mit wxPython
-                        ist eine gewisse Lernkurve verbunden. Es ist jedoch sehr portable und läuft
+                        ist eine gewisse Lernkurve verbunden. Es ist jedoch sehr portabel und läuft
                         unter Linux, Windows, Mac und sogar auf  Embedded-Systemen.
                         Für wxPython sind viele IDEs verfügbar, darunter
                         <ulink url="http://drpython.sourceforge.net">DrPython</ulink>,
-                        <ulink url="http://spe.pycs.net">SPE (Stani's Python Editor)</ulink>
+                        <ulink url="http://spe.pycs.net">SPE (Stani's Python Editor)</ulink>,
                         das auch einen GUI-Designer beinhaltet, sowie der GUI-Builder
                         <ulink url="http://wxglade.sourceforge.net">wxGlade</ulink>.
                         Sie können mit wxPython sowohl freie als auch proprietäre Software entwickeln.
@@ -216,7 +217,7 @@
                     >PythonWare</ulink>-Bibliothek ist umfangreich. TkInter ist portierbar
                         und läuft sowohl unter Linux/Unix als auch unter Windows.
                         Ein wichtiger Vorteil von TkInter ist, dass es Bestandteil der
-                        Standarddistribution von Python ist.
+                        Standard-Distribution von Python ist.
 
 					<!-- This is one of the oldest GUI toolkits in existence. If you have used
 					<application>IDLE</application>, you have seen a TkInter program at
@@ -253,7 +254,7 @@
 			Leider gibt es kein Standard-GUI-Tool für Python. Ich schlage vor, dass Sie
 			eines der obigen Toolkits auswählen, je nach Ihrer Situation. Der erste Faktor,
 			den Sie dabei bedenken müssen, ist, ob Sie bereit sind, für das GUI-Tool
-			Geld auszugeben. Der zweite Faktor ist, ob Sie Ihre Programm für Linux oder
+			Geld auszugeben. Der zweite Faktor ist, ob Sie Ihr Programm für Linux oder
 			für Windows oder für beides entwickeln wollen. Der dritte Faktor ist, ob Sie
 			als Linux-Benutzer eher eine Präferenz für KDE oder für GNOME haben.
 
@@ -273,7 +274,7 @@
 
 				Ich erwäge, für dieses Buch ein oder zwei Kapitel über GUI-Programmierung
 				zu schreiben. Ich werde wahrscheinlich hierbei wxPython als Toolkit auswählen.
-				Wenn Sie Ihre Ansicht über dieses Thema äußern möchten, dann können Sie die
+				Wenn Sie Ihre Ansicht über dieses Thema äußern möchten, dann können Sie dies
 				auf der <ulink url="http://lists.ibiblio.org/mailman/listinfo/byte-of-python"
 				>Byte-of-Python-Mailingliste</ulink> tun, wo Leser mit mir diskutieren, welche
 				Verbesserungen an dem Buch vorgenommen werden können.
@@ -302,7 +303,7 @@
 				Funktionalität von Haus aus bereitzustellen, wird oft der Slogan &quot;Batterien im
 				Lieferumfang&quot; (<foreignphrase>batteries included</foreignphrase>) verwendet.
 				Ich empfehle Ihnen auch sehr, dass Sie sich die
-				<ulink url="http://docs.python.org">Standarddokumentation von Python</ulink>
+				<ulink url="http://docs.python.org">Standard-Dokumentation von Python</ulink>
 				anschauen, bevor Sie anfangen, größere Programme zu schreiben. Auf der Website
 				Python.org finden Sie übrigens auch Verweise auf Artikel und Anleitungen zu
 				<ulink url="http://www.python.org/doc/NonEnglish.html#german"
@@ -360,7 +361,7 @@
 				Das <ulink url="http://aspn.activestate.com/ASPN/Python/Cookbook/"
 				>Python-Kochbuch</ulink> ist eine äußerst wertvolle Sammlung von Rezepten
 				oder Tipps, wie man bestimmte Problemarten mit Python lösen kann. Es ist eine der
-				Websites, die man sich als Python-Benutzer unbedingt gelesen haben muss.
+				Websites, die man als Python-Benutzer unbedingt gelesen haben muss.
 
 				<!-- <ulink url="http://aspn.activestate.com/ASPN/Python/Cookbook/">Python
 				Cookbook</ulink> is an extremely valuable collection of recipes or tips
@@ -388,7 +389,7 @@
 				gerade lesen, gründlich durchgelesen haben, empfehle ich Ihnen, als Nächstes
 				&quot;Dive Into Python&quot; zu lesen. Es behandelt eine Reihe von Themen,
 				darunter auch die Verarbeitung von XML, Test von Programmeinheiten
-				(<foreignphrase>Unit Testing</foreignphrase>, sowie funktionale Programmierung.
+				(<foreignphrase>Unit Testing</foreignphrase>), sowie funktionale Programmierung.
 
 				<!-- <ulink url="http://www.diveintopython.org/">Dive Into Python</ulink>
 				is a very good book for experienced Python programmers. If you have
@@ -443,7 +444,7 @@
 
 				<ulink url="http://www.caddr.com/code/lython/">Lython</ulink> ist ein
 				Lisp-Frontend für die Sprache Python. Es ähnelt Common Lisp und kompiliert direkt in
-				Python-Bytecode, was bedeutet, dass Sie mit normalen Python-Code zusammen arbeitet.
+				Python-Bytecode, was bedeutet, dass es mit normalem Python-Code zusammen arbeitet.
 
 				<!-- <ulink url="http://www.caddr.com/code/lython/">Lython</ulink> is a Lisp
 				frontend to the Python language. It is similar to Common Lisp and compiles
@@ -485,9 +486,9 @@
 
 		Wir sind nun am Ende des Buchs angelangt, aber, wie man sagt,
 		<emphasis>dies ist der Anfang vom Ende</emphasis>!
-		Sie sind nun ein begeisterter und eifriger Python-Anwender und brennen bestimmt darauf,
+		Sie sind nun ein begeisterter und eifriger Python-Anwender, und brennen bestimmt darauf,
 		viele Probleme mit Python zu lösen. Sie können damit anfangen, Ihren Computer zu automatisieren,
-		alle möglichen früher unvorstellbaren Dinge zu tun, oder ihre eigenen Spiele zu schreiben
+		alle möglichen früher unvorstellbaren Dinge zu tun, oder Ihre eigenen Spiele zu schreiben
 		und noch viel mehr. Also, worauf warten Sie noch?
 
 		<!-- We have now come to the end of this book but, as they say, this is the

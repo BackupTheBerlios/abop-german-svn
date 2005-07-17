@@ -1,9 +1,14 @@
 ﻿<preface id="preface">
+
+	<!-- German translation 2005-02-18 by Lutz Horn -->
+	<!-- Small Corrections and additions 2005-02-19 Christoph Zwerschke -->
+	<!-- Proofreading 2005-07-18 Christoph Zwerschke -->
+
 <title>Vorwort</title>
 
 <para>
 	Python ist eine der wenigen Programmiersprachen, die sowohl einfach
-	als auch mächtig sind. Das ist sowohl für Anfäger als
+	als auch mächtig sind. Das ist sowohl für Anfänger als
 	auch Experten gut, und, noch wichtiger, es macht Spaß damit zu programmieren.
 	Das Ziel dieses Buches ist es, Ihnen beim Lernen dieser
 	wunderbaren Programmiersprache zu helfen und Ihnen zu zeigen, wie
@@ -31,7 +36,7 @@
 	programmers as well.-->
 	</para>
 	<para>
-	Das Ziel ist, dass Sie Python mit diesem Buch lernen können,
+	Die Zielsetzung ist es, dass Sie Python mit diesem Buch lernen können,
 	selbst wenn Ihr einziges Wissen über Computer darin besteht,
 	wie man eine Textdatei abspeichert. Falls Sie bereits über
 	Programmiererfahrung verfügen, können Sie aber ebenfalls
@@ -45,9 +50,9 @@
 	</para>
 	<para>
 	Falls Sie bereits über Programmiererfahrung verfügen,
-	werden Sie sicher die Unterschiede zwischen Python und Ihrere
-	bevorzugte Programmiersprache interessieren - ich habe
-	viele solcher Unterschiede hervorgehoben. Eine Warung jedoch:
+	werden Sie sicher die Unterschiede zwischen Python und Ihrer
+	bevorzugten Programmiersprache interessieren - ich habe
+	viele solcher Unterschiede hervorgehoben. Eine Warnung jedoch:
 	Python wird bald Ihre Lieblingsprogrammiersprache sein!
 
 	<!--If you do have previous programming experience, you will be interested in
@@ -64,13 +69,13 @@
 	Ich habe zuerst mit Python angefangen, als ich ein Installationsprogramm
 	für meine Software <ulink
 	url="http://www.g2swaroop.net/software/">Diamond</ulink> schreiben
-	musste, die die Installation vereinfachen würde. Ich musste
+	musste, um dessen Installation zu vereinfachen. Ich musste
 	mich zwischen Python- und Perl-Bindings für die Qt-Bibliothek
 	entscheiden. Ich forschte ein wenig im Web nach und stieß auf einen
 	Artikel, in dem Eric S. Raymond, der berühmte und
 	respektierte Hacker, darüber schrieb, wie Python seine
 	bevorzugte Programmiersprache geworden war. Ich fand auch heraus,
-	dass die PyQT-Bindings verglichen mit Perl-Qt sehr gut waren . Daher
+	dass die PyQT-Bindings verglichen mit Perl-Qt sehr gut waren. Daher
 	entschied ich, dass Python die Sprache für mich sein würde.
 
 	<!--I first started with Python when I needed to write an installer
@@ -106,13 +111,13 @@
 	<para>
 	Ungefähr sechs Monate nach meiner ersten Berührung mit Python installierte
 	ich die damals aktuelle Version 9.0 von Red Hat Linux und spielte mit
-	KWord herum. Ich war beeindruckt und begam plötzich die Idee, etwas über
+	KWord herum. Ich war beeindruckt und bekam plötzlich die Idee, etwas über
 	Python zu schreiben. Ich begann, einige Seiten zu schreiben, aber aus
 	diesen wurden schnell 30 Seiten. Dann machte ich mir ernsthaft Gedanken
 	darüber, wie ich das Material in eine Buchform bringen könnte. Nach
 	<emphasis>vielen</emphasis> Neufassungen erreichte es einen Zustand, in
 	dem es eine nützliche Anleitung für das Lernen von Python war. Ich
-	betrachte dieses Buch als meinen Beitrag und meinen Tribut and die
+	betrachte dieses Buch als meinen Beitrag und meinen Tribut an die
 	Open-Source-Gemeinde.
 
 	<!--About six months after my first brush with Python, I installed the
@@ -154,7 +159,7 @@
 	Dieses Buch ist eine <emphasis role="bold">ständige Baustelle</emphasis>.
 	Viele Kapitel werden dauernd verändert und verbessert. Trotzdem ist das
 	Buch um vieles reifer geworden. Sie sollten in der Lage sein, mit diesem
-	Buch Python zu lernen. Bitte teilen Sie mir mit, wenn Sie irgend einen
+	Buch Python zu lernen. Bitte teilen Sie mir mit, wenn Sie irgendeinen
 	Teil des Buchs fehlerhaft oder unverständlich finden.
 
 	<!--This book is a <emphasis role="bold">work-in-progress</emphasis>.
@@ -167,40 +172,38 @@
 	Weitere Kapitel sind für die Zukunft geplant, etwa über wxPython, Twisted
 	und vielleicht auch Boa Constructor.
 
-      <!--More chapters are planned for the future, such as on wxPython,
-      Twisted and maybe even Boa Constructor.-->
-    </para>
-    
-    <section id="status-translation">
-      <title>Status der deutschen Übersetzung</title>
-      <para>
-	Die deutsche Übersetzung des Buches ist noch sehr
-	unvollständig.
-      </para>
-    </section>
-  </section>
+	<!--More chapters are planned for the future, such as on wxPython,
+	Twisted and maybe even Boa Constructor.-->
+	</para>
 
-  <section id="official-website">
-    <title>Offizielle Website</title>
-    <para>
-      Die offizielle Website des Buches ist <ulink
-      url="http://www.byteofpython.info">www.byteofpython.info</ulink>. Auf
-      der Website können Sie das gesamte Buch lesen, die letzte Version
-      herunterladen, und mir auch Rückmeldungen schicken.
-    </para>
+	<section id="status-translation">
+	<title>Status der deutschen Übersetzung</title>
+	<para>
+	Vorliegend finden Sie eine vollständige deutsche Übersetzung der aktuellen Version des Buchs.
+	</para>
+	</section>
+	</section>
 
-    <section id="translation-project">
-      <title>Website des Übersetzungs-Projekts</title>
-      <para>
-	Die deutsche Übersetzung des Buches wird im <ulink
+	<section id="official-website">
+	<title>Offizielle Website</title>
+	<para>
+	Die offizielle Website des Buches ist <ulink
+	url="http://www.byteofpython.info">www.byteofpython.info</ulink>.
+	Auf der Website können Sie das gesamte Buch lesen, die letzte Version
+	herunterladen, und mir auch Rückmeldungen schicken.
+	</para>
+
+	<section id="translation-project">
+	<title>Website des Übersetzungs-Projekts</title>
+	<para>
+	Die deutsche Übersetzung des Buches wurde im <ulink
 	url="http://developer.berlios.de/">BerliOS</ulink>-Projekt
 	<ulink
 	 url="https://developer.berlios.de/projects/abop-german/">abop-german</ulink> erstellt.
-	 Auf der Projektseite haben Sie Zugriff auf die deutsche Übersetzung in
-	 verschiedenen Formaten.
-      </para>
-    </section>
-  </section>
+	Auf der Projektseite haben Sie Zugriff auf die deutsche Übersetzung in verschiedenen Formaten.
+	</para>
+	</section>
+	</section>
 
 <section id="license">
 	<title>Lizenz</title>
@@ -211,21 +214,18 @@
 	Commons Attribution-NonCommercial-ShareAlike License 2.0</ulink>
 	lizensiert.
 
-      <!--This book is licensed under the <ulink
-      url="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative
-      Commons Attribution-NonCommercial-ShareAlike License 2.0</ulink> .-->
-    </para>
-    <para>
-      Das bedeutet, dass Sie frei sind, das Buch zu kopieren, zu verteilen und
-      anzuzeigen, solange Sie auf mich als Urheber hinweisen. Sie dürfen das
-      Buch nicht für kommerzielle Zwecke verwenden ohne meine Erlaubnis. Sie
-      dürfen das Buch kopieren, verteilen und zugänglich machen, so
-      lange Sie die Urheberschaft des Autors und der Übersetzer
-      nennen. Sie dürfen das Buch nicht ohne Genehmigung für
-      kommerzielle Zwecke verwenden. Sie dürfen das Buch verändern und
-      von ihm abgeleitete Werke erstellen, so lange Sie alle
-      vorgenommenen Änderungen deutlich kennzeichnen und das Ergebnis
-      Ihrer Arbeit unter den hier dargestellten Bedingungen veröffentlichen.
+	<!--This book is licensed under the <ulink
+	url="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative
+	Commons Attribution-NonCommercial-ShareAlike License 2.0</ulink> .-->
+	</para>
+	<para>
+	Grundsätzlich steht es Ihnen frei, das Buch zu kopieren, zu verteilen und
+	zugänglich zu machen, solange Sie die Urheberschaft des Autors und der
+	Übersetzer nennen. Sie dürfen das Buch allerdings nicht ohne deren Genehmigung
+	für kommerzielle Zwecke verwenden. Sie dürfen das Buch verändern und
+	von ihm abgeleitete Werke erstellen, solange Sie alle vorgenommenen Änderungen
+	deutlich kennzeichnen und das Ergebnis Ihrer Arbeit unter den gleichen hier
+	dargestellten Lizenzbedingungen veröffentlichen.
 
 	<!--Basically, you are free to copy, distribute, and display the book,
 	as long as you give credit to me. The restrictions are that you
@@ -255,40 +255,35 @@
 
 	<para>
 	Ich habe mir große Mühe gegeben, das Buch so interessant und genau
-	wie möglich zu machen. Falls Sie trotzdem Material finden, dass
+	wie möglich zu machen. Falls Sie trotzdem Material finden, das
 	inkonsistent oder ungenau ist, oder das einfach nur verbessert werden muss,
 	dann informieren Sie mich bitte, so dass ich entsprechende Verbesserungen
 	vornehmen kann. Sie können mich unter
 	<email>swaroop@byteofpython.info</email> erreichen.
 
-      <!--I have put in a lot of effort to make this book as interesting and
-      as accurate as possible. However, if you find some material to be
-      inconsistent or incorrect, or simply needs improvement, then
-      please do inform me, so that I can make suitable improvements. You
-      can reach me at <email>swaroop@byteofpython.info</email> .-->
-    </para>
+	<!--I have put in a lot of effort to make this book as interesting and
+	as accurate as possible. However, if you find some material to be
+	inconsistent or incorrect, or simply needs improvement, then
+	please do inform me, so that I can make suitable improvements. You
+	can reach me at <email>swaroop@byteofpython.info</email> .-->
+	</para>
 
-    <section id="feedback-translation">
-      <title>Rückmeldung zur deutschen Übersetzung</title>
-      <para>
-	Falls Sie Rückmeldungen zur deutschen Überstzung dieses Buches
+	<section id="feedback-translation">
+	<title>Rückmeldung zur deutschen Übersetzung</title>
+	<para>
+	Falls Sie Rückmeldungen zur deutschen Übersetzung dieses Buches
 	haben, falls Sie einen Tippfehler gefunden haben oder sonst
-	etwas beitragen möchten, verwenden Sie bitte eines der
-	Kommunikationsmittel auf der Website des Übersetzungsprojekts
+	etwas beitragen möchten, nehmen Sie bitte über die Website des
+	Übersetzungsprojekts
 	<ulink
-	 url="https://developer.berlios.de/projects/abop-german/">abop-german</ulink>.
-      </para>
-    </section>
-  </section>
+	url="https://developer.berlios.de/projects/abop-german/">abop-german</ulink>
+	Kontakt mit den Übersetzern auf.
+	</para>
+	</section>
+	</section>
 
-  <section id="something-to-think-about">
+	<section id="something-to-think-about">
 	<title>Etwas zum Nachdenken</title> <!-- Something To Think About -->
-    <note>
-      <para>
-	Die beiden folgenden Zitate wurden nicht übersetzt.
-      </para>
-    </note>
-      
 
 	<blockquote>
 	<attribution>C. A. R. Hoare</attribution>
