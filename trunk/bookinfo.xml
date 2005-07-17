@@ -13,15 +13,26 @@
 			<orgname>www.byteofpython.info</orgname>
 		</affiliation>
 	</author>
-	<collab>
-		<collabname>Bernd Hengelein</collabname>
-	</collab>
-	<collab>
-		<collabname>Lutz Horn</collabname>
-	</collab>
-	<collab>
-		<collabname>Christoph Zwerschke</collabname>
-	</collab>
+	<othercredit role="Translator">
+		<contrib>Deutsche Übersetzung</contrib>
+		<firstname>Bernd</firstname>
+		<surname>Hengelein</surname>
+	</othercredit>
+	<othercredit role="Translator">
+		<contrib>Deutsche Übersetzung</contrib>
+		<firstname>Lutz</firstname>
+		<surname>Horn</surname>
+	</othercredit>
+	<othercredit role="Translator">
+		<contrib>Deutsche Übersetzung</contrib>
+		<firstname>Bernhard</firstname>
+		<surname> Krieger</surname>
+	</othercredit>
+	<othercredit role="Translator">
+		<contrib>Deutsche Übersetzung</contrib>
+		<firstname>Christoph</firstname>
+		<surname> Zwerschke</surname>
+	</othercredit>
 	<date>
 		13.01.2004, <?dbtimestamp format="d.m.Y" ?> (deutsche Übersetzung)
 	</date>
@@ -30,9 +41,10 @@
 	<copyright>
 		<year>2003-2005</year>
 		<holder>Swaroop C H</holder>
-		<holder>Bernd Hengelein (deutsche Übersetzung)</holder>
-		<holder>Lutz Horn (deutsche Übersetzung)</holder>
-		<holder>Christoph Zwerschke (deutsche Übersetzung)</holder>
+	</copyright>
+	<copyright>
+		<year>2005</year>
+		<holder>Bernd Hengelein, Lutz Horn, Bernhard Krieger, Christoph Zwerschke (Deutsche Übersetzung)</holder>
 	</copyright>
 
 	<abstract>
