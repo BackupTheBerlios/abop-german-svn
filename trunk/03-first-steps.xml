@@ -413,7 +413,7 @@ Hello World
 			<para>
 
 			Das deutsche Alphabet besitzt ja bekanntlich zusätzlich zum englischen Alphabet, das dem
-			so genannten <abbrev>ASCII</abbrev>-Zeichensatz zugrunde liegt, zusätzlich die
+			so genannten <abbrev>ASCII</abbrev>-Zeichensatz zugrunde liegt, auch noch die
 			Umlaute ä, ö, ü sowie das ß, das sich trotz Rechtschreibreform hartnäckig hält. Diese Zeichen
 			kommen im normalen ASCII-Zeichensatz nicht vor und führen daher des Öfteren zu Problemen,
 			da sie speziell kodiert werden müssen, wofür es verschiedene Standards gibt.
