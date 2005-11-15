@@ -1,11 +1,11 @@
 #!/usr/bin/python
 
-# Das ist meine Einkaufsliste.
+# Dies ist meine Einkaufsliste
 einkaufsliste = ['Aepfel', 'Mangos', 'Karotten', 'Bananen']
 
-print 'Ich habe ', len(einkaufsliste), 'Dinge einzukaufen.'
+print 'Ich habe', len(einkaufsliste), 'Dinge einzukaufen.'
 
-print 'Diese Dinge sind:', # Achten Sie auf das Komma am Ende.
+print 'Diese Dinge sind:', # Beachten Sie das Komma am Zeilenende
 for ding in einkaufsliste:
 	print ding,
 
@@ -17,9 +17,8 @@ print 'Jetzt werde ich meine Einkaufsliste sortieren.'
 einkaufsliste.sort()
 print 'Die sortierte Einkaufsliste ist', einkaufsliste
 
-print 'Das erste Ding, das ich kaufen werde, ist', einkaufsliste[0]
+print 'Zuerst werde ich', einkaufsliste[0], 'kaufen.'
 altesding = einkaufsliste[0]
 del einkaufsliste[0]
-print 'Ich habe', altesding, 'gekauft'
+print 'Ich habe', altesding, 'gekauft.'
 print 'Meine Einkaufsliste ist jetzt', einkaufsliste
-

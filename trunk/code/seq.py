@@ -1,26 +1,24 @@
 #!/usr/bin/python
-# Filename: seq.py
 
-shoplist = ['apple', 'mango', 'carrot', 'banana']
+einkaufsliste = ['Aepfel', 'Mangos', 'Karotten', 'Bananen']
 
-# Indexing or 'Subscription' operation
-print 'Item 0 is', shoplist[0]
-print 'Item 1 is', shoplist[1]
-print 'Item 2 is', shoplist[2]
-print 'Item 3 is', shoplist[3]
-print 'Item -1 is', shoplist[-1]
-print 'Item -2 is', shoplist[-2]
+# Indizierungs-Operation
+print 'Position 0 ist', einkaufsliste[0]
+print 'Position 1 ist', einkaufsliste[1]
+print 'Position 2 ist', einkaufsliste[2]
+print 'Position 3 ist', einkaufsliste[3]
+print 'Position -1 ist', einkaufsliste[-1]
+print 'Position -2 ist', einkaufsliste[-2]
 
-# Slicing on a list
-print 'Item 1 to 3 is', shoplist[1:3]
-print 'Item 2 to end is', shoplist[2:]
-print 'Item 1 to -1 is', shoplist[1:-1]
-print 'Item start to end is', shoplist[:]
+# Teilbereichs-Operation auf einer Liste
+print 'Position 1 bis 3 ist', einkaufsliste[1:3]
+print 'Position 2 bis Ende ist', einkaufsliste[2:]
+print 'Position 1 bis -1 ist', einkaufsliste[1:-1]
+print 'Position Anfang bis ist', einkaufsliste[:]
 
-# Slicing on a string
+# Teilbereichs-Operation auf einem String
 name = 'swaroop'
-print 'characters 1 to 3 is', name[1:3]
-print 'characters 2 to end is', name[2:]
-print 'characters 1 to -1 is', name[1:-1]
-print 'characters start to end is', name[:]
-
+print 'Zeichen 1 bis 3 ist', name[1:3]
+print 'Zeichen 2 bis Ende ist', name[2:]
+print 'Zeichen 1 bis -1 ist', name[1:-1]
+print 'Zeichen Anfang bis Ende', name[:]
