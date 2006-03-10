@@ -3,6 +3,7 @@
 	<!-- German translation 2005-02-17 by Christoph Zwerschke -->
 	<!-- Proofreading 2005-02-24 Lutz Horn -->
 	<!-- Proofreading, small changes 2005-02-27 Bernd Hengelein -->
+	<!-- Proofreading 2006-03-10 Horst Jens -->
 
 	<title>Die Grundlagen</title> <!-- The Basics -->
 
@@ -197,8 +198,8 @@ He said "Bond, James Bond."
 				irgendwie angeben, dass dieses einzelne Anführungszeichen nicht das Ende des
 				Strings bedeutet. Dies kann mit Hilfe eines so genannten <emphasis>Maskierungscodes</emphasis>
 				geschehen. Sie geben ein einzelnes Anführungszeichen dabei als <literal>\'</literal> an
-				- beachten Sie dabei den Rückwärtsstrich. Nun können Sie den String als
-				<literal>'Wie heißen\'s doch gleich?'</literal> eingeben.
+				- beachten Sie dabei den umgekehrten Schrägstrich (&quot;backslash&quot;).
+				Nun können Sie den String als <literal>'Wie heißen\'s doch gleich?'</literal> eingeben.
 
 				<!-- Suppose, you want to have a string which contains a single quote
 				(<literal>'</literal>), how will you specify this string? For example,
@@ -218,8 +219,8 @@ He said "Bond, James Bond."
 				<literal>"Wie heißen's doch gleich?"</literal>, d. h. unter Benutzung doppelter Anführungszeichen.
 				Gleichermaßen müssen Sie einen Maskierungscode benutzen, um ein doppeltes Anführungszeichen
 				als solches innerhalb eines Strings zu benutzen, der von doppelten Anführungszeichen umschlossen ist.
-				Außerdem müssen Sie den Rückwärtsstrich selber innerhalb eines Strings mittels des Maskierungscodes
-				<literal>\\</literal> eingeben.
+				Außerdem müssen Sie den umgekehrten Schrägstrich selber innerhalb eines Strings mittels des
+				Maskierungscodes <literal>\\</literal> eingeben.
 
 				<!-- Another way of specifying this specific string would be
 				<literal>"What's your name?"</literal> i.e. using double quotes. Similarly,
@@ -249,9 +250,9 @@ He said "Bond, James Bond."
 				</para>
 				<para>
 
-				Eine Sache, die man sich merken sollte, ist, dass ein einzelner Rückwärtsstrich am Ende
-				der Zeile anzeigt, dass der String auf der nächsten Zeile weitergeht, jedoch ohne dass ein
-				Zeilenvorschub hinzugefügt wird. Zum Beispiel ist
+				Eine Sache, die man sich merken sollte, ist, dass ein einzelner umgekehrter Schrägstrich
+				am Ende der Zeile anzeigt, dass der String auf der nächsten Zeile weitergeht, jedoch
+				ohne dass ein Zeilenvorschub hinzugefügt wird. Zum Beispiel ist
 
 				<!-- One thing to note is that in a string, a single backslash at the end of
 				the line indicates that the string is continued in the next line, but
@@ -277,11 +278,12 @@ This is the second sentence."
 				</para>
 			</listitem>
 			<listitem>
-				<bridgehead renderas="sect5">Rohe Strings</bridgehead> <!-- Raw Strings -->
+				<bridgehead renderas="sect5">&quot;Rohe&quot; Zeichenketten</bridgehead> <!-- Raw Strings -->
 				<para>
 
-				Wenn Sie einen String angeben müssen, bei dem keine Zeichen besonders ausmaskiert werden sollen,
-				dann müssen Sie ihn als einen <emphasis>rohen</emphasis> String eingeben, indem Sie dem String
+				Wenn Sie einen String angeben müssen, bei dem keine Zeichen besonders ausmaskiert
+				werden sollen, dann müssen Sie ihn als eine <emphasis>rohe</emphasis> Zeichenkette
+				(<foreignphrase>raw string</foreignphrase>) eingeben, indem Sie dem String
 				ein <literal>r</literal> oder ein <literal>R</literal> voranstellen. Ein Beispiel ist
 				<literal>r"Zeilenvorschübe kennzeichnet man mit \n"</literal>.
 
@@ -297,14 +299,15 @@ This is the second sentence."
 				<bridgehead renderas="sect5">Unicode-Strings</bridgehead> <!-- Unicode Strings -->
 				<para>
 
-				Unicode ist ein Standard, der es einem erlaubt, beliebige internationale Zeichen in seinen Texten zu verwenden.
-				Wenn Sie einen Text in Ihrer Heimatsprache wie Deutsch, Hindi oder Arabisch schreiben wollen,
-				benötigen Sie einen Text-Editor, der entweder mit Ihren länderspezifischen Zeichensätzen
-				umgehen kann, die z.B. die deutschen Umlaute enthalten, oder mit Unicode, das alle diese
-				länderspezifischen Zeichen enthält. Analog ist es auch in Python möglich, Unicode-Text zu verarbeiten
-				- das Einzige, was sie hierfür tun müssen, ist dem String ein <literal>u</literal> oder ein
-				<literal>U</literal> voranzustellen, um ihn zu einem Unicode-String zu machen. Beispiel:
-				<literal><![CDATA[u"Dies ist ein Unicode-String."]]></literal>
+				Unicode ist ein Standard, der es einem erlaubt, beliebige internationale Zeichen
+				in seinen Texten zu verwenden. Wenn Sie einen Text in Ihrer Heimatsprache wie Deutsch,
+				Hindi oder Arabisch schreiben wollen, benötigen Sie einen Text-Editor, der entweder
+				mit Ihren länderspezifischen Zeichensätzen umgehen kann, die z.B. die deutschen Umlaute
+				enthalten, oder mit Unicode, das alle diese länderspezifischen Zeichen enthält.
+				Analog ist es auch in Python möglich, Unicode-Text zu verarbeiten - das Einzige,
+				was Sie hierfür tun müssen ist, dem String ein <literal>u</literal> oder ein
+				<literal>U</literal> voranzustellen, um ihn zu einem Unicode-String zu machen.
+				Beispiel: <literal><![CDATA[u"Dies ist ein Unicode-String."]]></literal>
 
 				<!-- Unicode is a standard way of writing international text. If you want to
 				write text in your native language such as Hindi or Arabic, then you need
@@ -384,10 +387,10 @@ This is the second sentence."
 			<title>Anmerkung, wenn Sie reguläre Ausdrücke verwenden</title> <!-- Note for Regular Expression Users -->
 			<para>
 
-			Verwenden Sie immer rohe Strings, wenn sie mit regulären Ausdrücken hantieren,
-			weil sie sonst ständig Zeichen mit Rückwärtsstrichen ausmaskieren müssen und dabei schnell den Überblick verlieren.
-			Zum Beispiel können Rückwärtsverweise als <literal>'\\1'</literal> oder als <literal>r'\1'</literal>
-			eingegeben werden.
+			Verwenden Sie immer rohe Zeichenketten, wenn Sie mit regulären Ausdrücken hantieren,
+			weil sie sonst ständig Zeichen mit umgekehrten Schrägstrichen ausmaskieren müssen
+			und dabei schnell den Überblick verlieren. Zum Beispiel können Rückwärtsverweise
+			als <literal>'\\1'</literal> oder als <literal>r'\1'</literal> eingegeben werden.
 
 			<!-- Always use raw strings when dealing with regular expressions. Otherwise, a lot of
 			backwhacking may be required. For example, backreferences can be referred to as
@@ -404,7 +407,7 @@ This is the second sentence."
 		beliebige Informationen zu speichern und sie auch zu verarbeiten. An dieser Stelle treten
 		die <emphasis>Variablen</emphasis> auf den Plan. Variablen sind genau so, wie sie heißen -
 		ihr Wert ist variabel, d.h. man kann alles Mögliche in einer Variable abspeichern. Variablen sind einfach
-		ein Teil des Speichers Ihres Computers, in dem Sie Informationen abspeichern. Anders als bei Literalen
+		ein Bereich im Speicher Ihres Computers, in welchem Sie Informationen ablegen. Anders als bei Literalen
 		braucht man eine Möglichkeit, auf diese Variablen zuzugreifen. Deswegen gibt man ihnen Namen.
 
 		<!-- Using just literal constants can soon become boring - we need some way of storing any
@@ -893,11 +896,13 @@ print i
 		</programlisting>
 		<para>
 
-		Manchmal geht Python implizit von einer Zeilenverkettung aus, so dass man keinen Rückwärtsstrich verwenden muss.
-		Dies ist der Fall, wenn die logische Zeile runde, eckige oder geschweifte Klammern enthält, und vor dem Zeilenende
-		Klammern noch nicht geschlossen wurden. Dies wird <emphasis role="bold">implizite Zeilenverkettung</emphasis>
-		genannt. Sie können sehen, wie dies funktioniert, wenn wir in späteren Kapiteln Programme schreiben werden,
-		die <link linkend="list">Listen</link> verwenden.
+		Manchmal geht Python implizit von einer Zeilenverkettung aus, so dass
+		man keinen umgekehrten Schrägstrich verwenden muss. Dies ist der Fall,
+		wenn die logische Zeile runde, eckige oder geschweifte Klammern enthält,
+		und vor dem Zeilenende Klammern noch nicht geschlossen wurden. Dies
+		wird <emphasis role="bold">implizite Zeilenverkettung</emphasis> genannt.
+		Sie können sehen, wie dies funktioniert, wenn wir in späteren Kapiteln
+		Programme schreiben werden, die <link linkend="list">Listen</link> verwenden.
 
 		<!-- Sometimes, there is an implicit assumption where you don't need to use a backslash. This
 		is the case where the logical line uses parentheses, square brackets or curly braces. This

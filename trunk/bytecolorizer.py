@@ -41,7 +41,7 @@ def is_builtin(s):
 	builtins = ('int', 'raw_input', 'True', 'False', 'range',
 		'len', 'os', 'sys', 'time', 'self', 'cPickle',
 		'file', 'None')
-	
+
 	# Match at beginning of string
 	m = re.match('|'.join(builtins), s)
 	if m is not None:
@@ -128,13 +128,13 @@ def lex(s):
 
 	while i < len(s):
 		flag = False # A flag for whether this pass of lexing is done
-		
+
 		if flag == False and s[i] == '#': # Highlight comments
 			newline = s.find('\n', i)
 			content += '<span class="py-comment">%s</span>' % s[i:newline]
 			i = newline # Continue with '\n'
 			flag = True
-		
+
 		if flag == False and s[i] in tuple("'rR"): # Highlight strings
 			length = is_string(s[i:])
 			if length > 0:
@@ -142,7 +142,7 @@ def lex(s):
 							% s[i:i+length]
 				i += length
 				flag = True
-		
+
 		if flag == False and s[i:i+6] == "&quot;": # Highlight strings
 			length = is_string(s[i:])
 			if length > 0:
@@ -183,7 +183,7 @@ def lex(s):
 							% s[i:i+length]
 				i += length
 				flag = True
-		
+
 		if flag == False:
 			length = is_word(s[i:]) # Leave whole words as is
 			if length > 0:
@@ -250,7 +250,7 @@ if len (sys.argv) != 2:
 # Get filenames
 outhtml = sys.argv[1]
 inhtml = outhtml + '.tmp'
-os.rename(sys.argv[1], inhtml)
+os.rename(outhtml, inhtml)
 
 # Read input
 input = file(inhtml)

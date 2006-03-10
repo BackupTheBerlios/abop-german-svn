@@ -5,44 +5,6 @@
 	<!-- Proofreading 2005-07-16 Christoph Zwerschke -->
 
 	<title>Versionsgeschichte</title>
-	<section id="timestamp">
-		<title>Zeitstempel</title>
-		<para>
-			Dieses Dokument wurde am <?dbtimestamp format="d.m.Y" ?> um
-			<?dbtimestamp format="H:M"?> Uhr erzeugt.
-		</para>
-	</section>
-
-	<section id="changelog-translation">
-		<title>Ergänzungen in der deutschen Version</title>
-		<para>
-			Für die deutsche Übersetzung wurden die folgenden Änderungen
-			vorgenommen, die über die reine Übersetzung des englischen
-			Originals in der Version 1.20 hinausgehen:
-		</para>
-		<itemizedlist>
-			<listitem>
-	<para>
-		 Nennung der Übersetzer und Hinweis auf BerliOS bei den Metainformation.
-	</para>
-			</listitem>
-			<listitem>
-	<para>
-		Hinweis auf den Status der Übersetzung und auf das Übersetzungs-Projekt im Vorwort.
-	</para>
-			</listitem>
-			<listitem>
-	<para>
-		Anmerkung für deutsche Anwender in Kapitel 3.
-	</para>
-			</listitem>
-			<listitem>
-	<para>
-		Sehr wenige kleinere inhaltliche Ergänzungen und Berichtigungen in anderen Kapiteln.
-	</para>
-			</listitem>
-		</itemizedlist>
-	</section>
 
 	<section id="revhistory-orig">
 		<title>Versionsgeschichte des englischen Originals</title>
@@ -189,4 +151,45 @@
 		</revision>
 	</revhistory>
 	</section>
+
+	<section id="changelog-translation">
+		<title>Ergänzungen in der deutschen Version</title>
+		<para>
+			Für die deutsche Übersetzung wurden die folgenden Änderungen
+			vorgenommen, die über die reine Übersetzung des englischen
+			Originals in der Version 1.20 hinausgehen:
+		</para>
+		<itemizedlist>
+			<listitem>
+	<para>
+		 Nennung der Übersetzer und Hinweis auf BerliOS bei den Metainformation.
+	</para>
+			</listitem>
+			<listitem>
+	<para>
+		Hinweis auf den Status der Übersetzung und auf das Übersetzungs-Projekt im Vorwort.
+	</para>
+			</listitem>
+			<listitem>
+	<para>
+		Anmerkung für deutsche Anwender in Kapitel 3.
+	</para>
+			</listitem>
+			<listitem>
+	<para>
+		Sehr wenige kleinere inhaltliche Ergänzungen und Berichtigungen in anderen Kapiteln.
+	</para>
+			</listitem>
+		</itemizedlist>
+	</section>
+
+	<section id="timestamp">
+		<title>Zeitstempel</title>
+		<para>
+			Dieses Dokument wurde am <?dbtimestamp format="d.m.Y" ?>
+			um <?dbtimestamp format="H" ?>:<?dbtimestamp format="M" ?> Uhr
+			erzeugt.
+		</para>
+	</section>
+
 </appendix>

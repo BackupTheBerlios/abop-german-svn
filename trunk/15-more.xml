@@ -152,7 +152,7 @@
 
 		<para>
 
-		Inzwischen sollten sie gut verstanden haben, dass jeder Anweisungsblock vom Rest
+		Inzwischen sollten Sie gut verstanden haben, dass jeder Anweisungsblock vom Rest
 		des Programms durch seine eigene Einrückungstiefe abgesetzt wird. Dies trifft zwar
 		meistens zu, ist aber nicht 100% genau. Wenn Ihr Anweisungsblock nur aus einer einzigen
 		Anweisung besteht, dann können Sie ihn in der gleichen Zeile von z.B. einer Bedingungs-
@@ -185,7 +185,7 @@ Yes
 		sondern direkt hinter die Bedingungsanweisung in die gleiche Zeile geschrieben.
 		Man kann dies zwar verwenden, um sein Programm <emphasis>kleiner</emphasis>
 		zu machen, aber ich empfehle dennoch <emphasis role="bold">stark</emphasis>,
-		dass sie diese abkürzende Schreibweise nicht benutzen, außer zur Fehlerprüfung usw.
+		dass Sie diese abkürzende Schreibweise nicht benutzen, außer zur Fehlerprüfung usw.
 		Ein Hauptgrund dafür ist, dass es sehr viel einfacher ist, eine weitere Anweisung zu
 		ergänzen, wenn man die Anweisungen sauber separat eingerückt hinschreibt.
 

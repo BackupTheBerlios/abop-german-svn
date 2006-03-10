@@ -3,6 +3,7 @@
 	<!-- German translation 2005-02-20 by Bernd Hengelein -->
 	<!-- Corrections and additions 2005-02-24 Christoph Zwerschke -->
 	<!-- Proofreading of additions 2005-02-24 Lutz Horn -->
+	<!-- Proofreading 2006-03-10 Horst Jens -->
 
 	<title>Erste Schritte</title>
 
@@ -65,7 +66,7 @@
 		</para>
 		<para>
 
-		Beachten Sie, dass die Zeichen <![CDATA[<<<]]> die Eingabeaufforderung für Python-Anweisungen darstellen.
+		Beachten Sie, dass die Zeichen <![CDATA[>>>]]> die Eingabeaufforderung für Python-Anweisungen darstellen.
 
 		<!-- Note that the <![CDATA[<<<]]> signs are the prompt for entering Python statements. -->
 

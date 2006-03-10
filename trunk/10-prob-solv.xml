@@ -367,9 +367,10 @@ Successful backup to /mnt/e/backup/20041208073244.zip
 
 					Sie können in der Liste <varname>quellen</varname> und der Variable
 					<varname>ziel_verzeichnis</varname> beliebige Datei- bzw. Verzeichnisnamen
-					angeben, aber Sie müssen unter Windows ein wenig Acht geben. Das Problem ist,
-					dass Windows den Rückwärtsstrich (<literal>\</literal>) als das Trennzeichen
-					für Verzeichnisse benutzt, Python jedoch den Rückwärtsstrich für Maskierungscodes benutzt!
+					angeben, aber Sie müssen unter Windows ein wenig Acht geben.
+					Das Problem ist, dass Windows den umgekehrten Schrägstrich
+					(<literal>\</literal>) als das Trennzeichen für Verzeichnisse benutzt,
+					Python jedoch den umgekehrten Schrägstrich für Maskierungscodes benutzt!
 
 					<!-- You can set the <varname>source</varname> list and
 					<varname>target</varname> directory to any file and directory names
@@ -381,8 +382,8 @@ Successful backup to /mnt/e/backup/20041208073244.zip
 					</para>
 					<para>
 
-					Daher müssen Sie einen Rückwärtsstrich selber durch einen Maskierungscode
-					oder durch die Benutzung von rohen Strings darstellen. Zum Beispiel können Sie
+					Daher müssen Sie einen umgekehrten Schrägstrich selber durch einen Maskierungscode
+					oder durch die Benutzung von rohen Zeichenketten darstellen. Zum Beispiel können Sie
 					<literal>'C:\\Dokumente'</literal> oder <literal>r'C:\Dokumente'</literal> schreiben,
 					<emphasis role="bold">nicht</emphasis> aber <literal>'C:\Dokumente'</literal>
 					- Sie verwenden hier einen unbekannten Maskierungscode <literal>\D</literal>!
@@ -796,8 +797,8 @@ SyntaxError: invalid syntax
 				der logischen Zeile daher ein Operand, weswegen es an dieser Stelle
 				abbricht. Erinnern Sie sich daran, dass wir angeben können, dass die logische
 				Zeile in der folgenden physikalischen Zeile fortgeführt wird, indem wir einen
-				Rückwärtsstrich am Ende der physikalischen Zeile benutzen. Wir machen daher
-				diese Verbesserung an unserem Programm. Eine solche Fehlerkorrektur wird
+				umgekehrten Schrägstrich am Ende der physikalischen Zeile benutzen. Wir machen
+				daher diese Verbesserung an unserem Programm. Eine solche Fehlerkorrektur wird
 				auch als <emphasis role="bold">Bug-Fixing</emphasis> bezeichnet.
 
 				<!-- On careful observation, we see that the single logical line has
@@ -855,7 +856,7 @@ if len(anmerkung) == 0: # pruefe, ob eine Anmerkung eingegeben wurde
 else:
 	ziel = heute + os.sep + jetzt + '_' + \
 		anmerkung.replace(' ', '_') + '.zip'
-	# Beachten Sie den Rueckwaertsstrich!
+	# Beachten Sie den umgekehrten Schraegstrich!
 
 # Erzeuge das Unterverzeichnis, wenn noch nicht vorhanden:
 if not os.path.exists(heute):

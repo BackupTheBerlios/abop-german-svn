@@ -18,7 +18,7 @@
 	</para>
 	<para>
 
-	Wenn Sie dieses Buch bereits gelesen haben, dann sind sie auch schon mit FLOSS vertraut,
+	Wenn Sie dieses Buch bereits gelesen haben, dann sind Sie auch schon mit FLOSS vertraut,
 	denn Sie haben die ganze Zeit <emphasis role="bold">Python</emphasis> benutzt!
 
 	<!-- If you have already read this book, then you are familiar with FLOSS as well since
@@ -31,7 +31,7 @@
 	Ich habe einige große FLOSS-Projekte aufgelistet, und auch einige FLOSS-Projekte,
 	die plattformunabhängig sind (d.h. unter Linux, Windows usw. laufen), so dass Sie diese
 	Software ausprobieren können, ohne sofort zu Linux wechseln zu müssen, <emphasis>obwohl
-	sie dies schließlich tun werden ;-)</emphasis>
+	Sie dies schließlich tun werden ;-)</emphasis>
 
 	<!-- If you want to know more about FLOSS, you can explore the following list. I have
 	listed some big FLOSS as well as those FLOSS which are cross-platform (i.e. work
@@ -284,7 +284,7 @@
 				Dies ist eine Linux-Distribution, die auf Knoppix basiert und direkt von
 				CD läuft, doch ist sie speziell dafür entworfen worden, Filme abzuspielen!
 				Sie können Movix-CDs erzeugen, die einfach bootbare CDs sind,
-				und wenn sie Ihren Computer neu starten und die CD einlegen,
+				und wenn Sie Ihren Computer neu starten und die CD einlegen,
 				dann startet der Film ganz von selber! Sie brauchen nicht einmal eine
 				Festplatte, um einen Film mit Movix anzuschauen.
 

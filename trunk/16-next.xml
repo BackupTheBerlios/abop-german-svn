@@ -125,8 +125,8 @@
 					und muss bezahlt werden, wenn Sie proprietäre Software erstellen wollen.
 					Eine gute (englische) Informationsquelle zu PyQt ist <ulink
 					url="http://www.opendocs.org/pyqt/">&quot;GUI Programming with
-                        Python: Qt Edition&quot;</ulink>. Weitere Einzelheiten finden Sie auf der offiziellen
-                        <ulink url="http://www.riverbankcomputing.co.uk/pyqt/">PyQt-Website</ulink>.
+					Python: Qt Edition&quot;</ulink>. Weitere Einzelheiten finden Sie auf der offiziellen
+					<ulink url="http://www.riverbankcomputing.co.uk/pyqt/">PyQt-Website</ulink>.
 
 					<!-- This is the Python binding for the Qt toolkit which is the foundation
 					upon which the KDE is built. Qt is extremely easy to use and very
@@ -149,14 +149,14 @@
 
 					<para>
 
-                        Dies ist die Python-Anbindung für das GTK+-Toolkit, das die Grundlage ist,
-                        auf der GNOME aufgebaut wurde. GTK+ hat im Gebrauch viele Eigenheiten;
-                        wenn Sie aber einmal damit vertraut sind, können Sie schnell GUI-Anwendungen
-                        erstellen. Das Werkzeug Glade zum entwerfen  der grafischen Schnittstelle
-                        ist hierbei unverzichtbar. Die Dokumentation müsste noch verbessert werden.
-                        GTK+ läuft gut unter Linux, aber die Portierung auf Windows ist unvollständig.
-                        Sie können mit GTK+ sowohl freie als auch proprietäre Software entwickeln.
-                        Weitere Einzelheiten finden Sie auf der offiziellen
+					Dies ist die Python-Anbindung für das GTK+-Toolkit, das die Grundlage ist,
+					auf der GNOME aufgebaut wurde. GTK+ hat im Gebrauch viele Eigenheiten;
+					wenn Sie aber einmal damit vertraut sind, können Sie schnell GUI-Anwendungen
+					erstellen. Das Werkzeug Glade zum entwerfen  der grafischen Schnittstelle
+					ist hierbei unverzichtbar. Die Dokumentation müsste noch verbessert werden.
+					GTK+ läuft gut unter Linux, aber die Portierung auf Windows ist unvollständig.
+					Sie können mit GTK+ sowohl freie als auch proprietäre Software entwickeln.
+					Weitere Einzelheiten finden Sie auf der offiziellen
 					<ulink url="http://www.pygtk.org">PyGTK-Website</ulink>.
 
 					<!-- This is the Python binding for the GTK+ toolkit which is the
@@ -177,16 +177,16 @@
 
 					<para>
 
-                        Dies ist die Python-Anbindung für das wxWidgets-Toolkit. Mit wxPython
-                        ist eine gewisse Lernkurve verbunden. Es ist jedoch sehr portabel und läuft
-                        unter Linux, Windows, Mac und sogar auf  Embedded-Systemen.
-                        Für wxPython sind viele IDEs verfügbar, darunter
-                        <ulink url="http://drpython.sourceforge.net">DrPython</ulink>,
-                        <ulink url="http://spe.pycs.net">SPE (Stani's Python Editor)</ulink>,
-                        das auch einen GUI-Designer beinhaltet, sowie der GUI-Builder
-                        <ulink url="http://wxglade.sourceforge.net">wxGlade</ulink>.
-                        Sie können mit wxPython sowohl freie als auch proprietäre Software entwickeln.
-                        Weitere Einzelheiten finden Sie auf der offiziellen
+					Dies ist die Python-Anbindung für das wxWidgets-Toolkit. Mit wxPython
+					ist eine gewisse Lernkurve verbunden. Es ist jedoch sehr portabel und läuft
+					unter Linux, Windows, Mac und sogar auf  Embedded-Systemen.
+					Für wxPython sind viele IDEs verfügbar, darunter
+					<ulink url="http://drpython.sourceforge.net">DrPython</ulink>,
+					<ulink url="http://spe.pycs.net">SPE (Stani's Python Editor)</ulink>,
+					das auch einen GUI-Designer beinhaltet, sowie der GUI-Builder
+					<ulink url="http://wxglade.sourceforge.net">wxGlade</ulink>.
+					Sie können mit wxPython sowohl freie als auch proprietäre Software entwickeln.
+					Weitere Einzelheiten finden Sie auf der offiziellen
 					<ulink url="http://www.wxpython.org">wxPython-Website</ulink>.
 
 					<!-- This is the Python bindings for the wxWidgets toolkit. wxPython has
@@ -209,15 +209,15 @@
 
 					<para>
 
-                        Dies ist das älteste existierende GUI-Toolkit für Python. Wenn Sie
-                        <application>IDLE</application> benutzt haben, dann haben Sie
-                        bereits gesehen, wie ein TkInter-Programm aussehen kann.
-                        Die Dokumentation für TkInter in der <ulink
-                    url="http://www.pythonware.com/library/tkinter/introduction/"
-                    >PythonWare</ulink>-Bibliothek ist umfangreich. TkInter ist portierbar
-                        und läuft sowohl unter Linux/Unix als auch unter Windows.
-                        Ein wichtiger Vorteil von TkInter ist, dass es Bestandteil der
-                        Standard-Distribution von Python ist.
+					Dies ist das älteste existierende GUI-Toolkit für Python. Wenn Sie
+					<application>IDLE</application> benutzt haben, dann haben Sie
+					bereits gesehen, wie ein TkInter-Programm aussehen kann.
+					Die Dokumentation für TkInter in der <ulink
+					url="http://www.pythonware.com/library/tkinter/introduction/"
+					>PythonWare</ulink>-Bibliothek ist umfangreich. TkInter ist portierbar
+					und läuft sowohl unter Linux/Unix als auch unter Windows.
+					Ein wichtiger Vorteil von TkInter ist, dass es Bestandteil der
+					Standard-Distribution von Python ist.
 
 					<!-- This is one of the oldest GUI toolkits in existence. If you have used
 					<application>IDLE</application>, you have seen a TkInter program at
@@ -268,7 +268,7 @@
 			<important>
 				<title>Zukünftige Kapitel</title> <!-- Future Chapters -->
 
-                    <!-- TODO: Work on future chapter on one of the GUI toolkit -->
+				<!-- TODO: Work on future chapter on one of the GUI toolkit -->
 
 				<para>
 

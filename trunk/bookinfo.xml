@@ -34,7 +34,7 @@
 		<surname> Zwerschke</surname>
 	</othercredit>
 	<date>
-		13.01.2004, <?dbtimestamp format="d.m.Y" ?> (deutsche Übersetzung)
+		11.01.2005, 15.11.2005 (deutsche Übersetzung)
 	</date>
 	<releaseinfo>Version 1.20, deutsche Übersetzung</releaseinfo>
 	<edition>A Byte of Python v1.20, deutsche Übersetzung</edition>
@@ -57,7 +57,7 @@
 		<para>
 		<inlinemediaobject>
 		<imageobject>
-		<imagedata fileref="bslogo.png" format="PNG" />
+		<imagedata fileref="berlios.png" format="PNG" align="right" />
 		</imageobject>
 		</inlinemediaobject>
 		Die Zusammenarbeit an der deutschen Übersetzung dieses Buchs wurde von

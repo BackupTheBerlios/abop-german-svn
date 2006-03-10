@@ -518,7 +518,7 @@
 						In diesem Fall wird der Python-Interpreter die Variable <literal>y</literal>
 						gar nicht erst in die Auswertung mit einbeziehen, da der Ausdruck
 						bereits falsch ist (da <literal>x</literal> <literal>False</literal> ist).
-						Dies wird eine &quot;Kurzschluss-Auswertung&quot; genannt: Sie liefert das
+						Dies wird eine &quot;Kurzschlussauswertung&quot; genannt: Sie liefert das
 						richtige Ergebnis, ohne dass <literal>y</literal> ausgewertet werden muss
 						(bedenken Sie, dass an der Stelle von <literal>y</literal> auch ein sehr komplizierter
 						Ausdruck stehen kann, dessen Berechnung lange Zeit in Anspruch nehmen würde oder
@@ -554,7 +554,7 @@
 						<entry>
 
 						<literal>x = True; y = False; x or y</literal> ergibt <literal>True</literal>.
-						Hier wird ebenfalls das Prinzip der &quot;Kurzschluss-Auswertung&quot; benutzt.
+						Hier wird ebenfalls das Prinzip der Kurzschlussauswertung verwendet.
 						So liefert z.B. <literal>3 and 1/0</literal> ohne Fehlermeldung den Wert 123
 						zurück, da die Zahl 3 dem Wahrheitswert <literal>True</literal> entspricht.
 						Die Auswertung von <literal>3/4 and 1/0</literal> führt jedoch zu einer Fehlermeldung,

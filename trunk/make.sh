@@ -14,6 +14,13 @@
 #    - note that directories *have to exist before* the transformation
 
 ############### Initialization #################################################
+
+if [ ! -d "docbook-xsl" ]; then
+	echo "You need docbook-xsl in the working directory. Download from"
+	echo "http://sf.net/project/showfiles.php?group_id=21935&package_id=16608"
+	exit 3
+fi
+
 # Create output directory
 mkdir -p output
 
@@ -30,7 +37,13 @@ then
 	echo "VERSION file missing"
 	exit 2
 fi
+
 version=`head -1 VERSION`
+
+# create German version
+export LANG="de_DE@euro"
+language="de"
+paper_type="A4"
 
 ############### Validation #####################################################
 if [ $type = "validate" ]
@@ -50,58 +63,62 @@ elif [ $type = "xhtml-single" ]
 then
 	echo "XHTML single"
 
-	dst="output/byteofpython_html_single"
+	dst="output/byteofpython_html_single_$version"
 	rm -rf $dst
 	mkdir $dst
 
+	html="$dst/index.html"
+	#html="dst/byteofpython_$version.html"
+
 	xsltproc \
-		--output $dst/byteofpython_$version.html \
-	         --stringparam use.extensions '0' \
-	         --stringparam html.stylesheet 'byte.css' \
-	         --stringparam use.id.as.filename '1' \
-	         --stringparam chunker.output.encoding 'UTF-8' \
-	         --stringparam navig.graphics '1' \
-	         docbook-xsl/xhtml/docbook.xsl \
-	         index.xml
-	         # --stringparam navig.graphics.extension '.png' \
-	         # --stringparam admon.graphics '1' \
-	         # --stringparam section.autolabel '1' \
-	         # --stringparam section.label.includes.component.label '1' \
-	         # --stringparam saxon.character.representation 'native;decimal' \
+		--output $html \
+		--stringparam use.extensions 0 \
+		--stringparam html.stylesheet byte.css \
+		--stringparam use.id.as.filename 1 \
+		--stringparam chunker.output.encoding UTF-8 \
+		--stringparam navig.graphics 1 \
+		docbook-xsl/xhtml/docbook.xsl \
+		index.xml
+		#--output $dst/byteofpython_$version.html\
+		# --stringparam navig.graphics.extension '.png' \
+		# --stringparam admon.graphics 1 \
+		# --stringparam section.autolabel 1 \
+		# --stringparam section.label.includes.component.label 1 \
+		# --stringparam saxon.character.representation 'native;decimal' \
 
 	cp byte.css $dst
-	cp bslogo.png $dst
+	cp berlios.png $dst
 	cp -r docbook-xsl/images $dst
 
 	# Colorizer
-	python bytecolorizer.py $dst/byteofpython_$version.html
+	python bytecolorizer.py $html
 
 ############### Chunked XHTML ##################################################
 elif [ $type = "xhtml" ]
 then
 	echo "XHTML in chunks"
 
-	dst="output/byteofpython_html"
+	dst="output/byteofpython_html_$version"
 	rm -rf $dst
 	mkdir $dst
 
 	xsltproc \
-	         --stringparam use.extensions '0' \
-	         --stringparam html.stylesheet 'byte.css' \
-	         --stringparam use.id.as.filename '1' \
-	         --stringparam base.dir "$dst/" \
-	         --stringparam chunker.output.encoding 'UTF-8' \
-	         --stringparam navig.graphics '1' \
-	         docbook-xsl/xhtml/chunk.xsl \
-	         index.xml
-	         # --stringparam navig.graphics.extension '.png' \
-	         # --stringparam admon.graphics '1' \
-	         # --stringparam section.autolabel '1' \
-	         # --stringparam section.label.includes.component.label '1' \
-	         # --stringparam saxon.character.representation 'native;decimal' \
+		--stringparam use.extensions 0 \
+		--stringparam html.stylesheet byte.css \
+		--stringparam use.id.as.filename 1 \
+		--stringparam base.dir "$dst/" \
+		--stringparam chunker.output.encoding UTF-8 \
+		--stringparam navig.graphics 1 \
+		docbook-xsl/xhtml/chunk.xsl \
+		index.xml
+		# --stringparam navig.graphics.extension '.png' \
+		# --stringparam admon.graphics 1 \
+		# --stringparam section.autolabel 1 \
+		# --stringparam section.label.includes.component.label 1 \
+		# --stringparam saxon.character.representation 'native;decimal' \
 
 	cp byte.css $dst
-	cp bslogo.png $dst
+	cp berlios.png $dst
 	cp -r docbook-xsl/images $dst
 
 	# Colorizer
@@ -110,48 +127,81 @@ then
 		python bytecolorizer.py $html
 	done
 
-############### FO #############################################################
-elif [ $type = "fo" ]
-then
-	echo "FO"
-
-	dst="output"
-	rm $dst/byteofpython_$version.fo
-
-	xsltproc \
-	         --output "$dst/byteofpython_$version.fo"
-	         docbook-xsl/fo/docbook.xsl \
-	         index.xml
-	
 ############### TXT ############################################################
 elif [ $type = "txt" ]
 then
 	echo "TXT"
 
 	dst="output"
-	rm -f $dst/byteofpython_$version.txt
+	outfile="$dst/byteofpython_$version.txt"
+	rm -f $outfile
+
+	# switch to German ISO locale for the text version
+	export LANG=de_DE@euro
 
 	xmlto \
-	      -o "$dst/" \
-	      txt \
-	      index.xml
-	
-	mv $dst/index.txt $dst/byteofpython_$version.txt
-	 
+		-o "$dst/" \
+		txt \
+		index.xml
+
+	mv $dst/index.txt $outfile
+
+############### FO #############################################################
+elif [ $type = "fo" ]
+then
+	echo "FO"
+
+	dst="output"
+	outfile="$dst/byteofpython_$version.fo"
+	rm -f $outfile
+
+	xsltproc \
+		--output $outfile \
+		--stringparam use.extensions 0 \
+		--stringparam fop.extensions 1 \
+		--stringparam paper.type $paper_type \
+		--stringparam l10n.gentext.default.language $language \
+		docbook-xsl/fo/docbook.xsl \
+		index.xml
+
 ############### PDF ############################################################
 elif [ $type = "pdf" ]
 then
 	echo "PDF"
 
 	dst="output"
-	rm -f $dst/byteofpython_$version.pdf
 
-	# Using the 'convenience' scripts:
-	export JAVACMD=`which java`
-	sh fop/fop.sh \
-	   -xml index.xml \
-	   -xsl docbook-xsl/fo/docbook.xsl \
-	   -pdf $dst/byteofpython_$version.pdf
+	outfile="$dst/byteofpython_$version.fo"
+	rm -f outfile
+
+	xsltproc \
+		--output $outfile \
+		--stringparam use.extensions 0 \
+		--stringparam fop.extensions 1 \
+		--stringparam paper.type $paper_type \
+		--stringparam l10n.gentext.default.language $language \
+		docbook-xsl/fo/docbook.xsl \
+		index.xml
+
+	infile=outfile
+	outfile="$dst/byteofpython_$version.pdf"
+	rm -f $outfile
+
+	# Note: If you're getting hyphenation errors,
+	# you need to download the hyphenation patterns
+	# from http://offo.sourceforge.net/hyphenation/
+
+	JAVACMD=`which java`
+	JAIHOME="/usr/share/java/jai"
+	CLASSPATH=$JAIHOME/jai_core.jar:$CLASSPATH
+	CLASSPATH=$JAIHOME/jai_codec.jar:$CLASSPATH
+	CLASSPATH=$JAIHOME/mlibwrapper_jai.jar:$CLASSPATH
+	fop=`which fop`
+	export JAVACMD
+	export CLASSPATH
+	$fop \
+		-fo $dst/byteofpython_$version.fo \
+		-pdf $outfile
 
 ############### Dist ###########################################################
 elif [ $type = "dist" ]
@@ -159,7 +209,7 @@ then
 	echo "DIST"
 
 	# Check XHTML single
-	if [ -d "output/byteofpython_html_single" ]
+	if [ -d "output/byteofpython_html_single_$version" ]
 	then
 		echo "XHTML single is present"
 	else
@@ -168,13 +218,13 @@ then
 		exit 3
 	fi
 	# Check XHTML
-	if [ -d "output/byteofpython_html" ]
+	if [ -d "output/byteofpython_html_$version" ]
 	then
 		echo "XHTML is present"
 	else
 		echo "XHTML is NOT present"
 		echo "Run this first: ./make.sh xhtml"
-		exit 3
+		exit 37
 	fi
 	# Check TXT
 	if [ -f "output/byteofpython_$version.txt" ]
@@ -202,12 +252,12 @@ then
 
 	# Zip XHTML
 	rm -f byteofpython_html_single_$version.zip
-	zip -qr byteofpython_html_single_$version.zip byteofpython_html_single
+	zip -qr byteofpython_html_single_$version.zip byteofpython_html_single_$version
 	echo "Created XHTML single archive"
 
 	# Zip XHTML single
 	rm -f byteofpython_html_$version.zip
-	zip -qr byteofpython_html_$version.zip byteofpython_html
+	zip -qr byteofpython_html_$version.zip byteofpython_html_$version
 	echo "Created XHTML archive"
 
 	# Switch back to main directory
@@ -215,7 +265,8 @@ then
 
 	# Create source tarball
 	rm -f output/byteofpython_source_$version.tar.gz
-	tar -czf output/byteofpython_source_$version.tar.gz *.xml *.py *.sh *.css code VERSION
+	tar -czf output/byteofpython_source_$version.tar.gz \
+		*.xml *.py *.sh *.css *.png code VERSION
 	echo "Created source archive"
 
 	# Create fullsource tarball

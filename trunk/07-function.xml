@@ -718,7 +718,7 @@ a is 100 and b is 5 and c is 50
 				</para>
 				<para>
 
-				Beim dritten Aufruf, <literal>funk(c=50, a=100)</literal>, verwenden wir
+				Beim dritten Aufruf der Funktion, <literal>funk(c=50, a=100)</literal>, verwenden wir
 				ausschließlich Schlüsselwort-Argumente, um die Werte anzugeben. Beachten Sie,
 				dass wir den Wert des Parameters <varname>c</varname> vor dem des Parameters
 				<varname>a</varname> angeben, obwohl <varname>a</varname>
@@ -832,7 +832,7 @@ $ python func_return.py
 
 				Jede Funktion hat implizit am Ende implizit die Anweisung <literal>return None</literal>,
 				wenn Sie nicht stattdessen Ihre eigene <literal>return</literal>-Anweisung geschrieben haben.
-				Statement geschrieben. Sie können das ausprobieren, wenn sie <literal>print eineFunktion()</literal>
+				Statement geschrieben. Sie können das ausprobieren, indem Sie <literal>print eineFunktion()</literal>
 				ausführen, wobei <function>eineFunktion</function> eine Funktion ohne
 				<literal>return</literal>-Anweisung sein soll, etwa:
 

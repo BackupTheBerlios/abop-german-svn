@@ -1,15 +1,16 @@
 ﻿<preface id="preface">
 
 	<!-- German translation 2005-02-18 by Lutz Horn -->
-	<!-- Small Corrections and additions 2005-02-19 Christoph Zwerschke -->
+	<!-- Minor corrections and additions 2005-02-19 Christoph Zwerschke -->
 	<!-- Proofreading 2005-07-18 Christoph Zwerschke -->
+	<!-- Proofreading 2006-03-10 Horst Jens -->
 
 <title>Vorwort</title>
 
 <para>
-	Python ist eine der wenigen Programmiersprachen, die sowohl einfach
-	als auch mächtig sind. Das ist sowohl für Anfänger als
-	auch Experten gut, und, noch wichtiger, es macht Spaß damit zu programmieren.
+	Python ist eine der wenigen Programmiersprachen, die zugleich einfach
+	und mächtig sind. Das ist sowohl für Anfänger als auch Experten gut, und
+	- noch wichtiger - es macht Spaß damit zu programmieren.
 	Das Ziel dieses Buches ist es, Ihnen beim Lernen dieser
 	wunderbaren Programmiersprache zu helfen und Ihnen zu zeigen, wie
 	sich Dinge schnell und leicht erledigen lassen - in der Tat 'Das
@@ -179,7 +180,8 @@
 	<section id="status-translation">
 	<title>Status der deutschen Übersetzung</title>
 	<para>
-	Vorliegend finden Sie eine vollständige deutsche Übersetzung der aktuellen Version des Buchs.
+	Vorliegend finden Sie eine vollständige deutsche Übersetzung
+	der Version 1.20 des Buchs.
 	</para>
 	</section>
 	</section>
@@ -199,8 +201,9 @@
 	Die deutsche Übersetzung des Buches wurde im <ulink
 	url="http://developer.berlios.de/">BerliOS</ulink>-Projekt
 	<ulink
-	 url="https://developer.berlios.de/projects/abop-german/">abop-german</ulink> erstellt.
-	Auf der Projektseite haben Sie Zugriff auf die deutsche Übersetzung in verschiedenen Formaten.
+	url="https://developer.berlios.de/projects/abop-german/">abop-german</ulink>
+	erstellt. Auf der Projektseite haben Sie Zugriff auf die deutsche
+	Übersetzung in verschiedenen Formaten.
 	</para>
 	</section>
 	</section>
@@ -235,11 +238,11 @@
 	same license as this book.-->
 	</para>
 	<para>
-	Bitte besuchen Sie die <ulink
+	Wenn Sie den vollständigen und exakten Text der Lizenz oder eine leicht
+	verständliche Fassung lesen wollen, besuchen Sie bitte die <ulink
 	url="http://creativecommons.org/licenses/by-nc-sa/2.0/"
-	>Creative-Commons-Website</ulink>, wenn Sie den vollständigen und exakten Text
-	der Lizenz oder eine leicht verständliche Fassung lesen wollen. Dort gibt es sogar
-	einen Comic, der die Bedingungen der Lizenz erklärt.
+	>Website der Organisation &quot;Creative Commons&quot;</ulink>. Dort gibt es
+	sogar einen Comic, der die Bedingungen der Lizenz erklärt.
 
 	<!--Please visit the <ulink
 	url="http://creativecommons.org/licenses/by-nc-sa/2.0/"
@@ -288,7 +291,7 @@
 	<blockquote>
 	<attribution>C. A. R. Hoare</attribution>
 	<para>
-		Es gibt zwei Weisen, Software zu entwerfen:
+		Es gibt zwei Arten, Software zu entwerfen:
 		Eine ist, es so einfach zu machen, dass es offensichtlich keine Mängel gibt;
 		die andere ist, es so kompliziert zu machen, dass es keine offensichtlichen Mängel gibt.
 		<!-- There are two ways of constructing a software design: one way is

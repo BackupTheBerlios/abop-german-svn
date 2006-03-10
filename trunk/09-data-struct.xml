@@ -491,7 +491,7 @@ Last animal brought from old zoo is penguin
 					kennzeichnen, damit Python zwischen einem Tupel und einem Klammerpaar
 					unterscheiden kann, das einfach nur ein Objekt in einem Ausdruck umschließt,
 					d.h. Sie müssen <literal>einzelnesetwas = (2 , )</literal> schreiben,
-					wenn sie ein Tupel meinen, das nur die Zahl <literal>2</literal> enthält.
+					wenn Sie ein Tupel meinen, das nur die Zahl <literal>2</literal> enthält.
 
 					<!-- An empty tuple is constructed by an empty pair of parentheses
 					such as <literal>myempty = ()</literal>. However, a tuple with
@@ -1311,7 +1311,7 @@ mylist is ['carrot', 'banana']
 				verwenden müssen, wenn Sie eine Kopie einer Liste oder derartiger
 				Sequenzen oder komplexer Objekte (nicht einfacher
 				<emphasis>Objekte</emphasis> wie Ganzzahlen) erstellen wollen.
-				Wenn sie nur den Variablennamen einem anderen Namen zuweisen,
+				Wenn Sie nur den Variablennamen einem anderen Namen zuweisen,
 				dann <emphasis>referenzieren</emphasis> beide Namen das gleiche
 				Objekt, was zu allen möglichen Schwierigkeiten führen kann, wenn
 				Sie dies nicht beachten.

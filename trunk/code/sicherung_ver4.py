@@ -29,7 +29,7 @@ if len(anmerkung) == 0: # pruefe, ob eine Anmerkung eingegeben wurde
 else:
 	ziel = heute + os.sep + jetzt + '_' + \
 		anmerkung.replace(' ', '_') + '.zip'
-	# Beachten Sie den Rueckwaertsstrich!
+	# Beachten Sie den umgekehrten Schraegstrich!
 
 # Erzeuge das Unterverzeichnis, wenn noch nicht vorhanden:
 if not os.path.exists(heute):
