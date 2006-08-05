@@ -3,6 +3,7 @@
 	<!-- German translation 2005-02-27 by Lutz Horn -->
 	<!-- German translation 2005-11-14 by Christoph Zwerschke -->
 	<!-- Proofreading 2005-11-15 Christoph Zwerschke -->
+	<!-- Proofreading 2006-08-04 Gunter Hannig -->
 
 	<title>Datenstrukturen <!--Data Structures--></title>
 
@@ -88,7 +89,7 @@
 			</para>
 			<para>
 
-			Eine Liste ist ein Beispiel für die Verwendung von Objekte und Klassen.
+			Eine Liste ist ein Beispiel für die Verwendung von Objekten und Klassen.
 			Wenn Sie eine Variable <varname>i</varname> verwenden und ihr einen Wert,
 			z.B. die Ganzzahl <literal>5</literal> zuweisen, können Sie sich das als
 			die Erzeugung eines <emphasis role="bold">Objekts</emphasis> (einer

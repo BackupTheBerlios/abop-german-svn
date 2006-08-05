@@ -2,6 +2,7 @@
 
 	<!-- German translation 2005-03-01 by Bernhard Krieger -->
 	<!-- Proofreading 2005-03-15 Christoph Zwerschke -->
+	<!-- Proofreading 2006-08-04 Gunter Hannig -->
 
 	<title>Funktionen</title> <!-- Functions -->
 
@@ -307,7 +308,7 @@ x is still 50
 				<para>
 
 				Wenn wir das erste mal in der Funktion den <emphasis>Wert</emphasis>
-				den Namen <varname>x</varname> verwenden, benutzt Python
+				mit dem Namen <varname>x</varname> verwenden, benutzt Python
 				hierfür den Wert des in der Funktion angegeben gleichnamigen Parameters.
 
 				<!-- In the function, the first time that we use the <emphasis>value</emphasis>
@@ -320,7 +321,7 @@ x is still 50
 				Als nächstes weisen wir <varname>x</varname> den Wert <literal>2</literal> zu.
  				Der Name <varname>x</varname> ist innerhalb unserer Funktion lokal gültig.
 				Wenn wir also den Wert von <varname>x</varname> in der Funktion verändern,
-				wird dies das im Hauptblock definierte <varname>x</varname> nicht beeinflussen.
+				wird hierdurch das im Hauptblock definierte <varname>x</varname> nicht beeinflusst.
 
 				<!-- Next, we assign the value <literal>2</literal> to <varname>x</varname>.
 				The name <varname>x</varname> is local to our function.
@@ -330,7 +331,7 @@ x is still 50
 				</para>
 				<para>
 
-				Mit der <literal>print</literal>-Anweisung am Ende bestätigen wir, dass er Wert
+				Mit der <literal>print</literal>-Anweisung am Ende bestätigen wir, dass der Wert
 				von <varname>x</varname> im Hauptblock tatsächlich unverändert geblieben ist.
 
 				<!-- In the last <literal>print</literal> statement, we confirm that the value
@@ -364,7 +365,7 @@ x is still 50
 			innerhalb der Funktion keine gleichnamige Variable gibt). Dies wird jedoch nicht empfohlen und sollte
 			vermieden werden, da es einem Leser des Programms nicht sofort klar ist, wo diese Variable definiert
 			wurde. Wenn man die <literal>global</literal>-Anweisung benutzt, ist damit sofort klar, dass
-			die Variable in einem außerhalb definiert wurde.
+			die Variable in einem äußeren Block definiert wurde.
 
 			<!-- You can use the values of such variables defined outside the function (assuming there
 			is no variable with the same name within the function). However, this is not
@@ -604,8 +605,8 @@ WorldWorldWorldWorldWorld
 
 		Wenn Sie Funktionen mit vielen Parametern haben, aber nur einige von ihnen angeben wollen,
 		dann können Sie solchen Parametern Werte übergeben, indem Sie sie benennen. Man spricht hier
-		auch von <emphasis>Schlüsselwort-Argumenten</emphasis>. Wie benutzen hier den Namen
-		(ein Schlüsselwort) anstatt (wie bisher) der Position, um die Argumente der Funktion zu spezifizieren.
+		auch von <emphasis>Schlüsselwort-Argumenten</emphasis>. Wir benutzen hier den Namen
+		(ein Schlüsselwort) anstatt (wie bisher) die Position, um die Argumente der Funktion zu spezifizieren.
 
 		<!-- If you have some functions with many parameters and you want to specify only some of them,
 		then you can give values for such parameters by naming them - this is called
@@ -830,9 +831,9 @@ $ python func_return.py
 				</para>
 				<para>
 
-				Jede Funktion hat implizit am Ende implizit die Anweisung <literal>return None</literal>,
+				Jede Funktion hat am Ende implizit die Anweisung <literal>return None</literal>,
 				wenn Sie nicht stattdessen Ihre eigene <literal>return</literal>-Anweisung geschrieben haben.
-				Statement geschrieben. Sie können das ausprobieren, indem Sie <literal>print eineFunktion()</literal>
+				Sie können das ausprobieren, indem Sie <literal>print eineFunktion()</literal>
 				ausführen, wobei <function>eineFunktion</function> eine Funktion ohne
 				<literal>return</literal>-Anweisung sein soll, etwa:
 
@@ -907,7 +908,7 @@ def printMax(x, y):
 	if x > y:
 		print x, 'ist das Maximum'
 	else:
-		print y, i'st das Maximum'
+		print y, 'ist das Maximum'
 
 printMax(3, 5)
 print printMax.__doc__
@@ -993,7 +994,7 @@ Prints the maximum of two numbers.
 
 				Wir erhalten den DocString der Funktion <function>printMax</function> über das
 				mit der Funktion verbundene Attribut <literal>__doc__</literal>
-				(beachten Sie die doppelten Unterstriche). Behalten Sie im Kopf, dass in
+				(beachten Sie die doppelten Unterstriche). Behalten Sie im Kopf, dass in Python
 				<emphasis>alles</emphasis> als ein Objekt behandelt wird, also auch
 				Funktionen. Wir werden im Kapitel über <link linkend="oops">Klassen</link>
 				mehr über Objekte lernen.

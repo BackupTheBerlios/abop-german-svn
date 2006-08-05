@@ -2,6 +2,7 @@
 
 	<!-- German translation 2005-04-14 by Bernhard Krieger -->
 	<!-- Proofreading 2005-04-16 Christoph Zwerschke -->
+	<!-- Proofreading 2006-08-04 Gunter Hannig -->
 
 	<title>Module</title> <!-- Modules -->
 
@@ -453,7 +454,7 @@ version = '0.1'
 			</para>
 			<para>
 
-			Erinnern Sie sich, dass das Modul im das gleiche Verzeichnis platziert werden sollte wie das
+			Erinnern Sie sich, dass das Modul in das gleiche Verzeichnis platziert werden sollte wie das
 			Programm, von dem es importiert wird, oder dass es in einem der Verzeichnisse liegen sollte,
 			die in <varname>sys.path</varname> aufgeführt sind.
 

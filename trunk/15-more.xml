@@ -2,6 +2,7 @@
 
 	<!-- German Translation 2005-02-27 by Christoph Zwerschke -->
 	<!-- Proofreading 2005-02-27 Lutz Horn -->
+	<!-- Proofreading 2006-08-04 Gunter Hannig -->
 
 	<title>Noch mehr Python</title> <!-- More Python -->
 
@@ -224,7 +225,7 @@ Yes
 		<para>
 
 		Listenkomprehension (Listenbeschreibung) ist ein Fachbegriff für eine sehr nützliche
-		Funktionalität von Python, die es erlaubt, aus einer existierende Liste eine neue Liste abzuleiten.
+		Funktionalität von Python, die es erlaubt, aus einer existierenden Liste eine neue Liste abzuleiten.
 		Nehmen Sie zum Beispiel an, Sie haben eine Liste von Zahlen und wollen eine entsprechende
 		Liste erzeugen, die aus den mit 2 multiplizierten Zahlen besteht, aber nur, wenn die
 		jeweilige Zahl selbst kleiner als 2 ist. Eine Listenkomprehension ist in solchen Fällen ideal.
@@ -512,7 +513,7 @@ Hello World
 
 		<para>
 
-		Die <literal>assert</literal>-Anweisung wird benutzt, um sicherzustellen, das
+		Die <literal>assert</literal>-Anweisung wird benutzt, um sicherzustellen, dass
 		eine bestimmte Voraussetzung, die Sie machen, wirklich erfüllt ist. Zum Beispiel könnten
 		Sie von der Voraussetzung ausgehen, dass sich  in einer bestimmten Liste, die Sie benutzen,
 		mindestens ein Element befindet. Wenn Sie überprüfen wollen, ob dies wirklich stimmt
