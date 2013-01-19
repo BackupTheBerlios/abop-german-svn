@@ -558,11 +558,11 @@ AssertionError
 		<para>
 
 		Die <function>repr</function>-Funktion wird benutzt um eine 'kanonische'
-		Darstellung eines Objekts als String zu erhalten. Das Gleiche kann mit umgekehrten
-		einfachen Anführungszeichen erreichen (also nicht dem normalen einfachen
-		Anführungszeichen, das mit dem Apostroph identisch ist, und das man für normale
-		Strings in Python verwendet, sondern das schräg rückwärts gerichtete
-		Anführungszeichen, das dem französischen Accent grave entspricht).
+		Darstellung eines Objekts als String zu erhalten. Das Gleiche kann man mit
+		umgekehrten einfachen Anführungszeichen erreichen (also nicht dem normalen
+		einfachen Anführungszeichen, das mit dem Apostroph identisch ist, und das
+		man für normale Strings in Python verwendet, sondern das schräg rückwärts
+		gerichtete Anführungszeichen, das dem französischen Accent grave entspricht).
 		Beachten Sie, dass meistens <literal>eval(repr(objekt)) == objekt</literal> gilt.
 
 		<!-- The <function>reprt</function> function is used to obtain a canonical string
