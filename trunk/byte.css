@@ -57,6 +57,16 @@ div.author {
   padding:5px;
 }
 
+p.othercredit {
+  font-size:12pt;
+  text-align:center;
+  background-color:#FFFED3;
+  border-left:1px solid #DBDAB5;
+  border-right:1px solid #DBDAB5;
+  border-bottom:1px solid #DBDAB5;
+  padding:4px;
+}
+
 p.releaseinfo {
   font-weight:bold;
 }
