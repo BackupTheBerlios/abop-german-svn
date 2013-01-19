@@ -11,14 +11,17 @@ for ding in einkaufsliste:
 
 print '\nIch muss auch Reis einkaufen.'
 einkaufsliste.append('Reis')
-print 'Meine Einkaufsliste ist jetzt', einkaufsliste
+print 'Meine Einkaufsliste ist jetzt:'
+print einkaufsliste
 
 print 'Jetzt werde ich meine Einkaufsliste sortieren.'
 einkaufsliste.sort()
-print 'Die sortierte Einkaufsliste ist', einkaufsliste
+print 'Die sortierte Einkaufsliste ist:'
+print einkaufsliste
 
 print 'Zuerst werde ich', einkaufsliste[0], 'kaufen.'
 altesding = einkaufsliste[0]
 del einkaufsliste[0]
 print 'Ich habe', altesding, 'gekauft.'
-print 'Meine Einkaufsliste ist jetzt', einkaufsliste
+print 'Meine Einkaufsliste ist jetzt:'
+print einkaufsliste

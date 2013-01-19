@@ -70,8 +70,8 @@ zahl = 23
 geraten = int(raw_input('Geben Sie eine ganze Zahl ein: '))
 
 if geraten == zahl:
-	print 'Glueckwunsch, Sie haben es erraten.' # hier faengt ein neuer Block an
-	print "(Aber Sie gewinnen leider keinen Preis!)" # hier hoert der neue Block auf
+	print 'Glueckwunsch, Sie haben es erraten.' # ein neuer Block beginnt hier
+	print "(Aber Sie gewinnen leider keinen Preis!)" # und hier hoert er auf
 elif geraten < zahl:
 	print 'Nein, die Zahl ist etwas hoeher.' # noch ein Block
 	# Sie koennen in dem Block tun, was sie wollen ...

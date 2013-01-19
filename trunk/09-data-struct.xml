@@ -167,17 +167,20 @@ for ding in einkaufsliste:
 
 print '\nIch muss auch Reis einkaufen.'
 einkaufsliste.append('Reis')
-print 'Meine Einkaufsliste ist jetzt', einkaufsliste
+print 'Meine Einkaufsliste ist jetzt:'
+print einkaufsliste
 
 print 'Jetzt werde ich meine Einkaufsliste sortieren.'
 einkaufsliste.sort()
-print 'Die sortierte Einkaufsliste ist', einkaufsliste
+print 'Die sortierte Einkaufsliste ist:'
+print einkaufsliste
 
 print 'Zuerst werde ich', einkaufsliste[0], 'kaufen.'
 altesding = einkaufsliste[0]
 del einkaufsliste[0]
 print 'Ich habe', altesding, 'gekauft.'
-print 'Meine Einkaufsliste ist jetzt', einkaufsliste
+print 'Meine Einkaufsliste ist jetzt:'
+print einkaufsliste
 				]]>
 				</programlisting>
 				<!-- <![CDATA[
@@ -217,12 +220,15 @@ $ python listen.py
 Ich habe 4 Dinge einzukaufen.
 Diese Dinge sind: Aepfel Mangos Karotten Bananen
 Ich muss auch Reis einkaufen.
-Meine Einkaufsliste ist jetzt ['Aepfel', 'Mangos', 'Karotten', 'Bananen', 'Reis']
+Meine Einkaufsliste ist jetzt:
+['Aepfel', 'Mangos', 'Karotten', 'Bananen', 'Reis']
 Jetzt werde ich meine Einkaufsliste sortieren.
-Die sortierte Einkaufsliste ist ['Aepfel', 'Bananen', 'Karotten', 'Mangos', 'Reis']
+Die sortierte Einkaufsliste ist:
+['Aepfel', 'Bananen', 'Karotten', 'Mangos', 'Reis']
 Zuerst werde ich Aepfel kaufen.
 Ich habe Aepfel gekauft.
-Meine Einkaufsliste ist jetzt ['Bananen', 'Karotten', 'Mangos', 'Reis']
+Meine Einkaufsliste ist jetzt:
+['Bananen', 'Karotten', 'Mangos', 'Reis']
 				]]>
 				</screen>
 				<!-- <![CDATA[
