@@ -863,7 +863,7 @@ Perimeter is 14
 				<varname>flaeche</varname> kein Leerzeichen eingefügt haben, fügt Python
 				dieses für uns ein, so dass wir eine schöne, klare Ausgabe erhalten. Dadurch ist auch
 				unser Programmcode leichter zu lesen, da wir uns keine Sorgen um die Formatierung
-				der Ausgabe machen müssen. Das ist ein Beispiel dafür, wie Python Programmierer
+				der Ausgabe machen müssen. Das ist ein Beispiel dafür, wie Python Programmierern
 				das Leben erleichtert.
 
 				<!-- Also, notice how Python 'pretty-prints' the output. Even though we have not
