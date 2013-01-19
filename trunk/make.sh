@@ -17,7 +17,7 @@
 
 if [ ! -d "docbook-xsl" ]; then
 	echo "You need docbook-xsl in the working directory. Download from"
-	echo "http://sf.net/project/showfiles.php?group_id=21935&package_id=16608"
+	echo "https://sourceforge.net/projects/docbook/files/docbook-xsl/1.70.1/"
 	exit 3
 fi
 
