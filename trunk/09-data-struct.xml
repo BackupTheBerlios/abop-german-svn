@@ -850,7 +850,7 @@ Guido's address is guido@python.org
 
 				<para>
 
-				Wir haben unter Benutzung der bereits erläuterten Schreibeweise
+				Wir haben unter Benutzung der bereits erläuterten Schreibweise
 				ein Dictionary <varname>ab</varname> erzeugt. Wir greifen dann
 				auf die Schlüssel/Wert-Paare zu, indem wir den Schlüssel mittels
 				des Indizierungsoperators angeben, den wir im Zusammenhang mit
