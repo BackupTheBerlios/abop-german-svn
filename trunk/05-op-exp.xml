@@ -491,7 +491,7 @@
 						</entry>
 						<entry>
 
-						<literal>x = True; not y</literal> ergibt <literal>False</literal>.
+						<literal>x = True; not x</literal> ergibt <literal>False</literal>.
 						<!-- <literal>x = True; not y</literal> returns
 						<literal>False</literal>. -->
 

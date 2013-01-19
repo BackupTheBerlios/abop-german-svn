@@ -138,7 +138,7 @@ bash: python: command not found
 		<note>
 			<title>Python in der Windows-Eingabeaufforderung verwenden</title>
 			<para>
-			Wenn Sie in der Lage sein wolle, Python von der Windows-Eingabeaufforderung
+			Wenn Sie in der Lage sein wollen, Python von der Windows-Eingabeaufforderung
 			aus laufen zu lassen, dann müssen die Umgebungsvariable PATH entsprechend setzten.
 			<!-- If you want to be able to use Python from the Windows command line, then you
 			need to set the PATH variable appropriately. -->
