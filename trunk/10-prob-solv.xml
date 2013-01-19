@@ -1048,7 +1048,7 @@ Successful backup to /mnt/e/backup/20041208/082316.zip
 			</para>
 			<programlisting>
 			<![CDATA[
-tar = 'tar -cvzf %s %s -X /home/swaroop/ausnahmen.txt' % (ziel, ' '.join(quellen))
+tar = 'tar -cvzf %s %s -X ausnahmen.txt' % (ziel, ' '.join(quellen))
 			]]>
 			</programlisting>
 			<!-- <![CDATA[
