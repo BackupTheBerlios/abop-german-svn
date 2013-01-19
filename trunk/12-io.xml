@@ -144,7 +144,7 @@ if you wanna make your work also fun:
 				<para>
 
 				Zuerst erzeugen wir eine Instanz der Klasse <classname>file</classname>,
-				indem wir den Name der Datei und den Modus angeben, in dem die Datei
+				indem wir den Namen der Datei und den Modus angeben, in dem die Datei
 				geöffnet werden soll. Der Modus kann Lesemodus sein (<literal>'r'</literal>
 				für <foreignphrase>read</foreignphrase>), Schreibmodus (<literal>'w'</literal>
 				für <foreignphrase>write</foreignphrase>) oder Anfügemodus (<literal>'a'</literal>
