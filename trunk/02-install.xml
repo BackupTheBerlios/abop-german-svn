@@ -149,7 +149,7 @@ bash: python: command not found
 			<guimenuitem>Umgebungsvariablen</guimenuitem>. Klicken Sie auf die Variable
 			namens <emphasis role="bold">Path</emphasis> in dem unteren Bereich für 'Systemvariablen',
 			dann wählen Sie <guimenuitem>Bearbeiten</guimenuitem> und fügen Sie
-			<command>;C:\Python23</command> (ohne die Anführungszeichen) am Ende der bereits
+			<command>;C:\Python23</command> <!-- (ohne die Anführungszeichen) --> am Ende der bereits
 			vorhandenen Zeile an. Natürlich sollten Sie den richtigen Verzeichnisnamen verwenden,
 			wenn Sie Python in einem anderen Verzeichnis installiert haben.
 			<!-- For Windows 2000, XP, 2003 , click on <guimenu>Control Panel</guimenu> ->
