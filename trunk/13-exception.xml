@@ -298,10 +298,10 @@ Done
 
 		</para>
 
-		<section id="raising-exceptions">
+		<section id="how-to-raise-exceptions">
 			<title>So löst man Ausnahmen aus</title> <!-- How To Raise Exceptions -->
 
-			<example id="raising-exceptions-example">
+			<example id="how-to-raise-exceptions-example">
 				<title>So löst man Ausnahmen aus
 					(<ulink url="code/ausnahmen.py">ausnahmen.py</ulink>)
 				</title> <!-- How To Raise Exceptions -->
@@ -357,7 +357,7 @@ else:
 				]]> -->
 			</example>
 
-			<section id="raising-exceptions-output">
+			<section id="how-to-raise-exceptions-output">
 				<title>Ausgabe</title> <!--  Output -->
 
 				<screen>
@@ -390,7 +390,7 @@ No exception was raised.
 				]]> -->
 			</section>
 
-			<section id="raising-exceptions-how">
+			<section id="how-to-raise-exceptions-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
