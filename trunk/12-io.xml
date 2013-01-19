@@ -42,7 +42,7 @@
 		<para>
 
 		Sie können Dateien zum Lesen und Schreiben öffnen, indem Sie ein Objekt der Klasse
-		<classname>file</classname> erzeugen. und dessen Methoden
+		<classname>file</classname> erzeugen und dessen Methoden
 		<methodname>read</methodname>, <methodname>readline</methodname>
 		oder <methodname>write</methodname> verwenden. Die Möglichkeit,
 		aus der Datei zu lesen oder in die Datei zu schreiben hängt von dem Modus ab,
