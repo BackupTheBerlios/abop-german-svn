@@ -147,7 +147,7 @@ EOFError
 
 			</para>
 
-			<example>
+			<example id="handling-exceptions-example">
 				<title>Ausnahmebehandlung
 					(<ulink url="code/try_except.py">try_except.py</ulink>)
 				</title> <!-- Handling Exceptions -->
@@ -189,7 +189,7 @@ print 'Done'
 				]]> -->
 			</example>
 
-			<section>
+			<section id="handling-exceptions-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -214,7 +214,7 @@ Done
 				]]> -->
 			</section>
 
-			<section>
+			<section id="handling-exceptions-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -298,10 +298,10 @@ Done
 
 		</para>
 
-		<section id="how-to-raise-exceptions">
+		<section id="raising-exceptions">
 			<title>So löst man Ausnahmen aus</title> <!-- How To Raise Exceptions -->
 
-			<example>
+			<example id="raising-exceptions-example">
 				<title>So löst man Ausnahmen aus
 					(<ulink url="code/ausnahmen.py">ausnahmen.py</ulink>)
 				</title> <!-- How To Raise Exceptions -->
@@ -357,7 +357,7 @@ else:
 				]]> -->
 			</example>
 
-			<section>
+			<section id="raising-exceptions-output">
 				<title>Ausgabe</title> <!--  Output -->
 
 				<screen>
@@ -390,7 +390,7 @@ No exception was raised.
 				]]> -->
 			</section>
 
-			<section>
+			<section id="raising-exceptions-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -455,7 +455,7 @@ No exception was raised.
 		<section id="using-try-finally">
 			<title>Gebrauch von finally</title> <!-- Using Finally -->
 
-			<example>
+			<example id="using-try-finally-example">
 				<title>Gebrauch von finally
 					(<ulink url="code/finally.py">finally.py</ulink>)
 				</title> <!-- Using Finally -->
@@ -499,7 +499,7 @@ finally:
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-try-finally-output">
 				<title>Ausgabe</title> <!-- Ausgabe -->
 
 				<screen>
@@ -526,7 +526,7 @@ KeyboardInterrupt
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-try-finally-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>

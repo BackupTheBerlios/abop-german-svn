@@ -67,7 +67,7 @@
 			</screen>
 		</tip>
 
-		<table>
+		<table id="operator-usage-table">
 
 			<title>Operatoren und ihre Verwendung</title> <!-- Operators and their usage -->
 			<tgroup cols="4">
@@ -615,7 +615,7 @@
 		sensibly and should not be redundant (as in <literal>2 + (3 + 4)</literal>). -->
 
 		</para>
-		<table>
+		<table id="operator-precedence-table">
 			<title>Auswertungsreihenfolge der Operatoren</title> <!-- Operator Precedence -->
 			<tgroup cols="2">
 				<thead>
@@ -789,7 +789,7 @@
 		<section id="using-expressions">
 			<title>Verwendung von Ausdrücken</title> <!-- Using Expressions -->
 
-			<example>
+			<example id="using-expressions-example">
 				<title>Verwendung von Ausdrücken</title>
 				<simpara>(<ulink url="code/ausdruck.py">ausdruck.py</ulink>)</simpara>
 				<programlisting>
@@ -817,7 +817,7 @@ print 'Perimeter is', 2 * (length + breadth)
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-expressions-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -833,7 +833,7 @@ Perimeter is 14
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-expressions-how">
 				<title>So funktioniert es</title> <!--<title>How It Works</title>-->
 
 				<para>

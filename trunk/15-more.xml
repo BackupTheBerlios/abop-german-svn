@@ -61,7 +61,7 @@
 
 		</para>
 
-		<table>
+		<table id="special-methods-table">
 			<title>Einige spezielle Methoden</title> <!-- Some Special Methods -->
 
 			<tgroup cols="2">
@@ -240,7 +240,7 @@ Yes
 		<section id="using-list-comprehension">
 			<title>Gebrauch von Listenkomprehension</title> <!-- Using List Comprehensions -->
 
-			<example>
+			<example id="using-list-comprehension-example">
 				<title>Gebrauch von Listenkomprehension
 					(<ulink url="code/listenkomprehension.py">listenkomprehension.py</ulink>)
 				</title> <!-- Using List Comprehensions -->
@@ -264,7 +264,7 @@ print listtwo
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-list-comprehension-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -279,7 +279,7 @@ $ python list_comprehension.py
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-list-comprehension-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -385,7 +385,7 @@ $ python list_comprehension.py
 		<section id="using-lambda-forms">
 			<title>Gebrauch des lambda-Operators</title> <!-- Using Lambda Forms -->
 
-			<example>
+			<example id="using-lambda-forms-example">
 				<title>Gebrauch des lambda-Operators
 					(<ulink url="code/lambda.py">lambda.py</ulink>)
 				</title> <!-- Using Lambda Forms -->
@@ -417,7 +417,7 @@ print twice(5)
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-lambda-forms-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -434,7 +434,7 @@ wordword
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-lambda-forms-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>

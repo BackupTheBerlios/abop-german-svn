@@ -13,22 +13,22 @@
 			<orgname>www.byteofpython.info</orgname>
 		</affiliation>
 	</author>
-	<othercredit role="Translator">
+	<othercredit class="Translator">
 		<contrib>Deutsche Übersetzung</contrib>
 		<firstname>Bernd</firstname>
 		<surname>Hengelein</surname>
 	</othercredit>
-	<othercredit role="Translator">
+	<othercredit class="Translator">
 		<contrib>Deutsche Übersetzung</contrib>
 		<firstname>Lutz</firstname>
 		<surname>Horn</surname>
 	</othercredit>
-	<othercredit role="Translator">
+	<othercredit class="Translator">
 		<contrib>Deutsche Übersetzung</contrib>
 		<firstname>Bernhard</firstname>
 		<surname> Krieger</surname>
 	</othercredit>
-	<othercredit role="Translator">
+	<othercredit class="Translator">
 		<contrib>Deutsche Übersetzung</contrib>
 		<firstname>Christoph</firstname>
 		<surname> Zwerschke</surname>

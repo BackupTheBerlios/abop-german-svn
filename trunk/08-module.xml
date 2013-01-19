@@ -43,7 +43,7 @@
 		<section id="using-sys-module">
 			<title>Benutzung des sys-Moduls</title> <!-- Using the sys module -->
 
-			<example>
+			<example id="using-sys-module-example">
 				<title>Benutzung des sys-Moduls
 					(<ulink url="code/beispiel_sys.py">beispiel_sys.py</ulink>)
 				</title> <!-- Using the sys module -->
@@ -74,7 +74,7 @@ print '\n\nThe PYTHONPATH is', sys.path, '\n'
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-sys-module-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -108,7 +108,7 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-sys-module-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -322,7 +322,7 @@ The PYTHONPATH is ['/home/swaroop/byte/code', '/usr/lib/python23.zip',
 		<section id="using-name">
 			<title>Verwendung von __name__</title> <!-- Using a module's __name__ -->
 
-			<example>
+			<example id="using-name-example">
 				<title>Verwendung von __name__
 					(<ulink url="code/beispiel_name.py">beispiel_name.py</ulink>)
 				</title> <!-- Using a module's __name__ -->
@@ -348,7 +348,7 @@ else:
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-name-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -373,7 +373,7 @@ I am being imported from another module
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-name-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -410,7 +410,7 @@ I am being imported from another module
 		<section id="creating-modules">
 			<title>Eigene Module erstellen</title> <!-- Creating your own Modules -->
 
-			<example>
+			<example id="creating-modules-example">
 				<title>Wie man ein eigenes Modul erstellt
 					(<ulink url="code/meinmodul.py">meinmodul.py</ulink>)
 				</title> <!-- How to create your own module -->
@@ -487,7 +487,7 @@ mymodule.sayhi()
 print 'Version', mymodule.version
 			]]> -->
 
-			<section>
+			<section id="creating-modules-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -504,7 +504,7 @@ Version 0.1
 				]]> -->
 			</section>
 
-			<section>
+			<section id="creating-modules-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -604,7 +604,7 @@ print 'Version', version
 		<section id="using-dir">
 			<title>Die dir-Funktion verwenden</title> <!-- Using the dir function -->
 
-			<example>
+			<example id="using-dir-example">
 				<title>Die dir-Funktion verwenden</title> <!--Using the dir function -->
 				<screen>
 				<![CDATA[
@@ -666,7 +666,7 @@ $ python
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-dir-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>

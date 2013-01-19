@@ -55,10 +55,10 @@
 
 		</para>
 
-		<section>
+		<section id="using-if-statement">
 			<title>Gebrauch der if-Anweisung</title> <!-- Using the if statement -->
 
-			<example id="using-if-statement">
+			<example id="using-if-statement-example">
 				<title>Gebrauch der if-Anweisung
 					(<ulink url="code/if.py">if.py</ulink>)
 				</title> <!-- Using the if statement -->
@@ -104,7 +104,7 @@ print 'Done'
 # This last statement is always executed, after the if statement is executed
 				]]> -->
 			</example>
-			<section>
+			<section id="using-if-statement-output">
 				<title>Output</title>
 				<screen>
 				<![CDATA[
@@ -140,7 +140,7 @@ Done
 				]]> -->
 			</section>
 		</section>
-		<section>
+		<section id="using-if-statement-how">
 			<title>So funktioniert es</title> <!-- How It Works -->
 			<para>
 
@@ -338,9 +338,9 @@ if True:
 		<literal>while</literal> statement can have an optional <literal>else</literal> clause. -->
 
 		</para>
-		<section>
+		<section id="using-while-statement">
 			<title>Gebrauch der while-Anweisung</title> <!-- Using the while statement -->
-			<example id="using-while-statement">
+			<example id="using-while-statement-example">
 				<title>Gebrauch der while-Anweisung
 					(<ulink url="code/while.py">while.py</ulink>)
 				</title> <!-- Using the while statement -->
@@ -392,7 +392,7 @@ else:
 print 'Done'
 				]]> -->
 			</example>
-			<section>
+			<section id="using-while-statement-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -419,7 +419,7 @@ The while loop is over.
 Done
 				]]> -->
 			</section>
-			<section>
+			<section id="using-while-statement-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -546,10 +546,10 @@ Done
 		an ordered collection of items. -->
 
 		</para>
-		<section>
+		<section id="using-for-statement">
 			<title>Gebrauch der for-Anweisung</title> <!-- Using the for statement -->
 
-			<example id="using-for-statement">
+			<example id="using-for-statement-example">
 				<title>Gebrauch der for-Anweisung
 					(<ulink url="code/for.py">for.py</ulink>)
 				</title> <!-- Using the for statement -->
@@ -573,7 +573,7 @@ else:
 	print 'The for loop is over'
 				]]> -->
 			</example>
-			<section>
+			<section id="using-for-statement-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -594,7 +594,7 @@ $ python for.py
 The for loop is over
 				]]> -->
 			</section>
-			<section>
+			<section id="using-for-statement-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 				<para>
 
@@ -744,9 +744,9 @@ The for loop is over
 		<emphasis role="bold">not</emphasis> executed. -->
 
 		</para>
-		<section>
+		<section id="using-break-statement">
 			<title>Gebrauch der break-Anweisung</title> <!-- Using the break statement -->
-			<example id="using-break-statement">
+			<example id="using-break-statement-example">
 				<title>Gebrauch der break-Anweisung
 					(<ulink url="code/break.py">break.py</ulink>)
 				</title> <!-- Using the break statement -->
@@ -774,7 +774,7 @@ while True:
 print 'Done'
 				]]> -->
 			</example>
-			<section>
+			<section id="using-break-statement-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -805,7 +805,7 @@ Enter something : quit
 Done
 				]]> -->
 			</section>
-			<section>
+			<section id="using-break-statement-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -843,7 +843,7 @@ Done
 
 				</para>
 			</section>
-			<section>
+			<section id="g2s-poetical-python">
 				<title>G2s poetisches Python</title>
 				<para>
 
@@ -878,9 +878,9 @@ willst du Spass haben daran:
 		iteration of the loop. -->
 
 		</para>
-		<section>
+		<section id="using-continue-statement">
 			<title>Gebrauch der continue-Anweisung</title> <!-- Using the continue statement -->
-			<example id="using-continue-statement">
+			<example id="using-continue-statement-example">
 				<title>Gebrauch der continue-Anweisung
 					(<ulink url="code/continue.py">continue.py</ulink>)
 				</title>
@@ -912,7 +912,7 @@ while True:
 	# Do other kinds of processing here...
 				]]> -->
 			</example>
-			<section>
+			<section id="using-continue-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -933,7 +933,7 @@ Input is of sufficient length
 Enter something : quit
 				]]> -->
 			</section>
-			<section>
+			<section id="using-continue-statement-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>

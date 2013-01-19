@@ -204,7 +204,7 @@
 		<section id="creating-class">
 			<title>Erzeugen einer Klasse</title> <!-- Creating a Class -->
 
-			<example>
+			<example id="creating-class-example">
 				<title>Erzeugen einer Klasse
 					(<ulink url="code/einfachsteklasse.py">einfachsteklasse.py</ulink>)
 				</title> <!-- Creating a Class -->
@@ -231,7 +231,7 @@ print p
 				]]> -->
 			</example>
 
-			<section>
+			<section id="creating-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -246,7 +246,7 @@ $ python simplestclass.py
 				]]> -->
 			</section>
 
-			<section>
+			<section id="creating-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -312,7 +312,7 @@ $ python simplestclass.py
 		<section id="using-object-methods">
 			<title>Benutzung von Objektmethoden</title> <!-- Using Object Methds -->
 
-			<example>
+			<example id="using-object-methods-example">
 				<title>Benutzung von Objektmethoden
 					(<ulink url="code/methode.py">methode.py</ulink>)
 				</title> <!-- Using Object Methds -->
@@ -347,7 +347,7 @@ p.sayHi()
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-object-methods-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -362,7 +362,7 @@ Hello, how are you?
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-object-methods-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -409,7 +409,7 @@ Hello, how are you?
 		<section id="using-class-init">
 			<title>Benutzung der __init__-Method</title> <!-- Using the __init__ method -->
 
-			<example>
+			<example id="using-class-init-example">
 				<title>Benutzung der __init__-Method
 					(<ulink url="code/klasse_init.py">klasse_init.py</ulink>)
 				</title> <!-- Using the __init__ method -->
@@ -448,7 +448,7 @@ p.sayHi()
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-class-init-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -463,7 +463,7 @@ Hello, my name is Swaroop
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-class-init-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -578,7 +578,7 @@ Hello, my name is Swaroop
 		<section id="using-class-and-obj-vars">
 			<title>Benutzung von Klassen- und Objektvariablen</title> <!-- Using Class and Object Variables -->
 
-			<example>
+			<example id="using-class-and-obj-vars-example">
 				<title>Benutzung von Klassen- und Objektvariablen
 					(<ulink url="code/objvar.py">objvar.py</ulink>)
 				</title> <!-- Using Class and Object Variables -->
@@ -690,7 +690,7 @@ swaroop.howMany()
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-class-and-obj-vars-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -727,7 +727,7 @@ I am the last one.
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-class-and-obj-vars-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -1015,7 +1015,7 @@ I am the last one.
 		<section id="using-inheritance">
 			<title>Verwendung von Vererbung</title> <!-- Using Inheritance -->
 
-			<example>
+			<example id="using-inheritance-example">
 				<title>Verwendung von Vererbung
 					(<ulink url="code/vererbung.py">vererbung.py</ulink>)
 				</title> <!-- Using Inheritance -->
@@ -1115,7 +1115,7 @@ for member in members:
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-inheritance-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -1142,7 +1142,7 @@ Name:"Swaroop" Age:"22" Marks: "75"
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-inheritance-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>

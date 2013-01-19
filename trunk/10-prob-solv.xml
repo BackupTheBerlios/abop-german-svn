@@ -126,7 +126,7 @@
 		<section id="first-version">
 			<title>Die erste Version</title> <!-- First Version -->
 
-			<example>
+			<example id="first-version-example">
 				<title>Sicherungsskript - erste Version
 					(<ulink url="code/sicherung_ver1.py">sicherung_ver1.py</ulink>)
 				</title> <!-- Backup Script - The First Version -->
@@ -197,7 +197,7 @@ else:
 				]]> -->
 			</example>
 
-			<section>
+			<section id="first-version-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -226,7 +226,7 @@ Successful backup to /mnt/e/backup/20041208073244.zip
 				</para>
 			</section>
 
-			<section>
+			<section id="first-version-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -472,7 +472,7 @@ Successful backup to /mnt/e/backup/20041208073244.zip
 
 			</para>
 
-			<example>
+			<example id="second-version-example">
 				<title>Sicherungsskript - zweite Version
 					(<ulink url="code/sicherung_ver2.py">sicherung_ver2.py</ulink>)
 				</title> <!-- Backup Script - The Second Version -->
@@ -562,7 +562,7 @@ else:
 				]]> -->
 			</example>
 
-			<section>
+			<section id="second-version-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -585,7 +585,7 @@ Successful backup to /mnt/e/backup/20041208/080428.zip
 				]]> -->
 			</section>
 
-			<section>
+			<section id="second-version-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -646,7 +646,7 @@ Successful backup to /mnt/e/backup/20041208/080428.zip
 
 			</para>
 
-			<example>
+			<example id="third-version-example">
 				<title>Sicherungsskript - dritte Version (funktioniert nicht!)
 					(<ulink url="code/sicherung_ver3.py">sicherung_ver3.py</ulink>)
 				</title> <!-- Backup Script - The Third Version (does not work!) -->
@@ -747,7 +747,7 @@ else:
 				]]> -->
 			</example>
 
-			<section>
+			<section id="third-version-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -768,7 +768,7 @@ SyntaxError: invalid syntax
 					]]> -->
 			</section>
 
-			<section>
+			<section id="third-version-how">
 				<title>Warum dies nicht funktioniert</title> <!-- How This (does not) Work</title> -->
 
 				<para>
@@ -818,7 +818,7 @@ SyntaxError: invalid syntax
 		<section id="fourth-version">
 			<title>Die vierte Version</title> <!-- Fourth Version -->
 
-			<example>
+			<example id="fourth-version-example">
 				<title>Sicherungsskript - vierte Version
 					(<ulink url="code/sicherung_ver4.py">sicherung_ver4.py</ulink>)
 				</title> <!-- Backup Script - The Fourth Version -->
@@ -920,7 +920,7 @@ else:
 				]]> -->
 			</example>
 
-			<section>
+			<section id="fourth-version-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -945,7 +945,7 @@ Successful backup to /mnt/e/backup/20041208/082316.zip
 				]]> -->
 			</section>
 
-			<section>
+			<section id="fourth-version-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>

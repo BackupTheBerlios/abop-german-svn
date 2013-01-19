@@ -148,7 +148,7 @@
 		<section id="using-lists">
 			<title>Benutzung von Listen</title> <!-- Using Lists -->
 
-			<example>
+			<example id="using-lists-example">
 				<title>Benutzung von Listen <!-- Using lists -->
 					(<ulink url="code/listen.py">listen.py</ulink>)
 				</title>
@@ -208,7 +208,7 @@ print 'My shopping list is now', shoplist
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-lists-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -239,7 +239,7 @@ My shopping list is now ['banana', 'carrot', 'mango', 'rice']
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-lists-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -370,10 +370,10 @@ My shopping list is now ['banana', 'carrot', 'mango', 'rice']
 
 		</para>
 
-		<section>
+		<section id="using-tuples">
 			<title>Benutzung von Tupeln</title> <!-- Using Tuples -->
 
-			<example>
+			<example id="using-tuples-example">
 				<title>Benutzung von Tupeln <!-- Using tuples -->
 					(<ulink url="code/tupel.py">tupel.py</ulink>)
 				</title>
@@ -405,7 +405,7 @@ print 'Last animal brought from old zoo is', new_zoo[2][2]
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-tuples-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -428,7 +428,7 @@ Last animal brought from old zoo is penguin
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-tuples-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -541,7 +541,7 @@ Last animal brought from old zoo is penguin
 
 			</para>
 
-			<example>
+			<example id="tuple-print-example">
 				<title>Ausgabe mittels Tupeln <!-- Output using tuples -->
 					(<ulink url="code/print_tupel.py">print_tupel.py</ulink>)
 				</title>
@@ -567,7 +567,7 @@ print 'Why is %s playing with that python?' % name
 				]]> -->
 			</example>
 
-			<section>
+			<section id="tuple-print-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -583,7 +583,7 @@ Why is Swaroop playing with that python?
 				]]> -->
 			</section>
 
-			<section>
+			<section id="tuple-print-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -744,7 +744,7 @@ Why is Swaroop playing with that python?
 		<section id="using-dictionaries">
 			<title>Benutzung von Dictionaries</title> <!-- Using Dictionaries -->
 
-			<example>
+			<example id="using-dictionaries-example">
 				<title>Benutzung von Dictionaries <!-- Using dictionaries -->
 					(<ulink url="code/dict.py">dict.py</ulink>)
 				</title>
@@ -806,7 +806,7 @@ if 'Guido' in ab: # OR ab.has_key('Guido')
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-dictionaries-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -839,7 +839,7 @@ Guido's address is guido@python.org
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-dictionaries-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -968,7 +968,7 @@ Guido's address is guido@python.org
 		<section id="using-sequences">
 			<title>Benutzung von Sequenzen</title> <!-- Using Sequences -->
 
-			<example>
+			<example id="using-sequences-example">
 				<title>Benutzung von Sequenzen <!-- Using Sequences -->
 					(<ulink url="code/seq.py">seq.py</ulink>)
 				</title>
@@ -1028,7 +1028,7 @@ print 'characters start to end is', name[:]
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-sequences-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -1068,7 +1068,7 @@ characters start to end is swaroop
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-sequences-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -1222,7 +1222,7 @@ characters start to end is swaroop
 		<section id="objects-and-references">
 			<title>Objekte und Referenzen</title> <!-- Objects and References -->
 
-			<example>
+			<example id="objects-and-references-example">
 				<title>Objekte und Referenzen <!-- Objects and References -->
 					(<ulink url="code/referenz.py">referenz.py</ulink>)
 				</title>
@@ -1277,7 +1277,7 @@ print 'mylist is', mylist
 				]]> -->
 			</example>
 
-			<section>
+			<section id="objects-and-references-output">
 				<title>Output</title>
 
 				<screen>
@@ -1302,7 +1302,7 @@ mylist is ['carrot', 'banana']
 				]]> -->
 			</section>
 
-			<section>
+			<section id="objects-and-references-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -1378,7 +1378,7 @@ mylist is ['carrot', 'banana']
 		<section id="string-methods">
 			<title>String-Methoden</title> <!-- String Methods -->
 
-			<example>
+			<example id="string-methods-example">
 				<title>String-Methoden <!-- String Methods -->
 					(<ulink url="code/str_methoden.py">str_methoden.py</ulink>)
 				</title>
@@ -1422,7 +1422,7 @@ print delimiter.join(mylist)
 				]]> -->
 			</example>
 
-			<section>
+			<section id="string-methods-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -1442,7 +1442,7 @@ Brazil_*_Russia_*_India_*_China
 				]]> -->
 			</section>
 
-			<section>
+			<section id="string-methods-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>

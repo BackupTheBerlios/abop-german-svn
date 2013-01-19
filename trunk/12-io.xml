@@ -63,7 +63,7 @@
 		<section id="using-files">
 			<title>Der Gebrauch von <classname>file</classname></title> <!-- Using file -->
 
-			<example>
+			<example id="using-files-example">
 				<title>Verwendung von Dateien
 					(<ulink url="code/beispiel_file.py">beispiel_file.py</ulink>)
 				</title>
@@ -117,7 +117,7 @@ f.close() # close the file
 				]]> -->
 			</example>
 
-			<section>
+			<section id="using-files-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -138,7 +138,7 @@ if you wanna make your work also fun:
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-files-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -251,7 +251,7 @@ if you wanna make your work also fun:
 		<section id="pickling-and-unpickling">
 			<title>Einfrieren und wieder Auftauen</title> <!-- Pickling and Unpickling -->
 
-			<example>
+			<example id="pickling-and-unpickling-example">
 				<title>Einfrieren und wieder Auftauen
 					(<ulink url="code/einmachen.py">einmachen.py</ulink>)
 				</title> <!-- Pickling and Unpickling -->
@@ -305,7 +305,7 @@ print storedlist
 				]]> -->
 			</example>
 
-			<section>
+			<section id="pickling-and-unpickling-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -320,7 +320,7 @@ $ python pickling.py
 				]]> -->
 			</section>
 
-			<section>
+			<section id="pickling-and-unpickling-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>

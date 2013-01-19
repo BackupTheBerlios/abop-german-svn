@@ -42,7 +42,7 @@
 		</para>
 		<section id="def-function">
 			<title>Definition einer Funktion</title> <!--Defining a Function -->
-			<example>
+			<example id="def-function-example">
 				<title>Definition einer Funktion
 					(<ulink url="code/funktion1.py">funktion1.py</ulink>)
 				</title> <!-- Defining a function -->
@@ -68,7 +68,7 @@ def sayHello():
 sayHello() # call the function
 				]]> -->
 			</example>
-			<section>
+			<section id="def-function-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -82,7 +82,7 @@ Hello World!
 				]]> -->
 			</section>
 
-			<section>
+			<section id="def-function-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -134,9 +134,9 @@ Hello World!
 
 		</para>
 
-		<section>
+		<section id="using-function-parameters">
 			<title>Funktionsparameter benutzen</title><!-- Using Function Parameters -->
-			<example>
+			<example id="using-function-parameters-example">
 				<title>Funktionsparameter benutzen
 					(<ulink url="code/funk_param.py">funk_param.py</ulink>)
 				</title> <!-- Using Function Parameters -->
@@ -176,7 +176,7 @@ y = 7
 printMax(x, y) # give variables as arguments
 				]]> -->
 			</example>
-			<section>
+			<section id="using-function-parameters-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -192,7 +192,7 @@ $ python func_param.py
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-function-parameters-example">
 				<title>So funktioniert es</title><!-- How It Works -->
 
 				<para>
@@ -250,9 +250,9 @@ $ python func_param.py
 
 		</para>
 
-		<section>
+		<section id="using-local-variables">
 			<title>Benutzung lokaler Variablen</title> <!-- Using Local Variables -->
-			<example>
+			<example id="using-local-variables-example">
 				<title>Benutzung lokaler Variablen
 					(<ulink url="code/funk_lokal.py">funk_lokal.py</ulink>)
 				</title> <!-- Using Local Variables -->
@@ -284,7 +284,7 @@ func(x)
 print 'x is still', x
 				]]> -->
 			</example>
-			<section>
+			<section id="using-local-variables-out">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -302,7 +302,7 @@ x is still 50
 				</screen>
 			</section>
 
-			<section>
+			<section id="using-local-variables-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -341,7 +341,7 @@ x is still 50
 			</section>
 		</section>
 
-		<section id="global">
+		<section id="using-global-statement">
 			<title>Benutzung der global-Anweisung</title> <!-- Using the global statement -->
 
 			<para>
@@ -375,7 +375,7 @@ x is still 50
 
 			</para>
 
-			<example>
+			<example id="using-global-statement-example">
 				<title>Benutzung der global-Anweisung
 					(<ulink url="code/funk_global.py">funk_global.py</ulink>)
 				</title> <!-- Using the global statement -->
@@ -411,7 +411,7 @@ func()
 print 'Value of x is', x
 				]]> -->
 			</example>
-			<section>
+			<section id="using-global-statement-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -429,7 +429,7 @@ Value of x is 2
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-global-statement-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -491,9 +491,9 @@ Value of x is 2
 
 		</para>
 
-		<section>
+		<section id="using-default-arguments">
 			<title>Verwendung voreingestellter Argumentwerte</title> <!-- Using Default Argument Values -->
-			<example>
+			<example id="using-default-arguments-example">
 				<title>Verwendung voreingestellter Argumentwerte
 					(<ulink url="code/funk_vorein.py">funk_vorein.py</ulink>)
 				</title> <!-- Using Default Argument Values -->
@@ -519,7 +519,7 @@ say('Hello')
 say('World', 5)
 				]]> -->
 			</example>
-			<section>
+			<section id="using-default-arguments-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -535,7 +535,7 @@ WorldWorldWorldWorldWorld
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-default-arguments-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -628,9 +628,9 @@ WorldWorldWorldWorldWorld
 
 		</para>
 
-		<section>
+		<section id="using-keyword-arguments">
 			<title>Schlüsselwort-Argumente benutzen</title> <!-- Using Keyword Arguments -->
-			<example>
+			<example id="using-keyword-arguments-example">
 				<title>Schlüsselwort-Argumente benutzen
 					(<ulink url="code/funk_schluessel.py">funk_schluessel.py</ulink>)
 				</title> <!-- Using Keyword Arguments -->
@@ -658,7 +658,7 @@ func(25, c=24)
 func(c=50, a=100)
 				]]> -->
 			</example>
-			<section>
+			<section id="using-keyword-arguments-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -676,7 +676,7 @@ a is 100 and b is 5 and c is 50
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-keyword-arguments-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -752,9 +752,9 @@ a is 100 and b is 5 and c is 50
 
 		</para>
 
-		<section>
+		<section id="using-return-statement">
 			<title>Verwendung der return-Anweisung</title> <!-- Using the literal statement --> <!-- ? -->
-			<example>
+			<example id="using-return-statement-example">
 				<title>Verwendung der return-Anweisung
 					(<ulink url="code/funk_return.py">funk_return.py</ulink>)
 				</title> <!-- Using the literal statement --> <!-- ? -->
@@ -784,7 +784,7 @@ def maximum(x, y):
 print maximum(2, 3)
 				]]> -->
 			</example>
-			<section>
+			<section id="using-return-statement-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -798,7 +798,7 @@ $ python func_return.py
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-return-statement-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>
@@ -887,9 +887,9 @@ def someFunction():
 
 		</para>
 
-		<section>
+		<section id="using-docstrings">
 			<title>Verwendung von DocStrings</title> <!-- Using DocStrings -->
-			<example>
+			<example id="using-docstrings-example">
 				<title>Verwendung von DocStrings
 					(<ulink url="code/funk_doc.py">funk_doc.py</ulink>)
 				</title> <!-- Using DocStrings -->
@@ -934,7 +934,7 @@ printMax(3, 5)
 print printMax.__doc__
 				]]> -->
 			</example>
-			<section>
+			<section id="using-docstrings-output">
 				<title>Ausgabe</title> <!-- Output -->
 				<screen>
 				<![CDATA[
@@ -954,7 +954,7 @@ Prints the maximum of two numbers.
 				]]> -->
 			</section>
 
-			<section>
+			<section id="using-docstrings-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>

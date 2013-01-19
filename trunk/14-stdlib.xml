@@ -54,7 +54,7 @@
 		<section id="command-line-arguments">
 			<title>Kommandozeilenparameter</title> <!-- Command Line Arguments -->
 
-			<example>
+			<example id="command-line-arguments-example">
 				<title>Der Gebrauch von sys.argv
 					(<ulink url="code/cat.py">cat.py</ulink>)
 				</title> <!-- Using sys.argv -->
@@ -142,7 +142,7 @@ else:
 				]]> -->
 			</example>
 
-			<section>
+			<section id="command-line-arguments-output">
 				<title>Ausgabe</title> <!-- Output -->
 
 				<screen>
@@ -195,7 +195,7 @@ if you wanna make your work also fun:
 				]]> -->
 			</section>
 
-			<section>
+			<section id="command-line-arguments-how">
 				<title>So funktioniert es</title> <!-- How It Works -->
 
 				<para>

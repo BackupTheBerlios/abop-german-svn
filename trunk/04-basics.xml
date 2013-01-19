@@ -620,7 +620,7 @@ This is the second sentence."
 			</procedure>
 		</note>
 
-		<example>
+		<example id="data-type-object-example">
 			<title>Benutzung von Variablen und Literalen
 					(<ulink url="code/var.py">var.py</ulink>)
 			</title> <!-- Using Variables and Literal constants -->
@@ -652,7 +652,7 @@ print s
 			]]> -->
 		</example>
 
-		<section>
+		<section id="data-type-object-output">
 			<title>Ausgabe</title> <!-- Output -->
 			<screen>
 			<![CDATA[
@@ -672,7 +672,7 @@ This is the second line.
 			]]> -->
 		</section>
 
-		<section>
+		<section id="data-type-object-how">
 			<title>So funktioniert es</title> <!-- How It Works -->
 
 			<para>

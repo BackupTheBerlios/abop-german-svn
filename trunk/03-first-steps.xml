@@ -71,7 +71,7 @@
 		<!-- Note that the <![CDATA[<<<]]> signs are the prompt for entering Python statements. -->
 
 		</para>
-		<example>
+		<example id="interpreter-prompt-example">
 			<title>Die Eingabeaufforderung des Python-Interpreters</title> <!-- Using the python interpreter prompt -->
 
 			<screen>
@@ -263,7 +263,7 @@ hello world
 		<filename>helloworld.py</filename> -->
 		</para>
 
-		<example>
+		<example id="source-file-example">
 			<title>Gebrauch einer Quelldatei
 					(<ulink url="code/hallowelt.py">hallowelt.py</ulink>)
 			</title> <!-- Using a Source File -->
@@ -298,7 +298,7 @@ print 'Hello World'
 		below. -->
 
 		</para>
-		<section>
+		<section id="source-file-output">
 			<title>Ausgabe</title> <!-- Output -->
 			<screen>
 			<![CDATA[
@@ -338,7 +338,7 @@ Hello World
 
 		</para>
 
-		<section>
+		<section id="source-file-how">
 			<title>So funktioniert es</title> <!-- How It Works -->
 			<para>
 
