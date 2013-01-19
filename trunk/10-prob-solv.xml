@@ -1230,7 +1230,7 @@ tar = 'tar -cvzf %s %s -X /home/swaroop/excludes.txt' % (target, ' '.join(srcdir
 
 			Eine empfohlene Weise, Programme zu schreiben ist die Vorgehensweise, der wir
 			beim Erstellen des Sicherungsskripts verfolgt haben - führen Sie die Analyse durch und
-			machen Sie eine Entwurf. Beginnen Sie die Implementierung mit einer einfachen ersten Version.
+			machen Sie einen Entwurf. Beginnen Sie die Implementierung mit einer einfachen ersten Version.
 			Testen und debuggen Sie das Programm. Benutzen Sie das Programm, um sicherzustellen, dass
 			alles wie erwartet funktioniert. Fügen Sie nun weitere gewünschte Funktionalität hinzu und
 			durchlaufen Sie den Zyklus Implementierung-Test-Anwendung so lange wie es nötig ist.
