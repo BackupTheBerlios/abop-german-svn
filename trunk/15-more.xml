@@ -37,7 +37,7 @@
 
 		Allgemein werden spezielle Methoden verwendet, um eine bestimmte Funktionalität zu imitieren.
 		Wenn Sie zum Beispiel die Indizierungs-Operation <literal>x[key]</literal> für Ihre Klasse
-		benutzen wollen (als wenn Sie eine Liste oder eine Tupel wäre), dann implementieren Sie einfach
+		benutzen wollen (als wenn Sie eine Liste oder ein Tupel wäre), dann implementieren Sie einfach
 		die Methode <methodname>__getitem__()</methodname>, und haben dieses Problem damit
 		gelöst. Wenn Sie darüber nachdenken, ist es genau das, was Python selber bei der Klasse
 		<classname>list</classname> macht. <!-- (CZ:--> Man spricht bei dieser Vorgehensweise
