@@ -286,10 +286,10 @@ $ python list_comprehension.py
 
 				Wir leiten hier von der vorhandenen Liste <literal>listeeins</literal>
 				eine neue Liste <literal>listezwei</literal> ab, indem wir die Manipulationsvorschrift
-				angeben (<literal>2*i</literal>), 	die an der Liste vorgenommen werden soll,
+				angeben (<literal>2*i</literal>), die an der Liste vorgenommen werden soll,
 				wenn eine bestimmte Bedingung (<literal><![CDATA[if i > 2]]></literal>) erfüllt ist.
 				Beachten Sie, dass die ursprüngliche Liste davon unberührt bleibt.
-				Oftmals, wenn wir Schleifen verwenden, um alle Element einer Liste zu durchlaufen,
+				Oftmals, wenn wir Schleifen verwenden, um alle Elemente einer Liste zu durchlaufen,
 				können wir das Gleiche auf präzisere, kompaktere und deutlichere Weise durch eine
 				Listenkomprehension ausdrücken.
 
