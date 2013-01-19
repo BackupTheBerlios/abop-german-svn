@@ -158,7 +158,7 @@ then
 	xsltproc \
 		--output $outfile \
 		--stringparam use.extensions 0 \
-		--stringparam fop.extensions 1 \
+		--stringparam fop1.extensions 1 \
 		--stringparam paper.type $paper_type \
 		--stringparam l10n.gentext.default.language $language \
 		docbook-xsl/fo/docbook.xsl \
@@ -177,7 +177,7 @@ then
 	xsltproc \
 		--output $outfile \
 		--stringparam use.extensions 0 \
-		--stringparam fop.extensions 1 \
+		--stringparam fop1.extensions 1 \
 		--stringparam paper.type $paper_type \
 		--stringparam l10n.gentext.default.language $language \
 		docbook-xsl/fo/docbook.xsl \
