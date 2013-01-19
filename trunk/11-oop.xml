@@ -300,7 +300,7 @@ $ python simplestclass.py
 
 		<para>
 
-		Wir haben bereits besprochen, dass Klassen/Objekte Methode haben können, die bis auf
+		Wir haben bereits besprochen, dass Klassen/Objekte Methoden haben können, die bis auf
 		den zusätzlichen Übergabeparameter <literal>self</literal> gewöhnliche Funktionen sind.
 		Wir werden hierfür nur ein Beispiel sehen.
 
