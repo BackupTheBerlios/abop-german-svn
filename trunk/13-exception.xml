@@ -441,7 +441,7 @@ No exception was raised.
 		mit Hilfe eines <literal>finally</literal>-Blocks erreicht werden. Beachten Sie jedoch,
 		dass Sie <emphasis>keine</emphasis> <literal>except</literal>-Klausel zusammen
 		mit einem <literal>finally</literal>-Block für den gleichen zugehörigen
-		<literal>try</literal>-Block benutzen dürfen. Wenn Sie beide zusammen benutze wollen,
+		<literal>try</literal>-Block benutzen dürfen. Wenn Sie beide zusammen benutzen wollen,
 		dann müssen Sie einen von beiden Blöcken in den anderen verschachteln.
 
 		<!-- What if you were reading a file and you wanted to close the file whether or not an
