@@ -697,7 +697,7 @@ $ python
 
 				Um zu sehen, wie die <function>dir</function>-Funktion arbeitet, definieren wir
 				eine neue Variable <varname>a</varname>, und weisen ihr einen Wert zu. Danach
-				überprüfen, was sich an der Ausgabe von <function>dir</function> geändert hat.
+				überprüfen wir, was sich an der Ausgabe von <function>dir</function> geändert hat.
 				Wir stellen fest, dass es in der Liste ein zusätzliches Element des gleichen Namens
 				<varname>a</varname> gibt. Wir entfernen die Variable bzw. das Attribut des
 				Moduls mittels der Anweisung <literal>del</literal>. Als Resultat der Änderung
