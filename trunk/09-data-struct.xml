@@ -252,9 +252,9 @@ My shopping list is now ['banana', 'carrot', 'mango', 'rice']
 
 				Die Variable <varname>einkaufsliste</varname> ist eine Einkaufsliste für
 				jemanden, der auf den Markt geht. In <varname>einkaufsliste</varname>
-				speichern wir nur die Namen der Dinge als Strings ab, aber denken Sie daran,
+				speichern wir nur die Namen der Dinge als Strings ab; aber denken Sie daran,
 				dass Sie einer Liste <emphasis>alle Arten von Objekten</emphasis> hinzufügen
-				können, einschließlich Zahlen und sogar anderer Listen.
+				können, also auch Zahlen und sogar andere Listen.
 
 				<!-- The variable <varname>shoplist</varname> is a shopping list for someone
 				who is going to the market. In <varname>shoplist</varname>, we only store
