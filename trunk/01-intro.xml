@@ -373,7 +373,7 @@
 		<para>
 		Außerdem wird die neue virtuelle Maschine <ulink
 		url="http://www.parrotcode.org">Parrot</ulink> entwickelt, um das komplett
-		neu entworfene Perl 6 und auch Python und andere interpretierte Sprache
+		neu entworfene Perl 6 und auch Python und andere interpretierte Sprachen
 		wie Ruby, PHP und Tcl ausführen zu können. Das bedeutet, dass Sie
 		<emphasis>vielleicht</emphasis> in der Zukunft all diese Perl-Module auch
 		in Python verwenden können, Sie also das beste beider Welten haben werden:
