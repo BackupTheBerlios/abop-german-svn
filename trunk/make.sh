@@ -17,7 +17,7 @@
 
 if [ ! -d "docbook-xsl" ]; then
 	echo "You need docbook-xsl in the working directory. Download from"
-	echo "https://sourceforge.net/projects/docbook/files/docbook-xsl/1.70.1/"
+	echo "https://sourceforge.net/projects/docbook/files/docbook-xsl/1.78.1/"
 	exit 3
 fi
 
@@ -141,6 +141,7 @@ then
 
 	xmlto \
 		-o "$dst/" \
+		--skip-validation \
 		txt \
 		index.xml
 

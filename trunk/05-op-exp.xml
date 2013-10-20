@@ -71,6 +71,10 @@
 
 			<title>Operatoren und ihre Verwendung</title> <!-- Operators and their usage -->
 			<tgroup cols="4">
+				<colspec colwidth="1*"/>
+				<colspec colwidth="3*"/>
+				<colspec colwidth="6*"/>
+				<colspec colwidth="6*"/>
 				<thead>
 					<row>
 						<entry>Operator</entry>
